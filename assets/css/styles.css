@@ -1,6 +1,6 @@
 html, body {
     overflow-y: auto;
-    background-color: #E6F7FF;
+    background-color: #F7C88A;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,15 @@ html, body {
 .chapter {
     background-color: white;
     border: 2px solid #ccc;
+}
+
+.chapter > button {
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.chapter > button:hover {
+    background-color: #F2A64A !important;
 }
 
 .section-header {
@@ -33,6 +42,10 @@ html, body {
 
 #sidebar a:hover {
     background-color: #f0f0f0;
+}
+
+#sidebar li {
+    border-bottom: 1px solid #ccc;
 }
 
 #sidebar b {
@@ -82,6 +95,7 @@ footer img {
 
 .btn-toggle {
     width: 100%;
+    border-bottom: 1px solid #ccc;
 }
 
 .btn-toggle::before {
