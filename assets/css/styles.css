@@ -35,6 +35,12 @@
     text-align: left;
 }
 
+#disclaimer-container {
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
+}
+
 footer {
     color: white;
 }
