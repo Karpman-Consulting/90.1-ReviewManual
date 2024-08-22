@@ -1,9 +1,19 @@
+html, body {
+    overflow-y: scroll;
+    background-color: #E6F7FF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .chapter {
+    background-color: white;
     border: 2px solid #ccc;
 }
 
 .section-header {
-    margin-left: 16px;
+    padding-left: 28px;
+    width: 100%;
 }
 
 .section-header:hover {
@@ -11,7 +21,6 @@
 }
 
 #sidebar {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -27,7 +36,7 @@
 }
 
 #sidebar b {
-    text-wrap: nowrap;
+    white-space: nowrap;
     margin-left: 10px;
 }
 
@@ -35,10 +44,26 @@
     text-align: left;
 }
 
+#header {
+    padding: 10px;
+}
+
 #disclaimer-container {
   justify-content: center;
   align-items: center;
   font-size: 0.75em;
+}
+
+.page-content {
+    flex-grow: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    border: 2px solid #ccc;
 }
 
 footer {
@@ -55,6 +80,10 @@ footer img {
     }
 }
 
+.btn-toggle {
+    width: 100%;
+}
+
 .btn-toggle::before {
     width: 1.25em;
     line-height: 0;
@@ -65,4 +94,8 @@ footer img {
 
 .btn-toggle[aria-expanded="true"]::before {
     transform: rotate(90deg);
+}
+
+.link-body-emphasis {
+    width: 100%;
 }
