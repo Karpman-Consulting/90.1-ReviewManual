@@ -9,11 +9,300 @@
 </head>
 <body>
 <div class="d-flex flex-nowrap">
-    <div id="sidebar-container"></div> <!-- Sidebar container -->
+    <div id="sidebar-container">
+        <div id="sidebar" class="flex-shrink-0 p-3" style="width: 280px;">
+            <span class="fs-5 fw-semibold">Contents</span>
+            <ul class="list-unstyled ps-0">
+                <li class="chapter mb-1">
+                    <button class="btn btn-toggle d-inline-flex justify-content-start rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#ch1-collapse" aria-expanded="false">
+                        <b>Ch. 1 &nbsp </b> Overview
+                    </button>
+                    <div class="collapse border-1" id="ch1-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <button class="section-header btn d-inline-flex rounded border-0">
+                                <b>1.1 &nbsp </b> Purpose
+                            </button>
+                            <button class="section-header btn d-inline-flex rounded border-0">
+                                <b>1.2 &nbsp </b> Applications of the PRM-RM
+                            </button>
+                            <button class="section-header btn d-inline-flex rounded border-0">
+                                <b>1.3 &nbsp </b> Standard 90.1-2022 Performance Rating Method Compliance Calculations
+                            </button>
+                            <button class="section-header btn d-inline-flex rounded border-0">
+                                <b>1.4 &nbsp </b> Organization
+                            </button>
+                            <button class="section-header btn d-inline-flex rounded border-0">
+                                <b>1.5 &nbsp </b> Type of Project Submittal
+                            </button>
+                        </ul>
+                    </div>
+                </li>
+                <li class="chapter mb-1">
+                    <button class="btn btn-toggle d-inline-flex justify-content-start rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#ch2-collapse" aria-expanded="false">
+                        <b>Ch. 2 &nbsp </b> General Modeling Procedures and Requirements
+                    </button>
+                    <div class="collapse border-1" id="ch2-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s2_1-collapse" aria-expanded="false">
+                                <b>2.1 &nbsp </b> Simulation General Requirements
+                            </button>
+                            <div class="collapse border-1" id="s2_1-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.1.1 &nbsp </b> Simulation Program</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s2_2-collapse" aria-expanded="false">
+                                <b>2.2 &nbsp </b> General Requirements for Data from the User
+                            </button>
+                            <div class="collapse border-1" id="s2_2-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.2.1 &nbsp </b> General</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.2.2 &nbsp </b> Definition of Building Descriptors</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.2.3 &nbsp </b> Treatment of Descriptors Not Fully Addressed by this Document</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.2.4 &nbsp </b> Energy Components</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.2.5 &nbsp </b> Regulated and Unregulated Energy Use</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s2_3-collapse" aria-expanded="false">
+                                <b>2.3 &nbsp </b> Thermal Blocks, HVAC Zones, and Space Functions
+                            </button>
+                            <div class="collapse border-1" id="s2_3-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.3.1 &nbsp </b> Definitions</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s2_4-collapse" aria-expanded="false">
+                                <b>2.4 &nbsp </b> Modeling Requirements for Zones
+                            </button>
+                            <div class="collapse border-1" id="s2_4-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.4.1 &nbsp </b> Required Zone Modeling Capabilities</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.4.2 &nbsp </b> Modeling Requirements for Unconditioned Spaces</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.4.3 &nbsp </b> Modeling Requirements for Parking Garages, Attics, and Crawlspaces that are Defined by Standard 90.1-2022 as Unenclosed Spaces</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.4.4 &nbsp </b> Modeling Requirements for Semi-Heated Spaces</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.4.5 &nbsp </b> Space Use Classification</a></li>
+                                </ul>
+                            </div>
+                            <button class="section-header btn d-inline-flex rounded border-0">
+                                <b>2.5 &nbsp </b> Unmet Load Hours
+                            </button>
+                            <button class="section-header btn d-inline-flex rounded border-0">
+                                <b>2.6 &nbsp </b> Calculation Procedures
+                            </button>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s2_7-collapse" aria-expanded="false">
+                                <b>2.7 &nbsp </b> HVAC Capacity Requirements and Sizing
+                            </button>
+                            <div class="collapse border-1" id="s2_7-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.7.1 &nbsp </b> Specifying HVAC Capacities for the Proposed Design</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.7.2 &nbsp </b> Sizing Equipment in the Baseline Building</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.7.3 &nbsp </b> Proposed Design with No HVAC, Lighting, SHW System or Receptacle Loads</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.7.4 &nbsp </b> Modeling Requirements for Semi-Heated Spaces</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li class="chapter mb-1">
+                    <button class="btn btn-toggle d-inline-flex justify-content-start rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#ch3-collapse" aria-expanded="false">
+                        <b>Ch. 3 &nbsp </b> Building Descriptors Reference
+                    </button>
+                    <div class="collapse border-1" id="ch3-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s3_1-collapse" aria-expanded="false">
+                                <b>3.1 &nbsp </b> Overview
+                            </button>
+                            <div class="collapse border-1" id="s3_1-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.1.1 &nbsp </b> Standard 90.1 Section G3.2 HVAC System Map</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.1.2 &nbsp </b> Organization of Information</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s3_2-collapse" aria-expanded="false">
+                                <b>3.2 &nbsp </b> Project Data
+                            </button>
+                            <div class="collapse border-1" id="s3_2-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.1 &nbsp </b> General Information</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.2 &nbsp </b> Building Model Classification</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.3 &nbsp </b> Geographic and Climate Data</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.4 &nbsp </b> Site Characteristics</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.5 &nbsp </b> Calendar</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.6 &nbsp </b> Simulation Control</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s3_3-collapse" aria-expanded="false">
+                                <b>3.3 &nbsp </b> HVAC Zones
+                            </button>
+                            <div class="collapse border-1" id="s3_3-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="content/3_3_1_general-information.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.1 &nbsp </b> General Information</a></li>
+                                    <li><a href="content/3_3_2_interior-lighting.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.2 &nbsp </b> Interior Lighting</a></li>
+                                    <li><a href="content/3_3_3_receptacle-and-process-loads.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.3 &nbsp </b> Receptacle and Process Loads</a></li>
+                                    <li><a href="content/3_3_4_occupants.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.4 &nbsp </b> Occupants</a></li>
+                                    <li><a href="content/3_3_5_infiltration.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.5 &nbsp </b> Infiltration</a></li>
+                                    <li><a href="content/3_3_6_natural-ventilation.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.6 &nbsp </b> Natural Ventilation</a></li>
+                                    <li><a href="content/3_3_7_thermal_mass.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.7 &nbsp </b> Thermal Mass</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s3_4-collapse" aria-expanded="false">
+                                <b>3.4 &nbsp </b> Space Uses
+                            </button>
+                            <div class="collapse border-1" id="s3_4-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.1 &nbsp </b> General Information</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.2 &nbsp </b> Occupants</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.3 &nbsp </b> Interior Lighting</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.4 &nbsp </b> Daylighting Control</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.5 &nbsp </b> Receptacle and Process Loads</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.6 &nbsp </b> Commercial Refrigeration Equipment</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.7 &nbsp </b> Elevators, Escalators, and Moving Walkways</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.8 &nbsp </b> Gas Process Equipment</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s3_5-collapse" aria-expanded="false">
+                                <b>3.5 &nbsp </b> Building Envelope Data
+                            </button>
+                            <div class="collapse border-1" id="s3_5-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.1 &nbsp </b> Materials</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.2 &nbsp </b> Construction Assemblies</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.3 &nbsp </b> Roofs</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.4 &nbsp </b> Exterior Wall</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.5 &nbsp </b> Exterior Floors</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.6 &nbsp </b> Doors</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.7 &nbsp </b> Fenestration</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.8 &nbsp </b> Below-Grade Walls</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.9 &nbsp </b> Slab Floors in Contact with Ground</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.10 &nbsp </b> Heat Transfer between Thermal Zones</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s3_6-collapse" aria-expanded="false">
+                                <b>3.6 &nbsp </b> HVAC Zone Level Systems
+                            </button>
+                            <div class="collapse border-1" id="s3_6-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.6.1 &nbsp </b> Zone Temperature Control</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.6.2 &nbsp </b> Terminal Device Data</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.6.3 &nbsp </b> Terminal Heating</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.6.4 &nbsp </b> Baseboard Heat</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.6.5 &nbsp </b> Zone Level Airflow</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s3_7-collapse" aria-expanded="false">
+                                <b>3.7 &nbsp </b> HVAC Secondary Systems
+                            </button>
+                            <div class="collapse border-1" id="s3_7-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.1 &nbsp </b> Basic System Information</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.2 &nbsp </b> System Controls</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.3 &nbsp </b> Fan Systems</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.4 &nbsp </b> Outdoor Air Controls and Economizers</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.5 &nbsp </b> Cooling Systems</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.6 &nbsp </b> Heating Systems</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.7 &nbsp </b> Humidity Controls and Devices</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s3_8-collapse" aria-expanded="false">
+                                <b>3.8 &nbsp </b> HVAC Primary Systems
+                            </button>
+                            <div class="collapse border-1" id="s3_8-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.1 &nbsp </b> Required Zone Modeling Capabilities</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.2 &nbsp </b> Modeling Requirements for Unconditioned Spaces</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.3 &nbsp </b> Modeling Requirements for Parking Garages, Attics, and Crawlspaces that are Defined by Standard 90.1-2022 as Unenclosed Spaces</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.4 &nbsp </b> Modeling Requirements for Semi-Heated Spaces</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.5 &nbsp </b> Space Use Classification</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.6 &nbsp </b> Space Use Classification</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.7 &nbsp </b> Space Use Classification</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.8 &nbsp </b> Space Use Classification</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s3_9-collapse" aria-expanded="false">
+                                <b>3.9 &nbsp </b> Miscellaneous Energy Uses
+                            </button>
+                            <div class="collapse border-1" id="s3_9-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.1 &nbsp </b> Water Heating</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.2 &nbsp </b> Exterior Lighting</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.3 &nbsp </b> Other Electricity Use</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.4 &nbsp </b> Other Gas Use</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.5 &nbsp </b> Swimming Pools</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.6 &nbsp </b> Transformers</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s3_10-collapse" aria-expanded="false">
+                                <b>3.10 &nbsp </b> On-Site Power Generation
+                            </button>
+                            <div class="collapse border-1" id="s3_10-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.10.1 &nbsp </b> Photovoltaic Systems</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.10.2 &nbsp </b> Wind Systems</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.10.3 &nbsp </b> Combined Heat and Power Cogeneration Systems</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s3_11-collapse" aria-expanded="false">
+                                <b>3.11 &nbsp </b> Common Data Structures
+                            </button>
+                            <div class="collapse border-1" id="s3_11-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.1 &nbsp </b> Schedule</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.2 &nbsp </b> Holidays</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.3 &nbsp </b> Surface Geometry</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.4 &nbsp </b> Opening Geometry</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.5 &nbsp </b> Shading Devices</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.6 &nbsp </b> Construction Assembly</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.7 &nbsp </b> Fenestration Construction</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.8 &nbsp </b> Material</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.9 &nbsp </b> Slab Construction</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.10 &nbsp </b> Occupant Heat Rate</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.11 &nbsp </b> Furniture and Contents</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.12 &nbsp </b> Reference Position in a Space</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.13 &nbsp </b> Two-Dimensional Curve</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.14 &nbsp </b> Three-Dimensional Curve</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+        <!--        <li class="border-top my-3"></li> -->
+                <li class="chapter mb-1">
+                    <button class="btn btn-toggle d-inline-flex justify-content-start rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#ch4-collapse" aria-expanded="false">
+                        <b>Ch. 4 &nbsp </b> Energy Price Data
+                    </button>
+                    <div class="collapse border-1" id="ch4-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <button class="section-header btn d-inline-flex rounded border-0">
+                                <b>4.1 &nbsp </b> State Average Energy Costs
+                            </button>
+                            <button class="btn btn-toggle d-inline-flex rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#s4_2-collapse" aria-expanded="false">
+                                <b>4.2 &nbsp </b> Custom Energy Costs
+                            </button>
+                            <div class="collapse border-1" id="s4_2-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>4.2.1 &nbsp </b> Utility Costs: Tariffs</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>4.2.2 &nbsp </b> Utility Costs: Charges</a></li>
+                                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>4.2.3 &nbsp </b> Utility Costs: Ratchets</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <main>
 
-        <header id="header" class="p-3 mb-3 border-bottom"></header> <!-- Header Section -->
+        <header id="header" class="p-3 mb-3 border-bottom">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-end">
+                    <form class="mb-3 mb-lg-0 me-lg-3" role="search">
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </header>
 
         <!-- Hero Section -->
         <div class="jumbotron text-center">
@@ -73,10 +362,15 @@
             <h5 class="text-center">Disclaimer</h5>
             <p>This document was prepared as an account of work sponsored by an agency of the United States Government. Neither the United States Government nor any agency thereof, nor Battelle Memorial Institute, nor any of their employees, makes <strong>any warranty, express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights.</strong> Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof, or Battelle Memorial Institute. The views and opinions of authors expressed herein do not necessarily state or reflect those of the United States Government or any agency thereof.</p>
         </div>
-        <footer id="footer" class="bg-dark text-center py-3"></footer> <!-- Footer Section -->
+        <footer id="footer" class="bg-dark text-center py-3">
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="assets/images/PNNL_CENTER_White.png" alt="PNNL Logo" class="mt-1 mx-2">
+                <img src="assets/images/DOE_Logo.png" alt="DOE Logo" class="mt-1 mx-5">
+            </div>
+            <p>&copy; Prepared for the U.S. Department of Energy under Contract DE-AC05-76RL01830</p>
+        </footer>
     </main>
 </div>
-<script src="assets/js/add-components.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
