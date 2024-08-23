@@ -18,73 +18,141 @@
         <div class="page-content container">
 
             <h1>3.3.1 General Information</h1>
-            <div class="mb-2">
-                <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#applicabilityContent"
-                   role="button" aria-expanded="false" aria-controls="applicabilityContent">
-                    <strong>Applicability</strong>
-                    <span class="arrow rotate">&#9656;</span>
-                </a>
-                <div class="collapse" id="applicabilityContent">
-                    <p>All projects</p>
+            <div>
+                <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneName" role="button" aria-expanded="false" aria-controls="hvacZoneName">
+                    <strong>HVAC Zone Name</strong>
+                </button>
+                <div class="collapse" id="hvacZoneName">
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneNameApp" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
+                            <strong>Applicability</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneNameApp">
+                            All projects.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneNameDef" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
+                            <strong>Definition</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneNameDef">
+                            A unique identifier for the thermal zone.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneNameUnits" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
+                            <strong>Units</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneNameUnits">
+                            Text
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneNameInpRes" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
+                            <strong>Input Restrictions</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneNameInpRes">
+                            None
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneNameBaseB" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
+                            <strong>Baseline Building</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneNameBaseB">
+                            Not applicable
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="mb-2">
-                <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#definitionContent" role="button"
-                   aria-expanded="false" aria-controls="definitionContent">
-                    <strong>Definition</strong>
-                    <span class="arrow rotate">&#9656;</span>
-                </a>
-                <div class="collapse" id="definitionContent">
-                    <p>The name of the primary HVAC system that serves this thermal zone. The purpose of this building
-                        descriptor is to link the thermal zone to a system. For thermal zones served by a ventilation
-                        system like a dedicated outdoor air system (DOAS) and a separate HVAC system that meets the
-                        heating and cooling loads, the DOAS system would be defined as the ventilation system and the
-                        HVAC system would be defined as the primary heating/cooling system.</p>
+            <div>
+                <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneAssociatedBATs" role="button" aria-expanded="false" aria-controls="hvacZoneAssociatedBATs">
+                    <strong>HVAC Zone Associated Building Area Types</strong>
+                </button>
+                <div class="collapse" id="hvacZoneAssociatedBATs">
+
                 </div>
             </div>
 
-            <div class="mb-2">
-                <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#unitsContent" role="button"
-                   aria-expanded="false" aria-controls="unitsContent">
-                    <strong>Units</strong>
-                    <span class="arrow rotate">&#9656;</span>
-                </a>
-                <div class="collapse" id="unitsContent">
-                    <p>Text, unique</p>
+            <div>
+                <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneDescription" role="button" aria-expanded="false" aria-controls="hvacZoneDescription">
+                    <strong>HVAC Zone Description</strong>
+                </button>
+                <div class="collapse" id="hvacZoneDescription">
+
                 </div>
             </div>
 
-            <div class="mb-2">
-                <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#inputRestrictionsContent"
-                   role="button" aria-expanded="false" aria-controls="inputRestrictionsContent">
-                    <strong>Input Restrictions</strong>
-                    <span class="arrow rotate">&#9656;</span>
-                </a>
-                <div class="collapse" id="inputRestrictionsContent">
-                    <p>None</p>
+            <div>
+                <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#spaceConditioningCategory" role="button" aria-expanded="false" aria-controls="spaceConditioningCategory">
+                    <strong>Space Conditioning Category</strong>
+                </button>
+                <div class="collapse" id="spaceConditioningCategory">
+
                 </div>
             </div>
 
-            <div class="mb-2">
-                <a class="d-flex align-items-center" data-bs-toggle="collapse" href="#baselineBuildingContent"
-                   role="button" aria-expanded="false" aria-controls="baselineBuildingContent">
-                    <strong>Baseline Building</strong>
-                    <span class="arrow rotate">&#9656;</span>
-                </a>
-                <div class="collapse" id="baselineBuildingContent">
-                    <p>
-                        <strong>G3.2 New Construction/Major Alterations</strong><br>
-                        The baseline building may have a different system mapping if the baseline building has a
-                        different HVAC type than the proposed design. Baseline system types 5-8 are required to be one
-                        system per floor. This could result in different system names as well.
-                    </p>
-                    <p>
-                        <strong>G3.3 Minor Alterations</strong><br>
-                        Same as proposed.
-                    </p>
+            <div>
+                <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneType" role="button" aria-expanded="false" aria-controls="hvacZoneType">
+                    <strong>HVAC Zone Type</strong>
+                </button>
+                <div class="collapse" id="hvacZoneType">
+
                 </div>
             </div>
+
+            <div>
+                <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#occupancyType" role="button" aria-expanded="false" aria-controls="occupancyType">
+                    <strong>Occupancy Type</strong>
+                </button>
+                <div class="collapse" id="occupancyType">
+
+                </div>
+            </div>
+
+            <div>
+                <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#ventilationSystemName" role="button" aria-expanded="false" aria-controls="ventilationSystemName">
+                    <strong>Ventilation System Name</strong>
+                </button>
+                <div class="collapse" id="ventilationSystemName">
+
+                </div>
+            </div>
+
+            <div>
+                <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#primaryHeatingCoolingSystemName" role="button" aria-expanded="false" aria-controls="primaryHeatingCoolingSystemName">
+                    <strong>Primary Heating/Cooling System Name</strong>
+                </button>
+                <div class="collapse" id="primaryHeatingCoolingSystemName">
+
+                </div>
+            </div>
+
+            <div>
+                <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#secondaryHeatingCoolingSystemName" role="button" aria-expanded="false" aria-controls="secondaryHeatingCoolingSystemName">
+                    <strong>Secondary Heating/Cooling System Name</strong>
+                </button>
+                <div class="collapse" id="secondaryHeatingCoolingSystemName">
+
+                </div>
+            </div>
+
+            <div>
+                <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#floorArea" role="button" aria-expanded="false" aria-controls="floorArea">
+                    <strong>Floor Area</strong>
+                </button>
+                <div class="collapse" id="floorArea">
+
+                </div>
+            </div>
+
         </div>
 
         <div id="footer-container"></div> <!-- Footer container -->

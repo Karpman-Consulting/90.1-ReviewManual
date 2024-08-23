@@ -18,6 +18,18 @@
         <div class="page-content container">
 
             <h1>3.3.2 Interior Lighting</h1>
+            <p>Inputs for interior lighting are specified at the space level (see specification below). In those instances when thermal zones contain just one space, the inputs here will be identical to the inputs for the single space that is contained within the thermal zone.</p>
+
+            <p>For those instances when a thermal zone contains more than one space, the software shall either model the lighting separately for each space and sum energy consumption and heat gain for each timestep of the analysis, or it must incorporate a procedure to sum inputs or calculate weighted averages such that the lighting power used at the thermal zone level is equal to the combination of lighting power for each of the spaces contained in the thermal zone.</p>
+
+            <p>In some cases, combining lighting power at the space level into lighting power for the thermal zone may be challenging and would have to be done at the level of each timestep in the simulation. These cases include:</p>
+
+            <ul>
+              <li>A thermal zone that contains some spaces that have daylighting and others that do not</li>
+              <li>A thermal zone that contains spaces with different schedules of operation</li>
+              <li>A thermal zone that contains some spaces that have a schedule adjusted for lighting controls and other spaces that do not</li>
+              <li>Combinations of the above</li>
+            </ul>
 
         </div>
 

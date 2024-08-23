@@ -1,6 +1,6 @@
 html, body {
     overflow-y: auto;
-    background-color: #F7C88A;
+    background-color: #F9F9F9;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ html, body {
 }
 
 .section-header:hover {
-    background-color: #f0f0f0;
+    background-color: #F7C88A !important;
 }
 
 #sidebar {
@@ -34,6 +34,7 @@ html, body {
     top: 0;
     height: 100vh;
     overflow-y: auto;
+    font-family: Arial, sans-serif;
 }
 
 #sidebar button:hover {
@@ -59,6 +60,10 @@ html, body {
 
 #header {
     padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #F9F9F9;
 }
 
 #disclaimer-container {
@@ -69,6 +74,17 @@ html, body {
 
 .page-content {
     flex-grow: 1;
+    font-family: Arial, sans-serif;
+}
+
+.table-row {
+    width: calc(100% - 25px) !important;
+    margin-left: 25px;
+    background-color: #ccc;
+}
+
+.descriptor {
+    border: 1px solid #ccc;
 }
 
 main {
@@ -76,7 +92,9 @@ main {
     flex-direction: column;
     min-height: 100vh;
     background-color: white;
-    border: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
 }
 
 footer {
@@ -95,7 +113,7 @@ footer img {
 
 .btn-toggle {
     width: 100%;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
 }
 
 .btn-toggle::before {
@@ -106,8 +124,16 @@ footer img {
     transform-origin: .5em 50%;
 }
 
+#sidebar .btn-toggle::before {
+    margin-top: 4px;
+}
+
 .btn-toggle[aria-expanded="true"]::before {
     transform: rotate(90deg);
+}
+
+.btn-toggle:hover {
+    background-color: #F7C88A !important;
 }
 
 .link-body-emphasis {
