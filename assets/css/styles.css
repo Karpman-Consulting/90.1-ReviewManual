@@ -12,7 +12,8 @@ html, body {
 }
 
 .chapter > button {
-    border-bottom: 1px solid #ccc;
+    border-radius: 0 !important;
+    border-bottom: 2px solid #ccc;
     font-weight: bold;
 }
 
@@ -23,6 +24,13 @@ html, body {
 .section-header {
     padding-left: 28px;
     width: 100%;
+    border-radius: 0 !important;
+    border-bottom: 2px solid #ccc !important;
+}
+
+.section-header-toggle {
+    border-radius: 0 !important;
+    border-bottom: 1px solid #ccc !important;
 }
 
 .section-header:hover {
@@ -46,6 +54,7 @@ html, body {
 }
 
 #sidebar li {
+    border-radius: 0 !important;
     border-bottom: 1px solid #ccc;
 }
 
@@ -84,6 +93,10 @@ html, body {
 }
 
 .descriptor {
+
+}
+
+.descriptor-container {
     border: 1px solid #ccc;
 }
 
@@ -95,6 +108,20 @@ main {
     border-left: 2px solid #ccc;
     border-right: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
+}
+
+main figure {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+main figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
@@ -113,7 +140,6 @@ footer img {
 
 .btn-toggle {
     width: 100%;
-    border-bottom: 2px solid #ccc;
 }
 
 .btn-toggle::before {
@@ -128,6 +154,10 @@ footer img {
     margin-top: 4px;
 }
 
+.btn {
+    border-radius: 0 !important;
+}
+
 .btn-toggle[aria-expanded="true"]::before {
     transform: rotate(90deg);
 }
@@ -138,4 +168,49 @@ footer img {
 
 .link-body-emphasis {
     width: 100%;
+}
+
+.descriptor-container .btn-toggle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 15px;
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.descriptor-container .btn-toggle:hover {
+    background-color: #e0e0e0;
+}
+
+main .collapse {
+    padding: 5px;
+}
+
+main .collapsing {
+    padding: 5px;
+    padding-left: 30px;
+}
+
+main .collapse.show {
+    margin-left: 25px;
+}
+
+#sidebar .collapse {
+    padding: 5px;
+}
+
+#sidebar .collapsing {
+    padding: 5px;
+    padding-left: 10px;
+}
+
+#sidebar .collapse.show {
+    margin-left: 5px;
+}
+
+.descriptor-container .collapse + div {
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 2px solid #ddd;
+    background-color: #f9f9f9;
 }

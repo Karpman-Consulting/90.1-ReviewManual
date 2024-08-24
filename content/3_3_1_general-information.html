@@ -18,53 +18,53 @@
         <div class="page-content container">
 
             <h1>3.3.1 General Information</h1>
-            <div>
+            <div class="descriptor-container mb-1">
                 <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneName" role="button" aria-expanded="false" aria-controls="hvacZoneName">
                     <strong>HVAC Zone Name</strong>
                 </button>
                 <div class="collapse" id="hvacZoneName">
 
                     <div>
-                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneNameApp" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneName-applicability" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
                             <strong>Applicability</strong>
                         </button>
-                        <div class="collapse show" id="hvacZoneNameApp">
+                        <div class="collapse show" id="hvacZoneName-applicability">
                             All projects.
                         </div>
                     </div>
 
                     <div>
-                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneNameDef" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneName-definition" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
                             <strong>Definition</strong>
                         </button>
-                        <div class="collapse show" id="hvacZoneNameDef">
+                        <div class="collapse show" id="hvacZoneName-definition">
                             A unique identifier for the thermal zone.
                         </div>
                     </div>
 
                     <div>
-                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneNameUnits" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneName-units" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
                             <strong>Units</strong>
                         </button>
-                        <div class="collapse show" id="hvacZoneNameUnits">
+                        <div class="collapse show" id="hvacZoneName-units">
                             Text
                         </div>
                     </div>
 
                     <div>
-                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneNameInpRes" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneName-inputRestrictions" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
                             <strong>Input Restrictions</strong>
                         </button>
-                        <div class="collapse show" id="hvacZoneNameInpRes">
+                        <div class="collapse show" id="hvacZoneName-inputRestrictions">
                             None
                         </div>
                     </div>
 
                     <div>
-                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneNameBaseB" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneName-baselineBuilding" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
                             <strong>Baseline Building</strong>
                         </button>
-                        <div class="collapse show" id="hvacZoneNameBaseB">
+                        <div class="collapse show" id="hvacZoneName-baselineBuilding">
                             Not applicable
                         </div>
                     </div>
@@ -72,84 +72,558 @@
                 </div>
             </div>
 
-            <div>
+            <div class="descriptor-container mb-1">
                 <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneAssociatedBATs" role="button" aria-expanded="false" aria-controls="hvacZoneAssociatedBATs">
                     <strong>HVAC Zone Associated Building Area Types</strong>
                 </button>
                 <div class="collapse" id="hvacZoneAssociatedBATs">
 
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneAssociatedBATs-applicability" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
+                            <strong>Applicability</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneAssociatedBATs-applicability">
+                            All projects.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneAssociatedBATs-definition" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
+                            <strong>Definition</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneAssociatedBATs-definition">
+                            An associated building area type for each HVAC zone. The permitted building area types are restricted to the building area types defined in Standard 90.1-2022 Section 9.5.1. This mapping is used to identify the baseline HVAC system, baseline SHW system and the WWR for the baseline building for projects following 90.1 G3.2.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneAssociatedBATs-units" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
+                            <strong>Units</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneAssociatedBATs-units">
+                            Text
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneAssociatedBATs-inputRestrictions" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
+                            <strong>Input Restrictions</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneAssociatedBATs-inputRestrictions">
+                            HVAC zones in the proposed building model shall be assigned to a building area type.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneAssociatedBATs-baselineBuilding" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
+                            <strong>Baseline Building</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneAssociatedBATs-baselineBuilding">
+                            Same as proposed
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div>
+            <div class="descriptor-container mb-1">
                 <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneDescription" role="button" aria-expanded="false" aria-controls="hvacZoneDescription">
                     <strong>HVAC Zone Description</strong>
                 </button>
                 <div class="collapse" id="hvacZoneDescription">
 
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneDescription-applicability" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
+                            <strong>Applicability</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneDescription-applicability">
+                            All projects.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneDescription-definition" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
+                            <strong>Definition</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneDescription-definition">
+                            A brief description of the HVAC zone that identifies the spaces that makes up the HVAC zone or other descriptive information. The description should tie the HVAC zone to the building plans.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneDescription-units" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
+                            <strong>Units</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneDescription-units">
+                            Text
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneDescription-inputRestrictions" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
+                            <strong>Input Restrictions</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneDescription-inputRestrictions">
+                            <p>HVAC zones in the proposed building model shall match those in the proposed building design, with each temperature control device defining a separate thermal zone.</p>
+
+                            <p>Refer to Section 2.3 of this manual for guidance on how to define thermal blocks, HVAC zones, and spaces.</p>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneDescription-baselineBuilding" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
+                            <strong>Baseline Building</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneDescription-baselineBuilding">
+                            Same as proposed
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div>
+            <div class="descriptor-container mb-1">
                 <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#spaceConditioningCategory" role="button" aria-expanded="false" aria-controls="spaceConditioningCategory">
                     <strong>Space Conditioning Category</strong>
                 </button>
                 <div class="collapse" id="spaceConditioningCategory">
 
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#spaceConditioningCategory-applicability" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
+                            <strong>Applicability</strong>
+                        </button>
+                        <div class="collapse show" id="spaceConditioningCategory-applicability">
+                            All projects.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#spaceConditioningCategory-definition" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
+                            <strong>Definition</strong>
+                        </button>
+                        <div class="collapse show" id="spaceConditioningCategory-definition">
+                            <p>
+                                Designation of the zone as containing a directly conditioned space, semi-heated, unconditioned, or plenum (i.e., unoccupied but partially conditioned as a consequence of its role as a path for returning air).
+                                <br><br>
+                                <u>Conditioned Space:</u> a space that has a heating and/or cooling system of sufficient size to maintain temperatures suitable for human comfort. Cooled zone, heated space, and indirectly conditioned space are conditioned spaces and are defined as follows:
+                            </p>
+                            <ul>
+                                <li><strong>Cooled space:</strong> an enclosed space within a building that is cooled by a cooling system whose sensible output capacity is greater than or equal to 3.4 Btu/h·ft<sup>2</sup> of floor area.</li>
+                                <li><strong>Heated space:</strong> an enclosed space within a building that is heated by a heating system whose output capacity relative to the floor area is greater than or equal to the criteria in Table 11.</li>
+                                <li><strong>Indirectly conditioned space:</strong> an enclosed space within a building that is not a heated space or a cooled space, which is heated or cooled indirectly by being connected to adjacent space(s) provided:
+                                    <ul>
+                                        <li>The product of the U-factor(s) and surface area(s) of the space adjacent to connected space(s) exceeds the combined sum of the product of the U-factor(s) and surface area(s) of the space adjoining the outdoors, unconditioned spaces, and to or from semi-heated spaces (e.g., corridors) or</li>
+                                        <li>That air from heated or cooled spaces is intentionally transferred (naturally or mechanically) into the space at a rate exceeding 3 air changes per hour (ACH) (e.g., atria).</li>
+                                    </ul>
+                                </li>
+
+                                    <li><strong>Semi-Heated Space:</strong> an enclosed space within a building that is heated by a heating system whose output capacity is greater than or equal to 3.4 Btu/h·ft<sup>2</sup> of floor area but is not a conditioned space.</li>
+                                    <li><strong>Unconditioned space:</strong> an enclosed space within a building that is not a conditioned space or a semi-heated space.</li>
+                                    <em>NOTE: Crawlspaces, attics, and parking garages that do not meet the definitions of either a conditioned or semi-heated space with natural or mechanical ventilation are not considered enclosed spaces. Rules for unconditioned spaces, not considered enclosed, are documented in Section 2.4.3 of this document.</em>
+                                </ul>
+
+                            <figure>
+                                <figcaption>Table 11. Standard 90.1-2022 Heated Space Criteria</figcaption>
+                                <img src="../assets/images/table-11.png" alt="Table 11. Standard 90.1-202022 Heated Space Criteria">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#spaceConditioningCategory-units" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
+                            <strong>Units</strong>
+                        </button>
+                        <div class="collapse show" id="spaceConditioningCategory-units">
+                            List: Conditioned, Semi-heated, and Unconditioned
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#spaceConditioningCategory-inputRestrictions" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
+                            <strong>Input Restrictions</strong>
+                        </button>
+                        <div class="collapse show" id="spaceConditioningCategory-inputRestrictions">
+                            <h3>G3.2 New Construction/Major Alterations</h3>
+                            <p>As designed except spaces designed as semi-heated that are not storage, stairwells, vestibules, electrical/mechanical rooms or restrooms, shall be modeled as a cooled space. The cooling system type shall be the same as the modeled in the baseline building design and shall comply with requirements specified in Standard 90.1-2022 Section 6.</p>
+
+                            <h3>G3.3 Minor Alterations</h3>
+                            <p>Same as proposed.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#spaceConditioningCategory-baselineBuilding" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
+                            <strong>Baseline Building</strong>
+                        </button>
+                        <div class="collapse show" id="spaceConditioningCategory-baselineBuilding">
+                            <h3>G3.2 New Construction/Major Alterations</h3>
+                            <p>Same as proposed for all space types except when spaces are designated as semi-heated spaces in the proposed. The criteria for a semi-heated space must be verified in both the baseline building and the proposed building.</p>
+
+                            <p>For spaces in the proposed building, the following should be verified:</p>
+                            <ul>
+                                <li>The proposed system capacity falls within the limits for a semi-heated space.</li>
+                            </ul>
+
+                            <p>If these conditions are met, the spaces are designated as semi-heated for the proposed building, and baseline building sizing runs in accordance with Section 2.7.2 are then carried out where the space in the baseline building is simulated with semi-heated envelope requirements to verify heating and cooling system capacity.</p>
+
+                            <p>If the heating system output capacity is greater than or equal to the values in Table 11 or the cooling capacity is greater than 5 Btu/h·ft<sup>2</sup> or the space is indirectly conditioned, then the space is considered conditioned in the baseline building and should be analyzed with the conditioned envelope requirements in Standard 90.1 Tables G3.4-1 to Tables G3.4-8. Otherwise, the space is considered a semi-heated space and the baseline building sizing run is complete.</p>
+
+                            <figure>
+                                <figcaption>Table 12. Heated Space Criteria for the Baseline Building</figcaption>
+                                <img src="../assets/images/table-12.png" alt="Table 12. Heated Space Criteria for the Baseline Building">
+                            </figure>
+
+                            <h3>G3.3 Minor Alterations</h3>
+                            <p>Same as proposed.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div>
+            <div class="descriptor-container mb-1">
                 <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneType" role="button" aria-expanded="false" aria-controls="hvacZoneType">
                     <strong>HVAC Zone Type</strong>
                 </button>
                 <div class="collapse" id="hvacZoneType">
 
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneType-applicability" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
+                            <strong>Applicability</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneType-applicability">
+                            All projects.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneType-definition" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
+                            <strong>Definition</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneType-definition">
+                            Designation of the thermal zone as directly conditioned, semi-heated, indirectly conditioned (i.e., conditioned only by passive heating or cooling from an adjacent thermal zone), or plenum (i.e., unoccupied but partially conditioned as a consequence of its role as a path for returning air).
+                            <br><br>
+                            A thermal zone may include a single space or more than one space. Each thermal zone shall have a single temperature control device.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneType-units" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
+                            <strong>Units</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneType-units">
+                            List: Directly Conditioned, Indirectly Conditioned, Semi-Heated, Unconditioned or Plenum
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneType-inputRestrictions" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
+                            <strong>Input Restrictions</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneType-inputRestrictions">
+                            The default thermal zone type is “directly conditioned”
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#hvacZoneType-baselineBuilding" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
+                            <strong>Baseline Building</strong>
+                        </button>
+                        <div class="collapse show" id="hvacZoneType-baselineBuilding">
+                            The descriptor is identical for the proposed design and baseline building
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div>
+            <div class="descriptor-container mb-1">
                 <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#occupancyType" role="button" aria-expanded="false" aria-controls="occupancyType">
                     <strong>Occupancy Type</strong>
                 </button>
                 <div class="collapse" id="occupancyType">
 
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#occupancyType-applicability" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
+                            <strong>Applicability</strong>
+                        </button>
+                        <div class="collapse show" id="occupancyType-applicability">
+                            All projects.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#occupancyType-definition" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
+                            <strong>Definition</strong>
+                        </button>
+                        <div class="collapse show" id="occupancyType-definition">
+                            <p>Separate exterior building envelope requirements are specified for each of three categories of conditioned space: (a) Nonresidential conditioned space, (b) Residential conditioned space, (c) Semi-heated space.
+
+                            <ul>
+                                <li><strong>Non-residential space conditioning category:</strong> All occupancies other than residential.</li>
+                                <li><strong>Residential space conditioning categories:</strong> Spaces in buildings used primarily for living and sleeping. Residential spaces include, but are not limited to, dwelling units, hotel/motel guest rooms, dormitories, nursing homes, patient rooms in hospitals, lodging houses, fraternity/sorority houses, hostels, prisons, and fire stations.</li>
+                                <li><strong>Semi-heated:</strong> Spaces that meet the semi-heated space criteria.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#occupancyType-units" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
+                            <strong>Units</strong>
+                        </button>
+                        <div class="collapse show" id="occupancyType-units">
+                            Text, unique
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#occupancyType-inputRestrictions" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
+                            <strong>Input Restrictions</strong>
+                        </button>
+                        <div class="collapse show" id="occupancyType-inputRestrictions">
+                            As designed
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#occupancyType-baselineBuilding" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
+                            <strong>Baseline Building</strong>
+                        </button>
+                        <div class="collapse show" id="occupancyType-baselineBuilding">
+                            <h3> G3.2 New Construction/Major Alterations</h3>
+                            <p>Same as proposed for all space types except semi-heated. A sizing run, with semi-heated envelope construction properties, would need to be done to determine heating capacity per unit area for the baseline building.</p>
+
+                            <h3> G3.3 Minor Alterations</h3>
+                            <p>Same as proposed.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div>
+            <div class="descriptor-container mb-1">
                 <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#ventilationSystemName" role="button" aria-expanded="false" aria-controls="ventilationSystemName">
                     <strong>Ventilation System Name</strong>
                 </button>
                 <div class="collapse" id="ventilationSystemName">
 
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#ventilationSystemName-applicability" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
+                            <strong>Applicability</strong>
+                        </button>
+                        <div class="collapse show" id="ventilationSystemName-applicability">
+                            All projects.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#ventilationSystemName-definition" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
+                            <strong>Definition</strong>
+                        </button>
+                        <div class="collapse show" id="ventilationSystemName-definition">
+                            The name of the system that provides ventilation to the thermal zone. In most cases, the primary heating/cooling system provides the required ventilation air. For thermal zones served by a dedicated outdoor air system, this descriptor would be used to identify the same. The purpose of this building descriptor is to link the thermal zone to a system.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#ventilationSystemName-units" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
+                            <strong>Units</strong>
+                        </button>
+                        <div class="collapse show" id="ventilationSystemName-units">
+                            Text, unique
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#ventilationSystemName-inputRestrictions" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
+                            <strong>Input Restrictions</strong>
+                        </button>
+                        <div class="collapse show" id="ventilationSystemName-inputRestrictions">
+                            None
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#ventilationSystemName-baselineBuilding" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
+                            <strong>Baseline Building</strong>
+                        </button>
+                        <div class="collapse show" id="ventilationSystemName-baselineBuilding">
+                            <h3> G3.2 New Construction/Major Alterations</h3>
+                            <p>NA</p>
+
+                            <h3> G3.3 Minor Alterations</h3>
+                            <p>Same as proposed</p>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div>
+            <div class="descriptor-container mb-1">
                 <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#primaryHeatingCoolingSystemName" role="button" aria-expanded="false" aria-controls="primaryHeatingCoolingSystemName">
                     <strong>Primary Heating/Cooling System Name</strong>
                 </button>
                 <div class="collapse" id="primaryHeatingCoolingSystemName">
 
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#primaryHeatingCoolingSystemName-applicability" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
+                            <strong>Applicability</strong>
+                        </button>
+                        <div class="collapse show" id="primaryHeatingCoolingSystemName-applicability">
+                            All projects.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#primaryHeatingCoolingSystemName-definition" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
+                            <strong>Definition</strong>
+                        </button>
+                        <div class="collapse show" id="primaryHeatingCoolingSystemName-definition">
+                            The name of the primary HVAC system that serves this thermal zone. The purpose of this building descriptor is to link the thermal zone to a system. For thermal zones served by a ventilation system like a dedicated outdoor air system (DOAS) and a separate HVAC system that meets the heating and cooling loads, the DOAS system would be defined as the ventilation system and the HVAC system would be defined as the primary heating/cooling system.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#primaryHeatingCoolingSystemName-units" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
+                            <strong>Units</strong>
+                        </button>
+                        <div class="collapse show" id="primaryHeatingCoolingSystemName-units">
+                            Text, unique
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#primaryHeatingCoolingSystemName-inputRestrictions" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
+                            <strong>Input Restrictions</strong>
+                        </button>
+                        <div class="collapse show" id="primaryHeatingCoolingSystemName-inputRestrictions">
+                            None
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#primaryHeatingCoolingSystemName-baselineBuilding" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
+                            <strong>Baseline Building</strong>
+                        </button>
+                        <div class="collapse show" id="primaryHeatingCoolingSystemName-baselineBuilding">
+                            <h3> G3.2 New Construction/Major Alterations </h3>
+                            <p> The baseline building may have a different system mapping if the baseline building has a different HVAC type than the proposed design. Baseline system types 5-8 are required to be one system per floor. This could result in different system names as well. </p>
+
+                            <h3> G3.3 Minor Alterations </h3>
+                            <p> Same as proposed </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div>
+            <div class="descriptor-container mb-1">
                 <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#secondaryHeatingCoolingSystemName" role="button" aria-expanded="false" aria-controls="secondaryHeatingCoolingSystemName">
                     <strong>Secondary Heating/Cooling System Name</strong>
                 </button>
                 <div class="collapse" id="secondaryHeatingCoolingSystemName">
 
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#secondaryHeatingCoolingSystemName-applicability" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
+                            <strong>Applicability</strong>
+                        </button>
+                        <div class="collapse show" id="secondaryHeatingCoolingSystemName-applicability">
+                            All projects.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#secondaryHeatingCoolingSystemName-definition" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
+                            <strong>Definition</strong>
+                        </button>
+                        <div class="collapse show" id="secondaryHeatingCoolingSystemName-definition">
+                            The name of the secondary HVAC system that serves this thermal zone. This descriptor is used if more than one HVAC system serves a thermal zone. For example, a VAV with perimeter baseboards. The baseboards would be the secondary system. The purpose of this building descriptor is to link the thermal zone to a system.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#secondaryHeatingCoolingSystemName-units" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
+                            <strong>Units</strong>
+                        </button>
+                        <div class="collapse show" id="secondaryHeatingCoolingSystemName-units">
+                            Text, unique
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#secondaryHeatingCoolingSystemName-inputRestrictions" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
+                            <strong>Input Restrictions</strong>
+                        </button>
+                        <div class="collapse show" id="secondaryHeatingCoolingSystemName-inputRestrictions">
+                            None
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#secondaryHeatingCoolingSystemName-baselineBuilding" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
+                            <strong>Baseline Building</strong>
+                        </button>
+                        <div class="collapse show" id="secondaryHeatingCoolingSystemName-baselineBuilding">
+                            <h3> G3.2 New Construction/Major Alterations </h3>
+                            <p> NA </p>
+
+                            <h3> G3.3 Minor Alterations </h3>
+                            <p> Same as proposed </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div>
+            <div class="descriptor-container mb-1">
                 <button class="btn btn-toggle descriptor w-100 d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#floorArea" role="button" aria-expanded="false" aria-controls="floorArea">
                     <strong>Floor Area</strong>
                 </button>
                 <div class="collapse" id="floorArea">
 
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#floorArea-applicability" role="button" aria-expanded="true" aria-controls="hvacZoneNameApp">
+                            <strong>Applicability</strong>
+                        </button>
+                        <div class="collapse show" id="floorArea-applicability">
+                            All projects.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#floorArea-definition" role="button" aria-expanded="true" aria-controls="hvacZoneNameDef">
+                            <strong>Definition</strong>
+                        </button>
+                        <div class="collapse show" id="floorArea-definition">
+                            The gross floor area of a thermal zone, including walls and minor spaces for mechanical or electrical services such as chases not assigned to other thermal zones.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#floorArea-units" role="button" aria-expanded="true" aria-controls="hvacZoneNameUnits">
+                            <strong>Units</strong>
+                        </button>
+                        <div class="collapse show" id="floorArea-units">
+                            Square feet (ft²)
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#floorArea-inputRestrictions" role="button" aria-expanded="true" aria-controls="hvacZoneNameInpRes">
+                            <strong>Input Restrictions</strong>
+                        </button>
+                        <div class="collapse show" id="floorArea-inputRestrictions">
+                            The floor area of the thermal zone is derived from the floor area of the individual spaces that make up the thermal zone.
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-toggle table-row d-flex align-items-center justify-content-start" data-bs-toggle="collapse" href="#floorArea-baselineBuilding" role="button" aria-expanded="true" aria-controls="hvacZoneNameBaseB">
+                            <strong>Baseline Building</strong>
+                        </button>
+                        <div class="collapse show" id="floorArea-baselineBuilding">
+                            Same as proposed
+                        </div>
+                    </div>
                 </div>
             </div>
 
