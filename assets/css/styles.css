@@ -18,7 +18,7 @@ html, body {
 }
 
 .chapter > button:hover {
-    background-color: #F2A64A !important;
+    background-color: #e6880f !important;
 }
 
 .section-header {
@@ -30,7 +30,7 @@ html, body {
 
 .section-header-toggle {
     border-radius: 0 !important;
-    border-bottom: 1px solid #ccc !important;
+    border-bottom: 2px solid #ccc !important;
 }
 
 .section-header:hover {
