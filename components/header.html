@@ -1,60 +1,7 @@
 <div class="container">
-    <div class="d-flex flex-wrap justify-content-between align-items-center">
-        <button class="btn btn-filter mb-3 mb-lg-0" type="button" data-toggle="collapse" data-target="#filterContent" aria-expanded="false" aria-controls="filterContent">
-            Filter Content
-        </button>
-
-        <p></p>
-
+    <div class="d-flex flex-wrap justify-content-end">
         <form class="mb-3 mb-lg-0 me-lg-3" role="search">
             <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-        </form>
-    </div>
-</div>
-
-<div class="collapse container mt-3" id="filterContent">
-    <div class="card card-body">
-        <form>
-            <div class="row">
-                <!-- First Dropdown -->
-                <div class="col-md-4 mb-3">
-                    <label for="dropdown1" class="form-label">Check Type(s):</label>
-                    <select class="selectpicker form-control" id="dropdown1" multiple>
-                        <option selected>All</option>
-                        <option>1. General Requirements</option>
-                        <option>2. Design Docs     --> Compliance Form</option>
-                        <option>3. Mandatory Requirements</option>
-                        <option>4. ECB/PRM         --> Compliance Form</option>
-                        <option>5. Compliance Form --> Model Inputs</option>
-                        <option>6. Compliance Form --> Model Outputs</option>
-                        <option>7. Model Outputs   --> Benchmarks</option>
-                    </select>
-                </div>
-
-                <!-- Second Dropdown -->
-                <div class="col-md-4 mb-3">
-                    <label for="dropdown2" class="form-label">Check(s):</label>
-                    <select class="selectpicker form-control" id="dropdown2" multiple>
-                        <option selected>All</option>
-                    </select>
-                </div>
-
-                <!-- Third Dropdown -->
-                <div class="col-md-4 mb-3">
-                    <label for="dropdown3" class="form-label">BEM Tool(s):</label>
-                    <select class="selectpicker form-control" id="dropdown3" multiple>
-                        <option selected>All</option>
-                        <option>eQUEST</option>
-                        <option>Trane TRACE 700</option>
-                        <option>Trane TRACE 3D Plus</option>
-                        <option>IESVE</option>
-                        <option>EnergyPlus</option>
-                        <option>OpenStudio</option>
-                        <option>Carrier HAP v5</option>
-                        <option>Design Builder</option>
-                    </select>
-                </div>
-            </div>
         </form>
     </div>
 </div>
