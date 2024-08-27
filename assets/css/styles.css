@@ -232,6 +232,21 @@ footer img {
     margin-bottom: 25px;
 }
 
+#sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #95a5a6;
+    border: 1px solid #cacaca;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #2c3e50;
+}
+
 .descriptor-container .collapse + div {
     margin-top: 10px;
     padding-left: 15px;
@@ -245,4 +260,27 @@ footer img {
 
 .fw-semibold {
     font-weight: 600 !important;
+}
+
+#filtered-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+#filtered-links a {
+    font-size: 0.875rem;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #007bff;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+#filtered-links a:hover {
+    background-color: #007bff;
+    color: #ffffff;
 }
