@@ -11,6 +11,9 @@
 <body>
 <div class="d-flex flex-nowrap">
     <div id="sidebar" class="flex-shrink-0 p-3" style="width: 310px;">
+        <a href="index.html">
+            <img src="assets/images/PNNL_Orange.png" alt="PNNL Logo">
+        </a>
         <span class="fs-5 fw-semibold">Contents</span>
         <ul class="list-unstyled ps-0">
             <li class="chapter mb-1">
@@ -144,8 +147,58 @@
                 </div>
             </li>
             <li class="chapter mb-1">
-                <a href="#energy-price-data" class="btn d-inline-flex justify-content-start rounded section-header">
-                    <b>7. &nbsp </b> Energy Price Data
+                <button class="btn btn-toggle d-inline-flex justify-content-start rounded collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#ch7-collapse" aria-expanded="false">
+                    <b>7. &nbsp </b> Simulation Reports
+                </button>
+                <div class="collapse border-1" id="ch7-collapse">
+                    <ul class="list-unstyled fw-normal small">
+                        <li>
+                            <a href="#nomenclature" class="btn d-inline-flex justify-content-start rounded">
+                                <b>7.1 &nbsp </b> Carrier HAP v5
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#nomenclature" class="btn d-inline-flex justify-content-start rounded">
+                                <b>7.2 &nbsp </b> DesignBuilder
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#nomenclature" class="btn d-inline-flex justify-content-start rounded">
+                                <b>7.3 &nbsp </b> EnergyPlus / OpenStudio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#nomenclature" class="btn d-inline-flex justify-content-start rounded">
+                                <b>7.4 &nbsp </b> eQUEST
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#nomenclature" class="btn d-inline-flex justify-content-start rounded">
+                                <b>7.5 &nbsp </b> IESVE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#nomenclature" class="btn d-inline-flex justify-content-start rounded">
+                                <b>7.6 &nbsp </b> Trane TRACE 3D Plus
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#nomenclature" class="btn d-inline-flex justify-content-start rounded">
+                                <b>7.7 &nbsp </b> Trane TRACE 700
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="chapter mb-1">
+                <a href="appA_typical-building-operating-schedules.html" class="btn d-inline-flex justify-content-start rounded section-header">
+                    Appendix A: Typical Building Operating Schedules
+                </a>
+            </li>
+            <li class="chapter mb-1">
+                <a href="abbreviations-and-acronyms.html" class="btn d-inline-flex justify-content-start rounded section-header">
+                    Abbreviations and Acronyms
                 </a>
             </li>
         </ul>
@@ -169,11 +222,11 @@
             <h1 class="display-5 mt-5">ASHRAE 90.1<br>Energy Cost Budget and Performance Rating Method<br>Submittal Review Manual
             </h1>
             <p class="lead mt-3">V04<br>July 2024</p>
-            <img src="assets/images/PNNL_Orange.png" alt="PNNL Logo">
         </div>
 
-        <!-- Overview Section -->
-        <div id="overview" class="container my-5 ms-3">
+        <!-- Summary Section -->
+        <div id="summary" class="container my-5 ms-3">
+            <h2>Summary</h2>
             <p>The 90.1 Energy Cost Budget and Performance Rating Method Submittal Review Manual (the Manual) is a comprehensive reference for reviewing modeling-based submittals. The Manual is a companion to the DOE/PNNL 90.1 Performance-based Compliance Form (Compliance Form) and supports the 2016, 2019, and 2022 editions of ANSI/ASHRAE Standard 90.1. The forms can be downloaded <a href="https://www.energycodes.gov/ashrae-standard-901-performance-based-compliance-form">here</a>.</p>
 
             <p>The Manual includes the following:</p>

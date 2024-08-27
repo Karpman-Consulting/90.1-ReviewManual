@@ -225,9 +225,24 @@ footer img {
     margin-left: 5px;
 }
 
+#sidebar img {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
 .descriptor-container .collapse + div {
     margin-top: 10px;
     padding-left: 15px;
     border-left: 2px solid #ddd;
     background-color: #f9f9f9;
+}
+
+.fs-5 {
+    font-size: 1.25rem !important;
+}
+
+.fw-semibold {
+    font-weight: 600 !important;
 }
