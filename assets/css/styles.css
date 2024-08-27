@@ -4,6 +4,7 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 
 .chapter {
@@ -22,7 +23,7 @@ html, body {
 }
 
 .section-header {
-    padding-left: 28px;
+    padding-left: 32px;
     width: 100%;
     border-radius: 0 !important;
     border-bottom: 2px solid #ccc !important;
@@ -45,12 +46,8 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-#sidebar button:hover {
-    background-color: #f0f0f0;
-}
-
-#sidebar a:hover {
-    background-color: #f0f0f0;
+#sidebar .btn:hover {
+    background-color: #F7C88A;
 }
 
 #sidebar li {
@@ -63,8 +60,18 @@ html, body {
     margin-left: 10px;
 }
 
-#sidebar button {
+#sidebar .btn {
     text-align: left;
+    width: 100%;
+    color: #212529;
+    background-color: #00000000;
+    white-space: normal;
+}
+
+#sidebar .btn:focus,
+#sidebar .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 #header {
@@ -158,6 +165,16 @@ footer img {
     border-radius: 0 !important;
 }
 
+.btn-filter {
+    background-color: #E6880F;
+    border: none;
+    color: white;
+}
+
+.btn-filter:hover {
+    background-color: #F7C88A;
+}
+
 .btn-toggle[aria-expanded="true"]::before {
     transform: rotate(90deg);
 }
@@ -182,16 +199,16 @@ footer img {
     background-color: #e0e0e0;
 }
 
-main .collapse {
+.page-content .collapse {
     padding: 5px;
 }
 
-main .collapsing {
+.page-content .collapsing {
     padding: 5px;
     padding-left: 30px;
 }
 
-main .collapse.show {
+.page-content .collapse.show {
     margin-left: 25px;
 }
 

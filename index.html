@@ -2,629 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ASHRAE 90.1-2022 PRM Review Manual</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>ASHRAE 90.1 ECB and PRM Submittal Review Manual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="icon" href="assets/images/favicon.ico" type="image/vnd.microsoft.icon">
 </head>
 <body>
 <div class="d-flex flex-nowrap">
-    <div id="sidebar-container">
-        <div id="sidebar" class="flex-shrink-0 p-3" style="width: 280px;">
-    <span class="fs-5 fw-semibold">Contents</span>
-    <ul class="list-unstyled ps-0">
-        <li class="chapter mb-1">
-            <button class="btn btn-toggle d-inline-flex justify-content-start rounded collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#ch1-collapse" aria-expanded="false">
-                <b>Ch. 1 &nbsp </b> Overview
-            </button>
-            <div class="collapse border-1" id="ch1-collapse">
-                <ul class="list-unstyled fw-normal small">
-                    <li>
-                        <button class="section-header btn d-inline-flex rounded">
-                            <b>1.1 &nbsp </b> Purpose
-                        </button>
-                    </li>
-                    <li>
-                        <button class="section-header btn d-inline-flex rounded">
-                            <b>1.2 &nbsp </b> Applications of the PRM-RM
-                        </button>
-                    </li>
-                    <li>
-                        <button class="section-header btn d-inline-flex rounded">
-                            <b>1.3 &nbsp </b> Standard 90.1-2022 Performance Rating Method Compliance Calculations
-                        </button>
-                    </li>
-                    <li>
-                        <button class="section-header btn d-inline-flex rounded">
-                            <b>1.4 &nbsp </b> Organization
-                        </button>
-                    </li>
-                    <li>
-                        <button class="section-header btn d-inline-flex rounded">
-                            <b>1.5 &nbsp </b> Type of Project Submittal
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li class="chapter mb-1">
-            <button class="btn btn-toggle d-inline-flex justify-content-start rounded collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#ch2-collapse" aria-expanded="false">
-                <b>Ch. 2 &nbsp </b> General Modeling Procedures and Requirements
-            </button>
-            <div class="collapse border-1" id="ch2-collapse">
-                <ul class="list-unstyled fw-normal small">
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s2_1-collapse" aria-expanded="false">
-                            <b>2.1 &nbsp </b> Simulation General Requirements
-                        </button>
-                        <div class="collapse border-1" id="s2_1-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.1.1
-                                    &nbsp </b> Simulation Program</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s2_2-collapse" aria-expanded="false">
-                            <b>2.2 &nbsp </b> General Requirements for Data from the User
-                        </button>
-                        <div class="collapse border-1" id="s2_2-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.2.1
-                                    &nbsp </b> General</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.2.2
-                                    &nbsp </b> Definition of Building Descriptors</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.2.3
-                                    &nbsp </b> Treatment of Descriptors Not Fully Addressed by this Document</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.2.4
-                                    &nbsp </b> Energy Components</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.2.5
-                                    &nbsp </b> Regulated and Unregulated Energy Use</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s2_3-collapse" aria-expanded="false">
-                            <b>2.3 &nbsp </b> Thermal Blocks, HVAC Zones, and Space Functions
-                        </button>
-                        <div class="collapse border-1" id="s2_3-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.3.1
-                                    &nbsp </b> Definitions</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s2_4-collapse" aria-expanded="false">
-                            <b>2.4 &nbsp </b> Modeling Requirements for Zones
-                        </button>
-                        <div class="collapse border-1" id="s2_4-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.4.1
-                                    &nbsp </b> Required Zone Modeling Capabilities</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.4.2
-                                    &nbsp </b> Modeling Requirements for Unconditioned Spaces</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.4.3
-                                    &nbsp </b> Modeling Requirements for Parking Garages, Attics, and Crawlspaces that
-                                    are Defined by Standard 90.1-2022 as Unenclosed Spaces</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.4.4
-                                    &nbsp </b> Modeling Requirements for Semi-Heated Spaces</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.4.5
-                                    &nbsp </b> Space Use Classification</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="section-header btn d-inline-flex rounded">
-                            <b>2.5 &nbsp </b> Unmet Load Hours
-                        </button>
-                    </li>
-                    <li>
-                        <button class="section-header btn d-inline-flex rounded">
-                            <b>2.6 &nbsp </b> Calculation Procedures
-                        </button>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s2_7-collapse" aria-expanded="false">
-                            <b>2.7 &nbsp </b> HVAC Capacity Requirements and Sizing
-                        </button>
-                        <div class="collapse border-1" id="s2_7-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.7.1
-                                    &nbsp </b> Specifying HVAC Capacities for the Proposed Design</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.7.2
-                                    &nbsp </b> Sizing Equipment in the Baseline Building</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.7.3
-                                    &nbsp </b> Proposed Design with No HVAC, Lighting, SHW System or Receptacle
-                                    Loads</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>2.7.4
-                                    &nbsp </b> Modeling Requirements for Semi-Heated Spaces</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <li class="chapter mb-1">
-            <button class="btn btn-toggle d-inline-flex justify-content-start rounded collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#ch3-collapse" aria-expanded="false">
-                <b>Ch. 3 &nbsp </b> Building Descriptors Reference
-            </button>
-            <div class="collapse border-1" id="ch3-collapse">
-                <ul class="list-unstyled fw-normal small">
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s3_1-collapse" aria-expanded="false">
-                            <b>3.1 &nbsp </b> Overview
-                        </button>
-                        <div class="collapse border-1" id="s3_1-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.1.1
-                                    &nbsp </b> Standard 90.1 Section G3.2 HVAC System Map</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.1.2
-                                    &nbsp </b> Organization of Information</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s3_2-collapse" aria-expanded="false">
-                            <b>3.2 &nbsp </b> Project Data
-                        </button>
-                        <div class="collapse border-1" id="s3_2-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.1
-                                    &nbsp </b> General Information</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.2
-                                    &nbsp </b> Building Model Classification</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.3
-                                    &nbsp </b> Geographic and Climate Data</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.4
-                                    &nbsp </b> Site Characteristics</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.5
-                                    &nbsp </b> Calendar</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.2.6
-                                    &nbsp </b> Simulation Control</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s3_3-collapse" aria-expanded="false">
-                            <b>3.3 &nbsp </b> HVAC Zones
-                        </button>
-                        <div class="collapse border-1" id="s3_3-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="content/3_3_1_general-information.html"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.1
-                                    &nbsp </b> General Information</a>
-                                </li>
-                                <li><a href="content/3_3_2_interior-lighting.html"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.2
-                                    &nbsp </b> Interior Lighting</a>
-                                </li>
-                                <li><a href="content/3_3_3_receptacle-and-process-loads.html"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.3
-                                    &nbsp </b> Receptacle and Process Loads</a>
-                                </li>
-                                <li><a href="content/3_3_4_occupants.html"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.4
-                                    &nbsp </b> Occupants</a>
-                                </li>
-                                <li><a href="content/3_3_5_infiltration.html"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.5
-                                    &nbsp </b> Infiltration</a>
-                                </li>
-                                <li><a href="content/3_3_6_natural-ventilation.html"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.6
-                                    &nbsp </b> Natural Ventilation</a>
-                                </li>
-                                <li><a href="content/3_3_7_thermal-mass.html"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.3.7
-                                    &nbsp </b> Thermal Mass</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s3_4-collapse" aria-expanded="false">
-                            <b>3.4 &nbsp </b> Space Uses
-                        </button>
-                        <div class="collapse border-1" id="s3_4-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.1
-                                    &nbsp </b> General Information</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.2
-                                    &nbsp </b> Occupants</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.3
-                                    &nbsp </b> Interior Lighting</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.4
-                                    &nbsp </b> Daylighting Control</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.5
-                                    &nbsp </b> Receptacle and Process Loads</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.6
-                                    &nbsp </b> Commercial Refrigeration Equipment</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.7
-                                    &nbsp </b> Elevators, Escalators, and Moving Walkways</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.4.8
-                                    &nbsp </b> Gas Process Equipment</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s3_5-collapse" aria-expanded="false">
-                            <b>3.5 &nbsp </b> Building Envelope Data
-                        </button>
-                        <div class="collapse border-1" id="s3_5-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.1
-                                    &nbsp </b> Materials</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.2
-                                    &nbsp </b> Construction Assemblies</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.3
-                                    &nbsp </b> Roofs</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.4
-                                    &nbsp </b> Exterior Wall</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.5
-                                    &nbsp </b> Exterior Floors</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.6
-                                    &nbsp </b> Doors</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.7
-                                    &nbsp </b> Fenestration</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.8
-                                    &nbsp </b> Below-Grade Walls</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.9
-                                    &nbsp </b> Slab Floors in Contact with Ground</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.5.10
-                                    &nbsp </b> Heat Transfer between Thermal Zones</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s3_6-collapse" aria-expanded="false">
-                            <b>3.6 &nbsp </b> HVAC Zone Level Systems
-                        </button>
-                        <div class="collapse border-1" id="s3_6-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.6.1
-                                    &nbsp </b> Zone Temperature Control</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.6.2
-                                    &nbsp </b> Terminal Device Data</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.6.3
-                                    &nbsp </b> Terminal Heating</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.6.4
-                                    &nbsp </b> Baseboard Heat</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.6.5
-                                    &nbsp </b> Zone Level Airflow</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s3_7-collapse" aria-expanded="false">
-                            <b>3.7 &nbsp </b> HVAC Secondary Systems
-                        </button>
-                        <div class="collapse border-1" id="s3_7-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.1
-                                    &nbsp </b> Basic System Information</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.2
-                                    &nbsp </b> System Controls</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.3
-                                    &nbsp </b> Fan Systems</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.4
-                                    &nbsp </b> Outdoor Air Controls and Economizers</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.5
-                                    &nbsp </b> Cooling Systems</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.6
-                                    &nbsp </b> Heating Systems</a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.7.7
-                                    &nbsp </b> Humidity Controls and Devices</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s3_8-collapse" aria-expanded="false">
-                            <b>3.8 &nbsp </b> HVAC Primary Systems
-                        </button>
-                        <div class="collapse border-1" id="s3_8-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.1
-                                    &nbsp </b> Boilers </a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.2
-                                    &nbsp </b> Chillers </a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.3
-                                    &nbsp </b> Cooling Towers </a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.4
-                                    &nbsp </b> Fluid Economizers </a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.5
-                                    &nbsp </b> Pumps </a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.6
-                                    &nbsp </b> Thermal Storage </a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.7
-                                    &nbsp </b> Heat Recovery Equipment </a>
-                                </li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.8.8
-                                    &nbsp </b> Plant Management </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s3_9-collapse" aria-expanded="false">
-                            <b>3.9 &nbsp </b> Miscellaneous Energy Uses
-                        </button>
-                        <div class="collapse border-1" id="s3_9-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.1
-                                    &nbsp </b> Water Heating</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.2
-                                    &nbsp </b> Exterior Lighting</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.3
-                                    &nbsp </b> Other Electricity Use</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.4
-                                    &nbsp </b> Other Gas Use</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.5
-                                    &nbsp </b> Swimming Pools</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.9.6
-                                    &nbsp </b> Transformers</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s3_10-collapse" aria-expanded="false">
-                            <b>3.10 &nbsp </b> On-Site Power Generation
-                        </button>
-                        <div class="collapse border-1" id="s3_10-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.10.1
-                                    &nbsp </b> Photovoltaic Systems</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.10.2
-                                    &nbsp </b> Wind Systems</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.10.3
-                                    &nbsp </b> Combined Heat and Power Cogeneration Systems</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s3_11-collapse" aria-expanded="false">
-                            <b>3.11 &nbsp </b> Common Data Structures
-                        </button>
-                        <div class="collapse border-1" id="s3_11-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.1
-                                    &nbsp </b> Schedule</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.2
-                                    &nbsp </b> Holidays</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.3
-                                    &nbsp </b> Surface Geometry</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.4
-                                    &nbsp </b> Opening Geometry</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.5
-                                    &nbsp </b> Shading Devices</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.6
-                                    &nbsp </b> Construction Assembly</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.7
-                                    &nbsp </b> Fenestration Construction</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.8
-                                    &nbsp </b> Material</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.9
-                                    &nbsp </b> Slab Construction</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.10
-                                    &nbsp </b> Occupant Heat Rate</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.11
-                                    &nbsp </b> Furniture and Contents</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.12
-                                    &nbsp </b> Reference Position in a Space</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.13
-                                    &nbsp </b> Two-Dimensional Curve</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>3.11.14
-                                    &nbsp </b> Three-Dimensional Curve</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </li>
-        <!--        <li class="border-top my-3"></li> -->
-        <li class="chapter mb-1">
-            <button class="btn btn-toggle d-inline-flex justify-content-start rounded collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#ch4-collapse" aria-expanded="false">
-                <b>Ch. 4 &nbsp </b> Energy Price Data
-            </button>
-            <div class="collapse border-1" id="ch4-collapse">
-                <ul class="list-unstyled fw-normal small">
-                    <li>
-                        <button class="section-header btn d-inline-flex rounded">
-                            <b>4.1 &nbsp </b> State Average Energy Costs
-                        </button>
-                    </li>
-                    <li>
-                        <button class="btn btn-toggle section-header-toggle d-inline-flex rounded collapsed"
-                                data-bs-toggle="collapse" data-bs-target="#s4_2-collapse" aria-expanded="false">
-                            <b>4.2 &nbsp </b> Custom Energy Costs
-                        </button>
-                        <div class="collapse border-1" id="s4_2-collapse">
-                            <ul class="list-unstyled fw-normal small">
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>4.2.1
-                                    &nbsp </b> Utility Costs: Tariffs</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>4.2.2
-                                    &nbsp </b> Utility Costs: Charges</a></li>
-                                <li><a href="#"
-                                       class="link-body-emphasis d-inline-flex text-decoration-none rounded"><b>4.2.3
-                                    &nbsp </b> Utility Costs: Ratchets</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-</div>
+    <div id="sidebar" class="flex-shrink-0 p-3" style="width: 310px;">
+        <span class="fs-5 fw-semibold">Contents</span>
+        <ul class="list-unstyled ps-0">
+            <li class="chapter mb-1">
+                <a href="content/1_background.html" class="btn d-inline-flex justify-content-start rounded section-header">
+                    <b>1. &nbsp </b> Background
+                </a>
+            </li>
+            <li class="chapter mb-1">
+                <a href="content/2_organization-of-the-manual.html" class="btn d-inline-flex justify-content-start rounded section-header">
+                    <b>2. &nbsp </b> Organization of the Manual
+                </a>
+            </li>
+            <li class="chapter mb-1">
+                <a href="content/3_submittal-review-quick-start.html" class="btn d-inline-flex justify-content-start rounded section-header">
+                    <b>3. &nbsp </b> Submittal Review Quick Start
+                </a>
+            </li>
+            <li class="chapter mb-1">
+                <a href="content/4_review-process.html" class="btn d-inline-flex justify-content-start rounded section-header">
+                    <b>4. &nbsp </b> Review Process
+                </a>
+            </li>
+            <li class="chapter mb-1">
+                <button class="btn btn-toggle d-inline-flex justify-content-start rounded collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#ch5-collapse" aria-expanded="false">
+                    <b>5. &nbsp </b> Review Methodology
+                </button>
+                <div class="collapse border-1" id="ch5-collapse">
+                    <ul class="list-unstyled fw-normal small">
+                        <li>
+                            <a href="#general-concept" class="btn d-inline-flex justify-content-start rounded" >
+                                <b>5.1 &nbsp </b> General Concept of 90.1 ECB and PRM Compliance
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#types-of-review-checks" class="btn d-inline-flex justify-content-start rounded">
+                                <b>5.2 &nbsp </b> Types of the Review Checks
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#identifying-impactful-aspects" class="btn d-inline-flex justify-content-start rounded">
+                                <b>5.3 &nbsp </b> Identifying the Impactful Aspects of the Submittal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#establishing-review-scope" class="btn d-inline-flex justify-content-start rounded">
+                                <b>5.4 &nbsp </b> Establishing Review Scope
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="chapter mb-1">
+                <button class="btn btn-toggle d-inline-flex justify-content-start rounded collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#ch6-collapse" aria-expanded="false">
+                    <b>6. &nbsp </b> Review Checks
+                </button>
+                <div class="collapse border-1" id="ch6-collapse">
+                    <ul class="list-unstyled fw-normal small">
+                        <li>
+                            <a href="#nomenclature" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.1 &nbsp </b> Nomenclature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#compliance-form-tab-name-changes" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.2 &nbsp </b> Compliance Form tab Name Changes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#simulation-general" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.3 &nbsp </b> Simulation General (SG)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#utility-rate" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.4 &nbsp </b> Utility Rate (UR)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#building-envelope" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.5 &nbsp </b> Building Envelope (BE)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#lighting-interior" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.6 &nbsp </b> Lighting, Interior (LI)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#lighting-exterior" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.7 &nbsp </b> Lighting, Exterior (LE)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#plug-process-other-loads" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.8 &nbsp </b> Plug, Process and Other Loads (PPO)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#service-water-heating" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.9 &nbsp </b> Service Water Heating (SWH)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#airside-hvac" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.10 &nbsp </b> Airside HVAC (AHVAC)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#waterside-hvac" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.11 &nbsp </b> Waterside HVAC (WHVAC)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#renewable-energy" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.12 &nbsp </b> Renewable Energy (RE)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#exceptional-calculations" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.13 &nbsp </b> Exceptional Calculations (EC)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#90-1-2022-section-g3-3" class="btn d-inline-flex justify-content-start rounded">
+                                <b>6.14 &nbsp </b> 90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="chapter mb-1">
+                <a href="#energy-price-data" class="btn d-inline-flex justify-content-start rounded section-header">
+                    <b>7. &nbsp </b> Energy Price Data
+                </a>
+            </li>
+        </ul>
     </div>
+
 
     <main>
 
@@ -640,78 +166,42 @@
 
         <!-- Hero Section -->
         <div class="jumbotron text-center">
-            <h1 class="display-5 mt-5">ANSI/ASHRAE/IES Standard 90.1-2022 <br>Performance Rating Method Reference Manual
+            <h1 class="display-5 mt-5">ASHRAE 90.1<br>Energy Cost Budget and Performance Rating Method<br>Submittal Review Manual
             </h1>
-            <p class="lead mt-3">Your guide to the Performance Rating Method for compliance with ASHRAE 90.1</p>
+            <p class="lead mt-3">V04<br>July 2024</p>
             <img src="assets/images/PNNL_Orange.png" alt="PNNL Logo">
         </div>
 
         <!-- Overview Section -->
         <div id="overview" class="container my-5 ms-3">
-            <p>This site is intended to be a reference manual for the Appendix G Performance Rating Method (PRM) of
-                ANSI/ASHRAE/IES Standard 90.1-2022 (Standard 90.1-2022). The PRM can be used to demonstrate compliance
-                with the standard and to rate the energy efficiency of commercial and high-rise residential buildings
-                with designs that exceed the requirements of Standard 90.1. Use of the PRM for demonstrating compliance
-                with Standard 90.1 was a new feature of ANSI/ASHRAE/IES Standard 90.1-2016 (Standard 90.1-2016). The
-                procedures and processes described in the PRM reference manual (PRM-RM) are designed to provide
-                consistency and accuracy by filling in gaps and providing additional details needed by users of the PRM.
-                Note that this document has been created independently from ASHRAE and Standing Standard Project
-                Committee (SSPC) 90.1 and is neither sanctioned nor approved by either of those entities.</p>
+            <p>The 90.1 Energy Cost Budget and Performance Rating Method Submittal Review Manual (the Manual) is a comprehensive reference for reviewing modeling-based submittals. The Manual is a companion to the DOE/PNNL 90.1 Performance-based Compliance Form (Compliance Form) and supports the 2016, 2019, and 2022 editions of ANSI/ASHRAE Standard 90.1. The forms can be downloaded <a href="https://www.energycodes.gov/ashrae-standard-901-performance-based-compliance-form">here</a>.</p>
 
-            <p>Interpretations to Standard 90.1-2022 Code requirements can be found <a
-                    href="https://www.ashrae.org/technical-resources/standards-and-guidelines/standards-interpretations">out
-                here</a>. Users can also request official interpretations to code requirements <a
-                    href="https://www.ashrae.org/standards-research--technology/standards-forms--procedures/how-to-request-an-interpretation">out
-                here</a>. In cases where the official interpretation conflicts with interpretations provided by the
-                PRM-RM, the official interpretations should be used.</p>
-            <br>
-            <h5>Authors</h5>
-            <ul class="list-unstyled">
-                <li>S Goel</li>
-                <li>M Rosenberg</li>
-                <li>M Karpman</li>
-                <li>C LaPerle</li>
-                <li>C Eley</li>
-                <li>E Mets</li>
+            <p>The Manual includes the following:</p>
+            <ul>
+                <li>The review checks to verify that the proposed design reported in the Compliance Form reflects design documents; that the configuration of the baseline/budget model is established correctly; that the baseline/budget and proposed design is modeled as reported; that the simulation is error-free, and that the compliance outcome is established correctly.</li>
+                <li>The review checks to verify compliance with the mandatory requirements of 90.1 relevant to the simulation inputs.</li>
+                <li>Examples and common mistakes.</li>
+                <li>The methodology for prioritizing the review.</li>
+                <li>Simulation reports for common BEM tools annotated with tips on performing specific checks.</li>
             </ul>
 
-            <p class="mt-5">Prepared for <br>the U.S. Department of Energy <br>under Contract DE AC05 76RL01830</p>
+            <p>Jurisdiction and rating authorities’ administrators charged with establishing a submittal review framework for their organization should refer to the <a href="https://www.energycodes.gov/performance_based_compliance">DOE Energy Codes website</a> for recommendations for organizing an effective and efficient submittal review process, including adoption of the DOE/PNNL 90.1 Performance-based Compliance Form, establishing the minimum qualification requirements for energy modelers and submittal reviewers, and a third-party reviewer Scope of Work template.</p>
 
-            <p class="mt-5">Pacific Northwest National Laboratory <br>Richland, Washington 99354</p>
-            <br>
-            <h5>Acknowledgements</h5>
-            <p>This document was prepared by Pacific Northwest National Laboratory (PNNL) for the U.S. Department of
-                Energy’s (DOE’s) Building Energy Codes Program. The authors would like to thank the following
-                organizations and individuals:</p>
+            <h2>Acknowledgements</h2>
+            <p>This manual was supported by the Pacific Northwest National Laboratory (PNNL) and the U.S. Department of Energy and was one of the outcomes of a research project to facilitate performance-based compliance with commercial energy code. The author would like to thank the following individuals:</p>
 
             <ul>
-                <li>Commercial Energy Services Network (COMNET) team for developing the framework for this document
-                    through the Standard 90.1-2019 Commercial Building Energy Modeling Guidelines and Procedures.
-                </li>
-                <li>California Energy Commission (CEC) for providing guidance through the Nonresidential Alternative
-                    Calculation Method (NACM) Reference Manual. The Reference Manual has been built off work originally
-                    done by COMNET for the Standard 90.1-2019 Commercial Building Energy Modeling Guidelines and
-                    Procedures and by CEC for the NACM Reference Manual.
-                </li>
-                <li>American Society of Heating, Refrigerating, and Air-Conditioning Engineers (ASHRAE) 90.1 Standing
-                    Standard Project Committee (SSPC) for their insight.
-                </li>
-                <li>The external peer review team and advisors:
-                    <ul>
-                        <li>Matt Swenka, Willdan</li>
-                        <li>Andrew Parker, National Renewable Energy Laboratory</li>
-                        <li>Sagar Rao, Affiliated Engineers</li>
-                        <li>Caitlin Bohnert, Trane Technologies</li>
-                        <li>Emily Hoffman, NYC Department of Buildings</li>
-                        <li>Greg Schluterman, HFA-AE</li>
-                        <li>Gail Hampsmire, Green Building Certification Institute</li>
-                    </ul>
-                </li>
-                <li>Matt Wilburn and Mark Halverson at PNNL for editorial and technical reviews</li>
-                <li>Jeremiah Williams, Chris Perry at U.S. DOE</li>
-                <li>Michael Tillou, Doug Maddox, David Winiarski at PNNL</li>
-                <li>Jackson Jarboe at Karpman Consulting for editorial and technical review</li>
+                <li>Michael Rosenberg (PNNL) and Kevin J Madison for the comprehensive feedback</li>
+                <li>Kimberly Cheslak, Dimitri Contoyannis, Jason Glazer, Duane Jonlin, Eric Mets, Andrew Parker, Dan Suyeyasu, Christin Witco for peer review</li>
+                <li>Caitlin Bohnert and Matthew Biesterveld (Trane), Matthew Dahlhausen and Andrew Parker (NREL), Liam Buckley (IES), Jim Pegues (Carrier), Andy Tindale, David Cocking and Shaun Wang (DesignBuilder) for developing the material included in the software-specific sections of the Manual.</li>
             </ul>
+
+            <h3>Authors</h3>
+            <ul>
+                <li>Maria Karpman, Karpman Consulting</li>
+                <li>Christina LaPerle, Karpman Consulting</li>
+            </ul>
+
         </div>
 
         <br>
@@ -734,12 +224,9 @@
                 <img src="assets/images/PNNL_CENTER_White.png" alt="PNNL Logo" class="mt-1 mx-2">
                 <img src="assets/images/DOE_Logo.png" alt="DOE Logo" class="mt-1 mx-5">
             </div>
-            <p>&copy; Prepared for the U.S. Department of Energy under Contract DE-AC05-76RL01830</p>
         </footer>
     </main>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
