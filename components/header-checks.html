@@ -1,6 +1,7 @@
 <div class="container">
     <div class="d-flex flex-wrap justify-content-between align-items-center">
-        <button class="btn btn-filter mb-3 mb-lg-0" type="button" data-toggle="collapse" data-target="#filterContent" aria-expanded="false" aria-controls="filterContent">
+        <button class="btn btn-filter mb-3 mb-lg-0" type="button" data-toggle="collapse" data-target="#filterContent"
+                aria-expanded="false" aria-controls="filterContent">
             Filter Content
         </button>
 
@@ -16,32 +17,95 @@
     <div class="card card-body">
         <form>
             <div class="row">
+                <div class="col-md-4 mb-3">
+                    <strong>Project Path: </strong><br>
+                    <div class="d-flex">
+                        <div class="form-check pr-3">
+                            <input class="form-check-input" type="checkbox" id="ecbPath">
+                            <label class="form-check-label" for="ecbPath">
+                                ECB
+                            </label>
+                        </div>
+                        <div class="form-check pr-3">
+                            <input class="form-check-input" type="checkbox" id="prmPath">
+                            <label class="form-check-label" for="prmPath">
+                                PRM
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <strong>90.1 Vintage: </strong><br>
+                    <div class="d-flex">
+                        <div class="form-check pr-3">
+                            <input class="form-check-input" type="checkbox" id="v2016">
+                            <label class="form-check-label" for="v2016">
+                                2016
+                            </label>
+                        </div>
+                        <div class="form-check pr-3">
+                            <input class="form-check-input" type="checkbox" id="v2019">
+                            <label class="form-check-label" for="v2019">
+                                2019
+                            </label>
+                        </div>
+                        <div class="form-check pr-3">
+                            <input class="form-check-input" type="checkbox" id="v2022">
+                            <label class="form-check-label" for="v2022">
+                                2022
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <strong>Model Type(s): </strong><br>
+                    <div class="d-flex">
+                        <div class="form-check pr-3">
+                            <input class="form-check-input" type="checkbox" id="bModel">
+                            <label class="form-check-label" for="bModel">
+                                Budget/Baseline
+                            </label>
+                        </div>
+                        <div class="form-check pr-3">
+                            <input class="form-check-input" type="checkbox" id="pModel">
+                            <label class="form-check-label" for="pModel">
+                                Proposed
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
                 <!-- First Dropdown -->
-                <div class="col-md-3 mb-3">
-                    <label for="dropdown1" class="form-label">Check Type(s):</label>
+                <div class="col-md-4 mb-3">
+                    <label for="dropdown1" class="form-label"><strong>Check Type(s):</strong></label>
                     <select class="selectpicker form-control" id="dropdown1" multiple>
                         <option selected>All</option>
                         <option>1. General Requirements</option>
-                        <option>2. Design Docs     --> Compliance Form</option>
+                        <option>2. Design Docs --> Compliance Form</option>
                         <option>3. Mandatory Requirements</option>
-                        <option>4. ECB/PRM         --> Compliance Form</option>
+                        <option>4. ECB/PRM --> Compliance Form</option>
                         <option>5. Compliance Form --> Model Inputs</option>
                         <option>6. Compliance Form --> Model Outputs</option>
-                        <option>7. Model Outputs   --> Benchmarks</option>
+                        <option>7. Model Outputs --> Benchmarks</option>
                     </select>
                 </div>
 
                 <!-- Second Dropdown -->
-                <div class="col-md-3 mb-3">
-                    <label for="dropdown2" class="form-label">Equipment Type(s):</label>
+                <div class="col-md-4 mb-3">
+                    <label for="dropdown2" class="form-label"><strong>Component Type(s):</strong></label>
                     <select class="selectpicker form-control" id="dropdown2" multiple>
                         <option selected>All</option>
                     </select>
                 </div>
 
                 <!-- Third Dropdown -->
-                <div class="col-md-3 mb-3">
-                    <label for="dropdown3" class="form-label">BEM Tool(s):</label>
+                <div class="col-md-4 mb-3">
+                    <label for="dropdown3" class="form-label"><strong>BEM Tool(s):</strong></label>
                     <select class="selectpicker form-control" id="dropdown3" multiple>
                         <option selected>All</option>
                         <option>eQUEST</option>
@@ -52,21 +116,6 @@
                         <option>OpenStudio</option>
                         <option>Carrier HAP v5</option>
                         <option>Design Builder</option>
-                    </select>
-                </div>
-
-                <!-- Fourth Dropdown -->
-                <div class="col-md-3 mb-3">
-                    <label for="dropdown3" class="form-label">Model Type(s):</label>
-                    <select class="selectpicker form-control" id="dropdown4" multiple>
-                        <option selected>All</option>
-                        <option>Proposed Design</option>
-                        <option>90.1 2016 PRM Baseline</option>
-                        <option>90.1 2019 PRM Baseline</option>
-                        <option>90.1 2022 PRM Baseline</option>
-                        <option>90.1 2016 ECB Budget</option>
-                        <option>90.1 2019 ECB Budget</option>
-                        <option>90.1 2022 ECB Budget</option>
                     </select>
                 </div>
             </div>
