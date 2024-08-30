@@ -88,11 +88,6 @@ html, body {
   font-size: 0.75em;
 }
 
-.page-content {
-    flex-grow: 1;
-    font-family: Arial, sans-serif;
-}
-
 .table-row {
     width: calc(100% - 25px) !important;
     margin-left: 25px;
@@ -199,16 +194,22 @@ footer img {
     background-color: #e0e0e0;
 }
 
-.page-content .collapse {
+#page-content {
+    flex-grow: 1;
+    font-family: Arial, sans-serif;
+    position:relative;
+}
+
+#page-content .collapse {
     padding: 5px;
 }
 
-.page-content .collapsing {
+#page-content .collapsing {
     padding: 5px;
     padding-left: 30px;
 }
 
-.page-content .collapse.show {
+#page-content .collapse.show {
     margin-left: 25px;
 }
 
@@ -262,14 +263,14 @@ footer img {
     font-weight: 600 !important;
 }
 
-#filtered-links {
+#filter-links {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding-top: 10px;
 }
 
-#filtered-links a {
+#filter-links a {
     font-size: 0.875rem;
     padding: 5px 10px;
     border: 1px solid #007bff;
@@ -280,7 +281,39 @@ footer img {
     transition: background-color 0.3s ease;
 }
 
-#filtered-links a:hover {
+#filter-links a.disabled {
+    color: #c0c0c0; /* Light grey to indicate a disabled state */
+    background-color: #f1f1f1; /* Light background color */
+    border-color: #c0c0c0;
+    opacity: 0.6; /* Makes it appear more faded */
+    pointer-events: none; /* Disables clicking */
+    cursor: not-allowed; /* Shows a not-allowed cursor */
+}
+
+#filter-links a.active {
+    color: #ffffff;
+    background-color: #0056b3; /* Darker blue to indicate active state */
+    border-color: #0056b3;
+    font-weight: bold; /* Optional: makes the text bold */
+}
+
+#filter-links a.locked {
+    background-color: #d7f8d8;
+    position: relative;
+}
+
+#filter-links a.locked::before {
+    content: '🔒';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.875rem;
+    margin-right: 5px;
+}
+
+#filter-links a:hover {
     background-color: #007bff;
     color: #ffffff;
 }
+
