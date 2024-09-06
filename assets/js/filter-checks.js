@@ -11,7 +11,7 @@ function filterContent() {
 
         const matchesCheckType = filters.checkType[0] === 'All' || checkType.some(type => filters.checkType.includes(type));
         const matchesComponent = filters.component[0] === 'All' || component.some(comp => filters.component.includes(comp));
-        const matchesModelType = filters.model[0] === 'All' || modelType.some(model => filters.model.includes(model));
+        const matchesModelType = modelType.some(model => filters.model.includes(model));
 
         const anchorTag = anchorTags[index];
 
@@ -25,19 +25,21 @@ function filterContent() {
         }
 
         // Now, filter individual sections within the card
-        const sections = card.querySelectorAll('div[data-version], div[data-path]');
+        const sections = card.querySelectorAll('div[data-version], div[data-path], div[data-bem-tool]');
 
         sections.forEach((section) => {
             const version = section.getAttribute('data-version')?.split(',').map(item => item.trim()) || [];
             const path = section.getAttribute('data-path')?.split(',').map(item => item.trim()) || [];
+            const bemTool = section.getAttribute('data-bem-tool')?.split(',').map(item => item.trim()) || [];
 
             // Check if the section matches the filters
             // Treat empty filters arrays as if all options are selected (show everything)
-            const matchesPath = path.some(p => filters.path.includes(p));
-            const matchesVersion = version.some(v => filters.version.includes(v));
+            const matchesPath = path.some(p => filters.path.includes(p)) || path.length === 0;
+            const matchesVersion = version.some(v => filters.version.includes(v)) || version.length === 0;
+            const matchesBEMTool = filters.bemTool[0] === 'All' || bemTool.some(bem => filters.bemTool.includes(bem)) || filters.bemTool.length === 0;
 
             // Show or hide the section based on match
-            if (!matchesPath || !matchesVersion) {
+            if (!matchesPath || !matchesVersion || !matchesBEMTool) {
                 section.style.display = 'none';
             } else {
                 section.style.display = '';

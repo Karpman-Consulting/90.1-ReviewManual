@@ -8,6 +8,13 @@ const filters = {
     bemTool: ['All'],
 };
 
+$('#imageModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget);
+    var fullImageUrl = button.data('full');
+    var modal = $(this);
+    modal.find('#modalImage').attr('src', fullImageUrl);
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     // Load sidebar
     fetch('../components/sidebar.html')
@@ -25,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
         $('.selectpicker').selectpicker();
         attachEventListeners();
         populateLinks();
-
     });
 
     // Load footer
