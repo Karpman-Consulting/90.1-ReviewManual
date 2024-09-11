@@ -40,6 +40,13 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(data => {
         document.getElementById('footer-container').innerHTML = data;
     });
+
+    // Load 90.1-2022 Appendix G3.3 content
+    fetch('../components/2022-g3_3-checks.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('2022-g3_3-modal-container').innerHTML = data;
+    });
 });
 
 function attachEventListeners() {
