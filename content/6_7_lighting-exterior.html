@@ -19,9 +19,11 @@
         <header id="header-container" class="p-3 mb-3 border-bottom"></header> <!-- Header Container -->
 
         <div id="page-content" class="container">
+
             <!--- Page Content Goes Here --->
 
             <table id="checks-table" class="table table-bordered table-sm" border="1">
+
                 <colgroup>
                     <col style="width: auto;">
                     <col style="width: auto;">
@@ -30,79 +32,67 @@
                 </colgroup>
 
                 <thead class="thead-dark">
-
                     <tr>
                         <th>Focus of the Check</th>
                         <th>Type of Check</th>
                         <th>Proposed Design</th>
                         <th>Baseline/Budget Design</th>
                     </tr>
-
                 </thead>
-                <tbody>
 
+                <tbody>
                     <tr>
                         <td rowspan="5">Lighting Power</td>
                         <td>CF inputs reflect design documents</td>
                         <td><a href="#le01-p">LE01-P</a></td>
                         <td>NA</td>
                     </tr>
-
                     <tr>
                         <td>CF inputs reflect requirements of ECB/PRM</td>
                         <td style="text-align: center;">NA</td>
                         <td class="automated"><a href="#le01-b">LE01-B</a></td>
                     </tr>
-
                     <tr>
                         <td>Meet mandatory requirements</td>
                         <td class="automated"><a href="#le02-p">LE02-P</a></td>
                         <td>NA</td>
                     </tr>
-
                     <tr>
                         <td>Simulation inputs consistent with CF</td>
                         <td ><a href="#le03">LE03-B</a></td>
                         <td><a href="#le03">LE03-P</a></td>
                     </tr>
-
                     <tr>
                         <td>Simulation outputs consistent with CF</td>
                         <td style="text-align: center;">NA</td>
                         <td>NA</td>
                     </tr>
-
                     <tr>
                         <td rowspan="5">Lighting Controls</td>
                         <td>CF inputs reflect design documents</td>
                         <td><a href="#le04-p">LE04-P</a></td>
                         <td>NA</td>
                     </tr>
-
                     <tr>
                         <td>CF inputs reflect requirements of ECB/PRM</td>
                         <td style="text-align: center;">NA</td>
                         <td class="automated"><a href="#le04-b">LE04-B</a></td>
                     </tr>
-
                     <tr>
                         <td>Meet mandatory requirements</td>
                         <td class="automated"><a href="#le05-p">LE05-P</a></td>
                         <td>NA</td>
                     </tr>
-
                     <tr>
                         <td>Simulation inputs consistent with CF</td>
                         <td style="text-align: center;">NA</td>
                         <td >NA</td>
                     </tr>
-
                     <tr>
                         <td>Simulation outputs consistent with CF</td>
                         <td class="automated"><a href="#le06">LE06-P,</a><a href="#le07">LE07</a></td>
                         <td class="automated"><a href="#le06">LE06-B,</a><a href="#le07">LE07</a></td>
                     </tr>
-
                     <tr>
                         <td colspan="4"><strong>Legend: </strong><span class="automated">PASS/FAIL/NA outcome is determined automatically in the Quality Control Checks tab of the Compliance Form.</span></td>
                     </tr>
@@ -111,14 +101,35 @@
 
             <p>The following strategies may be used to prioritize the review:</p>
             <ol>
-                <li>For checks that verify the specified fixture wattages, focus on fixtures that account for the largest total exterior wattage on the project and spot-check the rest.</li>
-                <li>For checks that verify the specified fixture counts, focus on exterior application types that account for the largest total wattage and spot-check the rest.</li>
-                <li>Exterior lighting allowances and controls prescribed in 90.1 Section 9 are mandatory and must be met where applicable. Perform the checks to verify that mandatory requirements are met using the prioritization techniques described in #1 and 2 above.</li>
-                <li>For ECB projects, exterior lighting trade-offs are not allowed (i.e., the exterior lighting is not an impactful end use), thus review is limited to verifying that the reported exterior lighting wattage and controls are as specified and meet the mandatory requirements.</li>
+                <li>
+                    For checks that verify the specified fixture wattages, focus on fixtures that account for the
+                    largest total exterior wattage on the project and spot-check the rest.
+                </li>
+                <li>
+                    For checks that verify the specified fixture counts, focus on exterior application types that
+                    account for the largest total wattage and spot-check the rest.
+                </li>
+                <li>
+                    Exterior lighting allowances and controls prescribed in 90.1 Section 9 are mandatory and must be met
+                    where applicable. Perform the checks to verify that mandatory requirements are met using the
+                    prioritization techniques described in #1 and 2 above.
+                </li>
+                <li>
+                    For ECB projects, exterior lighting trade-offs are not allowed (i.e., the exterior lighting is not
+                    an impactful end use), thus review is limited to verifying that the reported exterior lighting
+                    wattage and controls are as specified and meet the mandatory requirements.
+                </li>
             </ol>
 
-            <p>For 90.1 2022 PRM alterations subject to G3.3 (i.e., Minor Alterations), the summary tables on the Quality Control Checks tab in the Compliance Form may not reflect correct values for the baseline since projects, for the most part, only enter proposed design information and provide notes as to what was modeled in the baseline in the notes fields associated with the proposed design related tables.
-                Refer to the  <a href="content/6_14_90.1-2022-Section-G3.3.html">90.1 2022 Section G3.3 Performance Calculations for Other Alterations</a> section for more information regarding 90.1 2022 G3.3.
+            <p>
+                For 90.1 2022 PRM alterations subject to G3.3 (i.e., Minor Alterations), the summary tables on the
+                Quality Control Checks tab in the Compliance Form may not reflect correct values for the baseline since
+                projects, for the most part, only enter proposed design information and provide notes as to what was
+                modeled in the baseline in the notes fields associated with the proposed design related tables.
+                Refer to the
+                <a href="content/6_14_90.1-2022-Section-G3.3.html">90.1 2022 Section G3.3 Performance
+                Calculations for Other Alterations</a>
+                section for more information regarding 90.1 2022 G3.3.
             </p>
 
             <!--LE01-B Section -->
@@ -128,35 +139,55 @@
                 <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016 and 2019/2022 ECB</h5>
                     <strong>Table 11.5.1 No 1 Column B/ Table 12.5.1 No 1 Column B</strong>
-                    <p>Except as specifically instructed in this table, all building systems and equipment must be modeled identically in the budget building design and proposed design. Exterior lighting is not explicitly listed in Table 11.5.1/12.5.1, this is not a trade-off opportunity and must be modeled the same in the Budget building as specified in the proposed design.</p>
+                    <p>
+                        Except as specifically instructed in this table, all building systems and equipment must be
+                        modeled identically in the budget building design and proposed design. Exterior lighting is not
+                        explicitly listed in Table 11.5.1/12.5.1, this is not a trade-off opportunity and must be
+                        modeled the same in the Budget building as specified in the proposed design.
+                    </p>
                 </div>
 
                 <div data-version="2016,2019" data-path="PRM">
                     <h5>90.1 2016 and 2019 PRM</h5>
                     <strong>Table G3.1 No 6, Baseline Building Performance column</strong>
-                    <p>Exterior lighting in areas identified as “Tradable Surfaces” in Table G3.6 must be modeled with the baseline lighting power shown in Table G3.6. Other exterior lighting must be modeled the same in the baseline building design as in the proposed design.
+                    <p>
+                        Exterior lighting in areas identified as “Tradable Surfaces” in Table G3.6 must be modeled with
+                        the baseline lighting power shown in Table G3.6. Other exterior lighting must be modeled the
+                        same in the baseline building design as in the proposed design.
                     </p>
                 </div>
 
                 <div data-version="2022" data-path="PRM">
                     <h5>90.1 2022 PRM</h5>
                     <strong><u>G3.2 New Construction/Major Alterations</u></strong>
-                    <p>Same as the Table G3.1 No 6, Baseline Building Performance column requirements described above for the 90.1 2016 and 2019 PRM.
+                    <p>
+                        Same as the Table G3.1 No 6, Baseline Building Performance column requirements described above
+                        for the 90.1 2016 and 2019 PRM.
                     </p>
                     <br>
                     <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>Alterations subject to Section G3.3.2.7 (i.e., Minor Alterations) are required to model tradable exterior lighting as minimally compliant with 90.1 Section 9.1.1.3.2 in the baseline design model.
+                    <p>
+                        Alterations subject to Section G3.3.2.7 (i.e., Minor Alterations) are required to model tradable
+                        exterior lighting as minimally compliant with 90.1 Section 9.1.1.3.2 in the baseline design
+                        model.
                     </p>
                 </div>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Baseline/budget exterior lighting wattage is shown in Table 1 of the Exterior Lighting tab. It is established automatically based on the following user inputs
-                        (refer to the <a href="#" class="modal-2022-g3_3-trigger" data-content-id="le01-b">90.1 2022 Section G3.3 Performance Calculations for Other Alterations</a> section for the location of the baseline lighting wattage for alterations subject to 90.1 2022 Section G3.3):
+                    <li>Baseline/budget exterior lighting wattage is shown in Table 1 of the Exterior Lighting tab. It
+                        is established automatically based on the following user inputs (refer to the
+                        <a href="#" class="modal-2022-g3_3-trigger" data-content-id="le01-b">90.1 2022 Section G3.3
+                            Performance Calculations for Other Alterations</a>
+                        section for the location of the baseline lighting wattage for alterations subject to 90.1 2022
+                        Section G3.3):
                         <ol style="list-style-type: lower-alpha">
                             <li>Project’s exterior lighting zone based on 90.1 Table 9.4.2-1</li>
                             <li>Exterior lighting applications for which lighting is specified in the proposed design.</li>
-                            <li>The surface area or length of the exterior lighting application (e.g., area of the parking that or length of entrance door) that has exterior lighting specified in the proposed design.
+                            <li>
+                                The surface area or length of the exterior lighting application (e.g., area of the
+                                parking that or length of entrance door) that has exterior lighting specified in the
+                                proposed design.
                                 <figure>
                                     <img src="../assets/images/Sections_1-6/ext_lighting_CF.png" style="max-width: 750px;">
                                 </figure>
@@ -176,23 +207,62 @@
                         <p>Some AHJ and RAs may specify the exterior lighting zones that must be used based on the project address.</p>
                     </li>
 
-                    <li>Use Table 1 of the Exterior Lighting tab to identify exterior lighting applications with the greatest difference in wattage between the baseline and proposed design. Refer to the exterior lighting plans drawings to confirm that entered surface area or length are not exaggerated. The input must reflect the area or length of the surface in the proposed building that is illuminated to some industry standard, such as the IESNA Handbook. It is the responsibility of the design team to identify the illumination design standard and the area actually illuminated, as illustrated in the following figure.
+                    <li>
+                        Use Table 1 of the Exterior Lighting tab to identify exterior lighting applications with the
+                        greatest difference in wattage between the baseline and proposed design. Refer to the exterior
+                        lighting plans drawings to confirm that entered surface area or length are not exaggerated. The
+                        input must reflect the area or length of the surface in the proposed building that is
+                        illuminated to some industry standard, such as the IESNA Handbook. It is the responsibility of
+                        the design team to identify the illumination design standard and the area actually illuminated,
+                        as illustrated in the following figure.
                         <figure>
                             <img src="../assets/images/Sections_1-6/ext_lighting_check.png" style="max-width: 750px;">
                         </figure>
                         <ol style="list-style-type: lower-alpha">
-                            <li>Only the areas that are illuminated without obstruction may be included.
-                            <li>Each portion of the illuminated area must only be assigned one lighting application consistent with the actual use of the area. Any overlapping area of another lighting application, such as a pathway crossing the parking lot, must be subtracted from the area of the other lighting application.</li>
-                            <li>The allowed area of a site roadway, driveway, sidewalk, walkway or bikeway should be determined as either the actual paved area plus 5 feet on either side of the centerline path of travel; or a 25-foot-wide area running along the axis of the path of travel and including as much of the paved area of the site roadway, driveway, sidewalk, walkway or bikeway as possible.</li>
+                            <li>Only the areas that are illuminated without obstruction may be included.</li>
+                            <li>
+                                Each portion of the illuminated area must only be assigned one lighting application
+                                consistent with the actual use of the area. Any overlapping area of another lighting
+                                application, such as a pathway crossing the parking lot, must be subtracted from the
+                                area of the other lighting application.
+                            </li>
+                            <li>
+                                The allowed area of a site roadway, driveway, sidewalk, walkway or bikeway should be
+                                determined as either the actual paved area plus 5 feet on either side of the centerline
+                                path of travel; or a 25-foot-wide area running along the axis of the path of travel and
+                                including as much of the paved area of the site roadway, driveway, sidewalk, walkway or
+                                bikeway as possible.
+                            </li>
                         </ol>
                     </li>
 
                     <li>Common Mistakes
                         <ol style="list-style-type: lower-alpha">
-                            <li>Modeling different exterior lighting between the budget and proposed design with the ECB path.</li>
-                            <li>Including areas of the proposed design that are not illuminated, or incorrectly accounting for partially illuminated areas, when calculating the baseline exterior lighting power. For example, if the proposed design has an uncovered parking lot that has no lighting specified, the exterior lighting allowance for the uncovered parking areas in 90.1 Table G3.6 cannot be included in the baseline.</li>
-                            <li>Double-counting areas when calculating the baseline exterior lighting power allowance. For example, the baseline lighting allowance for the walkway that crosses an illuminated parking lot can be determined based on the parking lot allowance, or walkway allowance in 90.1 Table G3.6, but not both. If walkway allowance is used, the walkway area calculated as described in #3 above must be subtracted from the parking lot area used to calculate the parking lot baseline lighting allowance.</li>
-                            <li>Modeling baseline lighting for non-tradeable surfaces based on the full allowance in 90.1 Table 3.6. The baseline non-tradeable lighting must be modeled as specified in 90.1 Table G3.6 or based on the proposed lighting for each non-tradeable application, <u>whichever is lower.</u></li>
+                            <li>
+                                Modeling different exterior lighting between the budget and proposed design with the ECB
+                                path.
+                            </li>
+                            <li>
+                                Including areas of the proposed design that are not illuminated, or incorrectly
+                                accounting for partially illuminated areas, when calculating the baseline exterior
+                                lighting power. For example, if the proposed design has an uncovered parking lot that
+                                has no lighting specified, the exterior lighting allowance for the uncovered parking
+                                areas in 90.1 Table G3.6 cannot be included in the baseline.
+                            </li>
+                            <li>
+                                Double-counting areas when calculating the baseline exterior lighting power allowance.
+                                For example, the baseline lighting allowance for the walkway that crosses an illuminated
+                                parking lot can be determined based on the parking lot allowance, or walkway allowance
+                                in 90.1 Table G3.6, but not both. If walkway allowance is used, the walkway area
+                                calculated as described in #3 above must be subtracted from the parking lot area used to
+                                calculate the parking lot baseline lighting allowance.
+                            </li>
+                            <li>
+                                Modeling baseline lighting for non-tradeable surfaces based on the full allowance in
+                                90.1 Table 3.6. The baseline non-tradeable lighting must be modeled as specified in 90.1
+                                Table G3.6 or based on the proposed lighting for each non-tradeable application,
+                                <u>whichever is lower.</u>
+                            </li>
                         </ol>
                     </li>
                 </ol>
@@ -205,16 +275,33 @@
                 <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016 and 2019/2022 ECB</h5>
                     <strong>Table 11.5.1 #6 Column A (a) and (b)/Table 12.5.1 #6 Column A (a) and (b)</strong>
-                    <p>Where a complete lighting system exists, the actual lighting power should be used in the model. Where a complete lighting system has been designed, lighting power must be determined in accordance with Sections 9.1.3 and 9.1.4.</p>
+                    <p>
+                        Where a complete lighting system exists, the actual lighting power should be used in the model.
+                        Where a complete lighting system has been designed, lighting power must be determined in
+                        accordance with Sections 9.1.3 and 9.1.4.
+                    </p>
                 </div>
 
                 <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016, 2019 and 2022 PRM</h5>
                     <strong>Table G3.1 No.6 (a), (b), (d)</strong>
                     <ol style="list-style-type: lower-alpha">
-                        <li>Where a complete lighting system exists, the actual lighting power should be used in the model. Where a complete lighting system has been designed, lighting power must be determined in accordance with Sections 9.1.3 and 9.1.4.</li>
-                        <li>Where a lighting system has been designed, lighting power must be determined in accordance with 90.1 Sections 9.1.3 and 9.1.4.</li>
-                        <li>The input wattage of specified fixtures must include all power used by the fixture including lamps, ballasts, transformers and control devices and be based on the <u>manufacturers’ labeled maximum wattage of the luminaire.</u> The lamp and ballast combination shown on drawings may result in lower input wattage that the maximum rated and thus cannot be used for compliance calculations.</li>
+                        <li>
+                            Where a complete lighting system exists, the actual lighting power should be used in the
+                            model. Where a complete lighting system has been designed, lighting power must be determined
+                            in accordance with Sections 9.1.3 and 9.1.4.
+                        </li>
+                        <li>
+                            Where a lighting system has been designed, lighting power must be determined in accordance
+                            with 90.1 Sections 9.1.3 and 9.1.4.
+                        </li>
+                        <li>
+                            The input wattage of specified fixtures must include all power used by the fixture including
+                            lamps, ballasts, transformers and control devices and be based on the <u>manufacturers’
+                            labeled maximum wattage of the luminaire.</u> The lamp and ballast combination shown on
+                            drawings may result in lower input wattage that the maximum rated and thus cannot be used
+                            for compliance calculations.
+                        </li>
                     </ol>
                 </div>
 
@@ -230,17 +317,33 @@
                             </li>
                         </ol>
                     </li>
-                    <li>Use Table 1 of the Exterior Lighting tab to identify lighting fixtures that contribute the most toward the total specified lighting wattage based on the product of the Maximum Rated Fixture Wattage and Total Fixture Counts. Refer to the Lighting Schedule drawings to establish the manufacture and model number for the fixtures. Check the manufacturer information to confirm that the maximum rated fixture wattage reported in the compliance form reflects manufacturer’s data.
+                    <li>
+                        Use Table 1 of the Exterior Lighting tab to identify lighting fixtures that contribute the most
+                        toward the total specified lighting wattage based on the product of the Maximum Rated Fixture
+                        Wattage and Total Fixture Counts. Refer to the Lighting Schedule drawings to establish the
+                        manufacture and model number for the fixtures. Check the manufacturer information to confirm
+                        that the maximum rated fixture wattage reported in the compliance form reflects manufacturer’s
+                        data.
                     </li>
-                    <li>Use Table 1 of the Exterior Lighting tab to identify exterior lighting applications with the greatest difference in wattage between the baseline and proposed design. (The top contributors are also shown on the QC tab.) Refer to the exterior lighting plans drawings to confirm that fixture types and counts for these spaces reported in the Compliance Form match design documents.
+                    <li>
+                        Use Table 1 of the Exterior Lighting tab to identify exterior lighting applications with the
+                        greatest difference in wattage between the baseline and proposed design. (The top contributors
+                        are also shown on the QC tab.) Refer to the exterior lighting plans drawings to confirm that
+                        fixture types and counts for these spaces reported in the Compliance Form match design
+                        documents.
                         <figure>
                             <img src="../assets/images/Sections_1-6/ext_lighting_plans.png" style="max-width: 750px;">
                         </figure>
                     </li>
                     <li>Common Mistakes
                         <ol style="list-style-type: lower-alpha">
-                            <li>Proposed fixture wattage is based on the specified lamps and not the manufacturer’s labeled maximum wattage of the luminaire.</li>
-                            <li>Exterior lighting wattage is excluded for compliance calculations. Submittals with no exterior lighting should be flagged.</li>
+                            <li>Proposed fixture wattage is based on the specified lamps and not the manufacturer’s
+                                labeled maximum wattage of the luminaire.
+                            </li>
+                            <li>
+                                Exterior lighting wattage is excluded for compliance calculations. Submittals with no
+                                exterior lighting should be flagged.
+                            </li>
                         </ol>
                     </li>
                 </ol>
@@ -252,13 +355,21 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Table 2 of the Exterior Lighting tab shows the total specified exterior lighting wattage alongside the total
-                        exterior lighting power allowance in Table 9.4.2.2. Since the exterior lighting requirements are mandatory,
-                        projects where the total specified exterior lighting exceeds the exterior lighting power allowance should be
-                        flagged as not complying with 90.1. Refer to the <a href="#" class="modal-2022-g3_3-trigger" data-content-id="le02-p">90.1 2022 Section G3.3 Performance Calculations for Other
-                        Alterations</a> section for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor Alterations).
+                    <li>
+                        Table 2 of the Exterior Lighting tab shows the total specified exterior lighting wattage
+                        alongside the total exterior lighting power allowance in Table 9.4.2.2. Since the exterior
+                        lighting requirements are mandatory, projects where the total specified exterior lighting
+                        exceeds the exterior lighting power allowance should be flagged as not complying with 90.1.
+                        Refer to the
+                        <a href="#" class="modal-2022-g3_3-trigger" data-content-id="le02-p">90.1 2022 Section G3.3 Performance Calculations for Other
+                        Alterations</a>
+                        section for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor
+                        Alterations).
                         <ol style="list-style-type: lower-alpha">
-                            <li>Lighting fixtures used for exterior lighting applications and the maximum fixture rated wattage for each</li>
+                            <li>
+                                Lighting fixtures used for exterior lighting applications and the maximum fixture rated
+                                wattage for each
+                            </li>
                             <li>Number of fixtures of each type specified for each exterior lighting application.
                                 <figure>
                                     <img src="../assets/images/Sections_1-6/CF_ext_lighting_table2.png" style="max-width: 750px;">
@@ -281,8 +392,14 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>The modeled baseline/budget exterior lighting wattage must reflect the values reported in Table 2 of the Exterior Lighting tab (refer to the <a href="#" class="modal-2022-g3_3-trigger" data-content-id="le03-b">90.1 2022 Section G3.3 Performance Calculations for Other
-                        Alterations</a> section for the location of the baseline lighting wattage for alterations subject to 90.1 2022 Section G3.3).
+                    <li>
+                        The modeled baseline/budget exterior lighting wattage must reflect the values reported in Table
+                        2 of the Exterior Lighting tab (refer to the
+                        <a href="#" class="modal-2022-g3_3-trigger" data-content-id="le03-b">
+                            90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                        </a>
+                        section for the location of the baseline lighting wattage for alterations subject to 90.1 2022
+                        Section G3.3).
                         <figure>
                             <img src="../assets/images/Sections_1-6/CF_LE03.png" style="max-width: 750px;">
                         </figure>
@@ -290,8 +407,16 @@
 
                     <li>Depending on the reporting capabilities of the simulation tool used on the project, the inputs can be verified in the input or output reports, as follows
                         <ul>
-                            <li>Use simulation input reports to verify that the exterior lighting wattage entered into the simulation tool matches the wattage reported in the submittal.</li>
-                            <li>Use simulation output reports to verify that the modeled lighting peak demand does not exceed the exterior lighting wattage reported in the submittal. The exterior lighting peak demand occurs at night and thus does not coincide with the building overall electricity peak which occurs in the late afternoon for most building types.</li>
+                            <li>
+                                Use simulation input reports to verify that the exterior lighting wattage entered into
+                                the simulation tool matches the wattage reported in the submittal.
+                            </li>
+                            <li>
+                                Use simulation output reports to verify that the modeled lighting peak demand does not
+                                exceed the exterior lighting wattage reported in the submittal. The exterior lighting
+                                peak demand occurs at night and thus does not coincide with the building overall
+                                electricity peak which occurs in the late afternoon for most building types.
+                            </li>
                         </ul>
                         <br>
                         <p>PLD <= LTW</p>
@@ -490,13 +615,22 @@
             <!--LE04-P Section -->
             <div id="le04-p" class="card card-body mb-3" data-check-type="2" data-component="controls" data-model="P">
                 <h3>LE04-P Exterior lighting controls reported in the Compliance Form reflect design documents</h3>
-                <p>Refer to the Exterior Lighting tab of the Compliance Form to confirm that the exterior lighting controls are reported as specified. Focus on exterior lighting applications that account for the largest reported exterior lighting wattage.</p>
+                <p>
+                    Refer to the Exterior Lighting tab of the Compliance Form to confirm that the exterior lighting
+                    controls are reported as specified. Focus on exterior lighting applications that account for the
+                    largest reported exterior lighting wattage.
+                </p>
             </div>
 
             <!--LE04-B Section -->
             <div id="le04-b" class="card card-body mb-3" data-check-type="4" data-component="controls" data-model="P">
-                <h3>LE04-B Exterior lighting controls reported in the Compliance Form for the baseline/budget design are established correctly</h3>
-                <p>Exterior lighting controls must be the same in the baseline/budget as in the proposed design. No trade-offs in this area are allowed by either the Energy Cost Budge Method or the Performance Rating Method.</p>
+                <h3>LE04-B Exterior lighting controls reported in the Compliance Form for the baseline/budget design are
+                    established correctly</h3>
+                <p>
+                    Exterior lighting controls must be the same in the baseline/budget as in the proposed design. No
+                    trade-offs in this area are allowed by either the Energy Cost Budge Method or the Performance Rating
+                    Method.
+                </p>
             </div>
 
             <!--LE05-p Section -->
@@ -504,11 +638,18 @@
                 <h3>LE05-P Specified exterior lighting controls meet 90.1 mandatory requirements</h3>
                  <div data-version="2016,2019,2022" data-path="ECB,PRM">
                     <h5>90.1 2016, 2019 and 2022 The Energy Cost Budget and Performance Rating Methods</h5>
-                    <p><strong>Section 9.4.1.4</strong> includes exterior lighting control requirements. This section is mandatory, and thus must be met by project documenting compliance following Energy Cost Budge Method or Performance Rating Method.
+                    <p>
+                        <strong>Section 9.4.1.4</strong> includes exterior lighting control requirements. This section
+                        is mandatory, and thus must be met by project documenting compliance following Energy Cost
+                        Budget Method or Performance Rating Method.
                     </p>
                 </div>
 
-                <p>Exterior lighting controls must be the same in the baseline/budget as in the proposed design. No trade-offs in this area are allowed by either the Energy Cost Budge Method or the Performance Rating Method.</p>
+                <p>
+                    Exterior lighting controls must be the same in the baseline/budget as in the proposed design. No
+                    trade-offs in this area are allowed by either the Energy Cost Budge Method or the Performance Rating
+                    Method.
+                </p>
 
                 <h5>Review Tips</h5>
                 <p>Review design documents to confirm that exterior lighting controls required in Section 9.4.1.4 are met.</p>
@@ -520,7 +661,13 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Following Section 9.4.1.4, in 90.1 2016 and 2019 the exterior lighting must be controlled to turn off when sufficient lighting is available and turned off or operate at a wattage reduced by at least 50%, during non-business hours (applies to most exterior lighting applications 90.1 2022). These controls are mandatory and thus must be specified on all projects. Thus, the modeled exterior lighting runtime may be up to 12 hours / day (4,380 hours per year) for facilities opened 24/7, such as hospitals. Lower runtime (e.g., 6 hours per day) is expected for other building types due to lighting control requirements in 90.1 Section 9.4.1.4.
+                    <li>Following Section 9.4.1.4, in 90.1 2016 and 2019 the exterior lighting must be controlled to
+                        turn off when sufficient lighting is available and turned off or operate at a wattage reduced by
+                        at least 50%, during non-business hours (applies to most exterior lighting applications 90.1
+                        2022). These controls are mandatory and thus must be specified on all projects. Thus, the
+                        modeled exterior lighting runtime may be up to 12 hours / day (4,380 hours per year) for
+                        facilities opened 24/7, such as hospitals. Lower runtime (e.g., 6 hours per day) is expected for
+                        other building types due to lighting control requirements in 90.1 Section 9.4.1.4.
                         <br>
                         <p>EFLH= LEU / LTW</p>
                         <p>EFLH [hrs/yr] = exterior lighting effective full load hours</p>
@@ -532,8 +679,14 @@
                 <p>The review check should be performed only for Performance Rating Method projects.</p>
                     <ul>
                         <li>EFLH>4380 should be flagged as a likely error</li>
-                        <li>EFLH<2190 (less than 6 hours per day) are reasonable for non-24/7 facilities and should be accepted.</li>
-                        <li>EFLH between 2190 and 4380 should be investigated on Performance Rating Method projects that have proposed exterior lighting energy use significantly lower than the baseline.</li>
+                        <li>
+                            EFLH<2190 (less than 6 hours per day) are reasonable for non-24/7 facilities and should be
+                            accepted.
+                        </li>
+                        <li>
+                            EFLH between 2190 and 4380 should be investigated on Performance Rating Method projects that
+                            have proposed exterior lighting energy use significantly lower than the baseline.
+                        </li>
                     </ul>
 
                 <div class="annotated-report container">
@@ -732,9 +885,21 @@
 
                 <div data-version="2016,2019,2022" data-path="ECB,PRM">
                     <ol>
-                        <li>90.1 2016/2019/2022 Energy Cost Budge Method : Since exterior lighting is not a trade-off opportunity, the annual exterior lighting kWh must be the same in the budget and proposed design. Energy Cost Budge Method projects with different exterior lighting energy use in budget vs proposed design should be flagged.
+                        <li>
+                            90.1 2016/2019/2022 Energy Cost Budge Method : Since exterior lighting is not a trade-off
+                            opportunity, the annual exterior lighting kWh must be the same in the budget and proposed
+                            design. Energy Cost Budge Method projects with different exterior lighting energy use in
+                            budget vs proposed design should be flagged.
                         </li>
-                        <li>90.1 Performance Rating Method : Since the exterior lighting controls (i.e., lighting runtime) must be the same between the baseline and proposed design, the difference in the annual baseline versus proposed exterior lighting use is expected to be directly proportional to the difference in the exterior lighting wattage reported in the Table 2 of the Exterior Lighting tab of the Compliance Form. For example, if the proposed exterior lighting wattage reported in the submittal is 20% lower than the baseline, the proposed exterior lighting kWh are expected to be also 20% lower than the baseline exterior lighting kWh. Projects where this relationship does not hold should be flagged.
+                        <li>
+                            90.1 Performance Rating Method : Since the exterior lighting controls (i.e., lighting
+                            runtime) must be the same between the baseline and proposed design, the difference in the
+                            annual baseline versus proposed exterior lighting use is expected to be directly
+                            proportional to the difference in the exterior lighting wattage reported in the Table 2 of
+                            the Exterior Lighting tab of the Compliance Form. For example, if the proposed exterior
+                            lighting wattage reported in the submittal is 20% lower than the baseline, the proposed
+                            exterior lighting kWh are expected to be also 20% lower than the baseline exterior lighting
+                            kWh. Projects where this relationship does not hold should be flagged.
                             <p>Performance Rating Method :	LTW prop / LTW base = LEU prop / LEU base</p>
                             <p>Energy Cost Budge Method :	LEU prop  = LEU budge</p>
                         </li>
