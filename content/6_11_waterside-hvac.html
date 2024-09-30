@@ -19,6 +19,7 @@
         <header id="header-container" class="p-3 mb-3 border-bottom"></header> <!-- Header Container -->
 
         <div id="page-content" class="container">
+
             <!--- Page Content Goes Here --->
 
             <table id="checks-table" class="table table-bordered table-sm" border="1">
@@ -45,62 +46,52 @@
                         <td><a href="#whvac01-p">WHVAC01-P (chiller),</a> <a href="#whvac04-p">WHVAC04-P(loop T),</a> <a href="#ahvac06-p">WHVAC06-P(pump),</a> <a href="#whvac1O-p">WHVAC10-P(ht rej)</a></td>
                         <td>NA</td>
                     </tr>
-
                     <tr>
                         <td>CF inputs reflect requirements of ECB/PRM</td>
                         <td>NA</td>
                         <td class="automated"><a href="#whvac01-b">WHVAC01-B (chiller),</a> <a href="#whvac04-b">WHVAC04-B(loop T),</a> <a href="#whvac06-b">WHVAC06-B (pump),</a> <a href="#whvac1O-b">WHVAC10-B(ht rej)</a></td>
                     </tr>
-
                     <tr>
                         <td>Meet mandatory requirements</td>
                         <td><a href="#whvac01-p">WHVAC01-P (chiller)</a></td>
                         <td></td>
                     </tr>
-
                     <tr>
                         <td>Simulation inputs consistent with CF</td>
                         <td><a href="#whvac02">WHVAC02-P (chiller),</a> <a href="#whvac05">WHVAC05-P(loop T),</a> <a href="#whvac07">WHVAC07-P (pump),</a> <a href="#whvac08">WHVAC08-P(loop flw),</a><a href="#whvac11">WHVAC11-P(ht rej)</a></td>
                         <td><a href="#whvac02">WHVAC02-B (chiller),</a> <a href="#whvac05">WHVAC05-B(loop T),</a> <a href="#whvac07">WHVAC07-B (pump),</a> <a href="#whvac08">WHVAC08-B(loop flw),</a> <a href="#whvac11">WHVAC11-B(ht rej)</a></td>
                     </tr>
-
                     <tr>
                         <td>Simulation outputs consistent with CF</td>
                         <td><a href="#whvac03">WHVAC03-P (chiller),</a> <a href="#whvac09">WHVAC09-P(pump)</a></td>
                         <td><a href="#whvac03">WHVAC03-B (chiller),</a> <a href="#whvac09">WHVAC09-B(pump)</a></td>
                     </tr>
-
                     <tr>
                         <td rowspan="5">Boiler Plant</td>
                         <td>CF inputs reflect design documents</td>
                         <td><a href="#whvac12-p">WHVAC12-P (boiler),</a> <a href="#whvac15-p">WHVAC15-P (loop T),</a> <a href="#whvac17-p">WHVAC17–P(pump)</a></td>
                         <td>NA</td>
                     </tr>
-
                     <tr>
                         <td>CF inputs reflect requirements of ECB/PRM</td>
                         <td>NA</td>
                         <td class="automated"><a href="#whvac12-b">WHVAC12-B (boiler),</a> <a href="#whvac15-b">WHVAC15-B (loop T)</a></td>
                     </tr>
-
                     <tr>
                         <td>Meet mandatory requirements</td>
                         <td><a href="#whvac12-p">WHVAC12-P (boiler)</a></td>
                         <td></td>
                     </tr>
-
                     <tr>
                         <td>Simulation inputs consistent with CF</td>
                         <td><a href="#whvac13">WHVAC13-P (boiler),</a> <a href="#whvac16">WHVAC16-P (loop T),</a> <a href="#whvac18">WHVAC18–P(pump),</a> <a href="#whvac19">WHVAC19–P(loop flow)</a></td>
                         <td><a href="#whvac13">WHVAC13-B (boiler),</a> <a href="#whvac15-b">WHVAC15-B (loop T),</a> <a href="#whvac18">WHVAC18–B(pump),</a> <a href="#whvac19">WHVAC19–B(loop flow)</a></td>
                     </tr>
-
                     <tr>
                         <td>Simulation outputs consistent with CF</td>
                         <td><a href="#whvac14">WHVAC14-P (boiler),</a> <a href="#whvac20">WHVAC20-P (pump),</a> <a href="#whvac21">WHVAC21-P(pump),</a> <a href="#whvac22">WHVAC22-P(h.energy)</a></td>
                         <td><a href="#whvac14">WHVAC14-B (boiler),</a> <a href="#whvac20">WHVAC20-B (pump),</a> <a href="#whvac21">WHVAC21-B(pump)</a> <a href="#whvac22">WHVAC22-B(h.energy)</a></td>
                     </tr>
-
                     <tr>
                         <td colspan="4"><strong>Legend: </strong><span class="automated">PASS/FAIL/NA outcome is determined automatically in the Quality Control Checks tab of the Compliance Form.</span></td>
                     </tr>
@@ -115,25 +106,42 @@
                 <ol>
                     <li>Specified chillers are reported in Table 6a of the Proposed HVAC tab.
                     </li>
-                    <li>Verify that chiller type, quantity, capacity and rated full and part load efficiency listed in the table reflect design documents. A reference to the place in the design documents where the reported information is found must be listed in a dedicated field below the table.
+                    <li>
+                        Verify that chiller type, quantity, capacity and rated full and part load efficiency listed in
+                        the table reflect design documents. A reference to the place in the design documents where the
+                        reported information is found must be listed in a dedicated field below the table.
                         <figure>
                             <img src="../assets/images/Sections_1-6/CF_chiller.png" style="max-width: 750px;">
                         </figure>
                     </li>
-                    <li>Verify that efficiency of the specified chillers meets the minimum required in 90.1 Table 6 for either Path A or Path B. The applicable requirements are quoted in Table 6a. If the specified chillers don’t meet the requirements of either Path A or Path B, or if the default minimum requirements are over-written, the submittal must be flagged. These requirements are mandatory and must be met.
+                    <li>
+                        Verify that efficiency of the specified chillers meets the minimum required in 90.1 Table 6 for
+                        either Path A or Path B. The applicable requirements are quoted in Table 6a. If the specified
+                        chillers don’t meet the requirements of either Path A or Path B, or if the default minimum
+                        requirements are over-written, the submittal must be flagged. These requirements are mandatory
+                        and must be met.
                     </li>
-                    <li>Variations in chiller performance at a range of operating conditions are typically simulated using performance curves. The basis of performance curves may include the following:
+                    <li>
+                        Variations in chiller performance at a range of operating conditions are typically simulated
+                        using performance curves. The basis of performance curves may include the following:
                         <ol style="list-style-type: lower-alpha">
-                            <li>90.1 2022 Appendix J Table J-1 (for 90.1 2022 projects, where part-load performance of chillers in the proposed design is not available 90.1 2022 Appendix J Table J-1 curves must be used)
+                            <li>
+                                90.1 2022 Appendix J Table J-1 (for 90.1 2022 projects, where part-load performance of
+                                chillers in the proposed design is not available 90.1 2022 Appendix J Table J-1 curves
+                                must be used)
                             </li>
-                            <li>PNNL Performance Rating Method Reference Manual
-                            </li>
-                            <li>Custom curves based on chiller performance data from the equipment manufacturer
-                            </li>
+                            <li>PNNL Performance Rating Method Reference Manual</li>
+                            <li>Custom curves based on chiller performance data from the equipment manufacturer</li>
                         </ol>
                     </li>
                 </ol>
-                <p>If custom curves are used, confirm that supporting information is included in the submittal as required (Submittal Checklist #19). The provided curves may be directly reviewed. Alternatively, the annual average achieved chiller efficiency may be verified to confirm general alignment with the rated part load efficiency (see WHVAC03). Reviewer may also request that the default performance curves from 90.1 2022 Appendix J Table J-1 or the PNNL Performance Rating Method Reference Manual for the specified chiller type are used.
+                <p>
+                    If custom curves are used, confirm that supporting information is included in the submittal as
+                    required (Submittal Checklist #19). The provided curves may be directly reviewed. Alternatively, the
+                    annual average achieved chiller efficiency may be verified to confirm general alignment with the
+                    rated part load efficiency (see WHVAC03). Reviewer may also request that the default performance
+                    curves from 90.1 2022 Appendix J Table J-1 or the PNNL Performance Rating Method Reference Manual
+                    for the specified chiller type are used.
                 </p>
 
             </div>
@@ -144,41 +152,79 @@
 
                 <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016 and 2019/2022 ECB</h5>
-                    <p><strong>Table 11.5.2-1/12.5.2-1 Note e:</strong> The chiller plant of budget Systems 1, 2, 5 and 7 must be modeled with chiller quantity based on Table 11.5.2-2/12.5.2-2 and chiller type based on Table 11.5.2-3/12.5.2-3. If the proposed design includes both electric and fossil fuel chillers, the budget building design must have chillers with the same fuel types and capacity allocation between electric and fossil fuel. If the proposed design uses purchased chilled water, the chillers should not be explicitly modeled in the budget design and chilled-water costs shall be as determined in Section 11.4.3/12.4.3. Budget chillers efficiency must be based on Table 6.8.1-3 Path A (11.5.2 b/12.5.2 b).
+                    <p>
+                        <strong>Table 11.5.2-1/12.5.2-1 Note e:</strong> The chiller plant of budget Systems 1, 2, 5 and
+                        7 must be modeled with chiller quantity based on Table 11.5.2-2/12.5.2-2 and chiller type based
+                        on Table 11.5.2-3/12.5.2-3. If the proposed design includes both electric and fossil fuel
+                        chillers, the budget building design must have chillers with the same fuel types and capacity
+                        allocation between electric and fossil fuel. If the proposed design uses purchased chilled
+                        water, the chillers should not be explicitly modeled in the budget design and chilled-water
+                        costs shall be as determined in Section 11.4.3/12.4.3. Budget chillers efficiency must be based
+                        on Table 6.8.1-3 Path A (11.5.2 b/12.5.2 b).
                     </p>
-                    <p>New in 90.1 2022 Section 12.5.2b the 90.1 Standard now prescribes that the sets of performance curves specified in 90.1 Appendix J Table J-1 should be used to represent part-load performance of chillers in the budget building design.
+                    <p>
+                        New in 90.1 2022 Section 12.5.2b the 90.1 Standard now prescribes that the sets of performance
+                        curves specified in 90.1 Appendix J Table J-1 should be used to represent part-load performance
+                        of chillers in the budget building design.
                     </p>
                 </div>
 
                 <div data-version="2016,2019" data-path="PRM">
                     <h5>90.1 2016 and 2019 PRM</h5>
-                    <p><strong>Section G3.1.3.7</strong> Baseline Systems 7, 8, 11, 12 and 13 must be modeled with electric chillers, except for
-                        projects that use purchased chilled water (Sections G3.1.1.3.2 and G3.1.1.3.3). The number of chillers,
-                        chiller type and efficiency must be established based on the baseline peak cooling load as described in
-                        Tables G3.1.3.7 and G3.5.3.
+                    <p>
+                        <strong>Section G3.1.3.7</strong> Baseline Systems 7, 8, 11, 12 and 13 must be modeled with
+                        electric chillers, except for projects that use purchased chilled water (Sections G3.1.1.3.2 and
+                        G3.1.1.3.3). The number of chillers, chiller type and efficiency must be established based on
+                        the baseline peak cooling load as described in Tables G3.1.3.7 and G3.5.3.
                     </p>
                 </div>
 
                 <div data-version="2022" data-path="PRM">
                     <h5>90.1 2022 PRM</h5>
                     <strong><u>G3.2 New Construction/Major Alterations</u></strong>
-                    <p><strong>Section G3.2.3.7</strong> requirements are similar to the requirement described above for the 90.1 2016 and 2019 PRM except that G3.2.2.1 now prescribes that the sets of performance curves specified in Appendix J Table J-2 should be used to represent part-load performance of chillers in the baseline building design.
+                    <p>
+                        <strong>Section G3.2.3.7</strong> requirements are similar to the requirement described above
+                        for the 90.1 2016 and 2019 PRM except that G3.2.2.1 now prescribes that the sets of performance
+                        curves specified in Appendix J Table J-2 should be used to represent part-load performance of
+                        chillers in the baseline building design.
                     </p>
                     <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022 Section G3.3 are required to model the chiller type and quantity the same in the baseline and proposed. In addition, baseline systems shall meet the requirements in Section 6.1.4 and chillers shall meet the efficiency requirements in Table 6.8.1-3 using Path A or Path B, the same as the proposed design. If the proposed design meets both Path A and Path B requirements, Path A shall be used. The baseline performance curves can be modeled with the sets of performance curves specified in 90.1 Appendix J Table J-1 to represent part-load performance of chillers in the baseline building design.
+                    <p>
+                        The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
+                        Section G3.3 are required to model the chiller type and quantity the same in the baseline and
+                        proposed. In addition, baseline systems shall meet the requirements in Section 6.1.4 and
+                        chillers shall meet the efficiency requirements in Table 6.8.1-3 using Path A or Path B, the
+                        same as the proposed design. If the proposed design meets both Path A and Path B requirements,
+                        Path A shall be used. The baseline performance curves can be modeled with the sets of
+                        performance curves specified in 90.1 Appendix J Table J-1 to represent part-load performance of
+                        chillers in the baseline building design.
                     </p>
                 </div>
 
                 <div data-path="PRM">
                     <h5>Review Tips – PRM</h5>
                     <ol>
-                        <li>Refer to <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac01-b">90.1 2022 Section G3.3 Performance Calculations for Other Alterations</a> for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
+                        <li>
+                            Refer to
+                            <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac01-b">
+                                90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                            </a>
+                            for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
                         </li>
-                        <li>Baseline chillers are shown in Table 4a on the Baseline HVAC PRM tab. User inputs are limited to the building peak cooling load and the basis of the modeled performance curves. The rest of the fields are auto-populated based on the applicable Appendix G rules and are non-editable.
+                        <li>
+                            Baseline chillers are shown in Table 4a on the Baseline HVAC PRM tab. User inputs are
+                            limited to the building peak cooling load and the basis of the modeled performance curves.
+                            The rest of the fields are auto-populated based on the applicable Appendix G rules and are
+                            non-editable.
                         </li>
-                        <li>Verify that the entered building peak cooling load reflects simulation results for the baseline model.
+                        <li>
+                            Verify that the entered building peak cooling load reflects simulation results for the
+                            baseline model.
                         </li>
-                        <li>Verify that PNNL Performance Rating Method Reference Manual (PRM RM) is selected as the basis for baseline performance curves or, for 90.1 2022 projects, the performance curves specified in 90.1 2022 Appendix J Table J-2.
+                        <li>
+                            Verify that PNNL Performance Rating Method Reference Manual (PRM RM) is selected as the
+                            basis for baseline performance curves or, for 90.1 2022 projects, the performance curves
+                            specified in 90.1 2022 Appendix J Table J-2.
                             <figure>
                                 <img src="../assets/images/Sections_1-6/CF_PRM_curves.png" style="max-width: 750px;">
                             </figure>
@@ -189,14 +235,24 @@
                 <div data-path="ECB">
                     <h5>Review Tips – ECB</h5>
                     <ol>
-                        <li>Chillers included in the budget design are shown in Table 4a of the Budget HVAC ECB tab. User inputs are limited to the chiller plant capacity, fuel type and the basis of the modeled performance curves. The rest of the fields are auto-populated based on the applicable rules of the ECB and are non-editable.
+                        <li>
+                            Chillers included in the budget design are shown in Table 4a of the Budget HVAC ECB tab.
+                            User inputs are limited to the chiller plant capacity, fuel type and the basis of the
+                            modeled performance curves. The rest of the fields are auto-populated based on the
+                            applicable rules of the ECB and are non-editable.
                             <figure>
                                 <img src="../assets/images/Sections_1-6/CF_chiller_plant.png" style="max-width: 750px;">
                             </figure>
                         </li>
-                        <li>Verify that the entered chiller capacity reflects simulation results for the budget model.
+                        <li>
+                            Verify that the entered chiller capacity reflects simulation results for the budget model.
                         </li>
-                        <li>For 90.1 2016 and 2019 projects, verify that PNNL Performance Rating Method Reference Manual (PRM RM) is selected as the basis for baseline performance curves or, if the PRM RM curves are not used, verify that the modeled curves are appropriate. For 90.1 2022 projects, verify that “90.1 2022 Appendix J Table J-1” is selected as the “Basis of Modeled Performance Curves”.
+                        <li>
+                            For 90.1 2016 and 2019 projects, verify that PNNL Performance Rating Method Reference Manual
+                            (PRM RM) is selected as the basis for baseline performance curves or, if the PRM RM curves
+                            are not used, verify that the modeled curves are appropriate. For 90.1 2022 projects, verify
+                            that “90.1 2022 Appendix J Table J-1” is selected as the “Basis of Modeled Performance
+                            Curves”.
                         </li>
                     </ol>
                 </div>
@@ -207,7 +263,11 @@
                 <h3>WHVAC02 - B,P: Chillers are modeled as reported in the Compliance Form</h3>
                 <h5>Review Tips</h5>
                     <ol>
-                        <li>Review simulation reports to verify that the modeled chiller type, capacity and efficiency matches information provided in the Compliance Form. The following conversions may be used if chiller efficiency provided in the Compliance Form is expressed in different units than simulation tool inputs.
+                        <li>
+                            Review simulation reports to verify that the modeled chiller type, capacity and efficiency
+                            matches information provided in the Compliance Form. The following conversions may be used
+                            if chiller efficiency provided in the Compliance Form is expressed in different units than
+                            simulation tool inputs.
                         </li>
                     </ol>
                 <p>EER = COP*3.412</p>
@@ -404,25 +464,23 @@
                 <h5>Review Tips</h5>
                 <ol>
                     <li>Background
-                        <p>The annual average realized chiller efficiency is the ratio of the annual load on the chiller to the annual energy used by the chiller. The average realized efficiency is expected to be similar to chiller part load efficiency. Different than expected average efficiency may be due to the following:
+                        <p>
+                            The annual average realized chiller efficiency is the ratio of the annual load on the
+                            chiller to the annual energy used by the chiller. The average realized efficiency is
+                            expected to be similar to chiller part load efficiency. Different than expected average
+                            efficiency may be due to the following:
                         </p>
                         <ol style="list-style-type: lower-alpha">
-                            <li>Inappropriate performance curves (e.g., using software defaults or incorrect custom performance curves)
-                            </li>
-                            <li>Incorrect rated full load efficiency input
-                            </li>
-                            <li>Incorrect CHW loop controls such as design supply water temperature and temperature drop
-                            </li>
-                            <li>Chiller operating conditions are significantly different from AHRI rated conditions.
-                            </li>
+                            <li>Inappropriate performance curves (e.g., using software defaults or incorrect custom performance curves)</li>
+                            <li>Incorrect rated full load efficiency input</li>
+                            <li>Incorrect CHW loop controls such as design supply water temperature and temperature drop</li>
+                            <li>Chiller operating conditions are significantly different from AHRI rated conditions.</li>
                         </ol>
                     </li>
                     <li>The following should be flagged as it may result in overly optimistic compliance outcomes:
                         <ol style="list-style-type: lower-alpha">
-                            <li>Average realized baseline (budget) chiller efficiency worse than expected
-                            </li>
-                            <li>Average annual realized proposed chiller efficiency better than expected
-                            </li>
+                            <li>Average realized baseline (budget) chiller efficiency worse than expected</li>
+                            <li>Average annual realized proposed chiller efficiency better than expected</li>
                         </ol>
                     </li>
                 </ol>
@@ -615,15 +673,19 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Chilled water (CHW) plant loop arrangement (e.g. primary/secondary) and controls are reported in Table 5a of the Compliance Form on the Proposed HVAC tab.
+                    <li>
+                        Chilled water (CHW) plant loop arrangement (e.g. primary/secondary) and controls are reported in
+                        Table 5a of the Compliance Form on the Proposed HVAC tab.
                         <figure>
                             <img src="../assets/images/Sections_1-6/CF_CHW_temp.png" style="max-width: 750px;">
                         </figure>
                     </li>
-                    <li>Verify that the reported CHW loop configuration and controls reported in the Compliance Form reflect design documents. The applicable design documents are referenced in a dedicated field below the table.
+                    <li>
+                        Verify that the reported CHW loop configuration and controls reported in the Compliance Form
+                        reflect design documents. The applicable design documents are referenced in a dedicated field
+                        below the table.
                     </li>
                 </ol>
-
             </div>
 
             <!--WHVAC04-B Section -->
@@ -632,29 +694,58 @@
 
                 <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016 and 2019/2022 ECB</h5>
-                     <p><strong>Table 11.5.2-1/12.5.2-1 Note e:</strong>  44°F design chilled-water supply temperature and 56°F return temperature must be modeled.  The chilled-water supply water temperature must be reset in accordance with 90.1 Section 6.5.4.4.
+                     <p>
+                         <strong>Table 11.5.2-1/12.5.2-1 Note e:</strong>  44°F design chilled-water supply temperature
+                         and 56°F return temperature must be modeled.  The chilled-water supply water temperature must
+                         be reset in accordance with 90.1 Section 6.5.4.4.
                     </p>
                 </div>
 
                 <div data-version="2016,2019" data-path="PRM">
                     <h5>90.1 2016 and 2019 PRM</h5>
-                     <p>The chilled-water design supply temperature for Systems 7,8,11,12 and 13 must be modeled at 44°F and return water temperature at 56°F (Section G3.1.3.8). Supply temperature must be reset based on outdoor dry-bulb temperature using the following schedule: 44°F at 80°F and above, 54°F at 60°F and below and ramped linearly between 44°F and 54°F at temperatures between 80°F and 60°F (Section G3.1.3.9). Exceptions apply to chilled water systems serving computer rooms or using purchased chilled water (exception to Section G3.1.3.9).
+                     <p>
+                         The chilled-water design supply temperature for Systems 7,8,11,12 and 13 must be modeled at
+                         44°F and return water temperature at 56°F (Section G3.1.3.8). Supply temperature must be reset
+                         based on outdoor dry-bulb temperature using the following schedule: 44°F at 80°F and above,
+                         54°F at 60°F and below and ramped linearly between 44°F and 54°F at temperatures between 80°F
+                         and 60°F (Section G3.1.3.9). Exceptions apply to chilled water systems serving computer rooms
+                         or using purchased chilled water (exception to Section G3.1.3.9).
                      </p>
                 </div>
 
                 <div data-version="2022" data-path="PRM">
                     <h5>90.1 2022 PRM</h5>
                     <strong><u>G3.2 New Construction/Major Alterations</u></strong>
-                    <p><strong>Section G3.2.3.8 and Section G3.2.3.9</strong> requirements are the same as described above for the 90.1 2016 and 2019 PRM.
+                    <p>
+                        <strong>Section G3.2.3.8 and Section G3.2.3.9</strong> requirements are the same as described
+                        above for the 90.1 2016 and 2019 PRM.
                     </p>
                     <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022 Section G3.3 are required to model systems and equipment included in the scope of retrofit at efficiency levels meeting the mandatory and prescriptive requirements in Section 6.1.4. If there are no applicable requirements, then the systems and components are modeled identically in the baseline and proposed. For most alterations 90.1 Section 6.5.4.4 (Chilled- and Hot-Water Temperature Reset Controls) will not be applicable to the baseline and the reset schedule will be modeled identically in the baseline and proposed (if there is a reset scheduled specified in the proposed design). However, if the alteration includes new cooling systems installed to serve previously uncooled spaces, then the baseline is required to be modeled as meeting the minimum requirements of 90.1 Section 6.5.4.4 (Chilled- and Hot-Water Temperature Reset Controls).
+                    <p>
+                        The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
+                        Section G3.3 are required to model systems and equipment included in the scope of retrofit at
+                        efficiency levels meeting the mandatory and prescriptive requirements in Section 6.1.4. If there
+                        are no applicable requirements, then the systems and components are modeled identically in the
+                        baseline and proposed. For most alterations 90.1 Section 6.5.4.4 (Chilled- and Hot-Water
+                        Temperature Reset Controls) will not be applicable to the baseline and the reset schedule will
+                        be modeled identically in the baseline and proposed (if there is a reset scheduled specified in
+                        the proposed design). However, if the alteration includes new cooling systems installed to serve
+                        previously uncooled spaces, then the baseline is required to be modeled as meeting the minimum
+                        requirements of 90.1 Section 6.5.4.4 (Chilled- and Hot-Water Temperature Reset Controls).
                     </p>
                 </div>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>CHW plant loop arrangement and controls are reported in Table 6a of the Budget HVAC ECB tab (shown) or Table 6a of the Baseline HVAC PRM tab, depending on the compliance path followed by the project. The inputs are auto-populated based on the applicable requirements of 90.1. Over-written defaults are shown in brown font and should be verified. Refer to <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac04-b">90.1 2022 Section G3.3 Performance Calculations for Other Alterations</a> for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
+                    <li>
+                        CHW plant loop arrangement and controls are reported in Table 6a of the Budget HVAC ECB tab
+                        (shown) or Table 6a of the Baseline HVAC PRM tab, depending on the compliance path followed by
+                        the project. The inputs are auto-populated based on the applicable requirements of 90.1.
+                        Over-written defaults are shown in brown font and should be verified. Refer to
+                        <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac04-b">
+                            90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                        </a>
+                        for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
                          <figure>
                             <img src="../assets/images/Sections_1-6/CF_loop-control.png" style="max-width: 750px;">
                         </figure>
@@ -669,7 +760,9 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Use simulation reports to verify that the modeled chilled water loop configuration (i.e. primary/secondary) and temperature controls are modeled as reported in the Compliance Form.
+                    <li>
+                        Use simulation reports to verify that the modeled chilled water loop configuration
+                        (i.e. primary/secondary) and temperature controls are modeled as reported in the Compliance Form.
                     </li>
                 </ol>
 
@@ -855,12 +948,17 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Details of the specified CHW pumps are reported in Table 5a of the Proposed HVAC tab. Verify alignment between Compliance Form and design documents. (The applicable design documents must be listed below the table.)
+                    <li>
+                        Details of the specified CHW pumps are reported in Table 5a of the Proposed HVAC tab. Verify
+                        alignment between Compliance Form and design documents. (The applicable design documents must be
+                        listed below the table.)
                         <figure>
                             <img src="../assets/images/Section_7_Simulation_Reports/CF_loops.png" style="max-width: 750px;">
                         </figure>
                     </li>
-                    <li>If values provided on drawings (Figure 42) must be expressed in different units, the conversions must be documented in the submittal. Common conversions are included below.
+                    <li>
+                        If values provided on drawings (Figure 42) must be expressed in different units, the conversions
+                        must be documented in the submittal. Common conversions are included below.
                         <p>Pump Power [W] = BHP*746 / Effy</p>
                         <p>Effy = pump motor efficiency</p>
                         <p><strong>Figure 42: Pump Design </strong></p>
@@ -873,33 +971,74 @@
 
             <!--WHVAC06-B Section -->
             <div id="whvac06-b" class="card card-body mb-3" data-check-type="4" data-component="chiller" data-model="B">
-                <h3>WHVAC06–B Baseline/budget chilled water pump system parameters reported in the Compliance Form are established correctly</h3>
+                <h3>WHVAC06–B Baseline/budget chilled water pump system parameters reported in the Compliance Form are
+                    established correctly</h3>
 
                 <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016 and 2019/2022 ECB</h5>
-                    <p><strong>Table 11.5.2-1/12.5.2-1 Note e:</strong> The pump system power for each pumping system shall be the same as for the proposed design.  If the proposed design has no chilled-water pumps, the budget building design pump power shall be 22 W/gpm (equal to a pump operating against a 75 ft head, 65% combined impeller and motor efficiency). The chilled-water system shall be modeled as primary-only variable flow with flow maintained at the design rate through each chiller using a bypass. Chilled-water pumps must be modeled as riding the pump curve or with variable-speed drives when required in 90.1 Section 6.5.4.2. Each chiller shall be modeled with separate condenser water and chilled-water pumps interlocked to operate with the associated chiller.
+                    <p>
+                        <strong>Table 11.5.2-1/12.5.2-1 Note e:</strong> The pump system power for each pumping system
+                        shall be the same as for the proposed design.  If the proposed design has no chilled-water
+                        pumps, the budget building design pump power shall be 22 W/gpm (equal to a pump operating
+                        against a 75 ft head, 65% combined impeller and motor efficiency). The chilled-water system
+                        shall be modeled as primary-only variable flow with flow maintained at the design rate through
+                        each chiller using a bypass. Chilled-water pumps must be modeled as riding the pump curve or
+                        with variable-speed drives when required in 90.1 Section 6.5.4.2. Each chiller shall be modeled
+                        with separate condenser water and chilled-water pumps interlocked to operate with the associated
+                        chiller.
                     </p>
                 </div>
 
                 <div data-version="2016,2019" data-path="PRM">
                     <h5>90.1 2016 and 2019 PRM</h5>
-                    <p><strong>Section G3.1.3.10 </strong>Chilled-water systems shall be modeled as primary/secondary with constant flow primary loop and variable-flow secondary loop. For systems with a cooling capacity of 300 tons or more, the secondary pump shall be modeled with variable-speed drives and a minimum flow of 25% of the design flow rate. For systems with less than 300 tons cooling capacity, the secondary pump shall be modeled as riding the pump curve. The baseline building constant-volume primary pump power shall be modeled as 9 W/gpm and the variable-flow secondary pump power shall be modeled as 13 W/gpm at design conditions. See Section G3.1.3.10 for chilled water pump system parameters for baseline systems serving computer rooms (System 11) and projects with purchased chilled water (Section G3.1.1.3.2 and G3.1.1.3.3).
+                    <p>
+                        <strong>Section G3.1.3.10 </strong>Chilled-water systems shall be modeled as primary/secondary
+                        with constant flow primary loop and variable-flow secondary loop. For systems with a cooling
+                        capacity of 300 tons or more, the secondary pump shall be modeled with variable-speed drives and
+                        a minimum flow of 25% of the design flow rate. For systems with less than 300 tons cooling
+                        capacity, the secondary pump shall be modeled as riding the pump curve. The baseline building
+                        constant-volume primary pump power shall be modeled as 9 W/gpm and the variable-flow secondary
+                        pump power shall be modeled as 13 W/gpm at design conditions. See Section G3.1.3.10 for chilled
+                        water pump system parameters for baseline systems serving computer rooms (System 11) and
+                        projects with purchased chilled water (Section G3.1.1.3.2 and G3.1.1.3.3).
                     </p>
                 </div>
 
                 <div data-version="2022" data-path="PRM">
                     <h5>90.1 2022 PRM</h5>
                     <strong><u>G3.2 New Construction/Major Alterations</u></strong>
-                    <p><strong>Section G3.2.3.10 </strong>requirements are the same as described above for the 90.1 2016 and 2019 PRM Section G3.1.3.10.
+                    <p>
+                        <strong>Section G3.2.3.10 </strong>requirements are the same as described above for the 90.1
+                        2016 and 2019 PRM Section G3.1.3.10.
                     </p>
                     <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor Alterations) are required to model systems and equipment included in the scope of retrofit at efficiency levels meeting the mandatory and prescriptive requirements in Sections 6 and 10. Section 10.1.4 includes minimum motor efficiency requirements that should be modeled for the pump motors included in the scope of the alteration in the baseline. 90.1 Section 6 requirements depend on the scope of the alteration and the language in 90.1 Section 6.1.4. With regard to 90.1 Section 6, if there are no applicable requirements then the systems and components are modeled identically in the baseline and proposed. For most alterations 90.1 Section 6.5.4.2 (Hydronic Variable Flow Systems) will not be applicable to the baseline and the flow systems and controls will be modeled identically in the baseline and proposed. However, if the alteration includes new cooling systems installed to serve previously uncooled spaces, then the baseline is required to be modeled as meeting the minimum requirements of 90.1 Section 6.5.4.2 (Hydronic Variable Flow Systems).
+                    <p>
+                        The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
+                        Section G3.3 (i.e., Minor Alterations) are required to model systems and equipment included in
+                        the scope of retrofit at efficiency levels meeting the mandatory and prescriptive requirements
+                        in Sections 6 and 10. Section 10.1.4 includes minimum motor efficiency requirements that should
+                        be modeled for the pump motors included in the scope of the alteration in the baseline. 90.1
+                        Section 6 requirements depend on the scope of the alteration and the language in 90.1 Section
+                        6.1.4. With regard to 90.1 Section 6, if there are no applicable requirements then the systems
+                        and components are modeled identically in the baseline and proposed. For most alterations 90.1
+                        Section 6.5.4.2 (Hydronic Variable Flow Systems) will not be applicable to the baseline and the
+                        flow systems and controls will be modeled identically in the baseline and proposed. However, if
+                        the alteration includes new cooling systems installed to serve previously uncooled spaces, then
+                        the baseline is required to be modeled as meeting the minimum requirements of 90.1 Section
+                        6.5.4.2 (Hydronic Variable Flow Systems).
                     </p>
                 </div>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Parameters of the baseline CHW pumps are reported in Table 6a of the Baseline HVAC PRM tab (shown) or Budget HVAC ECB tab. All required inputs are auto-populated based on the applicable 90.1 rules. Over-written defaults should be checked. Refer to <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac06-b">90.1 2022 Section G3.3 Performance Calculations for Other Alterations</a> for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
+                    <li>
+                        Parameters of the baseline CHW pumps are reported in Table 6a of the Baseline HVAC PRM tab
+                        (shown) or Budget HVAC ECB tab. All required inputs are auto-populated based on the applicable
+                        90.1 rules. Over-written defaults should be checked. Refer to
+                        <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac06-b">
+                            90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                        </a>
+                        for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
                         <figure>
                             <img src="../assets/images/Sections_1-6/CF_BL_loops.png" style="max-width: 750px;">
                         </figure>
@@ -914,7 +1053,10 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Review simulation reports to verify that chilled water pumps were modeled as reported in the Compliance form including pump design flow (GPM), power (kW, or BHP and motor efficiency) and flow control (one/two speed, VSD).
+                    <li>
+                        Review simulation reports to verify that chilled water pumps were modeled as reported in the
+                        Compliance form including pump design flow (GPM), power (kW, or BHP and motor efficiency) and
+                        flow control (one/two speed, VSD).
                     </li>
                 </ol>
 
@@ -1104,7 +1246,10 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Review simulation reports to confirm that CHW loop configuration (i.e. primary/secondary), design flow (GPM) and flow control (three-way or two-way valves) are modeled as reported in the Compliance Form.
+                    <li>
+                        Review simulation reports to confirm that CHW loop configuration (i.e. primary/secondary),
+                        design flow (GPM) and flow control (three-way or two-way valves) are modeled as reported in the
+                        Compliance Form.
                     </li>
                 </ol>
 
@@ -1296,8 +1441,14 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Background: Pump energy depends on pump design BHP, pump motor efficiency, whether the flow is constant or variable, with two-way valves in the loop, whether there is a VSD on pump motor and VSD controls such as differential pressure reset. The typical power draw at part load conditions is shown in Table 7, based on the same part load operation assumptions as for the part load cooling efficiency (IPLV), including 1% at 100% of the load, 42% at 25% of the load, 45% at 50% of the load and 12% at 25% of the load).
-                    <p><strong>Table 7: Pump Performance at Part Load Conditions</strong></p>
+                    <li>
+                        Background: Pump energy depends on pump design BHP, pump motor efficiency, whether the flow is
+                        constant or variable, with two-way valves in the loop, whether there is a VSD on pump motor and
+                        VSD controls such as differential pressure reset. The typical power draw at part load conditions
+                        is shown in Table 7, based on the same part load operation assumptions as for the part load
+                        cooling efficiency (IPLV), including 1% at 100% of the load, 42% at 25% of the load, 45% at 50%
+                        of the load and 12% at 25% of the load).
+                        <p><strong>Table 7: Pump Performance at Part Load Conditions</strong></p>
                         <table border="1">
                             <thead>
                                 <tr style="background-color: #D3D3D3">
@@ -1573,12 +1724,15 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Parameters of the proposed condenser water (CW) loop are reported in Table 5a of the Proposed HVAC tab. Verify that information included in the Compliance Form reflects design documents.
+                    <li>
+                        Parameters of the proposed condenser water (CW) loop are reported in Table 5a of the Proposed
+                        HVAC tab. Verify that information included in the Compliance Form reflects design documents.
                     </li>
-                    <li>Cooling tower details are reported in Table 6a of the Proposed HVAC tab. Verify that information included in the Compliance Form reflects design documents.
+                    <li>
+                        Cooling tower details are reported in Table 6a of the Proposed HVAC tab. Verify that information
+                        included in the Compliance Form reflects design documents.
                     </li>
                 </ol>
-
             </div>
 
             <!--WHVAC10-B Section -->
@@ -1587,13 +1741,25 @@
 
                 <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016 and 2019/2022 ECB</h5>
-                    <p><strong>Table 11.5.2-1/12.5.1-1 Note e </strong>The heat-rejection device is an open-circuit axial-fan cooling tower with variable-speed fan control if required in 90.1 Section 6.5.5 and must meet the performance requirements of 90.1 Table 6.8.1-7. Condenser water design supply temperature and controls must be as described in 90.1 Table 11.5.2-1/12.5.1-1 Note e. Pump system power for each pumping system shall be the same as the proposed design; if the proposed design has no condenser water pumps, the budget building design pump power must be 19 W/gpm (equal to a pump operating against a 60 ft head, 60% combined impeller and motor efficiency).
+                    <p>
+                        <strong>Table 11.5.2-1/12.5.1-1 Note e </strong>The heat-rejection device is an open-circuit
+                        axial-fan cooling tower with variable-speed fan control if required in 90.1 Section 6.5.5 and
+                        must meet the performance requirements of 90.1 Table 6.8.1-7. Condenser water design supply
+                        temperature and controls must be as described in 90.1 Table 11.5.2-1/12.5.1-1 Note e. Pump
+                        system power for each pumping system shall be the same as the proposed design; if the proposed
+                        design has no condenser water pumps, the budget building design pump power must be 19 W/gpm
+                        (equal to a pump operating against a 60 ft head, 60% combined impeller and motor efficiency).
                     </p>
                 </div>
 
                 <div data-version="2016,2019" data-path="PRM">
                     <h5>90.1 2016 and 2019 PRM</h5>
-                    <p><strong>Section G3.1.3.11 </strong>The heat-rejection device is an axial-fan open-circuit cooling tower with variable speed fan control and efficiency of 38.2 gpm/hp at the conditions specified in 90.1 Table 6.8.1-7. Temperature controls must be as described in 90.1 Section G3.1.3.11 and 90.1 Table G3.1.3.11. The condenser-water pump power shall be 19 W/gpm and modeled as constant volume.
+                    <p>
+                        <strong>Section G3.1.3.11 </strong>The heat-rejection device is an axial-fan open-circuit
+                        cooling tower with variable speed fan control and efficiency of 38.2 gpm/hp at the conditions
+                        specified in 90.1 Table 6.8.1-7. Temperature controls must be as described in 90.1 Section
+                        G3.1.3.11 and 90.1 Table G3.1.3.11. The condenser-water pump power shall be 19 W/gpm and modeled
+                        as constant volume.
                     </p>
                 </div>
 
@@ -1603,21 +1769,41 @@
                     <p><strong>Section G3.2.3.11: </strong>Requirements are the same as described above for 90.1 2016 and 2019 PRM Section G3.1.3.11.
                     </p>
                     <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022 Section G3.3 are required to model heat rejection system parameters as minimally compliant with 90.1 2022 Section 6.1.4 in the baseline. This, at minimum, includes modeling the heat rejection equipment as minimally compliant with 90.1 Table 6.8.1-7 and 90.1 Section 6.5.5.2 which includes requirements for fan speed control. Other baseline requirements may be triggered in the case where a new cooling system is being installed to serve previously uncooled spaces as this makes it such that all 90.1 Section 6 mandatory and prescriptive requirements are applicable to establishing baseline modeling parameters. In all cases, the same type of heat rejection equipment shall be modeled in the baseline and proposed.
+                    <p>
+                        The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
+                        Section G3.3 are required to model heat rejection system parameters as minimally compliant with
+                        90.1 2022 Section 6.1.4 in the baseline. This, at minimum, includes modeling the heat rejection
+                        equipment as minimally compliant with 90.1 Table 6.8.1-7 and 90.1 Section 6.5.5.2 which includes
+                        requirements for fan speed control. Other baseline requirements may be triggered in the case
+                        where a new cooling system is being installed to serve previously uncooled spaces as this makes
+                        it such that all 90.1 Section 6 mandatory and prescriptive requirements are applicable to
+                        establishing baseline modeling parameters. In all cases, the same type of heat rejection
+                        equipment shall be modeled in the baseline and proposed.
                     </p>
                 </div>
 
                 <div data-path="PRM">
                     <h5>Review Tips – PRM</h5>
                     <ol>
-                        <li>Refer to <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac10-b">90.1 2022 Section G3.3 Performance Calculations for Other Alterations</a> for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
+                        <li>
+                            Refer to
+                            <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac10-b">
+                                90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                            </a>
+                            for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
                         </li>
-                        <li>Baseline cooling tower(s) are described in Table 4a of the Baseline HVAC PRM tab. The prescribed inputs are auto-populated based on the applicable 90.1 rules and are non-editable.
+                        <li>
+                            Baseline cooling tower(s) are described in Table 4a of the Baseline HVAC PRM tab. The
+                            prescribed inputs are auto-populated based on the applicable 90.1 rules and are
+                            non-editable.
                             <figure>
                                 <img src="../assets/images/Sections_1-6/CF_cooling-tower.png" style="max-width: 750px;">
                             </figure>
                         </li>
-                        <li>Baseline condenser loop is described in Table 6a of the Baseline HVAC PRM tab. The prescribed fields are auto populated based on 90.1 rules. Over-written defaults are shown in brown font and should be verified to confirm that changes are justified.
+                        <li>
+                            Baseline condenser loop is described in Table 6a of the Baseline HVAC PRM tab. The
+                            prescribed fields are auto populated based on 90.1 rules. Over-written defaults are shown in
+                            brown font and should be verified to confirm that changes are justified.
                             <figure>
                                 <img src="../assets/images/Sections_1-6/CF_BL_loops2.png" style="max-width: 750px;">
                             </figure>
@@ -1628,19 +1814,21 @@
                 <div data-path="ECB">
                     <h5>Review Tips – ECB</h5>
                     <ol>
-                        <li>Budget cooling tower(s) are described in Table 4a of the Budget HVAC ECB tab. Budget condenser water loop parameters are shown in Table 6a. The prescribed inputs are auto populated with default based on the applicable rules of the ECB. Over-written defaults are shown in brown font and should be verified to confirm that changes are justified.
+                        <li>
+                            Budget cooling tower(s) are described in Table 4a of the Budget HVAC ECB tab. Budget
+                            condenser water loop parameters are shown in Table 6a. The prescribed inputs are
+                            auto-populated with default based on the applicable rules of the ECB. Over-written defaults
+                            are shown in brown font and should be verified to confirm that changes are justified.
                         </li>
                     </ol>
                 </div>
-
             </div>
 
             <!--WHVAC11 Section -->
             <div id="whvac11" class="card card-body mb-3" data-check-type="5" data-component="chiller" data-model="B,P">
                 <h3>WHVAC11-B,P Heat rejection system is modeled as reported in the Compliance Form</h3>
                 <h5>Review Tips – ECB</h5>
-                <p>Verify that modeled parameters of the heat rejection system(s) are as reported in the Compliance Form.
-                </p>
+                <p>Verify that modeled parameters of the heat rejection system(s) are as reported in the Compliance Form.</p>
 
                 <div class="annotated-report container">
                     <div class="row" data-bem-tool="eQUEST">
@@ -1826,27 +2014,40 @@
 
             <!--WHVAC12-P Section -->
             <div id="whvac12-p" class="card card-body mb-3" data-check-type="2,3" data-component="boiler" data-model="P">
-                <h3>WHVAC12-P Proposed space heating boilers reported in the Compliance Form reflect design documents and meet the minimum efficiency requirements</h3>
+                <h3>WHVAC12-P Proposed space heating boilers reported in the Compliance Form reflect design documents
+                    and meet the minimum efficiency requirements</h3>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Specified space heating boilers are reported in Table 7a of the Proposed HVAC tab.
-                    </li>
-                    <li>Confirm that reported boiler type, fuel source, quantity, capacity and efficiency reflect design documents. The design documents where the information may be found (e.g. drawing number) must be included in a dedicated field below the table.
+                    <li>Specified space heating boilers are reported in Table 7a of the Proposed HVAC tab.</li>
+                    <li>
+                        Confirm that reported boiler type, fuel source, quantity, capacity and efficiency reflect design
+                        documents. The design documents where the information may be found (e.g. drawing number) must be
+                        included in a dedicated field below the table.
                         <figure>
                             <img src="../assets/images/Sections_1-6/CF_heating-plants.png" style="max-width: 750px;">
                         </figure>
                     </li>
-                    <li>Verify that efficiency of the specified spacy heating boilers meets 90.1 minimum efficiency requirements. (The applicable requirements are quoted in Table 7a.) If the specified boilers have lower efficiency or if the default minimum requirements are over-written, the submittal must be flagged. These requirements are mandatory and must be met.
+                    <li>
+                        Verify that efficiency of the specified spacy heating boilers meets 90.1 minimum efficiency
+                        requirements. (The applicable requirements are quoted in Table 7a.) If the specified boilers
+                        have lower efficiency or if the default minimum requirements are over-written, the submittal
+                        must be flagged. These requirements are mandatory and must be met.
                     </li>
-                    <li>Variations in boiler performance at a range of operating conditions are typically simulated using performance curves. The basis of the modeled performance curves may include the following:
+                    <li>
+                        Variations in boiler performance at a range of operating conditions are typically simulated
+                        using performance curves. The basis of the modeled performance curves may include the following:
                         <ol style="list-style-type: lower-alpha">
-                            <li>PNNL Performance Rating Method Reference Manual
-                            </li>
-                            <li>Custom curves based on chiller performance data from the equipment manufacturer.
-                            </li>
+                            <li>PNNL Performance Rating Method Reference Manual</li>
+                            <li>Custom curves based on chiller performance data from the equipment manufacturer.</li>
                         </ol>
-                        <p>If custom curves are used, confirm that supporting information is included in the submittal as required (Submittal Checklist #21). The provided curves may be directly reviewed. Alternatively, the annual average achieved boiler efficiency may be verified to confirm general alignment with the rated efficiency (see WHVAC14). Reviewer may also request that the default performance curves from PNNL Performance Rating Method Reference Manual for the specified boiler type are used.
+                        <p>
+                            If custom curves are used, confirm that supporting information is included in the submittal
+                            as required (Submittal Checklist #21). The provided curves may be directly reviewed.
+                            Alternatively, the annual average achieved boiler efficiency may be verified to confirm
+                            general alignment with the rated efficiency (see WHVAC14). Reviewer may also request that
+                            the default performance curves from PNNL Performance Rating Method Reference Manual for the
+                            specified boiler type are used.
                         </p>
                     </li>
                 </ol>
@@ -1860,39 +2061,74 @@
                 <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016 and 2019/2022 ECB</h5>
                     <strong><u>G3.2 New Construction/Major Alterations</u></strong>
-                    <p><strong>Table 11.5.2 – 1/Table 12.5.2 – 1, Note f: </strong>The budget building design boiler plant must be modeled with a single boiler if the budget building design plant load is 600,000 Btu/h or less and with two equally sized boilers for plant capacities exceeding 600,000 Btu/h. Boilers must be staged as required by the load. Boilers must use the same fuel as the proposed building design and be natural draft. Boiler efficiency must be the minimum required in 90.1 Table 6.8.1-6. If the proposed design uses purchased hot water or steam, then purchased water or steam must also be used in the budget design in lieu of boilers and the hot-water or steam costs must be based on actual utility rates.
+                    <p>
+                        <strong>Table 11.5.2 – 1/Table 12.5.2 – 1, Note f: </strong>The budget building design boiler
+                        plant must be modeled with a single boiler if the budget building design plant load is 600,000
+                        Btu/h or less and with two equally sized boilers for plant capacities exceeding 600,000 Btu/h.
+                        Boilers must be staged as required by the load. Boilers must use the same fuel as the proposed
+                        building design and be natural draft. Boiler efficiency must be the minimum required in 90.1
+                        Table 6.8.1-6. If the proposed design uses purchased hot water or steam, then purchased water or
+                        steam must also be used in the budget design in lieu of boilers and the hot-water or steam costs
+                        must be based on actual utility rates.
                     </p>
                 </div>
 
                  <div data-version="2016,2019" data-path="PRM">
                     <h5>90.1 2016 and 2019 PRM</h5>
-                    <p><strong>Section G3.1.3.2: </strong>The boiler plant for baseline System 1, 5 and 7 must be natural draft and use natural gas. If natural gas is not available on-site as determined by AHJ, the boiler plant must use propane. Purchased heat must be modeled in the baseline instead of on-site boiler for projects that use purchased heat in the proposed design (Section G3.1.1.1). The on-site baseline boiler plant must be modeled with a single boiler if the baseline plant serves a conditioned floor area of 15,000 ft2 or less and with two equally sized boilers for plants serving more than 15,000 ft2. The boilers must be staged as required by the load.
+                    <p>
+                        <strong>Section G3.1.3.2: </strong>The boiler plant for baseline System 1, 5 and 7 must be
+                        natural draft and use natural gas. If natural gas is not available on-site as determined by AHJ,
+                        the boiler plant must use propane. Purchased heat must be modeled in the baseline instead of
+                        on-site boiler for projects that use purchased heat in the proposed design (Section G3.1.1.1).
+                        The on-site baseline boiler plant must be modeled with a single boiler if the baseline plant
+                        serves a conditioned floor area of 15,000 ft2 or less and with two equally sized boilers for
+                        plants serving more than 15,000 ft2. The boilers must be staged as required by the load.
                     </p>
                  </div>
 
                 <div data-version="2022" data-path="PRM">
                     <h5>90.1 2022 PRM</h5>
                     <strong><u>G3.2 New Construction/Major Alterations</u></strong>
-                    <p><strong>Section G3.2.3.2 </strong>requirements are the same as described above for the 90.1 2016 and 2019 PRM Section G3.1.3.2.
+                    <p>
+                        <strong>Section G3.2.3.2 </strong>requirements are the same as described above for the 90.1 2016
+                        and 2019 PRM Section G3.1.3.2.
                     </p>
                     <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p><strong>Section G3.2.3.2 </strong>Alterations subject to Section G3.3 are required to model the same quantity and type of boiler in the baseline and proposed models. Boiler efficiency shall be modeled with the minimum requirements of Table 6.8.1-6 in the baseline.
+                    <p>
+                        <strong>Section G3.2.3.2 </strong>Alterations subject to Section G3.3 are required to model the
+                        same quantity and type of boiler in the baseline and proposed models. Boiler efficiency shall be
+                        modeled with the minimum requirements of Table 6.8.1-6 in the baseline.
                     </p>
                 </div>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>For PRM projects, the baseline space heating boilers are reported in Table 5a of the Baseline HVAC PRM tab (shown). For ECB projects, budget design boilers are shown in Table 5a of the Budget HVAC ECB tab. Refer to <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac12-b">90.1 2022 Section G3.3 Performance Calculations for Other Alterations</a> for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
+                    <li>
+                        For PRM projects, the baseline space heating boilers are reported in Table 5a of the Baseline
+                        HVAC PRM tab (shown). For ECB projects, budget design boilers are shown in Table 5a of the
+                        Budget HVAC ECB tab. Refer to
+                        <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac12-b">
+                            90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                        </a>
+                        for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
                     </li>
-                    <li>Confirm that reported boiler type, fuel source, quantity, capacity and efficiency reflect design documents. The design documents where the information may be found (e.g. drawing number) must be included in a dedicated field below the table.
+                    <li>
+                        Confirm that reported boiler type, fuel source, quantity, capacity and efficiency reflect design
+                        documents. The design documents where the information may be found (e.g. drawing number) must be
+                        included in a dedicated field below the table.
                         <figure>
                             <img src="../assets/images/Sections_1-6/CF_boiler.png" style="max-width: 750px;">
                         </figure>
                         <p>The fields are auto-populated except for the following:</p>
                         <ol style="list-style-type: lower-alpha">
-                            <li>Total Input Capacity is a user input and must reflect sizing determined in the baseline model. See WHVAC13 for the applicable simulation reports.)
+                            <li>
+                                Total Input Capacity is a user input and must reflect sizing determined in the baseline
+                                model. See WHVAC13 for the applicable simulation reports.)
                             </li>
-                            <li>Basis of the modeled performance curves must be set to Performance Rating Method Reference Manual (PRM RM). While the performance curves are not prescribed in 90.1, PRM RM reflect the industry standard defaults.
+                            <li>
+                                Basis of the modeled performance curves must be set to Performance Rating Method
+                                Reference Manual (PRM RM). While the performance curves are not prescribed in 90.1, PRM
+                                RM reflect the industry standard defaults.
                             </li>
                         </ol>
                         <p>Overwritten defaults (if any) are shown in brown font and should be flagged by reviewer.</p>
@@ -1905,15 +2141,16 @@
             <div id="whvac13" class="card card-body mb-3" data-check-type="5" data-component="boiler" data-model="B,P">
                 <h3>WHVAC-13–B,P Space heating boilers are modeled as reported in the Compliance Form</h3>
                 <h5>Review Tips – ECB</h5>
-                <p>The proposed boiler quantity, type, capacity and efficiency is modeled as reported. The following relationships may be used when necessary to convert between different efficiency units:
+                <p>
+                    The proposed boiler quantity, type, capacity and efficiency is modeled as reported. The following
+                    relationships may be used when necessary to convert between different efficiency units:
                 </p>
                 <ol style="list-style-type: lower-alpha">
                     <li>From AFUE to Et:
                         <p style="margin-left: 40px;">75%<=AFUE<80%: 	Et=0.1xAFUE+72.5%</p>
                         <p style="margin-left: 40px;">all other:		 Et=0.875 x AFUE + 10.5%</p>
                     </li>
-                    <li>From Ec to Et: Et=Ec-2%
-                    </li>
+                    <li>From Ec to Et: Et=Ec-2%</li>
                 </ol>
 
                 <div class="annotated-report container">
@@ -2101,7 +2338,14 @@
                 <h5>Review Tips</h5>
                 <ol>
                     <li><u>Background</u>
-                        <p>The annual average realized boiler efficiency is the ratio of the annual load on the boiler to the annual boiler energy use, as shown on simulation output reports. The average realized efficiency is expected to be lower than the rated efficiency. For example, the rated efficiency of condensing boilers corresponds to 80F return water temperature. A much higher design return water temperature is common (see WHVAC15-P), resulting in a significantly lower realized efficiency of condensing boilers, as illustrated below based on manufacturer data for a sample unit.
+                        <p>
+                            The annual average realized boiler efficiency is the ratio of the annual load on the boiler
+                            to the annual boiler energy use, as shown on simulation output reports. The average realized
+                            efficiency is expected to be lower than the rated efficiency. For example, the rated
+                            efficiency of condensing boilers corresponds to 80F return water temperature. A much higher
+                            design return water temperature is common (see WHVAC15-P), resulting in a significantly
+                            lower realized efficiency of condensing boilers, as illustrated below based on manufacturer
+                            data for a sample unit.
                         </p>
                         <figure>
                             <img src="../assets/images/Sections_1-6/boiler_eff.png" style="max-width: 750px;">
@@ -2109,18 +2353,36 @@
                     </li>
                     <li>Common Mistakes
                         <ol style="list-style-type: lower-alpha">
-                            <li>Average annual realized efficiency over 86% for condensing boilers included in the proposed designs that with the specified return water temperature of 160F should be flagged as it is likely overly optimistic. Review comment should request cut sheets for the boiler with AHRI efficiency and performance characteristics at various return water temperature and loads to justify the modeled performance. Higher than expected average efficiency may be due to the following:
+                            <li>
+                                Average annual realized efficiency over 86% for condensing boilers included in the
+                                proposed designs that with the specified return water temperature of 160F should be
+                                flagged as it is likely overly optimistic. Review comment should request cut sheets for
+                                the boiler with AHRI efficiency and performance characteristics at various return water
+                                temperature and loads to justify the modeled performance. Higher than expected average
+                                efficiency may be due to the following:
                                 <ul>
-                                    <li>Inappropriate performance curves (e.g., using software defaults or incorrect custom performance curves)</li>
+                                    <li>
+                                        Inappropriate performance curves (e.g., using software defaults or incorrect
+                                        custom performance curves)
+                                    </li>
                                     <li>Incorrect rated full load efficiency input</li>
-                                    <li>Incorrect HW loop controls such as lower than specified supply water temperature or higher than specified design temperature drop</li>
+                                    <li>
+                                        Incorrect HW loop controls such as lower than specified supply water temperature
+                                        or higher than specified design temperature drop
+                                    </li>
                                 </ul>
                             </li>
                             <li>Budget/baseline space heating boilers are natural draft (for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor Alterations) the baseline boiler type will depend on and be identical to the type specified in the proposed design). The average realized annual efficiency below 72% / 68% for the natural draft boilers that have 80% / 75% rated efficiency should be flagged. The expected part load efficiency degradation of such boilers based on the performance curves in PRM RM results in the efficiencies shown in Table 18. The annual average efficiency of a boiler that operates at 75% of design capacity 43% of the time, 50% of design capacity 45% of the time and 25% of design capacity 12% of the time is shown in Typ. Avg. column of Table 9. The average annual boiler efficiency that is lower than expected should be flagged and may be due to the following:
                                  <ul>
-                                    <li>Budget/baseline boilers are oversized by more than 25% and run at low part load for most of the year.</li>
+                                    <li>
+                                        Budget/baseline boilers are oversized by more than 25% and run at low part load
+                                        for most of the year.
+                                    </li>
                                     <li>Budget/baseline boilers are not controlled correctly in the model.</li>
-                                    <li>Inappropriate performance curves (e.g., using software defaults or incorrect custom performance curves)</li>
+                                    <li>
+                                        Inappropriate performance curves (e.g., using software defaults or incorrect
+                                        custom performance curves)
+                                    </li>
                                 </ul>
                             </li>
                         </ol>
@@ -2369,12 +2631,20 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>The configuration (primary/secondary) and temperature controls of the specified hot water loops are shown in Table 5a of the Proposed HVAC tab.
+                    <li>
+                        The configuration (primary/secondary) and temperature controls of the specified hot water loops
+                        are shown in Table 5a of the Proposed HVAC tab.
                         <figure>
                             <img src="../assets/images/Sections_1-6/CF_loop-config.png" style="max-width: 750px;">
                         </figure>
                      </li>
-                    <li>Verify that the reported hot water loop configuration and controls including design supply and return water temperature and temperature reset reflect design documents. Controls may have a significant impact on the realized efficiency. For example, the rated efficiency of condensing boilers corresponds to 80F return water temperature. A much higher design return water temperature is common, such as 160 F shown below, resulting in a significantly lower realized efficiency (see WHVAC13).
+                    <li>
+                        Verify that the reported hot water loop configuration and controls including design supply and
+                        return water temperature and temperature reset reflect design documents. Controls may have a
+                        significant impact on the realized efficiency. For example, the rated efficiency of condensing
+                        boilers corresponds to 80F return water temperature. A much higher design return water
+                        temperature is common, such as 160 F shown below, resulting in a significantly lower realized
+                        efficiency (see WHVAC13).
                         <figure>
                             <img src="../assets/images/Sections_1-6/WHVAC-design-docs.png" style="max-width: 750px;">
                         </figure>
@@ -2389,28 +2659,56 @@
 
                 <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016 and 2019/2022 ECB</h5>
-                    <p><strong>Table 11.5.2 – 1/Table 12.5.2 – 1, Note f: </strong>The hot-water space heating loop must be modeled with 180°F design supply temperature and 130°F return temperature. The supply water temperature must be reset in accordance with 90.1 Section 6.5.4.4.
+                    <p>
+                        <strong>Table 11.5.2 – 1/Table 12.5.2 – 1, Note f: </strong>The hot-water space heating loop
+                        must be modeled with 180°F design supply temperature and 130°F return temperature. The supply
+                        water temperature must be reset in accordance with 90.1 Section 6.5.4.4.
                     </p>
                 </div>
 
                 <div data-version="2016,2019" data-path="PRM">
                     <h5>90.1 2016 and 2019 PRM</h5>
-                    <p>The hot-water space heating loop must be modeled with 180°F design supply and 130°F design return temperature (90.1 Section G3.1.3.3). Hot-water supply temperature must be reset based on outdoor dry-bulb temperature using the following schedule: 180°F at 20°F and below, 150°F at 50°F and above and ramped linearly between 180°F and 150°F at temperatures between 20°F and 50°F (G3.1.3.4). See Exception to 90.1 Section G3.1.3.4 for projects that use purchased heat in the proposed design.
+                    <p>
+                        The hot-water space heating loop must be modeled with 180°F design supply and 130°F design
+                        return temperature (90.1 Section G3.1.3.3). Hot-water supply temperature must be reset based on
+                        outdoor dry-bulb temperature using the following schedule: 180°F at 20°F and below, 150°F at
+                        50°F and above and ramped linearly between 180°F and 150°F at temperatures between 20°F and 50°F
+                        (G3.1.3.4). See Exception to 90.1 Section G3.1.3.4 for projects that use purchased heat in the
+                        proposed design.
                     </p>
                 </div>
 
                 <div data-version="2022" data-path="PRM">
                     <h5>90.1 2022 PRM</h5>
                     <strong><u>G3.2 New Construction/Major Alterations</u></strong>
-                    <p><strong>90.1 Section G3.2.3.3 and G3.2.3.4</strong> requirements are the same as described above for the 90.1 2016 and 2019 PRM.
+                    <p>
+                        <strong>90.1 Section G3.2.3.3 and G3.2.3.4</strong> requirements are the same as described above
+                        for the 90.1 2016 and 2019 PRM.
+                    </p>
                     <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022 Section G3.3 are required to model systems and equipment included in the scope of retrofit at efficiency levels meeting the mandatory and prescriptive requirements in Section 6.1.4. If there are no applicable requirements, then the systems and components are modeled identically in the baseline and proposed. For most alterations 90.1 Section 6.5.4.4 (Chilled- and Hot-Water Temperature Reset Controls) will not be applicable to the baseline and the reset schedule will be modeled identically in the baseline and proposed (if there is a reset scheduled specified in the proposed design). However, if the alteration includes new cooling systems installed to serve previously uncooled spaces, then the baseline is required to be modeled as meeting the minimum requirements of 90.1 Section 6.5.4.4 (Chilled- and Hot-Water Temperature Reset Controls).
+                    <p>
+                        The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
+                        Section G3.3 are required to model systems and equipment included in the scope of retrofit at
+                        efficiency levels meeting the mandatory and prescriptive requirements in Section 6.1.4. If there
+                        are no applicable requirements, then the systems and components are modeled identically in the
+                        baseline and proposed. For most alterations 90.1 Section 6.5.4.4 (Chilled- and Hot-Water
+                        Temperature Reset Controls) will not be applicable to the baseline and the reset schedule will
+                        be modeled identically in the baseline and proposed (if there is a reset scheduled specified in
+                        the proposed design). However, if the alteration includes new cooling systems installed to serve
+                        previously uncooled spaces, then the baseline is required to be modeled as meeting the minimum
+                        requirements of 90.1 Section 6.5.4.4 (Chilled- and Hot-Water Temperature Reset Controls).
                     </p>
                 </div>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>HW plant loop arrangement and controls are reported in Table 6a of the Budget HVAC ECB tab (shown) or Table 6a of the Baseline HVAC PRM tab, depending on the compliance path followed by the project. The inputs are auto-populated based on the applicable requirements of 90.1. Over-written defaults are shown in brown font and should be verified. For alterations subject to 90.1 Section G3.3 (i.e., Minor Alterations) examine Table 5a on the Proposed HVAC tab for the parameters that should be modeled in the baseline and proposed.
+                    <li>
+                        HW plant loop arrangement and controls are reported in Table 6a of the Budget HVAC ECB tab
+                        (shown) or Table 6a of the Baseline HVAC PRM tab, depending on the compliance path followed by
+                        the project. The inputs are auto-populated based on the applicable requirements of 90.1.
+                        Over-written defaults are shown in brown font and should be verified. For alterations subject to
+                        90.1 Section G3.3 (i.e., Minor Alterations) examine Table 5a on the Proposed HVAC tab for the
+                        parameters that should be modeled in the baseline and proposed.
                     </li>
                 </ol>
 
@@ -2420,7 +2718,10 @@
             <div id="whvac16" class="card card-body mb-3" data-check-type="5" data-component="boiler" data-model="B,P">
                 <h3>WHVAC16-B,P Hot water loops temperature controls are modeled as reported in the Compliance Form</h3>
                 <h5>Review Tips</h5>
-                <p>Use simulation reports to verify that the modeled hot water loop configuration and controls such as supply and return hot water temperature and temperature reset are modeled as reported in the Compliance Form.
+                <p>
+                    Use simulation reports to verify that the modeled hot water loop configuration and controls such as
+                    supply and return hot water temperature and temperature reset are modeled as reported in the
+                    Compliance Form.
                 </p>
 
                 <div class="annotated-report container">
@@ -2616,7 +2917,10 @@
                 <h3>WHVAC17–P Proposed hot water pump system parameters reported in the Compliance Form reflect design documents</h3>
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Details of the specified HW pumps are reported in Table 5a of the Proposed HVAC tab. Verify alignment between Compliance Form and design documents. (The applicable design documents must be listed below the table.)
+                    <li>
+                        Details of the specified HW pumps are reported in Table 5a of the Proposed HVAC tab. Verify
+                        alignment between Compliance Form and design documents. (The applicable design documents must be
+                        listed below the table.)
                     </li>
                 </ol>
 
@@ -2628,29 +2932,63 @@
 
                 <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016 and 2019/2022 ECB</h5>
-                    <p><strong>Table 11.5.2 – 1/12.5.2-1, Note f: </strong>Pump system power for each pumping system must be the same as for the proposed building design; if the proposed building design has no hot-water pumps, the budget building design pump power must be 19 W/gpm, which is equal to a pump operating against a 60 ft head, 60% combined impeller and motor efficiency. The hot-water system shall be modeled as primary-only with continuous variable flow. The hot-water pumps must be modeled as riding the pump curve or with variable-speed drives when required by 90.1 Section 6.5.4.2.
+                    <p>
+                        <strong>Table 11.5.2 – 1/12.5.2-1, Note f: </strong>Pump system power for each pumping system
+                        must be the same as for the proposed building design; if the proposed building design has no
+                        hot-water pumps, the budget building design pump power must be 19 W/gpm, which is equal to a
+                        pump operating against a 60 ft head, 60% combined impeller and motor efficiency. The hot-water
+                        system shall be modeled as primary-only with continuous variable flow. The hot-water pumps must
+                        be modeled as riding the pump curve or with variable-speed drives when required by 90.1 Section
+                        6.5.4.2.
                     </p>
                 </div>
 
                 <div data-version="2016,2019" data-path="PRM">
                     <h5>90.1 2016 and 2019 PRM</h5>
-                    <p><strong>Section G3.1.3.5: </strong>The baseline building design hot-water pump power must be 19 W/gpm. The pumping system must be primary-only with continuous variable flow and a minimum of 25% of the design flow rate. Hot-water systems serving 120,000 ft2 or more must be modeled with variable-speed drives and systems serving less than 120,000 ft2 must be modeled as riding the pump curve.
+                    <p>
+                        <strong>Section G3.1.3.5: </strong>The baseline building design hot-water pump power must be 19
+                        W/gpm. The pumping system must be primary-only with continuous variable flow and a minimum of
+                        25% of the design flow rate. Hot-water systems serving 120,000 ft2 or more must be modeled with
+                        variable-speed drives and systems serving less than 120,000 ft2 must be modeled as riding the
+                        pump curve.
                     </p>
                 </div>
 
                 <div data-version="2022" data-path="PRM">
                     <h5>90.1 2022 PRM</h5>
                     <strong><u>G3.2 New Construction/Major Alterations</u></strong>
-                    <p><strong>Section G3.2.3.5</strong> requirements are the same as described above for the 90.1 2016 and 2019 PRM Section G3.1.3.5.
+                    <p>
+                        <strong>Section G3.2.3.5</strong> requirements are the same as described above for the 90.1 2016
+                        and 2019 PRM Section G3.1.3.5.
                     </p>
                     <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor Alterations) are required to model systems and equipment included in the scope of retrofit at efficiency levels meeting the mandatory and prescriptive requirements in Sections 6 and 10. Section 10.1.4 includes minimum motor efficiency requirements that should be modeled for the pump motors included in the scope of the alteration in the baseline. 90.1 Section 6 requirements depend on the scope of the alteration and the language in 90.1 Section 6.1.4. With regard to 90.1 Section 6, if there are no applicable requirements then the systems and components are modeled identically in the baseline and proposed. For most alterations 90.1 Section 6.5.4.2 (Hydronic Variable Flow Systems) will not be applicable to the baseline and the flow systems and controls will be modeled identically in the baseline and proposed. However, if the alteration includes new cooling systems installed to serve previously uncooled spaces, then the baseline is required to be modeled as meeting the minimum requirements of 90.1 Section 6.5.4.2 (Hydronic Variable Flow Systems).
+                    <p>
+                        The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
+                        Section G3.3 (i.e., Minor Alterations) are required to model systems and equipment included in
+                        the scope of retrofit at efficiency levels meeting the mandatory and prescriptive requirements
+                        in Sections 6 and 10. Section 10.1.4 includes minimum motor efficiency requirements that should
+                        be modeled for the pump motors included in the scope of the alteration in the baseline. 90.1
+                        Section 6 requirements depend on the scope of the alteration and the language in 90.1 Section
+                        6.1.4. With regard to 90.1 Section 6, if there are no applicable requirements then the systems
+                        and components are modeled identically in the baseline and proposed. For most alterations 90.1
+                        Section 6.5.4.2 (Hydronic Variable Flow Systems) will not be applicable to the baseline and the
+                        flow systems and controls will be modeled identically in the baseline and proposed. However, if
+                        the alteration includes new cooling systems installed to serve previously uncooled spaces, then
+                        the baseline is required to be modeled as meeting the minimum requirements of 90.1 Section
+                        6.5.4.2 (Hydronic Variable Flow Systems).
                     </p>
                 </div>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Parameters of the baseline HW pumps are reported in Table 6a of the Baseline HVAC PRM tab (shown) or Budget HVAC ECB tab. All required inputs are auto-populated based on the applicable 90.1 rules. Over-written defaults should be checked. Refer to <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac17-b">90.1 2022 Section G3.3 Performance Calculations for Other Alterations</a> for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
+                    <li>
+                        Parameters of the baseline HW pumps are reported in Table 6a of the Baseline HVAC PRM tab
+                        (shown) or Budget HVAC ECB tab. All required inputs are auto-populated based on the applicable
+                        90.1 rules. Over-written defaults should be checked. Refer to
+                        <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac17-b">
+                            90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                        </a>
+                        for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
                     </li>
                 </ol>
 
@@ -2662,7 +3000,10 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Review simulation reports to verify that hot water pumps were modeled as reported in the Compliance form including pump design flow (GPM), power (kW, or BHP and motor efficiency) and flow control (one/two speed, VSD).
+                    <li>
+                        Review simulation reports to verify that hot water pumps were modeled as reported in the
+                        Compliance form including pump design flow (GPM), power (kW, or BHP and motor efficiency) and
+                        flow control (one/two speed, VSD).
                     </li>
                 </ol>
 
@@ -2855,7 +3196,10 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Review simulation reports to confirm that HW loop configuration (i.e. primary/secondary), design flow (GPM) and flow control (three-way or two-way valves) are modeled as reported in the Compliance Form.
+                    <li>
+                        Review simulation reports to confirm that HW loop configuration (i.e. primary/secondary), design
+                        flow (GPM) and flow control (three-way or two-way valves) are modeled as reported in the
+                        Compliance Form.
                     </li>
                 </ol>
 
@@ -3050,7 +3394,9 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Follow the steps described for HVAVC09 to confirm that the modeled annual hot water pump energy is as expected.
+                    <li>
+                        Follow the steps described for HVAVC09 to confirm that the modeled annual hot water pump energy
+                        is as expected.
                     </li>
                 </ol>
 
@@ -3262,22 +3608,24 @@
                 <h3>WHVAC21 Pump energy use is reported on the Compliance Calculations tab if applicable.</h3>
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>If proposed/budget/baseline design includes chilled water, hot water or condenser loops based on the information reported in the Compliance Form (as noted below), pumps are expected to be modeled and non-zero “Pump” end use in expected to be reported on the Compliance Calculations tab Table 2. Loops are found on the following locations within the Compliance Form:
+                    <li>
+                        If proposed/budget/baseline design includes chilled water, hot water or condenser loops based on
+                        the information reported in the Compliance Form (as noted below), pumps are expected to be
+                        modeled and non-zero “Pump” end use in expected to be reported on the Compliance Calculations
+                        tab Table 2. Loops are found on the following locations within the Compliance Form:
                         <ul>
-                            <li>Proposed HVAC tab Table 5a (Examine the Notes field under the table for notes as to what was modeled in the baseline design model for 90.1 2022 alterations subject to G3.3)
+                            <li>
+                                Proposed HVAC tab Table 5a (Examine the Notes field under the table for notes as to what
+                                was modeled in the baseline design model for 90.1 2022 alterations subject to G3.3)
                             </li>
-                            <li>Baseline HVAC PRM tab Table 6a
-                            </li>
-                            <li>Budget HVAC ECB tab Table 6a
-                            </li>
+                            <li>Baseline HVAC PRM tab Table 6a</li>
+                            <li>Budget HVAC ECB tab Table 6a</li>
                         </ul>
                     </li>
                     <li>The following should be flagged in the review comments:
                         <ol style="list-style-type: lower-alpha">
-                            <li>Model is expected to have pumps, but no pump energy is reported
-                            </li>
-                            <li>Model is not expected to have pumps, but pump energy is reported.
-                            </li>
+                            <li>Model is expected to have pumps, but no pump energy is reported</li>
+                            <li>Model is not expected to have pumps, but pump energy is reported.</li>
                         </ol>
                     </li>
                 </ol>
@@ -3291,11 +3639,30 @@
                 <div data-path="ECB">
                     <h5>Review Tips – ECB</h5>
                     <ol>
-                        <li>When <strong>Section 11.5.2 j</strong> (12.5.2 j in 90.1 2022) is properly applied to determine the budget HVAC system, the allocation of heating and cooling energy use between fuels is expected to be similar in the budget building and the proposed design. For example, if based on the simulation output reports about one third of the annual heating MMBtu is associated with natural gas and two thirds with electricity, similar allocation is expected in the budget design. Explanation should be requested when allocation of heating energy use between fuels differ by more than 15% in the budget design vs proposed design. For example, if in the budget design heating energy MMBtu are split 50/50 between electricity and gas, and in the proposed design the split is 30/70.
+                        <li>
+                            When <strong>Section 11.5.2 j</strong> (12.5.2 j in 90.1 2022) is properly applied to
+                            determine the budget HVAC system, the allocation of heating and cooling energy use between
+                            fuels is expected to be similar in the budget building and the proposed design. For example,
+                            if based on the simulation output reports about one third of the annual heating MMBtu is
+                            associated with natural gas and two thirds with electricity, similar allocation is expected
+                            in the budget design. Explanation should be requested when allocation of heating energy use
+                            between fuels differ by more than 15% in the budget design vs proposed design. For example,
+                            if in the budget design heating energy MMBtu are split 50/50 between electricity and gas,
+                            and in the proposed design the split is 30/70.
                         </li>
-                        <li>All fuel types reported in the Proposed HVAC tab Table 1a or 7a should have the corresponding modeled energy use reported for the proposed design in the Compliance Calculations tab Table 2. All fuel types that are not listed in the above-referenced tables of the Proposed HAC tab are expected to have no energy user reported in the Compliance Calculations tab.
+                        <li>
+                            All fuel types reported in the Proposed HVAC tab Table 1a or 7a should have the
+                            corresponding modeled energy use reported for the proposed design in the Compliance
+                            Calculations tab Table 2. All fuel types that are not listed in the above-referenced tables
+                            of the Proposed HAC tab are expected to have no energy user reported in the Compliance
+                            Calculations tab.
                         </li>
-                        <li>All heating fuels reported in the Budget HVAC ECB tab Table 1a or 5a should have the corresponding modeled energy use reported for the budget design in the Compliance Calculations tab Table 2. All fuel types that are not listed in the above-referenced tables of the Proposed HAC tab are expected to have no energy user reported in the Compliance Calculations tab.
+                        <li>
+                            All heating fuels reported in the Budget HVAC ECB tab Table 1a or 5a should have the
+                            corresponding modeled energy use reported for the budget design in the Compliance
+                            Calculations tab Table 2. All fuel types that are not listed in the above-referenced tables
+                            of the Proposed HAC tab are expected to have no energy user reported in the Compliance
+                            Calculations tab.
                         </li>
                     </ol>
                 </div>
@@ -3303,13 +3670,31 @@
                 <div data-path="PRM">
                     <h5>Review Tips – PRM</h5>
                     <ol>
-                        <li>Refer to <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac22">90.1 2022 Section G3.3 Performance Calculations for Other Alterations</a> for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
+                        <li>
+                            Refer to
+                            <a href="#" class="modal-2022-g3_3-trigger" data-content-id="whvac22">
+                            90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                            </a>
+                            for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
                         </li>
-                        <li>All fuel types reported in the Proposed HVAC tab Table 1a or 7a should have the corresponding modeled energy use reported for the proposed design in the Compliance Calculations tab Table 2. All fuel types that are not listed in the above-referenced tables of the Proposed HAC tab are expected to have no energy user reported in the Compliance Calculations tab.
+                        <li>
+                            All fuel types reported in the Proposed HVAC tab Table 1a or 7a should have the
+                            corresponding modeled energy use reported for the proposed design in the Compliance
+                            Calculations tab Table 2. All fuel types that are not listed in the above-referenced tables
+                            of the Proposed HAC tab are expected to have no energy user reported in the Compliance
+                            Calculations tab.
                         </li>
-                        <li>All heating fuels reported in the Baseline HVAC PRM tab Table 1a or 5a should have the corresponding modeled energy use reported for the budget design in the Compliance Calculations tab Table 2. All fuel types that are not listed in the above-referenced tables of the Proposed HAC tab are expected to have no energy user reported in the Compliance Calculations tab.
+                        <li>
+                            All heating fuels reported in the Baseline HVAC PRM tab Table 1a or 5a should have the
+                            corresponding modeled energy use reported for the budget design in the Compliance
+                            Calculations tab Table 2. All fuel types that are not listed in the above-referenced tables
+                            of the Proposed HAC tab are expected to have no energy user reported in the Compliance
+                            Calculations tab.
                         </li>
-                        <li>Common mistake includes modeling electric heating in the baseline for projects located in climate zones 3B, 3C and 4-8. Based on 90.1 Table G3.1.1-3 and G3.1.1-4, such projects should have no electric heating in the baseline model.
+                        <li>
+                            Common mistake includes modeling electric heating in the baseline for projects located in
+                            climate zones 3B, 3C and 4-8. Based on 90.1 Table G3.1.1-3 and G3.1.1-4, such projects
+                            should have no electric heating in the baseline model.
                         </li>
                     </ol>
                 </div>
