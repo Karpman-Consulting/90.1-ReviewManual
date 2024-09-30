@@ -94,8 +94,8 @@ html, body {
     background-color: #ccc;
 }
 
-.descriptor {
-
+.btn-primary {
+    margin-bottom: 5px;
 }
 
 .descriptor-container {
