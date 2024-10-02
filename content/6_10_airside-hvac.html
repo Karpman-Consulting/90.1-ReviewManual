@@ -127,7 +127,7 @@
                             <a href="#ahvac12">AHVAC12-P (c. efficiency)</a>
                             <a href="#ahvac13">AHVAC13–P (h. efficiency)</a>
                             <a href="#ahvac30-p">AHVAC30-P (efficiency)</a>
-                            <a href="#ahvac31-p">AHVAC31-P (monthly c. h. pattern)</a>
+                            <a href="#ahvac31">AHVAC31-P (monthly c. h. pattern)</a>
                         </td>
                         <td>
                             <a href="#ahvac12">AHVAC12-B (c. efficiency)</a>
@@ -293,7 +293,8 @@
                         <br>
                         <p><strong>Figure 7: Sample Thermal Blocks Used in the Computer Simulation:</strong></p>
                         <figure>
-                            <img src="../assets/images/Sections_1-6/AHVAC_thermal-blocks.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/AHVAC_thermal-blocks.png" style="max-width: 750px;
+                            min-width: 650px;">
                         </figure>
                     </li>
                     <li>
@@ -308,7 +309,8 @@
                         check a sample of larger or typical thermal blocks with the submitted block diagram and
                         mechanical plans drawings to confirm that the rules we correctly applied to the project.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_light_fix_table.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/CF_light_fix_table.png" style="max-width: 750px;
+                            min-width: 550px;">
                         </figure>
                     </li>
                 </ol>
@@ -321,7 +323,7 @@
                     floors in the building.
                 </p>
                 <figure>
-                    <img src="../assets/images/Sections_1-6/thermal_blocks-ex.png" style="max-width: 750px;">
+                    <img src="../assets/images/Sections_1-6/thermal_blocks-ex.png" style="max-width: 750px; min-width: 650px;">
                 </figure>
             </div>
 
@@ -569,6 +571,188 @@
                     </li>
                 </ol>
             </div>
+
+            <!--AHVAC03-B Section -->
+            <div id="ahvac03-b" class="card card-body mb-3" data-check-type="4" data-component="system" data-model="B">
+                <h3>AHVAC03–B Baseline/budget system types reported in the Compliance Form are established correctly</h3>
+
+                <div data-version="2016,2019,2022" data-path="ECB">
+                    <h5>90.1 2016 and 2019/2022 ECB</h5>
+                    <p>Each HVAC system specified in the proposed design must have a corresponding baseline system established
+                        following 90.1 Figure 11.5.2/Figure 12.5.2, Table 11.5.2-1/Table 12.5.2-1 and accompanying notes.
+                    </p>
+                </div>
+
+                <div data-version="2016,2019" data-path="PRM">
+                    <h5>90.1 2016 and 2019 PRM</h5>
+                    <p>Baseline HVAC system type and description must be based on 90.1 Section G3.1.1. Mixed use buildings that
+                        include both residential and non-residential building types with non-predominant conditions accounting for
+                        more than 20,000 ft2 of conditioned floor area must have a separate baseline system type established for
+                        each set of conditions. The following baseline systems apply to climate zones 3B, 3C, and 4 to 8:
+                    </p>
+                    <ul>
+                        <li>All residential occupancies (dormitory, hotel, motel and multifamily):
+                            <p style = "margin-left: 20px;">System 1 – PTAC
+                            </p>
+                        </li>
+                        <li>All public assembly occupancies (houses of worship, auditoriums, movie theaters, performance theaters,
+                            concert halls, arenas, enclosed stadiums, ice rinks, gymnasiums, convention centers, exhibition centers
+                            and auditoriums):
+                            <p style = "margin-left: 20px;">System 3—PSZ-AC if <120,000 ft<sup>2</sup>
+                            </p>
+                            <p style = "margin-left: 20px;">System 12—SZ-CV-HW if >= 120,000 ft<sup>2</sup>
+                            </p>
+                        </li>
+                        <li>Heated-only storage (e.g. warehouse) meeting the definition of non-predominant conditions, or
+                            certain heated-only spaces such as storage rooms, stairwells, electrical/mechanical rooms
+                            (90.1 Section G3.1.1 e):
+                            <p style = "margin-left: 20px;">System 9—Heating and ventilation
+                            </p>
+                        </li>
+                        <li>All other non-residential:
+                            <p style = "margin-left: 20px;">System 3—PSZ-AC if 3 floors or fewer and <25,000 ft<sup>2</sup>
+                            </p>
+                            <p style = "margin-left: 20px;">System 5—Packaged VAV with reheat if 4 or 5 floors and <25,000
+                                ft<sup>2</sup> or
+                                5 floors or fewer and 25,000 ft<sup>2</sup> to 150,000 ft<sup>2</sup>
+                            </p>
+                            <p style = "margin-left: 20px;">System 7—VAV with reheat if more than 5 floors or >150,000 ft<sup>2</sup>
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p>The following baseline systems apply to climate zones 0 to 3A:
+                    </p>
+                    <ul>
+                        <li>All residential occupancies (dormitory, hotel, motel and multifamily):
+                            <p style = "margin-left: 20px;">System 1 – PTHP
+                            </p>
+                        </li>
+                        <li>All public assembly occupancies (houses of worship, auditoriums, movie theaters, performance
+                            theaters, concert halls, arenas, enclosed stadiums, ice rinks, gymnasiums, convention centers,
+                            exhibition centers and auditoriums):
+                            <p style = "margin-left: 20px;">System 4—PSZ-HP if <120,000 ft<sup>2</sup></p>
+                            <p style = "margin-left: 20px;">System 13—SZ-CV-ER if >= 120,000 ft<sup>2</sup></p>
+                        </li>
+                        <li>Heated-only storage (e.g. warehouse) meeting the definition of non-predominant conditions, or
+                            certain heated-only spaces such as storage rooms, stairwells, electrical/mechanical rooms
+                            (90.1 Section G3.1.1 e):
+                            <p style = "margin-left: 20px;">System 10—Heating and ventilation
+                            </p>
+                        </li>
+                        <li>All other non-residential:
+                            <p style = "margin-left: 20px;">System 4—PSZ-HP if 3 floors or fewer and <25,000 ft<sup>2</sup>
+                            </p>
+                            <p style = "margin-left: 20px;">System 6—Packaged VAV with PFP boxes if 4 or 5 floors and <25,000
+                                ft<sup>2</sup>
+                                or 5 floors or fewer and 25,000 ft<sup>2</sup> to 150,000 ft<sup>2</sup>
+                            </p>
+                            <p style = "margin-left: 20px;">System 8—VAV with PFP boxes if more than 5 floors or >150,000 ft<sup>2</sup>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div data-version="2016,2019" data-path="PRM">
+                    <h5>90.1 2022 PRM</h5>
+                    <strong><u>G3.2 New Construction/Major Alterations</u></strong>
+                    <p>Baseline HVAC system type and description for projects following Section G3.2 must be based on
+                        90.1 Section G3.2.1.
+                        Below is a summary of the process for determining the baseline HVAC system(s):
+                    </p>
+                        <ol>
+                            <li>Determine the combined gross conditioned and semi-heated floor area for each of the following building
+                                area
+                                types in the proposed design:
+                                <ul>
+                                    <li>residential and residential-associated zones</li>
+                                    <li><strong>residential associated HVAC zone (90.1 Section 3):</strong> any HVAC zone that
+                                        primarily includes nonresidential spaces designed to serve occupants of residential spaces, including but not
+                                        limited to corridors, stairwells, elevator lobbies, and common restrooms, on a floor where over 75% of the gross
+                                        conditioned floor area are residential spaces. This definition does not apply to HVAC zones within
+                                        hospitals.
+                                    </li>
+                                    <li>public assembly</li>
+                                    <li>heating-only storage</li>
+                                    <li>retail</li>
+                                    <li>hospitals</li>
+                                    <li>other nonresidential</li>
+                                </ul>
+                            </li>
+                            <li>Classify the nonresidential building area type with the largest combined area as the predominant
+                                nonresidential building area type. Add the combined area of any remaining nonresidential
+                                building area types with less than 20,000 ft<sup>2</sup> to the combined area of the
+                                predominant nonresidential building area type.
+                            </li>
+                            <li>Select a baseline HVAC system type from Table G3.1.1-3 for each of the following building area
+                                types included in the proposed design:
+                                <ol style="list-style-type: lower-alpha">
+                                    <li>Residential based on Section G3.2.1.1(a)</li>
+                                    <li>Predominant nonresidential based on Section G3.2.1.1(b)</li>
+                                    <li>Each additional nonresidential building area type with more than 20,000 ft<sup>2</sup>
+                                        of combined area based on Section G3.2.1.1(a)
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+
+                    <p><strong><u>G3.3 Minor Alterations</u></strong></p>
+                    <p>The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022 Section G3.3 (i.e.,
+                        Minor Alterations) must be modeled following the requirements of G3.3.2.8(a) which specify that the
+                        baseline HVAC system type is the same as the proposed design. <strong>Exception:</strong> if the proposed
+                        design includes variable refrigerant flow heat pumps or single-zone systems with electric resistance heat,
+                        then air source heat pumps shall be modeled in the baseline design.
+                    </p>
+                </div>
+
+                <div data-path="ECB">
+                    <h5>Review Tips – 90.1 ECB</h5>
+                    <ol>
+                        <li>Budget HVAC system types are reported in Table 1a of the Budget HVAC ECB tab. Since ECB requires
+                            that each system in the proposed design has a corresponding budget system, the default budget system
+                            types are set in the table by applying the appropriate rules of ECB to each proposed system. The over-written
+                            defaults are shown in brown bold font and should be verified.
+                            <figure>
+                                <img src="../assets/images/Sections_1-6/CF-AHVAC03-img1.png" style="max-width: 750px; min-width: 550px;">
+                            </figure>
+                        </li>
+                    </ol>
+                </div>
+
+                <div data-path="PRM">
+                    <h5>Review Tips – 90.1 PRM</h5>
+                    <ol>
+                        <li>Baseline HVAC system types are reported in Table 1a of the Baseline HVAC PRM tab. Spot-check to confirm that
+                            the baseline systems were established correctly based on the applicable 90.1 rules. Refer to <a href="#"
+                            class="modal-2022-g3_3-trigger" data-content-id="ahvac03-b">90.1 2022 Section G3.3 Performance Calculations for Other Alterations</a> for
+                            review tips for alterations subject to 90.1 2022 Section
+                            G3.3 (i.e., Minor alterations).
+                            <figure>
+                                <img src="../assets/images/Sections_1-6/CF_AHVAC03-img2.png" style="max-width: 750px; min-width: 550px;">
+                            </figure>
+                        </li>
+                        <li>Common Mistakes (not applicable to alterations subject to 90.1 2022 Section G3.3)
+                            <ol style="list-style-type: lower-alpha">
+                                <li>Baseline HVAC heating fuel source based on the heating source used in the proposed design instead of
+                                    based on the project’s climate zone. For example, a project in climate zone 4A that has electric heating
+                                    in the proposed design should not have electric heating modeled in the baseline design.
+                                </li>
+                                <li>Modeling dedicated outdoor air system (DOAS) in the baseline on projects with DOAS in the proposed design.
+                                    Instead, heating, cooling and ventilation in the baseline design is provided by systems determined following
+                                    90.1 Section G3.1.1/G3.2.1.
+                                </li>
+                                <li>System 5 - 8 are not modeled as System per floor; instead, multiple systems per floor are modeled to
+                                    maintain the same arrangement as in the proposed design. This impacts a baseline system’s individual
+                                    OA to supply ratio which determines baseline energy recovery requirements and may also affect the baseline
+                                    system efficiency.
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+
 
             <!--AHVAC04 Section -->
             <div id="ahvac04" class="card card-body mb-3" data-check-type="5" data-component="system" data-model="B,P">
@@ -845,7 +1029,7 @@
                         the Proposed HVAC tab. Cross-check the provided information with the design documents for a sample
                         of systems to confirm alignment.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_AHVAC-tab.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/CF_AHVAC-tab.png" style="max-width: 750px; min-width: 550px;">
                         </figure>
                     </li>
                 </ol>
@@ -883,7 +1067,7 @@
                     </p>
                     <p><strong>Figure 41: Example Design Conditions from 90.1 Appendix D</strong></p>
                     <figure>
-                        <img src="../assets/images/Sections_1-6/AHVAC05_ex.png" style="max-width: 750px;">
+                        <img src="../assets/images/Sections_1-6/AHVAC05_ex.png" style="max-width: 750px; min-width: 450px;">
                     </figure>
                 </div>
 
@@ -963,7 +1147,7 @@
                         of the Proposed HVAC tab. Cross-check the provided information with the design documents for a
                         sample of systems to confirm alignment.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_baseline_HVAC.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/CF_baseline_HVAC.png" style="max-width: 750px; min-width: 550px;">
                         </figure>
                     </li>
                     <li>
@@ -1098,6 +1282,14 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/Section_7_Simulation_Reports/eQuest-LS-C-building-peak-load-components.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/Section_7_Simulation_Reports/eQuest_SS-P.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/Section_7_Simulation_Reports/eQuest-SV-A.png">
                                         Annotated Report
                                     </button>
@@ -1155,7 +1347,7 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                     Plant Loops & Equipment Report, System Loads Report, BPRM Report, Space Loads &
+                                    Plant Loops & Equipment Report, System Loads Report, BPRM Report, Space Loads &
                                     Ventilation Report, Room Loads Report, Zone Loads Report, Detailed Simulation
                                     Report, PRM Compliance Report, ECB Compliance Report
                                 </div>
@@ -1312,7 +1504,7 @@
                         requirements applicable to each specified system are shown in Table 1a. Efficiencies that are
                         below the required minimum are highlighted in red and must be noted in the review comments.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_HVAC_eff.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/CF_HVAC_eff.png" style="max-width: 750px; min-width: 550px;">
                         </figure>
                     </li>
                 </ol>
@@ -1334,7 +1526,7 @@
                         be shown in brown bold font. Existing systems and components not in the scope of the project do
                         not need to comply with minimum efficiency requirements.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_HVAC_eff2.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/CF_HVAC_eff2.png" style="max-width: 750px; min-width: 550px;">
                         </figure>
                     </li>
                 </ol>
@@ -1377,7 +1569,7 @@
                             The defaults are based on the efficiency tables referenced in “90.1 Ref Table” column. Any
                             over-written defaults which are shown in brown font should be confirmed by the reviewer.
                             <figure>
-                                <img src="../assets/images/Sections_1-6/CF_HVAC_table.png" style="max-width: 750px;">
+                                <img src="../assets/images/Sections_1-6/CF_HVAC_table.png" style="max-width: 750px; min-width: 550px;">
                             </figure>
                         </li>
                     </ol>
@@ -1398,7 +1590,8 @@
                             Efficiency and COPnfcooling columns. The calculations reflect 90.1 requirements for
                             extracting fan power from efficiency rating.
                             <figure>
-                                <img src="../assets/images/Sections_1-6/CF_baseline_table.png" style="max-width: 750px;">
+                                <img src="../assets/images/Sections_1-6/CF_baseline_table.png" style="max-width: 750px;
+                                min-width: 650px;">
                             </figure>
                         </li>
                     </ol>
@@ -1437,7 +1630,7 @@
                     </li>
                     <li>
                         <figure>
-                            <img src="../assets/images/Sections_1-6/Cf_COP.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/Cf_COP.png" style="max-width: 750px; min-width: 550px;">
                         </figure>
 
                         <p>
@@ -1549,7 +1742,7 @@
                         equipment at the range of operating conditions. The basis of the modeled performance curves must
                         be specified in Table 1a of the Proposed HVAC tab.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_modeled_curves.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/CF_modeled_curves.png" style="max-width: 750px; min-width: 550px;">
                         </figure>
                         <p>
                             The performance curves may be available from equipment manufacturers or developed based on
@@ -1628,7 +1821,7 @@
                     Table 1a of the Budget HVAC ECB/ Baseline HVAC PRM tabs.
                 </p>
                 <figure>
-                    <img src="../assets/images/Sections_1-6/CF_modeled_Eff.png" style="max-width: 750px;">
+                    <img src="../assets/images/Sections_1-6/CF_modeled_Eff.png" style="max-width: 750px; min-width: 550px;">
                 </figure>
 
                 <div class="annotated-report container">
@@ -1872,7 +2065,8 @@
                                     temperature operation.
                                 </p>
                                 <figure>
-                                    <img src="../assets/images/Sections_1-6/heatpump_info.png" style="max-width: 750px;">
+                                    <img src="../assets/images/Sections_1-6/heatpump_info.png" style="max-width: 750px;
+                                     min-width: 650px;">
                                 </figure>
                             </li>
                         </ol>
@@ -2361,14 +2555,14 @@
                         2a of the Proposed HVAC tab. Cross-check Compliance Form inputs with the information provided in
                         the mechanical schedules for a sample of specified systems to ensure alignment.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/AHVAC-13_CF.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/AHVAC-13_CF.png" style="max-width: 750px; min-width: 550px;">
                         </figure>
                         <p>
                             The figure below illustrates how fan system performance is typically shown in the design
                             documents.
                         </p>
                         <figure>
-                            <img src="../assets/images/Sections_1-6/design-docs_ex.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/design-docs_ex.png" style="max-width: 750px; min-width: 550px;">
                         </figure>
                     </li>
                 </ol>
@@ -2437,7 +2631,7 @@
                     <ol>
                         <li>Design flow rate of the budget systems is reported in Table 2a of the Budget HVAC ECB tab.
                             <figure>
-                                <img src="../assets/images/Sections_1-6/CF_BL_Table2.png" style="max-width: 750px;">
+                                <img src="../assets/images/Sections_1-6/CF_BL_Table2.png" style="max-width: 750px; min-width: 550px;">
                             </figure>
                         </li>
                         <li>
@@ -2601,7 +2795,7 @@
                             quoted above. The total budget power by fan type is shown in Table 3. Since these values are
                             auto populated in the Compliance Form, they do not need to be checked.
                             <figure>
-                                <img src="../assets/images/Sections_1-6/CF_supply-fan.png" style="max-width: 750px;">
+                                <img src="../assets/images/Sections_1-6/CF_supply-fan.png" style="max-width: 750px; min-width: 550px;">
                             </figure>
                         </li>
                     </ol>
@@ -2627,7 +2821,7 @@
                             baseline design and not the total supply flow of the baseline system.  Spot-check should
                             focus on baseline systems with high CFM<sub>D</sub>
                             <figure>
-                                <img src="../assets/images/Sections_1-6/CF_CFM.png" style="max-width: 750px;">
+                                <img src="../assets/images/Sections_1-6/CF_CFM.png" style="max-width: 750px; min-width: 550px;">
                             </figure>
                             <p>
                                 Confirm that all devices included in Table 2a for the baseline are also included in the
@@ -2636,7 +2830,7 @@
                                 in the Common Mistakes below.
                             </p>
                             <figure>
-                                <img src="../assets/images/Sections_1-6/CF_Table_CFM.png" style="max-width: 750px;">
+                                <img src="../assets/images/Sections_1-6/CF_Table_CFM.png" style="max-width: 750px; min-width: 550px;">
                             </figure>
                         </li>
                         <li>
@@ -2647,7 +2841,8 @@
                             supply, return, relief and exhaust fans based on user-entered values in the % of Total Fan
                             Power columns for the corresponding fans.
                             <figure>
-                                <img src="../assets/images/Sections_1-6/CF_BL_Fan_Table.png" style="max-width: 750px;">
+                                <img src="../assets/images/Sections_1-6/CF_BL_Fan_Table.png" style="max-width: 750px;
+                                min-width: 550px;">
                             </figure>
                             <p>
                                 Optionally, cross-check user-specified allocation of fan power between supply,
@@ -2691,12 +2886,14 @@
                     <li>Air flow control method for each specified air-side HVAC system is reported in Table 1a of the
                         Proposed HVAC tab.
                          <figure>
-                             <img src="../assets/images/Sections_1-6/CF_supply-fan2.png" style="max-width: 750px;">
+                             <img src="../assets/images/Sections_1-6/CF_supply-fan2.png" style="max-width: 750px;
+                             min-width: 450px;">
                          </figure>
                     </li>
                     <li>Additional details are included in Table 4 of the Proposed HVAC tab.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF-air_side_controls.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/CF-air_side_controls.png" style="max-width: 750px;
+                            min-width: 450px;">
                         </figure>
                         <p>
                             Cross-check Compliance Form inputs with the information provided in the mechanical schedules
@@ -2705,7 +2902,8 @@
                     </li>
                     <li>Refer to Table 2b for a bird-eye view of the specified fan systems and controls.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_HVAC_Table2.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/CF_HVAC_Table2.png" style="max-width: 750px;
+                            min-width: 550px;">
                         </figure>
                     </li>
                 </ol>
@@ -2771,12 +2969,13 @@
                         <li>
                             PRM: Baseline flow and temperature controls for the baseline VAV systems is shown in Table
                             3a of the Baseline HVAC PRM tab. The values are set automatically based on the relevant 90.1
-                            rules quoted above and should only be checked if any auto-populated defaults are overwritten.
-                            (Such values will be shown in brown font.) Refer to the Notes sections under Table 4 on the
-                            Proposed HVAC tab for baseline modeling inputs for alterations subject to 90.1 2022 Section
-                            G3.3 (i.e., Minor alterations).
+                            rules quoted above and should only be checked if any auto-populated defaults
+                            are overwritten. (Such values will be shown in brown font.) Refer to the Notes sections
+                            under Table 4 on the Proposed HVAC tab for baseline modeling inputs for alterations subject
+                            to 90.1 2022 Section G3.3 (i.e., Minor alterations).
                             <figure>
-                                <img src="../assets/images/Sections_1-6/CF_BL_systems.png" style="max-width: 750px;">
+                                <img src="../assets/images/Sections_1-6/CF_BL_systems.png" style="max-width: 750px;
+                                min-width: 550px;">
                             </figure>
                         </li>
                         <li>
@@ -2892,7 +3091,8 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                    Room Information entered values report for flows, System Information entered values report for fan power
+                                    Room Information entered values report for flows, System Information entered values
+                                    report for fan power
                                 </div>
                             </div>
                             <div class="row">
@@ -2928,7 +3128,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/Section_7_Simulation_Reports/trace3d_cooling_checksums.png">
+                                            data-full="../assets/images/Section_7_Simulation_Reports/trace3d_cooling_checksums-ahvac18.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -2944,7 +3144,7 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                     System Loads Report, Detailed Simulation Report, Space Loads & Ventilation Report,
+                                    System Loads Report, Detailed Simulation Report, Space Loads & Ventilation Report,
                                     Florida Energy Code Compliance Report
                                 </div>
                             </div>
@@ -3079,7 +3279,8 @@
                             <li>Variable volume system fans often reach the maximum flow no greater than 70% of the
                                 design CFM, drawing approximately 50% of the design power (Table 16).
                                 <figure>
-                                    <img src="../assets/images/Sections_1-6/CF_fan_table.png" style="max-width: 750px;">
+                                    <img src="../assets/images/Sections_1-6/CF_fan_table.png" style="max-width: 750px;
+                                    min-width: 550px;">
                                 </figure>
                             </li>
                         </ol>
@@ -3162,7 +3363,7 @@
                         <div class="row">
                             <div class="col-12 border-bottom border-left border-right">
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                        data-full="../assets/images/Section_7_Simulation_Reports/trace3d_Section_1.6.png">
+                                        data-full="../assets/images/Section_7_Simulation_Reports/trace3d_peak_demand.png">
                                     Annotated Report
                                 </button>
                             </div>
@@ -3352,7 +3553,8 @@
 
                         <p><strong>Table 16: Fraction of VAV Fan Power at Reduced Flow (PRM RM)</strong></p>
                         <figure>
-                            <img src="../assets/images/Sections_1-6/table16_AHVAC.png" style="max-width: 750px;">
+                            <img src="../assets/images/Sections_1-6/table16_AHVAC.png" style="max-width: 750px;
+                            min-width: 550px;">
                         </figure>
 
                         <p>Common Mistakes:</p>
@@ -3440,7 +3642,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/Section_7_Simulation_Reports/trace3d_Section_1.6.png">
+                                            data-full="../assets/images/Section_7_Simulation_Reports/trace3d_peak_demand.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -3499,7 +3701,7 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                     eplustbl.html ‘Equipment Summary’ report, ‘Fans’ section, ‘Demand End Use
+                                    eplustbl.html ‘Equipment Summary’ report, ‘Fans’ section, ‘Demand End Use
                                     Components Summary’ report. The user may need to set the fan subcategory field to
                                     report out for a fan pump if several are present.
                                 </div>
@@ -3547,7 +3749,7 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                     Design Fan kWs: “Air System Sizing Summary” or “Zone Sizing Summary” system design
+                                    Design Fan kWs: “Air System Sizing Summary” or “Zone Sizing Summary” system design
                                     reports:.  Annual fan kWh for individual fans: “Monthly Simulation Results” reports.
                                 </div>
                             </div>
@@ -3593,7 +3795,7 @@
                         the provided information with the design documents for a sample of HVAC systems to ensure
                         alignment.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_economizer.png" style="max-width: 450px;">
+                            <img src="../assets/images/Sections_1-6/CF_economizer.png" style="max-width: 450px; min-width: 350px;">
                         </figure>
                     </li>
                     <li>
@@ -3681,7 +3883,8 @@
                         </a>
                         for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_AHVAC_econ.png" style="max-width: 450px;">
+                            <img src="../assets/images/Sections_1-6/CF_AHVAC_econ.png" style="max-width: 450px;
+                            min-width: 550px;">
                         </figure>
                     </li>
                 </ol>
@@ -3776,14 +3979,16 @@
 
             <!--AHVAC23-P Section -->
             <div id="ahvac23-p" class="card card-body mb-3" data-check-type="2" data-component="ancillary" data-model="P">
-                <h3>AHVAC23–P Design ventilation rates reported in the Compliance Form are consistent with the design documents</h3>
+                <h3>AHVAC23–P Design ventilation rates reported in the Compliance Form are consistent with the design
+                    documents</h3>
                 <h5>Review Tips</h5>
                 <ol>
                     <li>
                         Outdoor air rates are reported in Table 2a of the Proposed HVAC tab. Cross-check reported rates
                         with the design documents for a sample of specified systems to verify alignment.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_AHVAC23.png" style="max-width: 450px;">
+                            <img src="../assets/images/Sections_1-6/CF_AHVAC23.png" style="max-width: 450px;
+                            min-width: 350px;">
                         </figure>
                     </li>
                 </ol>
@@ -3798,7 +4003,8 @@
                         Outdoor air rates are reported in Table 2a of the Proposed HVAC tab. Cross-check reported rates
                         with the design documents for a sample of specified systems to verify alignment.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_AHVAC23.png" style="max-width: 450px;">
+                            <img src="../assets/images/Sections_1-6/CF_AHVAC23.png" style="max-width: 450px;
+                            min-width: 350px;">
                         </figure>
                     </li>
                 </ol>
@@ -3904,7 +4110,8 @@
                                     alteration and the requirements of 90.1-2022 Section 6.1.4, and
                                 </li>
                                 <li>
-                                    DCV is not required to be modeled in the baseline according to 90.1 Section 6.4.3.8</li>
+                                    DCV is not required to be modeled in the baseline according to 90.1 Section
+                                    6.4.3.8</li>
                             </ol>
                             <p>
                                 then ventilation air flow may differ between the baseline and proposed due to DCV. See
@@ -3922,7 +4129,7 @@
                              equal to the corresponding budget system. Over-written defaults are shown in brown font and
                              should be verified by reviewer.
                             <figure>
-                                <img src="../assets/images/Sections_1-6/CF_Table_2a.png" style="max-width: 450px;">
+                                <img src="../assets/images/Sections_1-6/CF_Table_2a.png" style="max-width: 450px; min-width: 550px;">
                             </figure>
                          </li>
                      </ol>
@@ -3944,7 +4151,8 @@
                              HVAC zones in the proposed design (which is the default selection) or whether it deviates
                              from the proposed design due to exceptions to G3.1.2.5/G3.2.2.4.
                             <figure>
-                                <img src="../assets/images/Sections_1-6/CF_BL_fans.png" style="max-width: 450px;">
+                                <img src="../assets/images/Sections_1-6/CF_BL_fans.png" style="max-width: 450px;
+                                min-width: 350px;">
                             </figure>
                          </li>
                          <li>
@@ -3953,7 +4161,8 @@
                              Table 3a indicates that the ventilation rate in all baseline systems is modeled as “Equal
                              to Proposed”, the baseline and proposed rates are expected to be the same in Table 3b.
                             <figure>
-                                <img src="../assets/images/Sections_1-6/CF_BL_fans.png" style="max-width: 450px;">
+                                <img src="../assets/images/Sections_1-6/CF_BL_fans.png" style="max-width: 450px;
+                                min-width: 350px;">
                             </figure>
                          </li>
                          <li>Common Mistakes
@@ -3985,7 +4194,7 @@
                         information provided in the table with the design documents for a sample of specified systems to
                         verify alignment.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_DCV.png" style="max-width: 450px;">
+                            <img src="../assets/images/Sections_1-6/CF_DCV.png" style="max-width: 450px; min-width: 350px;">
                         </figure>
                     </li>
                 </ol>
@@ -4006,7 +4215,7 @@
                         brown font and applicable exceptions must be listed. Verify that DCV is specified where
                         required.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_table-4.png" style="max-width: 450px;">
+                            <img src="../assets/images/Sections_1-6/CF_table-4.png" style="max-width: 450px; min-width: 350px;">
                         </figure>
                     </li>
                 </ol>
@@ -4098,10 +4307,6 @@
                                             data-full="../assets/images/Section_7_Simulation_Reports/trace700_system_entered_values.png">
                                         Annotated Report
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/Section_7_Simulation_Reports/trace700_system_entered_values2.png">
-                                        Annotated Report
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -4120,7 +4325,10 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
-                                    <!-- Outside air & ASHRAE 62.1 Report not in Trace 3D Section -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/Section_7_Simulation_Reports/trade3d-OA-62.1.png">
+                                        Annotated Report
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -4134,7 +4342,7 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                     Space Loads & Ventilation Report, ASHRAE 62.1 Report, System Loads Report, Detailed
+                                    Space Loads & Ventilation Report, ASHRAE 62.1 Report, System Loads Report, Detailed
                                     Simulation Report, Florida Energy Code Compliance Report
                                 </div>
                             </div>
@@ -4264,7 +4472,7 @@
                         information provided in the table with the design documents for a sample of specified systems to
                         verify alignment.
                         <figure>
-                            <img src="../assets/images/Sections_1-6/CF_exhaust.png" style="max-width: 450px;">
+                            <img src="../assets/images/Sections_1-6/CF_exhaust.png" style="max-width: 450px; min-width: 350px;">
                         </figure>
                     </li>
                 </ol>
@@ -4410,7 +4618,7 @@
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/Section_7_Simulation_Reports/trace700_system_entered_values2.png">
+                                            data-full="../assets/images/Section_7_Simulation_Reports/trane700-system-checksums.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -4444,7 +4652,7 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                     System Loads Report, Energy Model Output Report, PRM Compliance Report, ECB
+                                    System Loads Report, Energy Model Output Report, PRM Compliance Report, ECB
                                     Compliance Report, BPRM Report, Detailed Simulation Report
                                 </div>
                             </div>
@@ -4487,7 +4695,7 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                     eplustbl.html ‘Component Sizing Summary’ report,
+                                    eplustbl.html ‘Component Sizing Summary’ report,
                                     ‘HeatExchanger:AirToAir:SensibleAndLatent’ section, System Information entered
                                     values report for type, effectiveness, controls and added static pressure drop
                                 </div>
@@ -4529,7 +4737,7 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                      Energy Recovery Data: “Air System Input Data” reports.  Flow rates: “Ventilation
+                                    Energy Recovery Data: “Air System Input Data” reports.  Flow rates: “Ventilation
                                     Sizing Summary” system design report.
                                 </div>
                             </div>
@@ -4832,7 +5040,7 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                      Building level data: “Monthly Energy Use by System Component” report.  Individual
+                                    Building level data: “Monthly Energy Use by System Component” report.  Individual
                                     system level data: “Monthly Simulation Results” reports.
                                 </div>
                             </div>
@@ -4857,7 +5065,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/Section_7_Simulation_Reports/Design_Builder_26-28.png">
+                                            data-full="../assets/images/Section_7_Simulation_Reports/design-builder-ahvac-31.png">
                                         Annotated Report
                                     </button>
                                 </div>
