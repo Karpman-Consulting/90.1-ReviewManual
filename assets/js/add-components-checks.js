@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
         $('.selectpicker').selectpicker();
         attachEventListeners();
         populateLinks();
+        attachSearchInputListener();
+        replaceAnchorLinks();
     });
 
     // Load footer
@@ -269,5 +271,37 @@ function populateComponents() {
         option.value = component;
         option.textContent = labels[i];
         componentSelect.appendChild(option);
+    });
+}
+
+function attachSearchInputListener() {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            performSearch(e.target.value);
+        });
+    }
+}
+
+function replaceAnchorLinks() {
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                event.preventDefault();
+
+                const headerHeight = document.querySelector('#header-container').offsetHeight;
+                const scrollPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+                window.scrollTo({
+                    top: scrollPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
 }

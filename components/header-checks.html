@@ -5,11 +5,13 @@
             Filter Content
         </button>
 
-        <p></p>
-
-        <form class="mb-3 mr-3" role="search">
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        <form class="mb-3 me-3" role="search" autocomplete="off" style="position: relative;">
+            <div class="btn-group">
+               <input id="searchInput" class="form-control dropdown-toggle" placeholder="Search..." aria-label="Search" data-toggle="dropdown" aria-expanded="false">
+                <ul id="dropdownResults" class="dropdown-menu dropdown-menu-right"></ul>
+            </div>
         </form>
+
     </div>
 </div>
 
