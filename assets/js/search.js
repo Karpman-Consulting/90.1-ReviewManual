@@ -1155,9 +1155,11 @@ const fuse = new Fuse(list, options);
 
 // Initialize search on the Index page
 // Other pages this will have no effect because on load the search input is not present
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     const searchInput = document.getElementById('searchInput');
+    console.log('Attempting to initialize search');
     if (searchInput) {
+        console.log('Search input found');
         searchInput.addEventListener('input', (e) => {
             performSearch(e.target.value);
         });
