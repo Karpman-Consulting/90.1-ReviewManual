@@ -9,24 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../assets/images/favicon.ico" type="image/vnd.microsoft.icon"/>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floating Back to Top Button</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        #backToTop {
-            position: fixed; bottom: 20px; right: 30px;
-            background: #007BFF; color: white;
-            border: none; border-radius: 5px; padding: 10px;
-            cursor: pointer; animation: float 3s infinite alternate;
-        }
-        @keyframes float {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-10px); }
-        }
-    </style>
-
 </head>
 <body>
 <div class="d-flex flex-nowrap">
@@ -43,23 +25,14 @@
 
             <h3>Overview</h3>
 
-            <p>This category includes receptacle loads, non-HVAC motors, process loads, refrigeration equipment,
-            elevators and other systems and components reported on Plug, Process and Other Loads tab of the
-            Compliance Form. Some of these systems, such as certain refrigeration equipment and elevators, are
-            regulated by 90.1, while others are not. Table 9 summarizes the checks included in this group.
+            <p>
+                This category includes receptacle loads, non-HVAC motors, process loads, refrigeration equipment,
+                elevators and other systems and components reported on Plug, Process and Other Loads tab of the
+                Compliance Form. Some of these systems, such as certain refrigeration equipment and elevators, are
+                regulated by 90.1, while others are not. Table 9 summarizes the checks included in this group.
             </p>
 
             <p><strong>Table 9: Plug, Process and Other Loads Checks Overview</strong></p>
-
-            <div>
-                <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
-            </div>
-
-            <script>
-                function scrollToTop() {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            </script>
 
             <table id="checks-table" class="table table-bordered table-sm" border="1">
 
@@ -505,10 +478,10 @@
                 <div data-version="2019,2022" data-path="PRM">
                     <h5>90.1 2019 and 2022 PRM</h5>
                     <strong>Table G3.1 #4</strong>
-                    <p>The schedules must be typical of the proposed building type as determined by the designer and
+                    <p>
+                        The schedules must be typical of the proposed building type as determined by the designer and
                         approved by the rating authority.
                     </p>
-
                     <p style="margin: 0;"><strong>Table G3.1 #12</strong></p>
                     <ul>
                         <li>Receptacle schedules must be the same as the proposed design before the receptacle power
@@ -546,7 +519,6 @@
                     reported. Energy use from miscellaneous equipment and industrial is reported in Table 2 of the
                     Compliance Calculations tab.
                 </p>
-
                 <div class="annotated-report container">
                     <div class="row" data-bem-tool="eQUEST">
                         <div class="col-2 px-0">
@@ -761,9 +733,11 @@
                         <strong>Table 11.5.1 #12 Column A:</strong> All end use load components within and associated
                         with the building must be modeled including, but not limited to refrigeration equipment.
                     </p>
-                    <p><strong>Table 6.8.1-13 Commercial Refrigeration—Minimum Efficiency Requirements</strong><br>
+                    <p>
+                        <strong>Table 6.8.1-13 Commercial Refrigeration—Minimum Efficiency Requirements</strong><br>
                         Minimum efficiency requirements specified in the table are mandatory and must be met by the
-                        specified units.</p>
+                        specified units.
+                    </p>
                 </div>
 
                  <div data-version="2019,2022" data-path="ECB">
@@ -849,10 +823,12 @@
                  <div data-version="2019,2022" data-path="ECB">
                     <h5>90.1 2019/2022 ECB</h5>
                     <strong>Table 11.5.1 #13 Column B/Table 12.5.1 #13 Column B</strong>
-                    <p>Where refrigeration equipment is specified in the proposed design and listed in Table 6.8.1-11, the
-                    budget building design shall be modeled as specified in Table 6.8.1-11 using the actual equipment
-                    capacities. If the refrigeration equipment is not listed in Table 6.8.1-11, the budget building design shall
-                    be modeled the same as the proposed design.</p>
+                    <p>
+                        Where refrigeration equipment is specified in the proposed design and listed in Table 6.8.1-11,
+                        the budget building design shall be modeled as specified in Table 6.8.1-11 using the actual
+                        equipment capacities. If the refrigeration equipment is not listed in Table 6.8.1-11, the budget
+                        building design shall be modeled the same as the proposed design.
+                    </p>
                 </div>
 
                 <div data-version="2016,2019" data-path="PRM">
@@ -876,7 +852,8 @@
                     <strong><u>G3.2 New Construction/Major Alterations</u></strong>
                     <p>Requirements are the same as described for the 90.1 2016 and 2019 PRM above.</p>
 
-                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
+                    <p>
+                        <strong><u>G3.3 Minor Alterations</u></strong><br>
                         Based on 90.1 Section G3.3.2.1, commercial refrigerators & freezers included in the scope of
                         retrofit shall be modeled at efficiency levels meeting the mandatory and prescriptive
                         requirements in 90.1 Section 6.1.4.
@@ -893,7 +870,8 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Energy use of the regulated refrigerators and freezers in the baseline/budget design is
+                    <li>
+                        Energy use of the regulated refrigerators and freezers in the baseline/budget design is
                         established automatically in Table 3 on the Plug, Process and Other Loads tab. However, the
                         calculations are based on the characteristic of the corresponding proposed unit reported in
                         Table 3 below, thus the related inputs should be verified. Cross-check information provided in
@@ -901,7 +879,9 @@
                         for largest difference between baseline and proposed design accounting for unit quantity.
                         Reference to appropriate design documents where each unit is described must be provided in the
                         last column of Table 3. If details that must be captured in Table 3 are not available in the
-                        design documents, request equipment cutsheets or manufacturer literature.<br><br>
+                        design documents, request equipment cutsheets or manufacturer literature.
+                        <br>
+                        <br>
                         <p>
                             For 90.1 2019 and 2022 projects, Table 9 on the Plug, Process and Other Loads tab includes
                             information about walk-in cooler and freezer equipment. Similar to above, cross-check
@@ -909,10 +889,10 @@
                         </p>
                         <p>
                             Refer to
-                            <a href="#" class="modal-2022-g3_3-trigger" data-content-id="ppo05-b">90.1 2022
-                            Section G3.3 Performance Calculations for Other Alterations</a>
-                            for review tips for
-                            alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
+                            <a href="#" class="modal-2022-g3_3-trigger" data-content-id="ppo05-b">
+                                90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                            </a>
+                            for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
                         </p>
                         <figure>
                             <img src="../assets/images/section1-6/CF_ppo05.png" style="max-width: 750px; min-width: 550px;">
@@ -928,8 +908,10 @@
             <!--PPO06 Section -->
 
             <div id="ppo06" class="card card-body mb-3" data-check-type="5,6" data-component="commercial" data-model="B,P">
-                <h3>PPO06 Regulated refrigerators and freezers are modeled as reported in the Compliance Form for the
-                    baseline/budget and proposed design.</h3>
+                <h3>
+                    PPO06 Regulated refrigerators and freezers are modeled as reported in the Compliance Form for the
+                    baseline/budget and proposed design.
+                </h3>
 
                 <h5>Review Tips</h5>
                 <ol>
@@ -1254,7 +1236,9 @@
                         Same requirements as Table G3.1#16, Baseline Building Performance column described above for the
                         90.1 2016 and 2019 PRM.
                     </p>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
+                    <p>
+                        <strong><u>G3.3 Minor Alterations</u></strong>
+                        <br>
                         Based on Section G3.3.2.1, elevators included in the scope of retrofit shall be modeled at
                         efficiency levels meeting the mandatory and prescriptive requirements in Sections 10.1.4. All
                         other elevators should be modeled identically in the baseline and proposed.
@@ -1365,7 +1349,9 @@
                         systems other than on-site renewable energy systems, the baseline design shall include the same
                         generation systems excluding its site-recovered energy.
                     </p>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
+                    <p>
+                        <strong><u>G3.3 Minor Alterations</u></strong>
+                        <br>
                         90.1 Section G3.3.1 states that systems and equipment excluded from the scope of retrofit shall
                         reflect the existing conditions. Consequently, the requirement for CHP is the same as for G3.2
                         with the exception that if existing building systems use recovered heat from an existing on-site
