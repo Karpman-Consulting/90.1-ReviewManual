@@ -421,7 +421,7 @@ footer img {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    border-radius: 10px;
+    border-radius: 20px !important;
     padding: 10px;
     transition: opacity 0.3s ease-in-out, visibility 0.3s;
     z-index: 1000;
