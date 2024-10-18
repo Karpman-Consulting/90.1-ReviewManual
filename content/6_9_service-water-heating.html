@@ -9,24 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../assets/images/favicon.ico" type="image/vnd.microsoft.icon"/>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floating Back to Top Button</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        #backToTop {
-            position: fixed; bottom: 20px; right: 30px;
-            background: #007BFF; color: white;
-            border: none; border-radius: 5px; padding: 10px;
-            cursor: pointer; animation: float 3s infinite alternate;
-        }
-        @keyframes float {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-10px); }
-        }
-    </style>
-
 </head>
 <body>
 <div class="d-flex flex-nowrap">
@@ -39,16 +21,6 @@
         <div id="page-content" class="container">
 
             <!--- Page Content Goes Here --->
-            <div>
-                <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
-            </div>
-
-            <script>
-                function scrollToTop() {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            </script>
-
             <h1>Service Water Heating (SWH)</h1>
 
             <h3>Overview</h3>
@@ -1317,7 +1289,9 @@
             </div>
           </div>
         </div>
-
+        <div>
+            <button id="backToTop" class="btn btn-primary" onclick="scrollToTop()">↑ Back to Top</button>
+        </div>
     </main>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>

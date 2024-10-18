@@ -367,10 +367,10 @@ const list = [
         "checkHref": "content/6_6_lighting-interior.html#li01"
     },
     {
-        "key": "LI02",
+        "key": "LI02-P",
         "title": "Proposed lighting power reported in the Compliance Form reflects design documents for spaces where lighting is fully specified",
         "tags": [],
-        "checkHref": "content/6_6_lighting-interior.html#li02"
+        "checkHref": "content/6_6_lighting-interior.html#li02-p"
     },
     {
         "key": "LI03-P",
@@ -1157,9 +1157,7 @@ const fuse = new Fuse(list, options);
 // Other pages this will have no effect because on load the search input is not present
 window.addEventListener('load', () => {
     const searchInput = document.getElementById('searchInput');
-    console.log('Attempting to initialize search');
     if (searchInput) {
-        console.log('Search input found');
         searchInput.addEventListener('input', (e) => {
             performSearch(e.target.value);
         });
