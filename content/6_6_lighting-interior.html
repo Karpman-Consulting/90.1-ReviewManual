@@ -20,6 +20,16 @@
 
         <div id="page-content" class="container">
             <!--- Page Content Goes Here --->
+            <h1>Lighting, Interior (LI)</h1>
+
+            <h3>Overview</h3>
+
+            <p>
+                Lighting Interior check group addresses interior lighting power and controls. Table 7 summarizes the
+                checks included in this group.
+            </p>
+
+            <p><strong>Table 7: Lighting Interior Quality Control Checks Overview</strong></p>
 
             <table id="checks-table" class="table table-bordered table-sm" border="1">
 
@@ -59,7 +69,7 @@
                         <td rowspan="5">Lighting Power</td>
                         <td>CF inputs reflect design documents</td>
                         <td>
-                            <a href="#li02">LI02-P</a>
+                            <a href="#li02-p">LI02-P</a>
                         </td>
                         <td>NA</td>
                     </tr>
@@ -111,7 +121,7 @@
                     <tr>
                         <td>Meet mandatory requirements</td>
                         <td class="automated">
-                            <a href="#li05">LI05</a>
+                            <a href="#li05-b">LI05</a>
                         </td>
                         <td>NA</td>
                     </tr>
@@ -175,14 +185,29 @@
                 <img src="../assets/images/section1-6/CF_lighting-space-type-table.png" style="max-width: 750px; min-width: 350px;">
             </figure>
 
+            <p>
+                For 90.1 2022 PRM alterations subject to G3.3 (i.e., Minor Alterations), the summary tables on the
+                Quality Control Checks tab in the Compliance Form may not reflect correct values for the baseline since
+                projects, for the most part, only enter proposed design information and provide notes as to what was
+                modeled in the baseline in the notes fields associated with the proposed design related tables. Refer to
+                the
+                <a href="../content/6_14_90-1-2022-section-g3-3.html">
+                    90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                </a>
+                section for more information regarding 90.1 2022 G3.3.
+            </p>
+
             <!--LI01 Section -->
             <div id="li01" class="card card-body mb-3" data-check-type="2" data-component="general" data-model="B,P">
-                <h3>LI01 The floor area used in the lighting calculations is consistent with the reported project floor
-                    area.</h3>
+                <h3>
+                    LI01 The floor area used in the lighting calculations is consistent with the reported project floor
+                    area.
+                </h3>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>In order to establish the baseline/budget lighting power allowance, the floor area of individual
+                    <li>
+                        In order to establish the baseline/budget lighting power allowance, the floor area of individual
                         spaces (for projects using space-by-space method) or building area types (for Energy Cost Budget
                         Method projects using building area method) are reported in Table 1 of the Interior Lighting
                         Counts tab. The baseline/budget lighting power allowance will not be determined correctly if the
@@ -195,13 +220,34 @@
             </div>
 
             <!--LI02 Section -->
-            <div id="li02" class="card card-body mb-3" data-check-type="2" data-component="power" data-model="P">
-                <h3>LI02-P Proposed lighting power reported in the Compliance Form reflects design documents for spaces
-                    where lighting is fully specified</h3>
+            <div id="li02-p" class="card card-body mb-3" data-check-type="2" data-component="power" data-model="P">
+                <h3>
+                    LI02-P Proposed lighting power reported in the Compliance Form reflects design documents for spaces
+                    where lighting is fully specified
+                </h3>
+
+                <div data-version="2016,2019,2022" data-path="ECB,PRM">
+                    <h5>90.1 2016 and 2019/2022 ECB; 90.1 2016, 2019, and 2022 PRM</h5>
+                    <strong>90.1 Table 11.5.1 #6/90.1 Table 12.5.1 #6; Table G3.1 #6</strong>
+                    <ul>
+                        <li>
+                            Where a complete lighting system exists (e.g., in a renovation project where lighting is left as is), the
+                            actual lighting power must be modeled for each thermal block.
+                        </li>
+                        <li>
+                            Where a lighting system has been designed, lighting power must be determined in accordance with
+                            90.1 Sections 9.1.3 and 9.1.4. Based on these sections, the wattage must include all power used by
+                            the fixtures including lamps, ballasts, transformers and control devices and be based on the
+                            <u>manufacturers’ labeled maximum wattage of the luminaire</u>. Some exceptions may apply (90.1
+                            Sections 9.1.1, 9.1.3, 9.1.4, 9.2.2.3, 9.4.2).
+                        </li>
+                    </ul>
+                </div>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Refer to the table in the Interior Lighting section on the Quality Control Tab to identify
+                    <li>
+                        Refer to the table in the Interior Lighting section on the Quality Control Tab to identify
                         lighting fixtures with the highest total wattage. Focus the review on these fixtures and
                         spot-check others. data.
                         <figure>
@@ -216,25 +262,28 @@
                         <figure>
                             <img src="../assets/images/section1-6/CF_lighting-counts.png" style="max-width: 750px; min-width: 350px;">
                         </figure>
-                        <p><strong>Example:</strong> Wall sconces installed in the corridors of a multifamily building
+                        <p>
+                            <strong>Example:</strong> Wall sconces installed in the corridors of a multifamily building
                             are specified with two 18W CFL bulbs but have the manufacturers’ rated wattage of 120 W
                             based on incandescent bulbs. The 120W per fixture must be used in the LPD calculations for
                             the proposed design, unless the installed fixtures are re-labeled by the manufacturer based
                             on the CFL lamps. Thus, unless all of the specified fixtures reflect the maximum rated
                             wattage, or the fixtures are re-labeled by the manufacturer, the total fixture wattages
-                            specified on the lighting drawings will typically be lower than the wattages that must be
-                            used in the lighting compliance calculations.
+                            specified on the lighting drawings will typically be <em><u>lower</u></em> than the wattages
+                            that must be used in the lighting compliance calculations.
                         </p>
                     </li>
 
-                    <li>Refer to the table in the Interior Lighting section on the Quality Control Tab to identify space types
-                        that account for the greatest total lighting wattage.
+                    <li>
+                        Refer to the table in the Interior Lighting section on the Quality Control Tab to identify space
+                        types that account for the greatest total lighting wattage.
                         <figure>
                             <img src="../assets/images/section1-6/CF_space-types.png" style="max-width: 750px; min-width: 450px;">
                         </figure>
-                        <p>Locate several spaces of that type on the Interior Lighting Counts tab. Refer to the lighting plans to
-                           confirm that fixture types and counts for these spaces reported in the Compliance Form match
-                           design documents.
+                        <p>
+                            Locate several spaces of that type on the Interior Lighting Counts tab. Refer to the
+                            lighting plans to confirm that fixture types and counts for these spaces reported in the
+                            Compliance Form match design documents.
                         </p>
                         <figure>
                             <img src="../assets/images/section1-6/CF_lighting-counts-img2.png" style="max-width: 750px; min-width: 450px;">
@@ -244,12 +293,12 @@
                     <li>Common Mistakes
                         <ol style="list-style-type: lower-alpha">
                             <li>
-                                Fixture wattage is not based on a complete fixture including lamp and ballast and does not
-                                reflect manufacturer rated fixture wattage.
+                                Fixture wattage is not based on a complete fixture including lamp and ballast and does
+                                not reflect manufacturer rated fixture wattage.
                             </li>
                             <li>
-                                Track lighting is not calculated according to the allowed methods as described in 90.1 Section
-                                9.1.4.
+                                Track lighting is not calculated according to the allowed methods as described in 90.1
+                                Section 9.1.4.
                             </li>
                             <li>
                                 Proposed LPDs are based on partially specified or temporary lighting. For example, in hotel
@@ -274,7 +323,7 @@
                     </p>
                 </div>
 
-                 <div data-version="2016,2019" data-path="PRM">
+                <div data-version="2016,2019" data-path="PRM">
                     <h5>90.1 2016 and 2019 PRM</h5>
                     <p>
                         <strong>Table G3.1 #6, proposed Column, #c:</strong>Where lighting neither exists nor is
@@ -375,7 +424,7 @@
                     <br>
                     <strong><u>G3.3 Minor Alterations</u></strong>
                     <p>
-                        <strong>G3.3.2.6 Interior Lighting</strong>Lighting applies to alterations subject to 90.1 2022
+                        <strong>G3.3.2.6 Interior Lighting</strong> applies to alterations subject to 90.1 2022
                         Section G3.3 (i.e., Minor Alterations) and requires interior lighting power density included in
                         the scope of the alteration to be modeled as meeting the minimum requirements of 90.1 Section
                         9.1.1.3.1 using applicable allowances in 90.1 Section 9.5.2.1. Lighting not included in the
@@ -443,12 +492,12 @@
                                 <p>
                                     <strong>Example:</strong> The proposed design includes decorative wall sconces
                                     in the corridors of a multifamily building. The sconces are controlled
-                                    separately from the general ceiling lighting and have 0.7 W/ft2 LPD calculated
+                                    separately from the general ceiling lighting and have 0.7 W/ft<sup>2</sup> LPD calculated
                                     as described in 90.1 Section 9.1.3 and 90.1 Section 9.1.4.
                                 </p>
                                 <p>
                                     <u>Energy Cost Budget:</u> If the project used the space-by-space method, 0.7
-                                    W/ft2 can be added to the budget corridor LPD allowance. If the project uses the
+                                    W/ft<sup>2</sup> can be added to the budget corridor LPD allowance. If the project uses the
                                     building area method, lighting in the budget design cannot be increased to
                                     include the decorative allowance. The proposed design must be modeled as
                                     specified and include both the general and decorative lighting.
@@ -558,7 +607,7 @@
                         analysis. Other specified automatic lighting controls included in the proposed design must be
                         modeled by reducing the lighting schedule each hour by the Occupancy Sensor Reduction factors in
                         90.1 Table G3.7, including Notes b and c below the table.  Credit for other programmable
-                        lighting control in buildings less than 5000 ft2 can be taken by reducing the lighting schedule
+                        lighting control in buildings less than 5000 ft<sup>2</sup> can be taken by reducing the lighting schedule
                         each hour by 10%.
                     </p>
                     <p><strong><u>G3.3 Minor Alterations</u></strong></p>
@@ -673,9 +722,8 @@
                     <strong><u>G3.2 New Construction/Major Alterations</u></strong>
                     <p>The requirements are the same as described in Table G3.1 #6 for the 90.1 2016 and 2019 PRM
                         above.</p>
-                    <br>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>
+
+                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
                         Lighting controls shall be modeled as meeting the minimum requirements of 90.1 Section 9.1.1.3.1
                         in the baseline design model.
                     </p>
@@ -716,16 +764,15 @@
                         occupancy sensors (if applicable) and modeled daylighting controls. The modeled interior
                         lighting peak demand may be compared to the interior lighting wattage reported on the Interior
                         Lighting Summary tab Table 1 to verify the following for Performance Rating Method (except for
-                        90.1 2022 alterations subject to G3.3) projects:
+                        90.1 2022 alterations subject to G3.3) projects:<br><br>
                         <p>
-                            MLD base > TLW base indicates an error in the baseline model because the modeled
+                            MLD<sub>base</sub> > TLW<sub>base</sub> indicates an error in the baseline model because the modeled
                             non-coincident peak demand cannot exceed the maximum wattage reported in the Compliance
                             Form. When this check fails, the model inputs or the baseline lighting wattage reported in
                             the Compliance Form must be corrected.
                         </p>
                         <p>MLD = modeled noncoincident lighting peak demand from simulation reports[kW]</p>
                         <p>TLW = total lighting wattage from Table 1 of the Interior Lighting Summary tab [kW]</p>
-                    <br>
                     <p>
                         Optionally, a similar check may be completed for Performance Rating Method proposed design and
                         Energy Cost Budget budget and proposed design. However, for these models the coincident peak
@@ -781,7 +828,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/LEED-summary-1-6.png">
+                                            data-full="../assets/images/section7/LEED-summary-li-le07.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -803,7 +850,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/LEED-summary-1-6.png">
+                                            data-full="../assets/images/section7/trace3d_LI06-11.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -851,6 +898,10 @@
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_BPRM-report.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_BPRM-report-2.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -1420,11 +1471,10 @@
                         Full Load Hours (EFLH) are equal to the sum of the hourly schedule fractions over the year. EFLH
                         represent the number of hours lights must be fully on in order to consume the equivalent amount
                         of energy.
-                        <br>
+                        <br><br>
                         <p>EFLH = LEU / TLW</p>
                         <p>LEU  = simulated annual lighting energy use [kWh]</p>
                         <p>TLW = total lighting wattage from Table 1 of the Interior Lighting Summary tab tab [kW]</p>
-                        <br>
                         <p>
                             90.1 Section 9.4.1.1 requires turning off most non-emergency lights during unoccupied periods.
                             Furthermore, during the hours when the building is occupied, not all lights are on at all
@@ -1669,11 +1719,9 @@
                         The difference between the baseline (budget) and proposed annual lighting energy use (kWh) is
                         driven by the difference in the lighting wattages and controls of the two models. The expected
                         patterns are described below.
-                        <br>
+                        <br><br>
                         <p>TLW<sub>prop</sub>* LCC / LTW<sub>budget</sub> ~ LEU<sub>prop</sub> / LEU<sub>budget</sub></p>
-                        <br>
                         <p>LCC = proposed design lighting controls credit.</p>
-                        <br>
                         <ul>
                             <li>
                                 For Performance Rating Method, LCC=0.7 may be assumed (i.e. ~30% reduction in lighting
@@ -1686,14 +1734,12 @@
                                 addition to those required by 90.1, or ~ 0.9 if additional lighting controls are specified.
                             </li>
                         </ul>
-                        <br>
-                        <p>
+                        <p><br>
                             Difference in the lighting energy use between baseline/budget and proposed design that does
                             not follow this expected pattern may indicate that lighting was not simulated correctly and
                             should be flagged in the review. However, the expected change in lighting energy use may be
                             different on projects using space-by-space method, as shown in examples below.
                         </p>
-                        <br>
                         <p>
                             <strong>Example 1:</strong> 60,000 ft<sup>2</sup> dormitory building includes 30,000
                             ft<sup>2</sup> of dorm rooms (dormitory living quarters space type) with 0.3 W/
@@ -1702,7 +1748,6 @@
                             sensor controls meeting the minimum requirements in 90.1 Table 9.6.1. The project follows
                             ECB and uses the building area method for the lighting calculations.
                         </p>
-                       <br>
                         <p>
                             Based on 90.1 Table 9.5.1, the building area allowance is 0.61W/ ft<sup>2</sup> (90.1 Table 9.5.1).
                             This LPD must be modeled for all spaces in the budget model. The proposed LPD is
@@ -1710,7 +1755,6 @@
                             energy use in the proposed design is expected to be 0.55/0.61 ~ 90% of the budget lighting
                             energy use.
                         </p>
-                        <br>
                         <p>
                             <strong>Example 2:</strong> Same project as in Example 1, but the space-by-space method is
                             used. 90.1 Table 9.6.1 has an allowance of 0.54 W/ ft<sup>2</sup> for dormitory living quarters and
@@ -1784,7 +1828,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/trace3d_li07-li10.png">
+                                            data-full="../assets/images/section7/trace3d_LI06-11.png">
                                         Annotated Report
                                     </button>
                                 </div>

@@ -367,10 +367,10 @@ const list = [
         "checkHref": "content/6_6_lighting-interior.html#li01"
     },
     {
-        "key": "LI02",
+        "key": "LI02-P",
         "title": "Proposed lighting power reported in the Compliance Form reflects design documents for spaces where lighting is fully specified",
         "tags": [],
-        "checkHref": "content/6_6_lighting-interior.html#li02"
+        "checkHref": "content/6_6_lighting-interior.html#li02-p"
     },
     {
         "key": "LI03-P",
