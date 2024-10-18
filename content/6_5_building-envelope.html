@@ -9,24 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../assets/images/favicon.ico" type="image/vnd.microsoft.icon"/>
-
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floating Back to Top Button</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        #backToTop {
-            position: fixed; bottom: 20px; right: 30px;
-            background: #007BFF; color: white;
-            border: none; border-radius: 5px; padding: 10px;
-            cursor: pointer; animation: float 3s infinite alternate;
-        }
-        @keyframes float {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-10px); }
-        }
-    </style>
-
 </head>
 <body>
 <div class="d-flex flex-nowrap">
@@ -38,30 +20,26 @@
 
         <div id="page-content" class="container">
             <!--- Page Content Goes Here --->
-            <div>
-                <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
-            </div>
-
-            <script>
-                function scrollToTop() {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            </script>
-
             <h1>Building Envelope (BE)</h1>
 
             <h3>Overview of the Building Envelope Checks</h3>
 
-            <p>Building Envelope group of checks addresses above and below grade walls and floors, roof, fenestration,
+            <p>
+                Building Envelope group of checks addresses above and below grade walls and floors, roof, fenestration,
                 infiltration, building orientation and exterior and interior shading. Table 5 summarizes the checks
-                included in this group.</p>
+                included in this group.
+            </p>
 
-            <p>For 90.1 2022 PRM alterations subject to G3.3 (i.e., Minor alterations), the summary tables on the Quality
+            <p>
+                For 90.1 2022 PRM alterations subject to G3.3 (i.e., Minor alterations), the summary tables on the Quality
                 Control Checks tab in the Compliance Form may not reflect correct values for the baseline since projects,
                 for the most part, only enter proposed design information and provide notes as to what was modeled in the
                 baseline in the notes fields associated with the proposed design related tables. Refer to the
-                <a href="../content/6_14_90-1-2022-section-g3-3.html">90.1 2022 Section G3.3 Performance Calculations for
-                Other Alterations</a> section for more information regarding 90.1 2022 G3.3.</p>
+                <a href="../content/6_14_90-1-2022-section-g3-3.html">
+                    90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                </a>
+                section for more information regarding 90.1 2022 G3.3.
+            </p>
 
             <p><strong>Table 5: Building Envelope Checks Overview</strong></p>
 
@@ -3799,7 +3777,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/LEED_summary_1-6.png">
+                                            data-full="../assets/images/section7/LEED-summary-1_6.png">
                                         Annotated Report
                                     </button>
                                 </div>
