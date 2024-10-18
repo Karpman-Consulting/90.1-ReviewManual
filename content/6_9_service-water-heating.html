@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../assets/images/favicon.ico" type="image/vnd.microsoft.icon"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Back to Top Button</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #backToTop {
+            position: fixed; bottom: 20px; right: 30px;
+            background: #007BFF; color: white;
+            border: none; border-radius: 5px; padding: 10px;
+            cursor: pointer; animation: float 3s infinite alternate;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+    </style>
+
 </head>
 <body>
 <div class="d-flex flex-nowrap">
@@ -21,6 +39,24 @@
         <div id="page-content" class="container">
 
             <!--- Page Content Goes Here --->
+            <div>
+                <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
+            </div>
+
+            <script>
+                function scrollToTop() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            </script>
+
+            <h1>Service Water Heating (SWH)</h1>
+
+            <h3>Overview</h3>
+
+            <p>The service water heating category covers parameters related to the service water heating equipment
+            and demand. Table 11 summarizes the checks included in this group. </p>
+
+            <p><strong>Table 11: Service Water Heating Quality Control Checks Overview</strong></p>
 
             <table id="checks-table" class="table table-bordered table-sm" border="1">
 
@@ -162,7 +198,7 @@
                  <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016 and 2019/2022 ECB</h5>
                     <strong>Table 11.5.1 Column A #11/Table 12.5.1 Column A #11</strong>
-                     <p>
+                     <p style="margin:0;">
                          The service water-heating system type and all related performance parameters, such as equipment
                          capacities and efficiencies, in the proposed design are determined as follows:
                      </p>
@@ -186,7 +222,7 @@
                 <div data-version="2016,2019,2022" data-path="PRM">
                     <h5>90.1 2016, 2019, and 2022 PRM</h5>
                     <strong>Table G3.1 #11, Proposed Building Performance</strong>
-                    <p>
+                    <p style="margin:0;">
                         The service water-heating system type and all related performance parameters, such as equipment
                         capacities and efficiencies, in the proposed design must be determined as follows:
                     </p>
@@ -236,7 +272,7 @@
             <!--SWH02-P Section -->
             <div id="swh02-p" class="card card-body mb-3" data-check-type="3" data-component="system" data-model="P">
                 <h3>SWH02-P Proposed SWH system efficiency reported in the Compliance Form meets the mandatory
-                    requirements of 90.1 Section 8.</h3>
+                    requirements of 90.1 Section 8</h3>
 
                 <h5>Review Tips</h5>
                 <ol>
@@ -284,9 +320,9 @@
                     <p>Requirements are the same as Table G3.1 Baseline Building Performance column #11 for the 90.1 2016
                         and 2019 PRM described above.
                     </p>
-                    <br>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>Service water heating systems included in the scope of the alteration are required to be modeled with
+
+                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
+                        Service water heating systems included in the scope of the alteration are required to be modeled with
                         the minimum requirements in 90.1 Section 7.1.4 with the same system type modeled as specified in
                         proposed design. All unmodified service water heating systems and equipment shall be modeled the
                         same as in the proposed design.
@@ -401,9 +437,8 @@
                         Requirements are the same as Table G3.1 #11, Baseline Building Performance column, (e) & (f) for the
                         90.1 2016 and 2019 PRM described above.
                     </p>
-                    <br>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>
+
+                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
                         Alterations subject to 90.1 2022 Section G3.3 (i.e., Minor Alterations) are only required to model
                         condenser heat recovery systems if the requirements are applicable based on the scope of the alteration
                         and based on the language in 90.1 Section 6.1.4. This means, based on the language in 90.1 Section
@@ -450,8 +485,10 @@
                                 Table 4 calculates SHW demand for multifamily projects based on the entered flow rates for the
                                 specified fixtures in showers and sinks, average supply SHW temperature, entering cold water
                                 temperature and temperature at the fixture point of use. The calculations are based on
-                                requirements of the EPA ENERGY STAR Multifamily New Construction Program Simulation
-                                Guidelines. Verify that entered flow rates match design documents.
+                                requirements of the
+                                <a href="https://www.energystar.gov/sites/default/files/asset/document/ENERGY_STAR_MFHR_Simulation_Guidelines_AppG2016.pdf">
+                                EPA ENERGY STAR Multifamily New Construction Program Simulation Guidelines</a>. Verify that entered flow rates
+                                match design documents.
                             </li>
                             <li>
                                 Table 5 shows default service hot water use for non-residential building types. The default
@@ -487,29 +524,28 @@
 
                 <div data-version="2016,2019,2022" data-path="PRM">
                     <h5>90.1 2016 and 2019/2022 PRM</h5>
-                    <p><strong>Table G3.1 #11 Baseline Building Performance column:</strong>Exception to (g) states that
-                        service water heating use can be reduced due to the following:
+                    <p style="margin:0;"><strong>Table G3.1 #11 Baseline Building Performance column:</strong> Exception to (g)
+                        states that service water heating use can be reduced due to the following:
                     </p>
                         <ul>
                             <li>
-                                water conservation measures that reduce the physical volume of service water required.
+                                Water conservation measures that reduce the physical volume of service water required.
                                 Examples include low-flow shower heads.
                             </li>
                             <li>
-                                reducing the required temperature of service mixed water, by increasing the temperature, or by
+                                Reducing the required temperature of service mixed water, by increasing the temperature, or by
                                 increasing the temperature of the entering makeup water. Examples include alternative sanitizing
                                 technologies for dishwashing and heat recovery to entering makeup water.
                             </li>
                             <li>
-                                reducing the hot fraction of mixed water to achieve required operational temperature. Examples
+                                Reducing the hot fraction of mixed water to achieve required operational temperature. Examples
                                 include shower or laundry heat recovery to incoming cold-water supply, reducing the hot-water
                                 fraction required to meet required mixed-water temperature.
                             </li>
                         </ul>
                     <p>Such reductions must be demonstrated by calculations.</p>
-                    <br>
-                    <p>
-                        2019 and 2022 editions include the following clarification in Table G3.1 #1, Baseline Building column:
+                    <p style="margin:0;">2019 and 2022 editions include the following clarification in Table G3.1 #1, Baseline
+                       Building column:<br>
                        Where the baseline building systems and equipment are permitted to be different from the proposed design but
                        are not prescribed in this appendix, the baseline must be determined based on the following,
                        in the order of priority:
@@ -663,7 +699,7 @@
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/IESVE_florida.png">
+                                            data-full="../assets/images/section7/IESVE_florida_pg3.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -792,13 +828,12 @@
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li><u>ECB:</u> Since the budget SWH system must be of the same type and use the same fuel as the proposed
+                    <li>ECB: Since the budget SWH system must be of the same type and use the same fuel as the proposed
                         system and the reduction in the hot water demand is not a trade-off opportunity, the difference in
                         SWH energy use between the budget and proposed design depends only on the difference in
                         efficiencies of the budget and proposed systems.
                         <p><br>SWH_Use<sub>prop</sub> * SWH_Eff<sub>prop</sub> = SWH_Use<sub>budget</sub> * SWH_Eff<sub>budget
                         </sub></p>
-                        <br>
                         <p>SWH_Use [MMBtu] = the annual SWH use from simulation output reports</p>
                         <p>SWH_Eff = SWH efficiency reported in the submittal</p>
                         <p>
@@ -809,7 +844,7 @@
                         </p>
                     </li>
                     <li>
-                        <u>90.1 PRM:</u> The baseline SWH system may be of a different type and use a different fuel than the
+                        90.1 PRM: The baseline SWH system may be of a different type and use a different fuel than the
                         proposed SWH system and there may be a difference in hot water demand between the baseline
                         and proposed design, thus this check cannot be effectively performed. For alterations following 90.1
                         2022 Section G3.3 (i.e., Minor Alterations) that are not modeling a reduction in hot water demand
@@ -860,6 +895,10 @@
                                             data-full="../assets/images/section7/trace700_equip.png">
                                         Annotated Report
                                     </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/trane_equip-energy.png">
+                                        Annotated Report
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -879,7 +918,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/LEED-summary-1_6.png">
+                                            data-full="../assets/images/section7/trace3d-LI06-11.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -904,6 +943,10 @@
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_detailed-sim.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE-ahvac19-swh06.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -1098,7 +1141,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/LEED_summary_1-6.png">
+                                            data-full="../assets/images/section7/trace3d-LI06-11.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -1154,7 +1197,7 @@
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/IESVE_florida.png">
+                                            data-full="../assets/images/section7/IESVE_florida_pg3.png">
                                         Annotated Report
                                     </button>
                                 </div>
