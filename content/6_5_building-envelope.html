@@ -20,6 +20,28 @@
 
         <div id="page-content" class="container">
             <!--- Page Content Goes Here --->
+            <h1>Building Envelope (BE)</h1>
+
+            <h3>Overview of the Building Envelope Checks</h3>
+
+            <p>
+                Building Envelope group of checks addresses above and below grade walls and floors, roof, fenestration,
+                infiltration, building orientation and exterior and interior shading. Table 5 summarizes the checks
+                included in this group.
+            </p>
+
+            <p>
+                For 90.1 2022 PRM alterations subject to G3.3 (i.e., Minor alterations), the summary tables on the Quality
+                Control Checks tab in the Compliance Form may not reflect correct values for the baseline since projects,
+                for the most part, only enter proposed design information and provide notes as to what was modeled in the
+                baseline in the notes fields associated with the proposed design related tables. Refer to the
+                <a href="../content/6_14_90-1-2022-section-g3-3.html">
+                    90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                </a>
+                section for more information regarding 90.1 2022 G3.3.
+            </p>
+
+            <p><strong>Table 5: Building Envelope Checks Overview</strong></p>
 
             <table id="checks-table" class="table table-bordered table-sm" border="1">
                 <colgroup>
@@ -371,12 +393,295 @@
                 <p>See BE05-B for section references and review tips as they are analogous for all opaque assemblies.</p>
             </div>
 
+             <!-- BE02-B Section -->
+            <div id="be02-b" class="card card-body mb-3" data-check-type="4" data-component="BGW" data-model="B">
+                <h3>BE02-B Thermal properties of the baseline/budget below-grade walls are established correctly.</h3>
+                <p>See BE05-B for section references and review tips as they are analogous for all opaque assemblies.</p>
+            </div>
+
+            <!-- BE03-B Section -->
+            <div id="be03-b" class="card card-body mb-3" data-check-type="4" data-component="roof" data-model="B">
+                <h3>BE03-B Thermal properties of the baseline/budget roof are established correctly.</h3>
+                <p>See BE05-B for section references and review tips as they are analogous for all opaque assemblies.</p>
+            </div>
+
+            <!-- BE04-B Section -->
+            <div id="be04-b" class="card card-body mb-3" data-check-type="4" data-component="ext-floors" data-model="B">
+                <h3>BE04-B Thermal properties of the baseline/budget exterior floors are established correctly.</h3>
+                <p>See BE05-B for section references and review tips as they are analogous for all opaque assemblies.</p>
+            </div>
+
+            <!-- BE05-B Section -->
+            <div id="be05-b" class="card card-body mb-3" data-check-type="4" data-component="SOG" data-model="B">
+                <h3>BE05-B Thermal properties of the baseline/budget slab-on-grade floor are established correctly.</h3>
+
+                <div data-version="2016,2019" data-path="ECB">
+                    <h5>90.1 2016 and 2019 ECB</h5>
+                    <p>
+                        <strong>Table 11.5.1#5a, Column B:</strong>The opaque assemblies, such as roof, floors, doors and
+                        walls must be modeled with the same heat capacity (the same construction) as the proposed
+                        building design and the U-factors in 90.1 Section 5.5 for new buildings or additions and 90.1
+                        Section 5.1.3 (5.1.4 in 90.1 2022) for alterations.  When trade-offs are made between an
+                        addition and an existing building as described in the exception to Section 4.2.1.2, the envelope
+                        in the budget building design must reflect existing conditions prior to any retrofits that are
+                        part of the permit. Unconditioned envelope components must be modeled with the same properties
+                        as specified in the proposed design.
+                    </p>
+                </div>
+
+                <div data-version="2022" data-path="ECB">
+                    <h5>90.1 2022 ECB</h5>
+                    <p>
+                        <strong>12.5.1 #5a, Column B </strong>has similar requirements to Table 11.5.1#5a, Column B
+                        described above. However, 90.1 2022 specifically includes requirements for adjusting above grade
+                        wall U-factors in the budget model to account for linear thermal bridges and point thermal
+                        bridges. 12.5.1 #5b, Column B: Where linear thermal bridges and point thermal bridges, as
+                        identified in Sections 5.5.5.1 through 5.5.5.5, are included in the proposed design, they must
+                        be modeled by adjusting the U-factor of the parent assembly in accordance with the default
+                        values in Section A10. If the proposed design does not have linear thermal bridges and point
+                        thermal bridges, as identified in Sections 5.5.5.1 through 5.5.5.5, they do not have to be
+                        modeled in the budget building design. If the balcony length in the proposed design exceeds the
+                        maximum allowed by Sections 5.5.5.2.2, the area must be reduced proportionally for each balcony
+                        until the limit set in Sections 5.5.5.2.2 is met.
+                    </p>
+                </div>
+
+                <div data-version="2016,2019" data-path="PRM">
+                    <h5>90.1 2016 and 2019 PRM</h5>
+                    <p>
+                        <strong>Table G3.1 #5, Baseline Building Performance column: </strong>Opaque assemblies of new
+                        buildings, existing buildings, or additions shall conform with assemblies detailed in 90.1
+                        Appendix A and match the appropriate assembly maximum U-factors in 90.1 Tables G3.4-1 through
+                        G3.4-8:
+                    </p>
+                        <ul>
+                            <li>Roofs—Insulation entirely above deck (90.1 Section A2.2).</li>
+                            <li>Above-grade walls—Steel-framed (90.1 Section A3.3).</li>
+                            <li>Below-grade walls—Concrete block (90.1 Section A4).</li>
+                            <li>Floors—Steel-joist (90.1 Section A5.3).</li>
+                            <li>Slab-on-grade floors shall match the F-factor for unheated slabs from the same tables
+                                (90.1 Section A6).</li>
+                        </ul>
+                    <p>
+                        Unconditioned envelope components must be modeled in the baseline with the same properties as
+                        specified in the proposed design.
+                    </p>
+                </div>
+
+                <div data-version="2022" data-path="PRM">
+                    <h5>90.1 2022 PRM</h5>
+                    <strong><u>G3.2 New Construction/Major Alterations</u></strong>
+                    <p>
+                        Requirements are similar to 90.1 2016 and 2019 PRM requirements described above. An addition is
+                        that the process of establishing the space conditioning category was clarified in 90.1 2022.
+                        Table G3.1 #5b, Baseline Building Performance column: Space conditioning categories used to
+                        determine applicability of the envelope requirements in Tables G3.4-1 through G3.4-8 shall be
+                        the same as in the proposed design
+                    </p>
+                    <p>
+                        Exception: Envelope components of the HVAC zones that are semiheated in the proposed design must
+                        meet conditioned envelope requirements in Tables G3.4-1 through G3.4-8 if, based on the sizing
+                        runs, these zones are served by a baseline system with sensible cooling output capacity ≥5
+                        Btu/h·ft2 of floor area, or with heating output capacity greater than or equal to the criteria
+                        in Table G3.4-9, or that are indirectly conditioned spaces.
+                    </p>
+                    <strong><u>G3.3 Minor Alterations</u></strong>
+                    <p>The opaque assemblies included in the scope of retrofit for alterations subject to 90.1 2022 G3.3
+                        (i.e., minor alterations not meeting G3.1.4a) shall be modeled with U-factors meeting the
+                        requirements in Section 5.1.4 (see
+                        <a href="https://www.ashrae.org/file%20library/technical%20resources/standards%20and%20guidelines/standards%20errata/standards/90.1-2022-ip-erratasheet-10-24-2023-.pdf">
+                            errata sheet for ANSI/ASHRAE/IES STANDARD 90.1-2022
+                        </a>
+                        for correction from 5.1.3 to 5.1.4) as prescribed in 90.1 Section G3.3.2.3.
+                    </p>
+                </div>
+
+                <h5>Review Tips</h5>
+                <ol>
+                    <li>Baseline/budget assembly U/F/C factors are auto populated in Table 1 of the Envelope Areas tab
+                        of the Compliance Form based on the space conditioning categories specified by the user. Thus,
+                        the review should focus on verifying that the building envelope conditioning categories are
+                        established correctly, with the focus on the above-grade exterior walls that account for the
+                        greatest area. (The ranking of exterior walls by area is shown in the Quality Controls Checks
+                        tab, Building Envelope (BE) area. Refer to
+                        <a href ="#" class="modal-2022-g3_3-trigger" data-content-id="be05-b">
+                            90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                        </a>
+                        for tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
+                        <figure>
+                            <img src="../assets/images/section1-6/CF_building-env.png" style="min-width: 900px;">
+                        </figure>
+                        <p>The selection should be based on the following criteria:</p>
+                        <ul>
+                            <li>
+                                Residential surface bounds residential space and must be classified as exterior
+                                building envelope
+                            </li>
+                            <li>
+                                Nonresidential surface bounds nonresidential space and is classified as exterior
+                                building envelope
+                            </li>
+                            <li>Semiheated surface is classified as semiexterior building envelope</li>
+                            <li>All other surfaces are classified as unconditioned.</li>
+                        </ul>
+                        <br>
+                        <strong>90.1 Section 3: Residential vs non-residential spaces</strong>
+                        <ul>
+                            <li>
+                                Residential spaces are “spaces in buildings used primarily for living and sleeping.
+                                Residential spaces include, but are not limited to, dwelling units, hotel/motel
+                                guest rooms, dormitories, nursing homes, patient rooms in hospitals, lodging houses,
+                                fraternity/sorority houses, hostels, prisons, and fire stations.”
+                            </li>
+                            <li>All other enclosed spaces are classified as non-residential.</li>
+                            <li>
+                                Unenclosed spaces include crawlspaces, attics, and parking garages with natural or
+                                mechanical ventilation and are treated as exterior when determining applicable
+                                envelope requirements
+                            </li>
+                        </ul>
+                        <br>
+                        <strong>90.1 Section 3 and Figure 5.5.2: Exterior vs semi-exterior building envelope</strong>
+                        <ul>
+                            <li>
+                                Exterior Building Envelope: the elements of a building that separate conditioned
+                                spaces from the exterior
+                            </li>
+                            <li>
+                                Semiexterior Building Envelope: the elements of a building that separate conditioned
+                                space from unconditioned space or that enclose semiheated spaces through which
+                                thermal energy may be transferred to or from the exterior, to or from unconditioned
+                                spaces, or to or from conditioned spaces.
+                            </li>
+                            <li>
+                                Spaces may be classified as conditioned (cooled, heating or indirectly conditioned),
+                                semiheated, unconditioned or unenclosed. See definition of the space in 90.1 Section
+                                3 for more details.
+                            </li>
+                            <li>
+                                Common examples of conditioned spaces include offices, classrooms, hotel guestrooms,
+                                etc. Common examples of semiheated spaces include storage areas.
+                            </li>
+                        </ul><br>
+                    </li>
+                    <li>For 90.1 2022 ECB projects, budget assembly U factors accounting for linear and point thermal
+                        bridging are manually entered in Table 1 of the Envelope Areas tab of the Compliance Form in the
+                        column labeled Utot. The Submittal Checklist on the Submittal+Mand.Req. Checklists tab in the
+                        Compliance Form requests that the submitter provide supporting documentation/calculations in
+                        accordance with the default values in 90.1 2022 Section A10 for establishing the Utot values
+                        modeled in the budget design model. Confirm that the supporting documentation/calculations Utot
+                        values align with the values entered in Table 1 and that values were established in accordance
+                        with the default values in Section A10. Note that alterations other than additions are exempt
+                        from thermal bridging requirements according to Standard 90.1-2022 Section 5.5.5 exception #6.
+                        <figure>
+                            <img src="../assets/images/section1-6/CF_build-env-areas.png" style="min-width: 900px;">
+                        </figure>
+                    </li>
+                </ol>
+
+                <strong>Example BE05-B</strong>
+                <strong>(This specific example applies to 90.1 2022 ECB budget designs only)</strong>
+                <p>
+                    A 33,000 square foot, 4-story multifamily building includes thermal bridging due to brick shelf
+                    angle cladding support, a parapet that follows the entire perimeter of the roof, and wall to
+                    vertical fenestration intersections. Below is a high-level graphical depiction showing the location
+                    of these thermal bridges. The length of the parapet would equal the perimeter of the building since
+                    it runs along the edge of the roof, the brick shelf angles run continuously along the perimeter once
+                    per floor so the total linear length would be the perimeter of the building multiplied by 4-stories,
+                    and the length of the wall to vertical fenestration would be the sum of the perimeter of each window
+                    as depicted with the yellow lines around the perimeter of the window shown in the graphic below.
+                </p>
+                <figure>
+                    <img src="../assets/images/section1-6/be05-ex1.png" style="max-width: 750px; min-width: 550px;">
+                </figure>
+                <p>
+                    The design team needs to quantify the length of each linear thermal bridge as measured on the
+                    outside surface of the building envelope (Li) and the number of occurrences of each type of point
+                    thermal bridge (ni). Below, outlined in red, is an example of the minimum information needed to
+                    determine the budget U-factor to model for example assembly EW-1. This process would need to be
+                    completed for all above grade wall assemblies. Project teams can use the built-in functionality in
+                    Comcheck for 90.1 2022 to complete and document these calculations.
+                </p>
+                <figure>
+                    <img src="../assets/images/section1-6/be05-ex2.png" style="max-width: 500px; min-width: 500px;">
+                </figure>
+                <p>The budget Utot is calculated using equation 90.1 2022 A10.2 which is shown directly below.</p>
+                <p>Utot = {[(∑ψi × Li) + (∑χj × nj)]/Atotal) + Uo}</p>
+                <p>Where</p>
+                <p>
+                    Utot = overall thermal transmittance, including the effect of linear thermal bridges and point
+                    thermal bridges not included in the construction assembly Uo-factor, Btu/(h·ft<sup>2</sup>·°F)
+                </p>
+                <p>
+                    Uo = clear-field thermal transmittance of the construction assembly as determined from 90.1 2022
+                    Tables 5.5, 0-8 based on the proposed design assembly type, Btu/(h·ft<sup>2</sup>·°F)
+                </p>
+                <p>Atotal 	= total opaque projected surface area of the construction assembly, ft<sup>2</sup></p>
+                <p>
+                    ψi 	= psi-factor, thermal transmittance for each type of linear thermal bridge from 90.1 2022 Table
+                    A10.1 “Default” column, Btu/(h·ft·°F)
+                </p>
+                <p>
+                    Li 	= length of a particular linear thermal bridge as measured on the outside surface of the
+                    building envelope, ft
+                </p>
+                <p>
+                    χi 	= chi-factor, thermal transmittance for each detail type of point thermal bridge from 90.1 2022
+                    Table A10.1 “Default” column, Btu/(h·°F)
+                </p>
+                <p>ni = number of occurrences a particular type of point thermal bridge</p>
+                <p>
+                    Below, outlined in red, shows the Psi-factor from both the Unmitigated column and the Default column
+                    from 90.1 2022 Table A10.1 (left value is unmitigated and right is default). The chi-factors are not
+                    shown because they are not applicable to the thermal bridging types shown in the table.
+                </p>
+                <figure>
+                    <img src="../assets/images/section1-6/be05-ex5.png" style="max-width: 650px; min-width: 550px;">
+                </figure>
+                <p>
+                    Using equation A10.2 the Utot required to be modeled in the budget design model is calculated as
+                    follows:
+                </p>
+                <p>
+                    Utot budget for EW-1 = 0.064 + [(1,162 ft * 0.217 Btu/(h·ft·°F)) + (415 ft* 0.151 Btu/(h·ft·°F)) +
+                    (1,387.2 ft * 0.112 Btu/(h·ft·°F))]/13,294 ft<sup>2</sup> = 0.064 + 0.0353 = 0.099 Btu/(h·ft<sup>2</sup>·°F)
+                </p>
+                <p>
+                    Below is an example format for complete documentation/supporting calculations. These calculations
+                    would need to be submitted for each above grade wall assembly. The chi-factors are not shown because
+                    they are not applicable to the thermal bridging types shown in the table. For this review check the
+                    proposed design related columns can be ignored. Project teams can use the built-in functionality in
+                    Comcheck for 90.1 2022 to complete and document these calculations.
+                </p>
+                <figure>
+                    <img src="../assets/images/section1-6/be05-ex6.png" style="max-width: 750px; min-width: 550px;">
+                </figure>
+                <p>
+                    For this review check spot check the calculations for alignment with 90.1 2022 equation A10.2 and
+                    compare Li and ni inputs to design documents to ensure they have been captured correctly in the
+                    calculations.
+                </p>
+
+                <p style="margin: 0;">Common Mistakes</p>
+                <ol style="list-style-type: lower-alpha">
+                    <li>
+                        Floors of conditioned spaces adjacent to garages must be treated as exterior surfaces when
+                        establishing the baseline floor U-value, as garages are considered un-enclosed spaces.
+                    </li>
+                    <li>
+                        Treating the envelope of residential spaces in non-residential buildings as non-residential
+                        envelope. For example, even though hospitals are considered non-residential building type,
+                        patient rooms are used primarily for living and sleeping, and are thus residential spaces.
+                    </li>
+                </ol>
+            </div>
+
             <!-- BE01-P Section -->
             <div id="be01-p" class="card card-body mb-3" data-check-type="2" data-component="AGW" data-model="P">
                 <h3>BE01-P Thermal properties of the exterior walls in the proposed design are established correctly.</h3>
 
                 <div data-version="2016,2019,2022" data-path="ECB">
-                <h5>90.1 2016 and 2019 ECB</h5>
+                    <h5>90.1 2016 and 2019 ECB</h5>
                     <strong>Table 11.5.1 #5 Column A</strong>
                     <p>
                         All components of the building envelope in the proposed design must be modeled as shown on
@@ -388,10 +693,11 @@
                 </div>
 
                 <div data-version="2022" data-path="ECB">
-                <h5>90.1 2022 ECB</h5>
+                    <h5>90.1 2022 ECB</h5>
                     <p>
                         Requirements of Table 12.5.1 #5 Column A are similar to Table 11.5.1 #5 Column A above except for
-                        the addition of the following.</p>
+                        the addition of the following.
+                    </p>
                     <p>
                         All linear thermal bridge and point thermal bridge as identified in Section 5.5.5 must be modeled
                         using either of the following techniques:
@@ -400,214 +706,239 @@
                         <li>Separate model of each of these assemblies within the energy simulation model.</li>
                         <li>Adjustment of the clear-field U-factor in accordance with Section A10.2.</li>
                     </ul>
-                    <p>All uninsulated assemblies (e.g., projecting balconies, perimeter edges of intermediate floor
+                    <p>
+                        All uninsulated assemblies (e.g., projecting balconies, perimeter edges of intermediate floor
                         stabs, concrete floor beams over parking garages, roof parapet) must be separately modeled using
-                        either of the following techniques:</p>
-                     <ul>
-                         <li>Separate model of each of these assemblies within the energy simulation model.</li>
-                         <li>Separate calculation of the U-factor for each of these assemblies. The U-factors of these
+                        either of the following techniques:
+                    </p>
+                    <ul>
+                        <li>Separate model of each of these assemblies within the energy simulation model.
+                        </li>
+                        <li>Separate calculation of the U-factor for each of these assemblies. The U-factors of these
                              assemblies are then averaged with larger adjacent surfaces using an area-weighted average
-                             method. This average U-factor is modeled within the energy simulation model.</li>
-                     </ul>
+                             method. This average U-factor is modeled within the energy simulation model.
+                        </li>
+                    </ul>
                 </div>
 
                 <div data-version="2016,2019" data-path="PRM">
-                <h5>90.1 2016 and 2019 PRM</h5>
+                    <h5>90.1 2016 and 2019 PRM</h5>
                     <strong>Table G3.1 #5 (a), Proposed Building Performance column</strong>
-                    <p>All components of the building envelope in the proposed design must be modeled as shown on
-                        architectural drawings or as built for existing building envelopes.</p>
-                    <p>All uninsulated assemblies (e.g., projecting balconies, perimeter edges of intermediate floor
+                    <p>
+                        All components of the building envelope in the proposed design must be modeled as shown on
+                        architectural drawings or as built for existing building envelopes.
+                    </p>
+                    <p>
+                        All uninsulated assemblies (e.g., projecting balconies, perimeter edges of intermediate floor
                         stabs, concrete floor beams over parking garages, roof parapet) must be separately modeled using
-                        either of the following techniques:</p>
+                        either of the following techniques:
+                    </p>
                     <ul>
                         <li>Separate model of each of these assemblies within the energy simulation model.</li>
-                        <li>Separate calculation of the U-factor for each of these assemblies. The U-factors of these
+                        <li>
+                            Separate calculation of the U-factor for each of these assemblies. The U-factors of these
                             assemblies are then averaged with larger adjacent surfaces using an area-weighted average
-                            method. This average U-factor is modeled within the energy simulation model.</li>
+                            method. This average U-factor is modeled within the energy simulation model.
+                        </li>
                     </ul>
-                    <p>Any other building envelope assembly that covers less than 5% of the total area of that assembly
+                    <p>
+                        Any other building envelope assembly that covers less than 5% of the total area of that assembly
                         type (e.g., exterior walls) need not be separately described, provided that it is similar to an
                         assembly being modeled. If not separately described, the area of a building envelope assembly
                         must be added to the area of an assembly of that same type with the same orientation and thermal
-                        properties.</p>
+                        properties.
+                    </p>
                 </div>
 
                 <div data-version="2022" data-path="PRM">
-                <h5>90.1 2022 PRM</h5>
-                    <p>Requirements are similar to 90.1 2016 and 2019 PRM Table G3.1 #5 (a), Proposed Building
-                        Performance column requirements above except for the addition of the following.</p>
-                    <p>All linear thermal bridge and point thermal bridge as identified in Section 5.5.5 must be modeled
-                        using either of the following techniques:</p>
+                    <h5>90.1 2022 PRM</h5>
+                    <p>
+                        Requirements are similar to 90.1 2016 and 2019 PRM Table G3.1 #5 (a), Proposed Building
+                        Performance column requirements above except for the addition of the following.
+                    </p>
+                    <p>
+                        All linear thermal bridge and point thermal bridge as identified in Section 5.5.5 must be modeled
+                        using either of the following techniques:
+                    </p>
                     <ul>
                         <li>Separate model of each of these assemblies within the energy simulation model.</li>
                         <li>Adjustment of the clear-field U-factor in accordance with Section A10.2.</li>
                     </ul>
 
-                <h5>Review Tips</h5>
-                <ol>
-                    <li>Locate constructions selected for the review in the design documents based on the reference
-                        provided for that construction in the Plans/Specs column of Table 1 in the Proposed Envelope
-                        Assemblies tab of the Compliance form (note that some columns may be hatched out and table
-                        headings may vary depending on the applicable version of 90.1 since requirements differ across
-                        vintages). Focus the review on constructions that account for the highest wall area, as shown in
-                        the table in the Building Envelope (BE) section of the Quality Control Check tab.
-                        <figure>
-                            <img src="../assets/images/section1-6/be01p-tip1.png" style="min-width: 900px;">
-                        </figure>
-                    </li>
-
-                    <li>Verify that the description of the construction provided in the table reflects design documents.
-                        The location in the design documents where construction is described is included in the last
-                        column of Table 1 in the Proposed Envelope Assemblies tab of the Compliance Form shown above.
-                    </li>
-
-                    <li>Verify that the value reported in “Modeled U/C/F-factor Including Int. and Ext. Air Film” is
-                        established correctly. (See Common Mistakes section.)
-                        <p>
-                            For 90.1 2022 PRM and ECB projects, the proposed assembly U factors are required to account
-                            for linear and point thermal bridging, so Uclearfield needs to be derated and the resultant
-                            derated U-factor entered in the “Modeled U/C/F-factor Including Int. and Ext. Air Film”
-                            column. Uclearfield is entered in the “Uclearfield” column. Clear-field thermal bridges
-                            (90.1 Section 3) are elements of a building envelope assembly that are distributed over the
-                            area of the assembly and addressed in determining the thermal performance of the assembly in
-                            accordance with Normative Appendix A (i.e., U-factors determined from Appendix A tables are
-                            considered Uclearfield and need to be adjusted for linear and point thermal bridging).
-                        </p>
-                        <p>
-                            The Submittal Checklist on the Submittal+Mand.Req. Checklists tab in the Compliance Form
-                            requests that the submitter provide supporting documentation/calculations for the modeled
-                            U-factors that account for linear and point thermal bridging. Confirm that the supporting
-                            documentation/calculations align with the U-factor values entered in Table 1. If “Adjustment
-                            of the clear-field U-factor in accordance with Section A10.2” was selected in the “Technique
-                            to Capture Linear and Point Thermal Bridging” column, verify that values were established in
-                            accordance with Section A10.2. If “A separate model of the assembly within the energy
-                            simulation model" was selected in the “Technique to Capture Linear and Point Thermal
-                            Bridging” column, refer to Envelope Areas tab Table 1 to confirm that the reported Net Area
-                            for such assemblies is appropriate.
-                        </p>
-                        <strong>Example BE01-P: Project that is adjusting the clear-field U-factor in accordance with
-                            Section A10.2</strong>
-                        <p>
-                            See Example BE05-B for description of example project, assembly, and assembly thermal
-                            bridges. The same assembly and set of thermal bridges are used for this example.
-                        </p>
-                        <p>Like in Example BE05-B, the design team needs to quantify the length of each linear thermal
-                            bridge as measured on the outside surface of the building envelope (Li) and the number of
-                            occurrences of each type of point thermal bridge (ni). Below is an example of the minimum
-                            information needed to determine the proposed U-factor to model (Utot) for example assembly
-                            EW-1. This process would need to be completed for all above grade wall assemblies. Project
-                            teams can use the built-in functionality in Comcheck for 90.1 2022 to complete and document
-                            these calculations.
-                        </p>
-                        <figure>
-                            <img src="../assets/images/section1-6/be01p-ex1.png" style="max-width: 500px; min-width: 400px;">
-                        </figure>
-                        <p>The proposed Utot is calculated using equation 90.1 2022 A10.2 which is shown directly below.</p>
-                        <p>Utot = {[(∑ψi × Li) + (∑χj × nj)]/Atotal) + Uo}
-                        </p>
-                        <p>Where</p>
-                        <p>
-                            Utot 	= overall thermal transmittance, including the effect of linear thermal bridges and
-                            point thermal bridges not included in the construction assembly Uo-factor, Btu/(h·ft2·°F)
-                        </p>
-                        <p>Uo 	= clear-field thermal transmittance of the construction assembly as determined in
-                            accordance with Section 5, Btu/(h·ft2·°F)
-                        </p>
-                        <p>Atotal 	= total opaque projected surface area of the construction assembly, ft2</p>
-                        <p>
-                            ψi 	= psi-factor, thermal transmittance for each type of linear thermal bridge from 90.1
-                            2022 Table A10.1. The default column shall be used where the thermal bridge meets 90.1
-                            Section 5.5.5 prescriptive requirements. The unmitigated column shall be used where the
-                            thermal bridge does not meet the prescriptive requirements., Btu/(h·ft·°F)
-                        </p>
-                        <p>
-                            Li 	= length of a particular linear thermal bridge as measured on the outside surface of the
-                            building envelope, ft
-                        </p>
-                        <p>
-                            χi 	= chi-factor, thermal transmittance for each detail type of point thermal bridge from
-                            90.1 2022 Table A10.1.  The default column shall be used where the thermal bridge meets 90.1
-                            Section 5.5.5 prescriptive requirements. The unmitigated column shall be used where the
-                            thermal bridge does not meet the prescriptive requirements., Btu/(h·°F)
-                        </p>
-                        <p>ni 		= number of occurrences a particular type of point thermal bridge.</p>
-                        <p>
-                            The “Proposed Design Psi-Factor, Btu/(h·ft·°F) per Table A10.1” column in the graphic below
-                            shows the Psi-factor used in the calculation of Utot for the proposed design for this
-                            example assembly. This is determined based on whether the specified thermal bridging
-                            mitigation techniques (if any are specified) meet the prescriptive requirements in 90.1
-                            Section 5.5.5. If the specified thermal bridging mitigation techniques do not meet
-                            prescriptive requirements, then the unmitigated column in Table A10.1 must be used. For
-                            reference only, the “Unmitigated/Default Psi-Factor, Btu/(h·ft·°F) per Table A10.1” column
-                            below shows both the Unmitigated and Default columns from 90.1 2022 Table A10.1 (left value
-                            is unmitigated and right is default). The chi-factors are not shown because they are not
-                            applicable to the thermal bridging types shown in the table.
-                        </p>
+                    <h5>Review Tips</h5>
+                    <ol>
+                        <li>
+                            Locate constructions selected for the review in the design documents based on the reference
+                            provided for that construction in the Plans/Specs column of Table 1 in the Proposed Envelope
+                            Assemblies tab of the Compliance form (note that some columns may be hatched out and table
+                            headings may vary depending on the applicable version of 90.1 since requirements differ across
+                            vintages). Focus the review on constructions that account for the highest wall area, as shown in
+                            the table in the Building Envelope (BE) section of the Quality Control Check tab.
                             <figure>
-                                <img src="../assets/images/section1-6/be01p-ex2.png" style="max-width: 750px; min-width: 350px;">
+                                <img src="../assets/images/section1-6/be01p-tip1.png" style="min-width: 900px;">
                             </figure>
-                        <p>
-                            Using equation A10.2 the proposed Utot required to be modeled in the proposed design model
-                            for this example assembly is calculated as follows:
-                        </p>
-                        <p>
-                            Utot proposed for EW-1 = 0.055 + [(1,162 ft * 0.217 Btu/(h·ft·°F)) + (415 ft* 0.289
-                            Btu/(h·ft·°F)) + (1,387.2 ft * 0.112 Btu/(h·ft·°F))]/13,294 ft2 = 0.055 + 0.0353 = 0.095
-                            Btu/(h·ft2·°F)
-                        </p>
-                        <p>
-                            Below is an example format for complete documentation/supporting calculations. These
-                            calculations would need to be submitted for each above grade wall assembly. The chi-factors
-                            are not shown because they are not applicable to the thermal bridging types shown in the
-                            table. Project teams can use the built-in functionality in Comcheck for 90.1 2022 to
-                            complete and document these calculations.
-                        </p>
-                        <figure>
-                            <img src="../assets/images/section1-6/be01p-ex3.png" style="max-width: 750px; min-width: 350px;">
-                        </figure>
-                        <p>
+                        </li>
+
+                        <li>
+                            Verify that the description of the construction provided in the table reflects design documents.
+                            The location in the design documents where construction is described is included in the last
+                            column of Table 1 in the Proposed Envelope Assemblies tab of the Compliance Form shown above.
+                        </li>
+
+                        <li>
+                            Verify that the value reported in “Modeled U/C/F-factor Including Int. and Ext. Air Film” is
+                            established correctly. (See Common Mistakes section.)
+                            <br>
+                            <br>
+                            <p>
+                                For 90.1 2022 PRM and ECB projects, the proposed assembly U factors are required to account
+                                for linear and point thermal bridging, so Uclearfield needs to be derated and the resultant
+                                derated U-factor entered in the “Modeled U/C/F-factor Including Int. and Ext. Air Film”
+                                column. Uclearfield is entered in the “Uclearfield” column. Clear-field thermal bridges
+                                (90.1 Section 3) are elements of a building envelope assembly that are distributed over the
+                                area of the assembly and addressed in determining the thermal performance of the assembly in
+                                accordance with Normative Appendix A (i.e., U-factors determined from Appendix A tables are
+                                considered Uclearfield and need to be adjusted for linear and point thermal bridging).
+                            </p>
+                            <p>
+                                The Submittal Checklist on the Submittal+Mand.Req. Checklists tab in the Compliance Form
+                                requests that the submitter provide supporting documentation/calculations for the modeled
+                                U-factors that account for linear and point thermal bridging. Confirm that the supporting
+                                documentation/calculations align with the U-factor values entered in Table 1. If “Adjustment
+                                of the clear-field U-factor in accordance with Section A10.2” was selected in the “Technique
+                                to Capture Linear and Point Thermal Bridging” column, verify that values were established in
+                                accordance with Section A10.2. If “A separate model of the assembly within the energy
+                                simulation model" was selected in the “Technique to Capture Linear and Point Thermal
+                                Bridging” column, refer to Envelope Areas tab Table 1 to confirm that the reported Net Area
+                                for such assemblies is appropriate.
+                            </p>
+                            <strong>Example BE01-P: Project that is adjusting the clear-field U-factor in accordance with
+                                Section A10.2</strong>
+                            <p>
+                                See Example BE05-B for description of example project, assembly, and assembly thermal
+                                bridges. The same assembly and set of thermal bridges are used for this example.
+                            </p>
+                            <p>
+                                Like in Example BE05-B, the design team needs to quantify the length of each linear thermal
+                                bridge as measured on the outside surface of the building envelope (Li) and the number of
+                                occurrences of each type of point thermal bridge (ni). Below is an example of the minimum
+                                information needed to determine the proposed U-factor to model (Utot) for example assembly
+                                EW-1. This process would need to be completed for all above grade wall assemblies. Project
+                                teams can use the built-in functionality in Comcheck for 90.1 2022 to complete and document
+                                these calculations.
+                            </p>
+                            <figure>
+                                <img src="../assets/images/section1-6/be01p-ex1.png" style="max-width: 500px; min-width: 400px;">
+                            </figure>
+                            <p>The proposed Utot is calculated using equation 90.1 2022 A10.2 which is shown directly below.</p>
+                            <p>Utot = {[(∑ψi × Li) + (∑χj × nj)]/Atotal) + Uo}</p>
+                            <p>Where</p>
+                            <p>
+                                Utot 	= overall thermal transmittance, including the effect of linear thermal bridges and
+                                point thermal bridges not included in the construction assembly Uo-factor, Btu/(h·ft<sup>2</sup>·°F)
+                            </p>
+                            <p>Uo 	= clear-field thermal transmittance of the construction assembly as determined in
+                                accordance with Section 5, Btu/(h·ft<sup>2</sup>·°F)
+                            </p>
+                            <p>Atotal 	= total opaque projected surface area of the construction assembly, ft2</p>
+                            <p>
+                                ψi 	= psi-factor, thermal transmittance for each type of linear thermal bridge from 90.1
+                                2022 Table A10.1. The default column shall be used where the thermal bridge meets 90.1
+                                Section 5.5.5 prescriptive requirements. The unmitigated column shall be used where the
+                                thermal bridge does not meet the prescriptive requirements., Btu/(h·ft·°F)
+                            </p>
+                            <p>
+                                Li 	= length of a particular linear thermal bridge as measured on the outside surface of the
+                                building envelope, ft
+                            </p>
+                            <p>
+                                χi 	= chi-factor, thermal transmittance for each detail type of point thermal bridge from
+                                90.1 2022 Table A10.1.  The default column shall be used where the thermal bridge meets 90.1
+                                Section 5.5.5 prescriptive requirements. The unmitigated column shall be used where the
+                                thermal bridge does not meet the prescriptive requirements., Btu/(h·°F)
+                            </p>
+                            <p>ni 		= number of occurrences a particular type of point thermal bridge.</p>
+                            <p>
+                                The “Proposed Design Psi-Factor, Btu/(h·ft·°F) per Table A10.1” column in the graphic below
+                                shows the Psi-factor used in the calculation of Utot for the proposed design for this
+                                example assembly. This is determined based on whether the specified thermal bridging
+                                mitigation techniques (if any are specified) meet the prescriptive requirements in 90.1
+                                Section 5.5.5. If the specified thermal bridging mitigation techniques do not meet
+                                prescriptive requirements, then the unmitigated column in Table A10.1 must be used. For
+                                reference only, the “Unmitigated/Default Psi-Factor, Btu/(h·ft·°F) per Table A10.1” column
+                                below shows both the Unmitigated and Default columns from 90.1 2022 Table A10.1 (left value
+                                is unmitigated and right is default). The chi-factors are not shown because they are not
+                                applicable to the thermal bridging types shown in the table.
+                            </p>
+                                <figure>
+                                    <img src="../assets/images/section1-6/be01p-ex2.png" style="max-width: 750px; min-width: 350px;">
+                                </figure>
+                            <p>
+                                Using equation A10.2 the proposed Utot required to be modeled in the proposed design model
+                                for this example assembly is calculated as follows:
+                            </p>
+                            <p>
+                                Utot proposed for EW-1 = 0.055 + [(1,162 ft * 0.217 Btu/(h·ft·°F)) + (415 ft* 0.289
+                                Btu/(h·ft·°F)) + (1,387.2 ft * 0.112 Btu/(h·ft·°F))]/13,294 ft<sup>2</sup> = 0.055 + 0.0353 = 0.095
+                                Btu/(h·ft<sup>2</sup>·°F)
+                            </p>
+                            <p>
+                                Below is an example format for complete documentation/supporting calculations. These
+                                calculations would need to be submitted for each above grade wall assembly. The chi-factors
+                                are not shown because they are not applicable to the thermal bridging types shown in the
+                                table. Project teams can use the built-in functionality in Comcheck for 90.1 2022 to
+                                complete and document these calculations.
+                            </p>
+                            <figure>
+                                <img src="../assets/images/section1-6/be01p-ex3.png" style="max-width: 750px; min-width: 350px;">
+                            </figure>
+                            <br>
                             Spot check the calculations for alignment with 90.1 2022 equation A10.2, compare Li and ni
                             inputs to design documents, and verify that the project complies with prescriptive thermal
                             bridging mitigation requirements in Section 5.5.5 where default psi and chi factors are
                             used.
-                        </p>
-                    </li>
+                            <br>
+                            <br>
+                        </li>
 
-                    <li>
-                        Review architectural details drawing to identify if project includes any uninsulated assemblies
-                        such as projecting balconies, perimeter edges of intermediate floor stabs, concrete floor beams
-                        over parking garages and roof parapets (for 90.1 2022 projects many of these may already be
-                        captured as linear and/or point thermal bridges). If present, check “Modeled U/C/F-Factor
-                        Includes Uninsulated Assemblies?” column to confirm that such elements were included with the
-                        adjacent constructions with the appropriate adjustment to overall U-factor (based on
-                        area-weighted average) or reported as separate construction. If separately reported, refer to
-                        Envelope Areas tab Table 1 to confirm that the reported Net Area for such assemblies is
-                        appropriate.
-                    </li>
+                        <li>
+                            Review architectural details drawing to identify if project includes any uninsulated assemblies
+                            such as projecting balconies, perimeter edges of intermediate floor stabs, concrete floor beams
+                            over parking garages and roof parapets (for 90.1 2022 projects many of these may already be
+                            captured as linear and/or point thermal bridges). If present, check “Modeled U/C/F-Factor
+                            Includes Uninsulated Assemblies?” column to confirm that such elements were included with the
+                            adjacent constructions with the appropriate adjustment to overall U-factor (based on
+                            area-weighted average) or reported as separate construction. If separately reported, refer to
+                            Envelope Areas tab Table 1 to confirm that the reported Net Area for such assemblies is
+                            appropriate.
+                            <br>
+                            <br>
+                        </li>
 
-                    <li>Common Mistakes
-                        <ol style="list-style-type: lower-alpha">
-                            <li>
-                                The overall assembly U-value is established without accounting for clear-field thermal
-                                bridging, as required by 90.1 Section 5.5.3. For example, a steel framed wall assembly
-                                with R-13 insulation in the 16” on center steel framing cavity and R-3 continuous
-                                insulation must be reported as U-0.091.
-                                <figure>
-                                    <img src="../assets/images/section1-6/be01p-ex4.png" style="max-width: 750px; min-width: 550px;">
-                                </figure>
-                            </li>
-                            <li>
-                                For tapered roof insulation, the U-value should be based on the area-weighted average
-                                R-Value for the varying insulation thickness (see Standard 90.1 2016 User’s Manual
-                                Example FY1, Area Weighted Averages).
-                            </li>
-                            <li>
-                                For 90.1 2022 projects, failure to account for linear and point thermal bridging
-                                following the requirements for the ECB and PRM.
-                            </li>
-                        </ol>
-                    </li>
-                </ol>
+                        <li>Common Mistakes
+                            <ol style="list-style-type: lower-alpha">
+                                <li>
+                                    The overall assembly U-value is established without accounting for clear-field thermal
+                                    bridging, as required by 90.1 Section 5.5.3. For example, a steel framed wall assembly
+                                    with R-13 insulation in the 16” on center steel framing cavity and R-3 continuous
+                                    insulation must be reported as U-0.091.
+                                    <figure>
+                                        <img src="../assets/images/section1-6/be01p-ex4.png" style="max-width: 750px; min-width: 550px;">
+                                    </figure>
+                                </li>
+                                <li>
+                                    For tapered roof insulation, the U-value should be based on the area-weighted average
+                                    R-Value for the varying insulation thickness (see Standard 90.1 2016 User’s Manual
+                                    Example FY1, Area Weighted Averages).
+                                </li>
+                                <li>
+                                    For 90.1 2022 projects, failure to account for linear and point thermal bridging
+                                    following the requirements for the ECB and PRM.
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
             </div>
 
             <!-- BE02-P Section -->
@@ -654,10 +985,10 @@
                      </li>
                      <li>See BE01-P for additional tips.</li>
                  </ol>
-            </div>
+             </div>
 
             <!-- BE06-P, BE06-B Section -->
-             <div id="be06" class="card card-body mb-3" data-check-type="5" data-component="AGW" data-model="B,P">
+            <div id="be06" class="card card-body mb-3" data-check-type="5" data-component="AGW" data-model="B,P">
                 <h3>BE06-B, BE06-P Modeled U-factors and areas of the baseline/budget and proposed above-grade walls are
                     as reported in the Compliance Form. </h3>
                 <h5>Review Tips</h5>
@@ -889,304 +1220,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- BE02-B Section -->
-            <div id="be02-b" class="card card-body mb-3" data-check-type="4" data-component="BGW" data-model="B">
-                <h3>BE02-B Thermal properties of the baseline/budget below-grade walls are established correctly.</h3>
-                <p>See BE05-B for section references and review tips as they are analogous for all opaque assemblies.</p>
-            </div>
-
-            <!-- BE03-B Section -->
-            <div id="be03-b" class="card card-body mb-3" data-check-type="4" data-component="roof" data-model="B">
-                <h3>BE03-B Thermal properties of the baseline/budget roof are established correctly.</h3>
-                <p>See BE05-B for section references and review tips as they are analogous for all opaque assemblies.</p>
-            </div>
-
-            <!-- BE04-B Section -->
-            <div id="be04-b" class="card card-body mb-3" data-check-type="4" data-component="ext-floors" data-model="B">
-                <h3>BE04-B Thermal properties of the baseline/budget exterior floors are established correctly.</h3>
-                <p>See BE05-B for section references and review tips as they are analogous for all opaque assemblies.</p>
-            </div>
-
-            <!-- BE05-B Section -->
-            <div id="be05-b" class="card card-body mb-3" data-check-type="4" data-component="SOG" data-model="B">
-                <h3>BE05-B Thermal properties of the baseline/budget slab-on-grade floor are established correctly.</h3>
-
-                <div data-version="2016,2019" data-path="ECB">
-                    <h5>90.1 2016 and 2019 ECB</h5>
-                    <p>
-                        <strong>90.1 2016 and 2019 ECB </strong>The opaque assemblies, such as roof, floors, doors and
-                        walls must be modeled with the same heat capacity (the same construction) as the proposed
-                        building design and the U-factors in 90.1 Section 5.5 for new buildings or additions and 90.1
-                        Section 5.1.3 (5.1.4 in 90.1 2022) for alterations.  When trade-offs are made between an
-                        addition and an existing building as described in the exception to Section 4.2.1.2, the envelope
-                        in the budget building design must reflect existing conditions prior to any retrofits that are
-                        part of the permit. Unconditioned envelope components must be modeled with the same properties
-                        as specified in the proposed design.
-                    </p>
-                </div>
-
-                <div data-version="2022" data-path="ECB">
-                    <h5>90.1 2022 ECB</h5>
-                    <p>
-                        <strong>12.5.1 #5a, Column B </strong>has similar requirements to Table 11.5.1#5a, Column B
-                        described above. However, 90.1 2022 specifically includes requirements for adjusting above grade
-                        wall U-factors in the budget model to account for linear thermal bridges and point thermal
-                        bridges. 12.5.1 #5b, Column B: Where linear thermal bridges and point thermal bridges, as
-                        identified in Sections 5.5.5.1 through 5.5.5.5, are included in the proposed design, they must
-                        be modeled by adjusting the U-factor of the parent assembly in accordance with the default
-                        values in Section A10. If the proposed design does not have linear thermal bridges and point
-                        thermal bridges, as identified in Sections 5.5.5.1 through 5.5.5.5, they do not have to be
-                        modeled in the budget building design. If the balcony length in the proposed design exceeds the
-                        maximum allowed by Sections 5.5.5.2.2, the area must be reduced proportionally for each balcony
-                        until the limit set in Sections 5.5.5.2.2 is met.
-                    </p>
-                </div>
-
-                <div data-version="2016,2019" data-path="PRM">
-                    <h5>90.1 2016 and 2019 PRM</h5>
-                    <p>
-                        <strong>Table G3.1 #5, Baseline Building Performance column: </strong>Opaque assemblies of new
-                        buildings, existing buildings, or additions shall conform with assemblies detailed in 90.1
-                        Appendix A and match the appropriate assembly maximum U-factors in 90.1 Tables G3.4-1 through
-                        G3.4-8:
-                    </p>
-                        <ul>
-                            <li>Roofs—Insulation entirely above deck (90.1 Section A2.2).</li>
-                            <li>Above-grade walls—Steel-framed (90.1 Section A3.3).</li>
-                            <li>Below-grade walls—Concrete block (90.1 Section A4).</li>
-                            <li>Floors—Steel-joist (90.1 Section A5.3).</li>
-                            <li>Slab-on-grade floors shall match the F-factor for unheated slabs from the same tables
-                                (90.1 Section A6).</li>
-                        </ul>
-                    <p>
-                        Unconditioned envelope components must be modeled in the baseline with the same properties as
-                        specified in the proposed design.
-                    </p>
-                </div>
-
-                <div data-version="2022" data-path="PRM">
-                    <h5>90.1 2022 PRM</h5>
-                    <strong>G3.2 New Construction/Major Alterations</strong>
-                    <p>
-                        Requirements are similar to 90.1 2016 and 2019 PRM requirements described above. An addition is
-                        that the process of establishing the space conditioning category was clarified in 90.1 2022.
-                        Table G3.1 #5b, Baseline Building Performance column: Space conditioning categories used to
-                        determine applicability of the envelope requirements in Tables G3.4-1 through G3.4-8 shall be
-                        the same as in the proposed design
-                    </p>
-                    <p>
-                        Exception: Envelope components of the HVAC zones that are semiheated in the proposed design must
-                        meet conditioned envelope requirements in Tables G3.4-1 through G3.4-8 if, based on the sizing
-                        runs, these zones are served by a baseline system with sensible cooling output capacity ≥5
-                        Btu/h·ft2 of floor area, or with heating output capacity greater than or equal to the criteria
-                        in Table G3.4-9, or that are indirectly conditioned spaces.
-                    </p>
-                    <strong>G3.3 Minor Alterations</strong>
-                    <p>The opaque assemblies included in the scope of retrofit for alterations subject to 90.1 2022 G3.3
-                        (i.e., minor alterations not meeting G3.1.4a) shall be modeled with U-factors meeting the
-                        requirements in Section 5.1.4 (see
-                        <a href="https://www.ashrae.org/file%20library/technical%20resources/standards%20and%20guidelines/standards%20errata/standards/90.1-2022-ip-erratasheet-10-24-2023-.pdf">
-                            errata sheet for ANSI/ASHRAE/IES STANDARD 90.1-2022
-                        </a>
-                        for correction from 5.1.3 to 5.1.4) as prescribed in 90.1 Section G3.3.2.3.
-                    </p>
-                </div>
-
-                <h5>Review Tips</h5>
-                <ol>
-                    <li>Baseline/budget assembly U/F/C factors are auto populated in Table 1 of the Envelope Areas tab
-                        of the Compliance Form based on the space conditioning categories specified by the user. Thus,
-                        the review should focus on verifying that the building envelope conditioning categories are
-                        established correctly, with the focus on the above-grade exterior walls that account for the
-                        greatest area. (The ranking of exterior walls by area is shown in the Quality Controls Checks
-                        tab, Building Envelope (BE) area. Refer to
-                        <a href ="#" class="modal-2022-g3_3-trigger" data-content-id="be05-b">
-                            90.1 2022 Section G3.3 Performance Calculations for Other Alterations
-                        </a>
-                        for tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
-                        <figure>
-                            <img src="../assets/images/section1-6/CF_building-env.png" style="min-width: 900px;">
-                        </figure>
-                        <p>The selection should be based on the following criteria:</p>
-                        <ul>
-                            <li>
-                                Residential surface bounds residential space and must be classified as exterior
-                                building envelope
-                            </li>
-                            <li>
-                                Nonresidential surface bounds nonresidential space and is classified as exterior
-                                building envelope
-                            </li>
-                            <li>Semiheated surface is classified as semiexterior building envelope</li>
-                            <li>All other surfaces are classified as unconditioned.</li>
-                        </ul>
-                        <br>
-                        <strong>90.1 Section 3: Residential vs non-residential spaces</strong>
-                        <ul>
-                            <li>
-                                Residential spaces are “spaces in buildings used primarily for living and sleeping.
-                                Residential spaces include, but are not limited to, dwelling units, hotel/motel
-                                guest rooms, dormitories, nursing homes, patient rooms in hospitals, lodging houses,
-                                fraternity/sorority houses, hostels, prisons, and fire stations.”
-                            </li>
-                            <li>All other enclosed spaces are classified as non-residential.</li>
-                            <li>
-                                Unenclosed spaces include crawlspaces, attics, and parking garages with natural or
-                                mechanical ventilation and are treated as exterior when determining applicable
-                                envelope requirements
-                            </li>
-                            <li>
-                                Semiexterior Building Envelope: the elements of a building that separate conditioned
-                                space from unconditioned space or that enclose semiheated spaces through which
-                                thermal energy may be transferred to or from the exterior, to or from unconditioned
-                                spaces, or to or from conditioned spaces.
-                            </li>
-                            <li>
-                                Spaces may be classified as conditioned (cooled, heating or indirectly conditioned),
-                                semiheated, unconditioned or unenclosed. See definition of the space in 90.1 Section
-                                3 for more details.
-                            </li>
-                            <li>
-                                Common examples of conditioned spaces include offices, classrooms, hotel guestrooms,
-                                etc. Common examples of semiheated spaces include storage areas.
-                            </li>
-                        </ul>
-                        <br>
-                        <strong>90.1 Section 3 and Figure 5.5.2: Exterior vs semi-exterior building envelope</strong>
-                        <ul>
-                            <li>
-                                Exterior Building Envelope: the elements of a building that separate conditioned
-                                spaces from the exterior
-                            </li>
-                            <li>
-                                Semiexterior Building Envelope: the elements of a building that separate conditioned
-                                space from unconditioned space or that enclose semiheated spaces through which
-                                thermal energy may be transferred to or from the exterior, to or from unconditioned
-                                spaces, or to or from conditioned spaces.
-                            </li>
-                            <li>
-                                Spaces may be classified as conditioned (cooled, heating or indirectly conditioned),
-                                semiheated, unconditioned or unenclosed. See definition of the space in 90.1 Section
-                                3 for more details.
-                            </li>
-                            <li>
-                                Common examples of conditioned spaces include offices, classrooms, hotel guestrooms,
-                                etc. Common examples of semiheated spaces include storage areas.
-                            </li>
-                        </ul>
-                    </li>
-                    <li>For 90.1 2022 ECB projects, budget assembly U factors accounting for linear and point thermal
-                        bridging are manually entered in Table 1 of the Envelope Areas tab of the Compliance Form in the
-                        column labeled Utot. The Submittal Checklist on the Submittal+Mand.Req. Checklists tab in the
-                        Compliance Form requests that the submitter provide supporting documentation/calculations in
-                        accordance with the default values in 90.1 2022 Section A10 for establishing the Utot values
-                        modeled in the budget design model. Confirm that the supporting documentation/calculations Utot
-                        values align with the values entered in Table 1 and that values were established in accordance
-                        with the default values in Section A10. Note that alterations other than additions are exempt
-                        from thermal bridging requirements according to Standard 90.1-2022 Section 5.5.5 exception #6.
-                        <figure>
-                            <img src="../assets/images/section1-6/CF_build-env-areas.png" style="min-width: 900px;">
-                        </figure>
-                    </li>
-                </ol>
-
-                <strong>Example BE05-B</strong>
-                <strong>(This specific example applies to 90.1 2022 ECB budget designs only)</strong>
-                <p>
-                    A 33,000 square foot, 4-story multifamily building includes thermal bridging due to brick shelf
-                    angle cladding support, a parapet that follows the entire perimeter of the roof, and wall to
-                    vertical fenestration intersections. Below is a high-level graphical depiction showing the location
-                    of these thermal bridges. The length of the parapet would equal the perimeter of the building since
-                    it runs along the edge of the roof, the brick shelf angles run continuously along the perimeter once
-                    per floor so the total linear length would be the perimeter of the building multiplied by 4-stories,
-                    and the length of the wall to vertical fenestration would be the sum of the perimeter of each window
-                    as depicted with the yellow lines around the perimeter of the window shown in the graphic below.
-                </p>
-                <figure>
-                    <img src="../assets/images/section1-6/be05-ex1.png" style="max-width: 750px; min-width: 550px;">
-                </figure>
-                <p>
-                    The design team needs to quantify the length of each linear thermal bridge as measured on the
-                    outside surface of the building envelope (Li) and the number of occurrences of each type of point
-                    thermal bridge (ni). Below, outlined in red, is an example of the minimum information needed to
-                    determine the budget U-factor to model for example assembly EW-1. This process would need to be
-                    completed for all above grade wall assemblies. Project teams can use the built-in functionality in
-                    Comcheck for 90.1 2022 to complete and document these calculations.
-                </p>
-                <figure>
-                    <img src="../assets/images/section1-6/be05-ex2.png" style="max-width: 500px; min-width: 500px;">
-                </figure>
-                <p>The budget Utot is calculated using equation 90.1 2022 A10.2 which is shown directly below.</p>
-                <p>Utot = {[(∑ψi × Li) + (∑χj × nj)]/Atotal) + Uo}</p>
-                <p>Where</p>
-                <p>
-                    Utot 	= overall thermal transmittance, including the effect of linear thermal bridges and point
-                    thermal bridges not included in the construction assembly Uo-factor, Btu/(h·ft2·°F)
-                </p>
-                <p>
-                    Uo 	= clear-field thermal transmittance of the construction assembly as determined from 90.1 2022
-                    Tables 5.5, 0-8 based on the proposed design assembly type, Btu/(h·ft2·°F)
-                </p>
-                <p>Atotal 	= total opaque projected surface area of the construction assembly, ft2</p>
-                <p>
-                    ψi 	= psi-factor, thermal transmittance for each type of linear thermal bridge from 90.1 2022 Table
-                    A10.1 “Default” column, Btu/(h·ft·°F)
-                </p>
-                <p>
-                    Li 	= length of a particular linear thermal bridge as measured on the outside surface of the
-                    building envelope, ft
-                </p>
-                <p>
-                    χi 	= chi-factor, thermal transmittance for each detail type of point thermal bridge from 90.1 2022
-                    Table A10.1 “Default” column, Btu/(h·°F)
-                </p>
-                <p>ni 		= number of occurrences a particular type of point thermal bridge</p>
-                <p>
-                    Below, outlined in red, shows the Psi-factor from both the Unmitigated column and the Default column
-                    from 90.1 2022 Table A10.1 (left value is unmitigated and right is default). The chi-factors are not
-                    shown because they are not applicable to the thermal bridging types shown in the table.
-                </p>
-                <figure>
-                    <img src="../assets/images/section1-6/be05-ex5.png" style="max-width: 650px; min-width: 550px;">
-                </figure>
-                <p>
-                    Using equation A10.2 the Utot required to be modeled in the budget design model is calculated as
-                    follows:
-                </p>
-                <p>
-                    Utot budget for EW-1 = 0.064 + [(1,162 ft * 0.217 Btu/(h·ft·°F)) + (415 ft* 0.151 Btu/(h·ft·°F)) +
-                    (1,387.2 ft * 0.112 Btu/(h·ft·°F))]/13,294 ft2 = 0.064 + 0.0353 = 0.099 Btu/(h·ft2·°F)
-                </p>
-                <p>
-                    Below is an example format for complete documentation/supporting calculations. These calculations
-                    would need to be submitted for each above grade wall assembly. The chi-factors are not shown because
-                    they are not applicable to the thermal bridging types shown in the table. For this review check the
-                    proposed design related columns can be ignored. Project teams can use the built-in functionality in
-                    Comcheck for 90.1 2022 to complete and document these calculations.
-                </p>
-                <figure>
-                    <img src="../assets/images/section1-6/be05-ex6.png" style="max-width: 750px; min-width: 550px;">
-                </figure>
-                <p>
-                    For this review check spot check the calculations for alignment with 90.1 2022 equation A10.2 and
-                    compare Li and ni inputs to design documents to ensure they have been captured correctly in the
-                    calculations.
-                </p>
-                <p>Common Mistakes</p>
-                <ol style="list-style-type: lower-alpha">
-                    <li>
-                        Floors of conditioned spaces adjacent to garages must be treated as exterior surfaces when
-                        establishing the baseline floor U-value, as garages are considered un-enclosed spaces.
-                    </li>
-                    <li>
-                        Treating the envelope of residential spaces in non-residential buildings as non-residential
-                        envelope. For example, even though hospitals are considered non-residential building type,
-                        patient rooms are used primarily for living and sleeping, and are thus residential spaces.
-                    </li>
-                </ol>
-            </div>
 
             <!-- BE07 Section -->
             <div id="be07" class="card card-body mb-3" data-check-type="5" data-component="BGW" data-model="B,P">
@@ -1316,8 +1349,8 @@
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/IESVE_BPRM-report.png">
-                                        Annotated Report
+                                                data-full="../assets/images/section7/IESVE_BPRM-report.png">
+                                            Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_BPRM-report-2.png">
@@ -2304,7 +2337,7 @@
                 <div data-version="2016,2019" data-path="PRM">
                     <h5>90.1 2016 and 2019 PRM</h5>
                     <p>
-                        <strong>Table G3.1 #5 Baseline Building Performance column (c) and Table G3.1.1-1:</strong>The
+                        <strong>Table G3.1 #5 Baseline Building Performance column (c) and Table G3.1.1-1:</strong> The
                         baseline fenestration area depends on the Building Area Type in Table G3.1.1-1. For example, a
                         40,000 ft2 office building is modeled with the baseline vertical fenestration area equal to 31%
                         of the gross above grade wall area. For building types not specified in Table G3.1.1-1, such as
@@ -2332,14 +2365,6 @@
                         area of these faces such that the total baseline building vertical fenestration area is equal to
                         that calculated following Table G3.1.1-1.
                     </p>
-                    <ul>
-                        <li>
-                            The exterior roof surface shall be modeled using the aged solar reflectance and thermal
-                            emittance determined in accordance with Section 5.5.3.1.1(a). Where aged test data are
-                            unavailable, the roof surface may be modeled with a reflectance of 0.30 and a thermal
-                            emittance of 0.90.
-                        </li>
-                    </ul>
                  </div>
 
                 <h5>Review Tips</h5>
@@ -2348,7 +2373,7 @@
                         Baseline/budget fenestration area by exposure and building type is shown in the Envelope Areas
                         tab Tables 3-5. The areas are automatically calculated by the Compliance Form by applying the
                         appropriate rules of 90.1 to the project, but may be over-written by the modeler. If the default
-                        value was over-written, the input in the Fenestration Area, ft2 column is shown in light brown
+                        value was over-written, the input in the Fenestration Area, ft<sup>2</sup> column is shown in light brown
                         font. Over-ride may be justified for projects involving existing buildings where the
                         baseline/budget fenestration must reflect area prior to retrofit or where distributing the
                         fenestration on each face of the building in the same proportion as in the proposed design would
@@ -2459,8 +2484,8 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/trace700_building-u-factors.png">
-                                        Annotated Report
+                                             data-full="../assets/images/section7/trace700_building-u-factors.png">
+                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/trace700_building-areas.png">
@@ -3004,7 +3029,7 @@
                     <h5>90.1 2022 ECB</h5>
                     <p>
                         <strong>Table 12.5.1 No 5 Column B (f): </strong>The air leakage rate of the building envelope
-                        (I75Pa) at a pressure differential of 75 Pa (0.30 of water) shall be 0.35 cfm/ft^2 of building
+                        (I75Pa) at a pressure differential of 75 Pa (0.30 of water) shall be 0.35 cfm/ft<sup>2</sup> of building
                         envelope area and shall be converted to appropriate units for the simulation software using the
                         same method as the proposed design.
                     </p>
@@ -3015,7 +3040,7 @@
                     <p>
                         <strong>Table G3.1 Proposed Building Performance No 5 (b): </strong> The air leakage rate of the
                         building envelope (I75Pa) at a fixed building pressure differential of 0.3 in. of water shall be
-                        0.4 cfm/ft2. Infiltration must be modeled using the same methodology, air leakage rate and
+                        0.4 cfm/ft<sup>2</sup>. Infiltration must be modeled using the same methodology, air leakage rate and
                         adjustments for weather and building operation in both the proposed design and the baseline
                         building design. The air leakage rate of the building envelope must be converted to appropriate
                         units for the simulation program using one of the methods in 90.1 Section G3.1.1.4.
@@ -3027,7 +3052,7 @@
                     <p>
                         <strong>Table G3.1 Baseline Building Performance No 5(h): </strong> The air leakage rate of the
                         building envelope (I75Pa) at a fixed building pressure differential of 0.3 in. of water shall be
-                        1.0 cfm/ft2.The air leakage rate of the building envelope shall be converted to appropriate
+                        1.0 cfm/ft<sup>2</sup>.The air leakage rate of the building envelope shall be converted to appropriate
                         units for the simulation program using one of the methods in Section G3.1.1.4.
                     </p>
                 </div>
@@ -3044,7 +3069,7 @@
                     <p>
                         <strong>Section G3.3.2.5, </strong>which is applicable to alterations that do not meet the
                         criteria in 90.1 G3.1.4a, requires that when Section 5.4.3.1.3 applies, the air leakage rate of
-                        the building envelope(I75Pa) shall be equal to 0.35 cfm/ft2 of building envelope area at a
+                        the building envelope(I75Pa) shall be equal to 0.35 cfm/ft<sup>2</sup> of building envelope area at a
                         pressure differential of 75 Pa (0.30 in. of water). The air leakage rate shall be converted to
                         appropriate units for the simulation software using the same method as the proposed design.
                     </p>
@@ -3109,7 +3134,7 @@
                     <h5>90.1 2019 PRM</h5>
                     <p><strong>Table G3.1 Proposed Building Performance column No 5b: </strong>The air leakage rate of
                         the building envelope (I75Pa) at a fixed building pressure differential of 0.3 in. of water
-                        shall be 0.6 cfm/ft2 for buildings providing verification in accordance with Section 5.9.1.2.
+                        shall be 0.6 cfm/ft<sup>2</sup> for buildings providing verification in accordance with Section 5.9.1.2.
                         The air leakage rate of the building envelope shall be converted to appropriate units for the
                         simulation program using one of the methods in Section G3.1.1.4., except when whole-building air
                         leakage testing in accordance with ASTM E779 is specified during design and completed after
@@ -3126,21 +3151,21 @@
                         The air leakage rate of the building envelope shall be in accordance with one of the
                         following:
                     </p>
-                    <ol>
+                    <ul>
                         <li>
                             When whole-building pressurization testing is required or specified during design, and
                             completed in accordance with Section 5.4.3.1.4, the measured air leakage rate of the
-                            building envelope(I75Pa) at a fixed building pressure differential of 75 Pa (0.30 in. of
+                            building envelope (I75Pa) at a fixed building pressure differential of 75 Pa (0.30 in. of
                             water) shall be modeled for purposes of demonstrating compliance with this standard.
                         </li>
                         <li>
                             For buildings providing verification in accordance with Section 5.9.1.2, the air leakage
                             rate of the building envelope (I75Pa) at a fixed building pressure differential of 75 Pa
-                            (0.30 in. of water) shall be 0.45 cfm/ft2.The air leakage rate of the building envelope
+                            (0.30 in. of water) shall be 0.45 cfm/ft<sup>2</sup>.The air leakage rate of the building envelope
                             shall be converted to appropriate units for the simulation program using one of the
                             methods in Section 12.5.3.
                         </li>
-                    </ol>
+                    </ul>
                 </div>
 
                 <h5>Review Tips</h5>
@@ -3289,7 +3314,7 @@
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/assets/images/section7/IESVE_system-loads1.png">
+                                            data-full="../assets/images/section7/IESVE_system-loads1.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -3298,6 +3323,10 @@
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_BPRM-report.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_BPRM-report-2.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -3430,7 +3459,7 @@
                                     building roof (0.063/0.032=2).
                                 </p>
                                 <p>
-                                    <strong><u>Example 2: </u></strong> Based on the submittal, the proposed design has
+                                    <strong>Example 2: </strong> Based on the submittal, the proposed design has
                                     40,000 SF of vertical fenestration with U-0.5; the baseline has 30,000 SF of
                                     fenestration with U-0. 5. The heat loss through windows due to conduction should go
                                     up. ((U<sub>prop</sub> x A<sub>prop</sub>)/(U<sub>base</sub> x A<sub>base</sub>) =
@@ -3575,6 +3604,10 @@
                                             data-full="../assets/images/section7/IESVE_BPRM-report.png">
                                         Annotated Report
                                     </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_BPRM-report-2.png">
+                                        Annotated Report
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -3645,7 +3678,7 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                    simulated output result file (.eso)
+                                    Simulated output result file (.eso)
                                 </div>
                             </div>
                             <div class="row">
@@ -3770,7 +3803,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/LEED-summary-report.png">
+                                            data-full="../assets/images/section7/LEED-summary-1_6.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -3820,6 +3853,10 @@
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_BPRM-report.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_BPRM-report-2.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -3976,7 +4013,7 @@
                     <p>
                         <strong>Table G3.1 Proposed Building Performance column No 5b: </strong>The air leakage rate of
                         the building envelope (I75Pa) at a fixed building pressure differential of 0.3 in. of water
-                        shall be 0.6 cfm/ft2 for buildings providing verification in accordance with Section 5.9.1.2.
+                        shall be 0.6 cfm/ft<sup>2</sup> for buildings providing verification in accordance with Section 5.9.1.2.
                         The air leakage rate of the building envelope shall be converted to appropriate units for the
                         simulation program using one of the methods in Section G3.1.1.4., except when whole-building air
                         leakage testing in accordance with ASTM E779 is specified during design and completed after
@@ -4113,19 +4150,18 @@
                         Sections 12.2d/G1.2.1d are included in the “Envelope Backstop Verification” section on the
                         Envelope Areas tab in the Compliance Form (a screenshot from the section is shown below for
                         reference).
-                    </li>
-                    <li>
-                        Review the section to check that one of the compliance options is selected. If compliance with
+
+                    <p><br>Review the section to check that one of the compliance options is selected. If compliance with
                         Section 5.5, “Prescriptive Building Envelope Compliance Path” is selected then ensure that “Yes”
                         is selected for each row in the “Complies?” column in the table shown below. Some of the rows
                         autopopulate with manual overrides shown in bold orange. If “Exception Applies” is selected
                         review the explanation for validity. For peach cells that require a user input, manual
-                        overrides, or scenarios in which exceptions apply ensure that the inputs and explanations align
-                        with the documentation noted in the “Plans/Spec Reference” column.
+                        overrides, or scenarios in which exceptions apply, ensure that the inputs and explanations align
+                        with the documentation noted in the “Plans/Spec Reference” column.</p>
                         <figure>
                             <img src="../assets/images/section1-6/CF_envelope-areas-tab.png" style="max-width: 1028px; min-width: 1028px;">
                         </figure>
-                        <p>
+                        <p><br>
                             For projects following the Section 5.6, “Building Envelope Trade-Off Compliance Option” the
                             90.1 Sections 12.2d/G1.2.1d allowances are such that the proposed envelope performance
                             factor cannot exceed the base envelope performance factor by more than 15% for
