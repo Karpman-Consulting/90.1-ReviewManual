@@ -9,24 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../assets/images/favicon.ico" type="image/vnd.microsoft.icon"/>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floating Back to Top Button</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        #backToTop {
-            position: fixed; bottom: 20px; right: 30px;
-            background: #007BFF; color: white;
-            border: none; border-radius: 5px; padding: 10px;
-            cursor: pointer; animation: float 3s infinite alternate;
-        }
-        @keyframes float {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-10px); }
-        }
-    </style>
-
 </head>
 <body>
 <div class="d-flex flex-nowrap">
@@ -38,22 +20,14 @@
 
         <div id="page-content" class="container">
             <!--- Page Content Goes Here --->
-            <div>
-                <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
-            </div>
-
-            <script>
-                function scrollToTop() {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            </script>
-
             <h1>Lighting, Interior (LI)</h1>
 
             <h3>Overview</h3>
 
-            <p>Lighting Interior check group addresses interior lighting power and controls. Table 7 summarizes the
-            checks included in this group.</p>
+            <p>
+                Lighting Interior check group addresses interior lighting power and controls. Table 7 summarizes the
+                checks included in this group.
+            </p>
 
             <p><strong>Table 7: Lighting Interior Quality Control Checks Overview</strong></p>
 
@@ -95,7 +69,7 @@
                         <td rowspan="5">Lighting Power</td>
                         <td>CF inputs reflect design documents</td>
                         <td>
-                            <a href="#li02">LI02-P</a>
+                            <a href="#li02-p">LI02-P</a>
                         </td>
                         <td>NA</td>
                     </tr>
@@ -211,21 +185,29 @@
                 <img src="../assets/images/section1-6/CF_lighting-space-type-table.png" style="max-width: 750px; min-width: 350px;">
             </figure>
 
-            <p>For 90.1 2022 PRM alterations subject to G3.3 (i.e., Minor Alterations), the summary tables on the
-            Quality Control Checks tab in the Compliance Form may not reflect correct values for the baseline since
-            projects, for the most part, only enter proposed design information and provide notes as to what was
-            modeled in the baseline in the notes fields associated with the proposed design related tables. Refer to
-            the <a href="../content/6_14_90-1-2022-section-g3-3.html">90.1 2022 Section G3.3 Performance Calculations
-            for Other Alterations</a> section for more information regarding 90.1 2022 G3.3.</p>
+            <p>
+                For 90.1 2022 PRM alterations subject to G3.3 (i.e., Minor Alterations), the summary tables on the
+                Quality Control Checks tab in the Compliance Form may not reflect correct values for the baseline since
+                projects, for the most part, only enter proposed design information and provide notes as to what was
+                modeled in the baseline in the notes fields associated with the proposed design related tables. Refer to
+                the
+                <a href="../content/6_14_90-1-2022-section-g3-3.html">
+                    90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                </a>
+                section for more information regarding 90.1 2022 G3.3.
+            </p>
 
             <!--LI01 Section -->
             <div id="li01" class="card card-body mb-3" data-check-type="2" data-component="general" data-model="B,P">
-                <h3>LI01 The floor area used in the lighting calculations is consistent with the reported project floor
-                    area.</h3>
+                <h3>
+                    LI01 The floor area used in the lighting calculations is consistent with the reported project floor
+                    area.
+                </h3>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>In order to establish the baseline/budget lighting power allowance, the floor area of individual
+                    <li>
+                        In order to establish the baseline/budget lighting power allowance, the floor area of individual
                         spaces (for projects using space-by-space method) or building area types (for Energy Cost Budget
                         Method projects using building area method) are reported in Table 1 of the Interior Lighting
                         Counts tab. The baseline/budget lighting power allowance will not be determined correctly if the
@@ -238,29 +220,34 @@
             </div>
 
             <!--LI02 Section -->
-            <div id="li02" class="card card-body mb-3" data-check-type="2" data-component="power" data-model="P">
-                <h3>LI02-P Proposed lighting power reported in the Compliance Form reflects design documents for spaces
-                    where lighting is fully specified</h3>
+            <div id="li02-p" class="card card-body mb-3" data-check-type="2" data-component="power" data-model="P">
+                <h3>
+                    LI02-P Proposed lighting power reported in the Compliance Form reflects design documents for spaces
+                    where lighting is fully specified
+                </h3>
 
                 <div data-version="2016,2019,2022" data-path="ECB,PRM">
                     <h5>90.1 2016 and 2019/2022 ECB; 90.1 2016, 2019, and 2022 PRM</h5>
                     <strong>90.1 Table 11.5.1 #6/90.1 Table 12.5.1 #6; Table G3.1 #6</strong>
                     <ul>
-                        <li>Where a complete lighting system exists (e.g., in a renovation project where lighting is left as is), the
-                        actual lighting power must be modeled for each thermal block.
+                        <li>
+                            Where a complete lighting system exists (e.g., in a renovation project where lighting is left as is), the
+                            actual lighting power must be modeled for each thermal block.
                         </li>
-                        <li>Where a lighting system has been designed, lighting power must be determined in accordance with
-                        90.1 Sections 9.1.3 and 9.1.4. Based on these sections, the wattage must include all power used by
-                        the fixtures including lamps, ballasts, transformers and control devices and be based on the
-                        <u>manufacturers’ labeled maximum wattage of the luminaire</u>. Some exceptions may apply (90.1
-                        Sections 9.1.1, 9.1.3, 9.1.4, 9.2.2.3, 9.4.2).
+                        <li>
+                            Where a lighting system has been designed, lighting power must be determined in accordance with
+                            90.1 Sections 9.1.3 and 9.1.4. Based on these sections, the wattage must include all power used by
+                            the fixtures including lamps, ballasts, transformers and control devices and be based on the
+                            <u>manufacturers’ labeled maximum wattage of the luminaire</u>. Some exceptions may apply (90.1
+                            Sections 9.1.1, 9.1.3, 9.1.4, 9.2.2.3, 9.4.2).
                         </li>
                     </ul>
                 </div>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Refer to the table in the Interior Lighting section on the Quality Control Tab to identify
+                    <li>
+                        Refer to the table in the Interior Lighting section on the Quality Control Tab to identify
                         lighting fixtures with the highest total wattage. Focus the review on these fixtures and
                         spot-check others. data.
                         <figure>
@@ -275,25 +262,28 @@
                         <figure>
                             <img src="../assets/images/section1-6/CF_lighting-counts.png" style="max-width: 750px; min-width: 350px;">
                         </figure>
-                        <p><strong>Example:</strong> Wall sconces installed in the corridors of a multifamily building
+                        <p>
+                            <strong>Example:</strong> Wall sconces installed in the corridors of a multifamily building
                             are specified with two 18W CFL bulbs but have the manufacturers’ rated wattage of 120 W
                             based on incandescent bulbs. The 120W per fixture must be used in the LPD calculations for
                             the proposed design, unless the installed fixtures are re-labeled by the manufacturer based
                             on the CFL lamps. Thus, unless all of the specified fixtures reflect the maximum rated
                             wattage, or the fixtures are re-labeled by the manufacturer, the total fixture wattages
-                            specified on the lighting drawings will typically be <em><u>lower</u></em> than the wattages that
-                            must be used in the lighting compliance calculations.
+                            specified on the lighting drawings will typically be <em><u>lower</u></em> than the wattages
+                            that must be used in the lighting compliance calculations.
                         </p>
                     </li>
 
-                    <li>Refer to the table in the Interior Lighting section on the Quality Control Tab to identify space types
-                        that account for the greatest total lighting wattage.
+                    <li>
+                        Refer to the table in the Interior Lighting section on the Quality Control Tab to identify space
+                        types that account for the greatest total lighting wattage.
                         <figure>
                             <img src="../assets/images/section1-6/CF_space-types.png" style="max-width: 750px; min-width: 450px;">
                         </figure>
-                        <p>Locate several spaces of that type on the Interior Lighting Counts tab. Refer to the lighting plans to
-                           confirm that fixture types and counts for these spaces reported in the Compliance Form match
-                           design documents.
+                        <p>
+                            Locate several spaces of that type on the Interior Lighting Counts tab. Refer to the
+                            lighting plans to confirm that fixture types and counts for these spaces reported in the
+                            Compliance Form match design documents.
                         </p>
                         <figure>
                             <img src="../assets/images/section1-6/CF_lighting-counts-img2.png" style="max-width: 750px; min-width: 450px;">
@@ -303,12 +293,12 @@
                     <li>Common Mistakes
                         <ol style="list-style-type: lower-alpha">
                             <li>
-                                Fixture wattage is not based on a complete fixture including lamp and ballast and does not
-                                reflect manufacturer rated fixture wattage.
+                                Fixture wattage is not based on a complete fixture including lamp and ballast and does
+                                not reflect manufacturer rated fixture wattage.
                             </li>
                             <li>
-                                Track lighting is not calculated according to the allowed methods as described in 90.1 Section
-                                9.1.4.
+                                Track lighting is not calculated according to the allowed methods as described in 90.1
+                                Section 9.1.4.
                             </li>
                             <li>
                                 Proposed LPDs are based on partially specified or temporary lighting. For example, in hotel
@@ -838,7 +828,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/LEED-summary-LI-LE07.png">
+                                            data-full="../assets/images/section7/LEED-summary-li-le07.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -860,7 +850,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/trace3d-LI06-11.png">
+                                            data-full="../assets/images/section7/trace3d_LI06-11.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -1838,7 +1828,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/trace3d-LI06-11.png">
+                                            data-full="../assets/images/section7/trace3d_LI06-11.png">
                                         Annotated Report
                                     </button>
                                 </div>

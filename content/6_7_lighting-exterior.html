@@ -9,24 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../assets/images/favicon.ico" type="image/vnd.microsoft.icon"/>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floating Back to Top Button</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        #backToTop {
-            position: fixed; bottom: 20px; right: 30px;
-            background: #007BFF; color: white;
-            border: none; border-radius: 5px; padding: 10px;
-            cursor: pointer; animation: float 3s infinite alternate;
-        }
-        @keyframes float {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-10px); }
-        }
-    </style>
-
 </head>
 <body>
 <div class="d-flex flex-nowrap">
@@ -39,22 +21,14 @@
         <div id="page-content" class="container">
 
             <!--- Page Content Goes Here --->
-            <div>
-                <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
-            </div>
-
-            <script>
-                function scrollToTop() {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            </script>
-
             <h1>Lighting, Exterior (LE)</h1>
 
             <h3>Overview</h3>
 
-            <p>Lighting Exterior check group addresses exterior lighting and controls. Table 8 summarizes the checks
-                included in this group. </p>
+            <p>
+                Lighting Exterior check group addresses exterior lighting and controls. Table 8 summarizes the checks
+                included in this group.
+            </p>
 
             <p><strong>Table 8: Lighting, Exterior Checks Overview</strong></p>
 
@@ -166,8 +140,9 @@
                 projects, for the most part, only enter proposed design information and provide notes as to what was
                 modeled in the baseline in the notes fields associated with the proposed design related tables.
                 Refer to the
-                <a href="content/6_14_90.1-2022-Section-G3.3.html">90.1 2022 Section G3.3 Performance
-                Calculations for Other Alterations</a>
+                <a href="content/6_14_90.1-2022-Section-G3.3.html">
+                    90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                </a>
                 section for more information regarding 90.1 2022 G3.3.
             </p>
 
@@ -204,7 +179,9 @@
                         for the 90.1 2016 and 2019 PRM.
                     </p>
 
-                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
+                    <p>
+                        <strong><u>G3.3 Minor Alterations</u></strong>
+                        <br>
                         Alterations subject to Section G3.3.2.7 (i.e., Minor Alterations) are required to model tradable
                         exterior lighting as minimally compliant with 90.1 Section 9.1.1.3.2 in the baseline design
                         model.
@@ -215,8 +192,9 @@
                 <ol>
                     <li>Baseline/budget exterior lighting wattage is shown in Table 1 of the Exterior Lighting tab. It
                         is established automatically based on the following user inputs (refer to the
-                        <a href="#" class="modal-2022-g3_3-trigger" data-content-id="le01-b">90.1 2022 Section G3.3
-                            Performance Calculations for Other Alterations</a>
+                        <a href="#" class="modal-2022-g3_3-trigger" data-content-id="le01-b">
+                            90.1 2022 Section G3.3 Performance Calculations for Other Alterations
+                        </a>
                         section for the location of the baseline lighting wattage for alterations subject to 90.1 2022
                         Section G3.3):
                         <ol style="list-style-type: lower-alpha">
@@ -251,8 +229,10 @@
                             </li>
                         </ol>
                         <br>
-                        <p>Some AHJ and RAs may specify the exterior lighting zones that must be used based on the
-                            project address.</p>
+                        <p>
+                            Some AHJ and RAs may specify the exterior lighting zones that must be used based on the
+                            project address.
+                        </p>
                     </li>
 
                     <li>
@@ -743,9 +723,12 @@
                         modeled exterior lighting runtime may be up to 12 hours / day (4,380 hours per year) for
                         facilities opened 24/7, such as hospitals. Lower runtime (e.g., 6 hours per day) is expected for
                         other building types due to lighting control requirements in 90.1 Section 9.4.1.4.<br>
-                        <br>EFLH= LEU / LTW
-                        <br>EFLH [hrs/yr] = exterior lighting effective full load hours
-                        <br>LEU [kWh] = annual exterior lighting energy use, based on the simulation output reports
+                        <br>
+                        EFLH= LEU / LTW
+                        <br>
+                        EFLH [hrs/yr] = exterior lighting effective full load hours
+                        <br>
+                        LEU [kWh] = annual exterior lighting energy use, based on the simulation output reports
                     </li>
                 </ol>
 
@@ -800,7 +783,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/LEED_summary_1-6.png">
+                                            data-full="../assets/images/section7/LEED-summary-1_6.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -822,7 +805,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/trace3d-LE.png">
+                                            data-full="../assets/images/section7/trace3d_le.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -1032,7 +1015,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/LEED-summary-LI-LE07.png">
+                                            data-full="../assets/images/section7/LEED-summary-li-le07.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -1054,7 +1037,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/trace3d-LE.png">
+                                            data-full="../assets/images/section7/trace3d_le.png">
                                         Annotated Report
                                     </button>
                                 </div>
