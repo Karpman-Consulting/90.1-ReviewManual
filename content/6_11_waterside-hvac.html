@@ -21,6 +21,31 @@
         <div id="page-content" class="container">
 
             <!--- Page Content Goes Here --->
+            <h1>Waterside HVAC (WHVAC)</h1>
+            <h3>Overview</h3>
+            <p>
+                This group of checks covers water-side HVAC systems including chiller and boiler type, capacity
+                efficiency and controls, chilled and hot water loop pumps and controls, and heat rejection. In addition,
+                there are several checks to verify general consistency between simulation inputs and outputs, such as
+                that when pumps are reported for the baseline/budget or proposed design, simulation results show
+                pump energy use; that if electric resistance heating is reported in the compliance form, simulation
+                results show heating energy use for electricity, etc. Table 17 summarizes the checks included in this
+                group.
+            </p>
+
+            <p>The following strategies may be used to prioritize the review:</p>
+            <ol>
+                <li>Checks should focus on water-side systems with the highest heating or cooling capacity and
+                    spot-checking the rest.
+                </li>
+                <li>
+                    90.1 Section 6 has mandatory minimums for heating and cooling system efficiencies and
+                    ventilation controls. Checks verifying mandatory requirements should be completed where
+                    applicable
+                </li>
+            </ol>
+
+            <p><strong>Table 17: Water-side HVAC Quality Control Checks Overview</strong></p>
 
             <table id="checks-table" class="table table-bordered table-sm" border="1">
                 <colgroup>
@@ -200,9 +225,9 @@
                     If custom curves are used, confirm that supporting information is included in the submittal as
                     required (Submittal Checklist #19). The provided curves may be directly reviewed. Alternatively, the
                     annual average achieved chiller efficiency may be verified to confirm general alignment with the
-                    rated part load efficiency (see WHVAC03). Reviewer may also request that the default performance
-                    curves from 90.1 2022 Appendix J Table J-1 or the PNNL Performance Rating Method Reference Manual
-                    for the specified chiller type are used.
+                    rated part load efficiency (see <a href="#whvac03">WHVAC03</a>). Reviewer may also request that
+                    the default performance curves from 90.1 2022 Appendix J Table J-1 or the PNNL Performance Rating
+                    Method Reference Manual for the specified chiller type are used.
                 </p>
 
             </div>
@@ -234,7 +259,7 @@
                 <div data-version="2016,2019" data-path="PRM">
                     <h5>90.1 2016 and 2019 PRM</h5>
                     <p>
-                        <strong>Section G3.1.3.7</strong> Baseline Systems 7, 8, 11, 12 and 13 must be modeled with
+                        <strong>Section G3.1.3.7:</strong> Baseline Systems 7, 8, 11, 12 and 13 must be modeled with
                         electric chillers, except for projects that use purchased chilled water (Sections G3.1.1.3.2 and
                         G3.1.1.3.3). The number of chillers, chiller type and efficiency must be established based on
                         the baseline peak cooling load as described in Tables G3.1.3.7 and G3.5.3.
@@ -250,8 +275,7 @@
                         curves specified in Appendix J Table J-2 should be used to represent part-load performance of
                         chillers in the baseline building design.
                     </p>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>
+                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
                         The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
                         Section G3.3 are required to model the chiller type and quantity the same in the baseline and
                         proposed. In addition, baseline systems shall meet the requirements in Section 6.1.4 and
@@ -322,7 +346,7 @@
 
             <!--WHVAC02 Section -->
             <div id="whvac02" class="card card-body mb-3" data-check-type="5" data-component="chiller" data-model="B,P">
-                <h3>WHVAC02 - B,P: Chillers are modeled as reported in the Compliance Form</h3>
+                <h3>WHVAC02-B,P Chillers are modeled as reported in the Compliance Form</h3>
                 <h5>Review Tips</h5>
                     <ol>
                         <li>
@@ -395,7 +419,14 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
-                                    <!--Not in the manual -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section1-6/trace3d-system-component-summary.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/trace3d_whvac02.png">
+                                        Annotated Report
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -534,12 +565,12 @@
 
             <!--WHVAC03 Section -->
             <div id="whvac03" class="card card-body mb-3" data-check-type="6" data-component="chiller" data-model="B,P">
-                <h3>WHVAC03-B, P Average annual realized chiller efficiency is as expected</h3>
+                <h3>WHVAC03-B,P Average annual realized chiller efficiency is as expected</h3>
 
                 <h5>Review Tips</h5>
                 <ol>
                     <li>Background
-                        <p>
+                        <p style="margin-bottom:0;">
                             The annual average realized chiller efficiency is the ratio of the annual load on the
                             chiller to the annual energy used by the chiller. The average realized efficiency is
                             expected to be similar to chiller part load efficiency. Different than expected average
@@ -602,6 +633,10 @@
                                             data-full="../assets/images/section7/trane_equip-whvac-3-5-7-9.png">
                                         Annotated Report
                                     </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7//trace700_visualizer.png">
+                                        Annotated Report
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -649,6 +684,10 @@
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_detailed-report.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_detailed-ahvac-whvac.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -759,7 +798,7 @@
             <!--WHVAC04-P Section -->
             <div id="whvac04-p" class="card card-body mb-3" data-check-type="2" data-component="chiller" data-model="P">
                 <h3>
-                    WHVAC04-P: Proposed chilled water loop configuration and temperature controls reported in the
+                    WHVAC04-P Proposed chilled water loop configuration and temperature controls reported in the
                     Compliance Form reflect design documents.
                 </h3>
 
@@ -815,8 +854,7 @@
                         <strong>Section G3.2.3.8 and Section G3.2.3.9</strong> requirements are the same as described
                         above for the 90.1 2016 and 2019 PRM.
                     </p>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>
+                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
                         The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
                         Section G3.3 are required to model systems and equipment included in the scope of retrofit at
                         efficiency levels meeting the mandatory and prescriptive requirements in Section 6.1.4. If there
@@ -899,6 +937,10 @@
                                             data-full="../assets/images/section7/trane_whvac-plant-2-4-7-11.png">
                                         Annotated Report
                                     </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/trane_equip-whvac-3-5-7-9.png">
+                                        Annotated Report
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -955,6 +997,10 @@
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_florida.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_california.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -1051,7 +1097,7 @@
 
             <!--WHVAC06-P Section -->
             <div id="whvac06-p" class="card card-body mb-3" data-check-type="2" data-component="chiller" data-model="P">
-                <h3>WHVAC06-P: Proposed chilled water pump system parameters reported in the Compliance Form reflect design documents</h3>
+                <h3>WHVAC06-P Proposed chilled water pump system parameters reported in the Compliance Form reflect design documents</h3>
 
                 <h5>Review Tips</h5>
                 <ol>
@@ -1118,8 +1164,7 @@
                         <strong>Section G3.2.3.10 </strong>requirements are the same as described above for the 90.1
                         2016 and 2019 PRM Section G3.1.3.10.
                     </p>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>
+                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
                         The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
                         Section G3.3 (i.e., Minor Alterations) are required to model systems and equipment included in
                         the scope of retrofit at efficiency levels meeting the mandatory and prescriptive requirements
@@ -1156,7 +1201,7 @@
 
             <!--WHVAC07 Section -->
             <div id="whvac07" class="card card-body mb-3" data-check-type="5" data-component="chiller" data-model="B,P">
-                <h3>WHVAC07–B, P CHW pumps are modeled as reported in the Compliance Form</h3>
+                <h3>WHVAC07–B,P CHW pumps are modeled as reported in the Compliance Form</h3>
 
                 <h5>Review Tips</h5>
                 <ol>
@@ -1232,7 +1277,10 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
-                                    <!--Not in the manual -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section1-6/trace3d-system-component-summary.png">
+                                        Annotated Report
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1361,7 +1409,7 @@
 
             <!--WHVAC08 Section -->
             <div id="whvac08" class="card card-body mb-3" data-check-type="5" data-component="chiller" data-model="B,P">
-                <h3>WHVAC08 (B, P) CHW loops flow control is modeled as reported in the Compliance Form</h3>
+                <h3>WHVAC08-B,P CHW loops flow control is modeled as reported in the Compliance Form</h3>
 
                 <h5>Review Tips</h5>
                 <ol>
@@ -1583,7 +1631,7 @@
                         is shown in Table 7, based on the same part load operation assumptions as for the part load
                         cooling efficiency (IPLV), including 1% at 100% of the load, 42% at 25% of the load, 45% at 50%
                         of the load and 12% at 25% of the load).
-                        <p><strong>Table 7: Pump Performance at Part Load Conditions</strong></p>
+                        <p style="margin-top:20px; margin-bottom:0;"><strong>Table 7: Pump Performance at Part Load Conditions</strong></p>
                         <table border="1">
                             <thead>
                                 <tr style="background-color: #D3D3D3">
@@ -1651,13 +1699,12 @@
                             </tbody>
                         </table>
 
-                        <p>P<sub>pump</sub> [W] = pump power at part load</p>
+                        <p style="margin:0;">P<sub>pump</sub> [W] = pump power at part load</p>
                         <p>P<sub>design</sub> [W] = pump power at design load</p>
-                        <br>
-                        <p>The annual pump energy use may be estimated as follows:</p>
-                        <p style="margin-left: 40px;">PEU= P<sub>design</sub> * Avg% * HRS</p>
-                        <p style="margin-left: 40px;">PEU [kWh] = estimated annual pump energy use</p>
-                        <p style="margin-left: 40px;">HRS = number of hours per year the building is occupied</p>
+                        <p style="margin:0;">The annual pump energy use may be estimated as follows:</p>
+                        <p style="margin:0; margin-left: 40px;">PEU= P<sub>design</sub> * Avg% * HRS</p>
+                        <p style="margin:0; margin-left: 40px;">PEU [kWh] = estimated annual pump energy use</p>
+                        <p style="margin:0; margin-left: 40px;">HRS = number of hours per year the building is occupied</p>
                         <p style="margin-left: 40px;">Avg% = the average pump power draw from Table 7 depending on pump capacity control </p>
                     </li>
                     <li>Compare simulated pump energy use to PEU estimated above. The following should be flagged:
@@ -1900,7 +1947,7 @@
                 <div data-version="2016,2019,2022" data-path="ECB">
                     <h5>90.1 2016 and 2019/2022 ECB</h5>
                     <p>
-                        <strong>Table 11.5.2-1/12.5.1-1 Note e </strong>The heat-rejection device is an open-circuit
+                        <strong>Table 11.5.2-1/12.5.1-1 Note e: </strong>The heat-rejection device is an open-circuit
                         axial-fan cooling tower with variable-speed fan control if required in 90.1 Section 6.5.5 and
                         must meet the performance requirements of 90.1 Table 6.8.1-7. Condenser water design supply
                         temperature and controls must be as described in 90.1 Table 11.5.2-1/12.5.1-1 Note e. Pump
@@ -1926,8 +1973,7 @@
                     <strong><u>G3.2 New Construction/Major Alterations</u></strong>
                     <p><strong>Section G3.2.3.11: </strong>Requirements are the same as described above for 90.1 2016 and 2019 PRM Section G3.1.3.11.
                     </p>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>
+                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
                         The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
                         Section G3.3 are required to model heat rejection system parameters as minimally compliant with
                         90.1 2022 Section 6.1.4 in the baseline. This, at minimum, includes modeling the heat rejection
@@ -1985,7 +2031,7 @@
             <!--WHVAC11 Section -->
             <div id="whvac11" class="card card-body mb-3" data-check-type="5" data-component="chiller" data-model="B,P">
                 <h3>WHVAC11-B,P Heat rejection system is modeled as reported in the Compliance Form</h3>
-                <h5>Review Tips – ECB</h5>
+                <h5>Review Tips</h5>
                 <p>Verify that modeled parameters of the heat rejection system(s) are as reported in the Compliance Form.</p>
 
                 <div class="annotated-report container">
@@ -2215,9 +2261,9 @@
                             If custom curves are used, confirm that supporting information is included in the submittal
                             as required (Submittal Checklist #21). The provided curves may be directly reviewed.
                             Alternatively, the annual average achieved boiler efficiency may be verified to confirm
-                            general alignment with the rated efficiency (see WHVAC14). Reviewer may also request that
-                            the default performance curves from PNNL Performance Rating Method Reference Manual for the
-                            specified boiler type are used.
+                            general alignment with the rated efficiency (see <a href="#whvac14">WHVAC14</a>).
+                            Reviewer may also request that the default performance curves from PNNL Performance
+                            Rating Method Reference Manual for the specified boiler type are used.
                         </p>
                     </li>
                 </ol>
@@ -2252,8 +2298,9 @@
                         the boiler plant must use propane. Purchased heat must be modeled in the baseline instead of
                         on-site boiler for projects that use purchased heat in the proposed design (Section G3.1.1.1).
                         The on-site baseline boiler plant must be modeled with a single boiler if the baseline plant
-                        serves a conditioned floor area of 15,000 ft2 or less and with two equally sized boilers for
-                        plants serving more than 15,000 ft2. The boilers must be staged as required by the load.
+                        serves a conditioned floor area of 15,000 ft<sup>2</sup> or less and with two equally sized
+                        boilers for plants serving more than 15,000 ft<sup>2</sup> . The boilers must be staged as
+                        required by the load.
                     </p>
                  </div>
 
@@ -2264,11 +2311,10 @@
                         <strong>Section G3.2.3.2 </strong>requirements are the same as described above for the 90.1 2016
                         and 2019 PRM Section G3.1.3.2.
                     </p>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>
-                        <strong>Section G3.2.3.2 </strong>Alterations subject to Section G3.3 are required to model the
-                        same quantity and type of boiler in the baseline and proposed models. Boiler efficiency shall be
-                        modeled with the minimum requirements of Table 6.8.1-6 in the baseline.
+                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
+                    <strong>Section G3.2.3.2 </strong>Alterations subject to Section G3.3 are required to model the
+                    same quantity and type of boiler in the baseline and proposed models. Boiler efficiency shall be
+                    modeled with the minimum requirements of Table 6.8.1-6 in the baseline.
                     </p>
                 </div>
 
@@ -2282,19 +2328,14 @@
                             90.1 2022 Section G3.3 Performance Calculations for Other Alterations
                         </a>
                         for review tips for alterations subject to 90.1 2022 Section G3.3 (i.e., Minor alterations).
-                    </li>
-                    <li>
-                        Confirm that reported boiler type, fuel source, quantity, capacity and efficiency reflect design
-                        documents. The design documents where the information may be found (e.g. drawing number) must be
-                        included in a dedicated field below the table.
                         <figure>
                             <img src="../assets/images/section1-6/CF_boiler.png" style="max-width: 750px; min-width: 350px;">
                         </figure>
-                        <p>The fields are auto-populated except for the following:</p>
+                        <p style="margin:0;">The fields are auto-populated except for the following:</p>
                         <ol style="list-style-type: lower-alpha">
                             <li>
                                 Total Input Capacity is a user input and must reflect sizing determined in the baseline
-                                model. See WHVAC13 for the applicable simulation reports.)
+                                model. See <a href="#whvac13">WHVAC13</a> for the applicable simulation reports.)
                             </li>
                             <li>
                                 Basis of the modeled performance curves must be set to Performance Rating Method
@@ -2310,7 +2351,7 @@
 
             <!--WHVAC13 Section -->
             <div id="whvac13" class="card card-body mb-3" data-check-type="5" data-component="boiler" data-model="B,P">
-                <h3>WHVAC-13–B,P Space heating boilers are modeled as reported in the Compliance Form</h3>
+                <h3>WHVAC13-B,P Space heating boilers are modeled as reported in the Compliance Form</h3>
                 <h5>Review Tips – ECB</h5>
                 <p>
                     The proposed boiler quantity, type, capacity and efficiency is modeled as reported. The following
@@ -2318,8 +2359,8 @@
                 </p>
                 <ol style="list-style-type: lower-alpha">
                     <li>From AFUE to Et:
-                        <p style="margin-left: 40px;">75%<=AFUE<80%: 	Et=0.1xAFUE+72.5%</p>
-                        <p style="margin-left: 40px;">all other:		 Et=0.875 x AFUE + 10.5%</p>
+                        <p style="margin:0; margin-left: 40px;">75%<=AFUE<80%: 	Et=0.1xAFUE+72.5%</p>
+                        <p style="margin:0;margin-left: 40px;">all other:		 Et=0.875 x AFUE + 10.5%</p>
                     </li>
                     <li>From Ec to Et: Et=Ec-2%</li>
                 </ol>
@@ -2524,9 +2565,9 @@
                             to the annual boiler energy use, as shown on simulation output reports. The average realized
                             efficiency is expected to be lower than the rated efficiency. For example, the rated
                             efficiency of condensing boilers corresponds to 80F return water temperature. A much higher
-                            design return water temperature is common (see WHVAC15-P), resulting in a significantly
-                            lower realized efficiency of condensing boilers, as illustrated below based on manufacturer
-                            data for a sample unit.
+                            design return water temperature is common (see <a href="#whvac15-p">WHVAC15-P</a>),
+                            resulting in a significantly lower realized efficiency of condensing boilers, as
+                            illustrated below based on manufacturer data for a sample unit.
                         </p>
                         <figure>
                             <img src="../assets/images/section1-6/boiler-eff.png" style="max-width: 750px; min-width: 550px;">
@@ -2581,7 +2622,8 @@
                     </li>
                 </ol>
 
-                <p><strong>Table 18: Natural Draft Boiler Efficiency at Part Load Conditions</strong></p>
+                <p><strong>Table 18: Natural Draft Boiler Efficiency at
+                    Part Load Conditions</strong></p>
 
                 <table border="1">
                     <thead>
@@ -2628,8 +2670,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <br>
-                <p>Note 1: All ECB budget boilers and PRM baseline boilers with heating capacity over 2,500 kBtu/h or under 300 kBtu/h</p>
+                <p style="margin-top:20px; margin-bottom:0;">Note 1: All ECB budget boilers and PRM baseline boilers with heating capacity over 2,500 kBtu/h or under 300 kBtu/h</p>
                 <p>Note 2: PRM baseline boilers with 300 kBtu/h – 2,500 kBtu/h</p>
 
                 <div class="annotated-report container">
@@ -2671,7 +2712,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/trane_equip-energy-whvac.png">
+                                            data-full="../assets/images/section7/trace700_equip-whvac-14-18-19.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -2723,15 +2764,19 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_detailed-report.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_detailed-ahvac-whvac.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_plant-loops.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_BPRM-report.png">
-                                        Annotated Report
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/IESVE_detailed-report.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -2856,7 +2901,7 @@
                         significant impact on the realized efficiency. For example, the rated efficiency of condensing
                         boilers corresponds to 80F return water temperature. A much higher design return water
                         temperature is common, such as 160 F shown below, resulting in a significantly lower realized
-                        efficiency (see WHVAC13).
+                        efficiency (<a href="#whvac13">see WHVAC13</a>).
                         <figure>
                             <img src="../assets/images/section1-6/whvac-design-docs.png" style="max-width: 650px; min-width: 550px;">
                         </figure>
@@ -2868,7 +2913,7 @@
             <!--WHVAC15-B Section -->
             <div id="whvac15-b" class="card card-body mb-3" data-check-type="4,5" data-component="boiler" data-model="B">
                 <h3>
-                    WHVA15–B Budget/baseline hot water loop configuration and temperature controls reported in the
+                    WHVAC15–B Budget/baseline hot water loop configuration and temperature controls reported in the
                     Compliance Form are established correctly
                 </h3>
 
@@ -2900,8 +2945,7 @@
                         <strong>90.1 Section G3.2.3.3 and G3.2.3.4</strong> requirements are the same as described above
                         for the 90.1 2016 and 2019 PRM.
                     </p>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>
+                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
                         The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
                         Section G3.3 are required to model systems and equipment included in the scope of retrofit at
                         efficiency levels meeting the mandatory and prescriptive requirements in Section 6.1.4. If there
@@ -3030,6 +3074,10 @@
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_detailed-report.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_ahvac-04-06_whvac-16.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -3174,8 +3222,8 @@
                     <p>
                         <strong>Section G3.1.3.5: </strong>The baseline building design hot-water pump power must be 19
                         W/gpm. The pumping system must be primary-only with continuous variable flow and a minimum of
-                        25% of the design flow rate. Hot-water systems serving 120,000 ft2 or more must be modeled with
-                        variable-speed drives and systems serving less than 120,000 ft2 must be modeled as riding the
+                        25% of the design flow rate. Hot-water systems serving 120,000 ft<sup>2</sup> or more must be modeled with
+                        variable-speed drives and systems serving less than 120,000 ft<sup>2</sup> must be modeled as riding the
                         pump curve.
                     </p>
                 </div>
@@ -3187,8 +3235,7 @@
                         <strong>Section G3.2.3.5</strong> requirements are the same as described above for the 90.1 2016
                         and 2019 PRM Section G3.1.3.5.
                     </p>
-                    <p><strong><u>G3.3 Minor Alterations</u></strong></p>
-                    <p>
+                    <p><strong><u>G3.3 Minor Alterations</u></strong><br>
                         The systems and equipment included in the scope of retrofit for alterations subject to 90.1 2022
                         Section G3.3 (i.e., Minor Alterations) are required to model systems and equipment included in
                         the scope of retrofit at efficiency levels meeting the mandatory and prescriptive requirements
@@ -3277,7 +3324,7 @@
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/trane_equip-energy.png">
+                                            data-full="../assets/images/section7/trace700_equip-whvac-14-18-19.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -3302,6 +3349,10 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/trace3d_whvac16-18.png">
+                                        Annotated Report
+                                    </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/trace3d_whvac18-20.png">
                                         Annotated Report
@@ -3330,6 +3381,10 @@
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_detailed-report.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_detailed-ahvac-whvac.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -3488,7 +3543,7 @@
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/trane_equip-energy-whvac.png">
+                                            data-full="../assets/images/section7/trace700_equip-whvac-14-18-19.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -3541,6 +3596,10 @@
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_detailed-report.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_detailed-ahvac-whvac.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -3652,7 +3711,7 @@
                 <h5>Review Tips</h5>
                 <ol>
                     <li>
-                        Follow the steps described for HVAVC09 to confirm that the modeled annual hot water pump energy
+                        Follow the steps described for WHVAC09 to confirm that the modeled annual hot water pump energy
                         is as expected.
                     </li>
                 </ol>
@@ -3766,6 +3825,10 @@
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_detailed-report.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_detailed-ahvac-whvac.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -3997,7 +4060,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/eQuest-BEPU.png">
+                                            data-full="../assets/images/section7/eQuest_BEPU.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -4073,6 +4136,10 @@
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
                                             data-full="../assets/images/section7/IESVE_plant-loops.png">
+                                        Annotated Report
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_BPRM-report-3.png">
                                         Annotated Report
                                     </button>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
@@ -4165,7 +4232,7 @@
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
-                                            data-full="../assets/images/section7/designbuilder_whvac11-13-14-16-19.png">
+                                            data-full="../assets/images/section7/designbuilder_performance-outputs.png">
                                         Annotated Report
                                     </button>
                                 </div>
