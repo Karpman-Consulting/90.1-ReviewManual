@@ -55,3 +55,25 @@ function replaceAnchorLinks() {
         });
     });
 }
+
+window.onscroll = function() {
+    toggleBackToTopButton();
+};
+
+function toggleBackToTopButton() {
+    const backToTopButton = document.getElementById("backToTop");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.opacity = "1";
+        backToTopButton.style.visibility = "visible";
+    } else {
+        backToTopButton.style.opacity = "0";
+        backToTopButton.style.visibility = "hidden";
+    }
+}
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

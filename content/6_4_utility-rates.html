@@ -20,6 +20,20 @@
 
         <div id="page-content" class="container">
             <!--- Page Content Goes Here --->
+            <h1>Utility Rate (UR)</h1>
+
+            <h3>Overview of the Utility Rate Checks</h3>
+
+            <p>
+                Utility Rate checks verify that utility rates from the approved source were used for all applicable fuels,
+                that the required supporting information is included in the submittal, and that modeling inputs and
+                outputs reflect the reported rate structure. Table 4 summarizes the checks included in the Utility Rates
+                section. This group of checks may be skipped if project documents compliance using unit other than
+                energy cost, such as site or source energy or emissions, which may be allowed by some rating
+                authorities and jurisdictions.
+            </p>
+
+            <p><strong>Table 4: Utility Rates Checks Overview</strong></p>
 
             <table id="checks-table" class="table table-bordered table-sm" border="1">
                 <colgroup>
@@ -64,46 +78,66 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="4"><strong>Legend: </strong><span class="automated">PASS/FAIL/NA outcome is determined automatically in the Quality Control Checks tab of the Compliance Form.</span></td>
+                        <td colspan="4"><strong>Legend: </strong><span class="automated">PASS/FAIL/NA outcome is determined
+                            automatically in the Quality Control Checks tab of the Compliance Form.</span></td>
                     </tr>
                 </tbody>
             </table>
 
             <!-- UR01 Section -->
             <div id="ur01" class="card card-body mb-3" data-check-type="2" data-component="rates" data-model="B">
-                <h3>UR01 The utility rate for electricity, natural gas and other applicable energy sources are based on the approved source</h3>
+                <h3>
+                    UR01 The utility rate for electricity, natural gas and other applicable energy sources are based on
+                    the approved source
+                </h3>
                 <div data-version="2016,2019,2022" data-path="ECB">
-                    <h5>90.1 2016 and 2019/2022 ECB  </h5>
-                    <p><strong>11.4.3.2/12.4.3.2: </strong> The rates for purchased energy (such as electricity, gas, oil, propane, steam and chilled water) must be approved by the AHJ. </p>
+                    <h5>90.1 2016 and 2019/2022 ECB</h5>
+                    <p>
+                        <strong>11.4.3.2/12.4.3.2: </strong> The rates for purchased energy (such as electricity, gas, oil,
+                        propane, steam and chilled water) must be approved by the AHJ.
+                    </p>
                 </div>
 
                 <div data-version="2016,2019,2022" data-path="PRM">
                 <h5>90.1 2016 and 2019/2022 PRM </h5>
-                    <p><strong>Section G2.4.2: </strong> Either the actual rates for purchased energy or state average energy prices published by U.S. Energy Information Administration (EIA) for commercial building customers may be used, but rates from different sources may not be mixed in the same project. </p>
+                    <p>
+                        <strong>Section G2.4.2: </strong> Either the actual rates for purchased energy or state average energy
+                        prices published by U.S. Energy Information Administration (EIA) for commercial building customers may
+                        be used, but rates from different sources may not be mixed in the same project.
+                    </p>
                 </div>
 
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>All fuels applicable to the baseline/budget or proposed design must be listed on the Energy Sources tab of the Compliance Form. Table 1 includes the list of fuels and description of utility rates for each.
+                    <li>
+                        All fuels applicable to the baseline/budget or proposed design must be listed on the Energy Sources tab
+                        of the Compliance Form. Table 1 includes the list of fuels and description of utility rates for each.
                         <figure>
                             <img src="../assets/images/section1-6/CF_fuel-type.png" style="max-width: 750px; min-width: 350px">
                         </figure>
                         The fee structures for each fuel is further described in Tables 2-4 of the Energy Sources tab.
                         Table 2 is used for reporting rates that have uniform charges, Table 3 for time of use charges,
-                        Table 4 for block charges. These tables also list Source of Data for each rate which may include Actual Rates, EIA Rates or Other.
+                        Table 4 for block charges. These tables also list Source of Data for each rate which may include
+                        Actual Rates, EIA Rates or Other.
                         <figure>
                             <img src="../assets/images/section1-6/CF_fee-structure.png" style="max-width: 750px; min-width: 550px">
                         </figure>
                     </li>
 
-                    <li>With the EIA option, the most recent annual average rates for electricity and natural gas published at the EIA website should be used. These rates are readily available and are simple usage charges such as $/kWh.</li>
+                    <li>
+                        With the EIA option, the most recent annual average rates for electricity and natural gas published
+                        at the EIA website should be used. These rates are readily available and are simple usage charges such
+                        as $/kWh.
+                    </li>
 
                     <li>
-                        The actual rates may be more challenging to establish for a new construction project, as several different rate classes and choice of electricity suppliers may apply.
-                        The actual rates may also be harder to model as they often include block charges, time of use charges, demand charges, ratchet clauses, etc.
-                        However, using the actual rates makes models more representative of the post-occupancy energy costs and allows capturing impact of electricity demand and time of use on compliance.
-                        If actual utility rates are used on the project, the supporting information should be included in the submittal (Submittal Checklist #7),
-                        such as rate description from the utility company.
+                        The actual rates may be more challenging to establish for a new construction project, as several different
+                        rate classes and choice of electricity suppliers may apply. The actual rates may also be harder to
+                        model as they often include block charges, time of use charges, demand charges, ratchet clauses, etc.
+                        However, using the actual rates makes models more representative of the post-occupancy energy costs
+                        and allows capturing impact of electricity demand and time of use on compliance.
+                        If actual utility rates are used on the project, the supporting information should be included in the
+                        submittal (Submittal Checklist #7), such as rate description from the utility company.
                         <figure>
                             <img src="../assets/images/section1-6/example-utility-company-charges.png" style="max-width: 750px; min-width: 550px">
                         </figure>
@@ -113,27 +147,52 @@
 
             <!-- UR02 Section -->
             <div id="ur02" class="card card-body mb-3" data-check-type="6" data-component="rates" data-model="B,P">
-                <h3>UR02 The difference between the average (virtual) modeled budget/baseline and proposed utility rates for electricity, natural gas and other applicable energy sources are as expected. </h3>
+                <h3>UR02 The difference between the average (virtual) modeled budget/baseline and proposed utility rates
+                    for electricity, natural gas and other applicable energy sources are as expected. </h3>
                 <h5>Review Tips</h5>
                 <ol>
                     <li>
-                        <p> Background </p>
-                        <p> The average annual rate, often referred to as the virtual rate, is calculated for each fuel as the ratio of the annual fuel consumption to the annual fuel cost. For example, if the simulation output reports show that the baseline annual electricity use was 509,150 kWh and the annual electricity cost was $76,370, the virtual electricity rate is $76,370 / 509,150kWh = 0.15 $/kWh.</p>
-                        For projects that used EIA rates or the actual rates with fixed usage charges (e.g. $/kWh, $/Therm) and no demand, time of use, or block charges, the virtual rate is expected to be the same for the budget/baseline and the proposed design and match the rate reported on the Energy Sources tab of the Compliance Form. For projects that use more complex utility rate structures, virtual rates may differ between the budget/baseline and proposed design. For example, the virtual electricity rate for the proposed design may be lower than for the budget (baseline) design if the proposed design reduces the peak demand and the modeled electricity rates include demand charges.
-
+                        Background <br>
+                        The average annual rate, often referred to as the virtual rate, is calculated for each fuel as the
+                        ratio of the annual fuel consumption to the annual fuel cost. For example, if the simulation output
+                        reports show that the baseline annual electricity use was 509,150 kWh and the annual electricity cost
+                        was $76,370, the virtual electricity rate is $76,370 / 509,150kWh = 0.15 $/kWh.
+                        <br>
+                        <br>
+                        For projects that used EIA rates or the actual rates with fixed usage charges (e.g. $/kWh, $/Therm) and
+                        no demand, time of use, or block charges, the virtual rate is expected to be the same for the
+                        budget/baseline and the proposed design and match the rate reported on the Energy Sources tab of the
+                        Compliance Form. For projects that use more complex utility rate structures, virtual rates may differ
+                        between the budget/baseline and proposed design. For example, the virtual electricity rate for the proposed
+                        design may be lower than for the budget (baseline) design if the proposed design reduces the peak demand and
+                        the modeled electricity rates include demand charges.
+                        <br>
+                        <br>
                     </li>
                     <li>
-                        <p>Virtual utility rates for the budget/baseline and proposed design that are not equal for projects with simple utility rate structures or differ by more than 5% for projects with complex utility rate structures, should be flagged.</p>
+                        <p>
+                            Virtual utility rates for the budget/baseline and proposed design that are not equal for projects with simple
+                            utility rate structures or differ by more than 5% for projects with complex utility rate structures, should be
+                            flagged.
+                        </p>
                     </li>
                 </ol>
             </div>
 
             <!-- UR03 Section -->
             <div id="ur03" class="card card-body mb-3" data-check-type="5" data-component="rates" data-model="B,P">
-                <h3>UR03 The modeled utility rates for electricity, natural gas and other fuels applicable to the project are as reported in the Compliance Form and are the same in the baseline/budget and proposed design model.</h3>
+                <h3>
+                    UR03 The modeled utility rates for electricity, natural gas and other fuels applicable to the
+                    project are as reported in the Compliance Form and are the same in the baseline/budget and proposed
+                    design model.
+                </h3>
                 <h5>Review Tips</h5>
                 <ol>
-                    <li>Review input and output reports to confirm that the utility rate structure described in the submittal was properly modeled. This QC check should be performed if UR02 check fails or instead of UR02.</li>
+                    <li>
+                        Review input and output reports to confirm that the utility rate structure described in the
+                        submittal was properly modeled. This QC check should be performed if UR02 check fails or instead
+                        of UR02.
+                    </li>
                 </ol>
 
                 <div class="annotated-report container">
@@ -151,7 +210,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/eQuest_ES-D.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/eQuest_ES-D.png">
                                         Annotated Report
                                     </button>
                                     <!-- Could not find ES-E or ES-F in eQuest simulation output reports section of the Review Manual  -->
@@ -168,18 +228,22 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                    Library Members entered values report Utility rates section for utility rate input, Monthly Energy Consumption and Monthly Utility Cost reports for consumption and cost output
+                                    Library Members entered values report Utility rates section for utility rate input, Monthly Energy
+                                    Consumption and Monthly Utility Cost reports for consumption and cost output
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/trace700_monthly-energy.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/trace700_utility-rates.png">
                                         Annotated Report
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/trace700_monthly-utility-cost.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/trace700_monthly-energy.png">
                                         Annotated Report
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/trace700_utility-rates.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/trace700_monthly-utility-cost.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -195,15 +259,18 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                    Site Consumption Summary report for energy consumption for each fuel and Economic and Life Cycle Costs Summary report for consumption costs for each fuel
+                                    Site Consumption Summary report for energy consumption for each fuel and Economic
+                                    and Life Cycle Costs Summary report for consumption costs for each fuel
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/trace3d_monthly-energy-enduse.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/trace3d_monthly-energy-enduse.png">
                                         Annotated Report
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/trace3d_monthly-utility.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/trace3d_monthly-utility.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -219,24 +286,26 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                    Energy Model Output Report, PRM Compliance Report, ECB Compliance Report, BPRM Report, ASHRAE 90.1-2016 PCI Report
+                                    Energy Model Output Report, PRM Compliance Report, ECB Compliance Report, BPRM
+                                    Report, ASHRAE 90.1-2016 PCI Report
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/IESVE_energy-model-output-report.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_energy-model-output-report.png">
                                         Annotated Report
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/iecc-compliance-report.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/ashrae-prm-ecb-compliance-report.png">
                                         Annotated Report
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/IESVE_BPRM-report.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_ur03-PRM-compliance.png">
                                         Annotated Report
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/IESVE_ur03-PRM-compliance.png">
-                                        Annotated Report
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/IESVE_ur03-rate-structure.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/IESVE_ur03-rate-structure.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -257,7 +326,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/energyplus_ur03-re03.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/energyplus_ur03-re03.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -273,7 +343,8 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                Not Applicable <!This section is blank in the review manual, in order to keep formatting I entered Not Applicable>
+                                Not Applicable
+                                <!--This section is blank in the review manual, in order to keep formatting I entered Not Applicable-->
                                 </div>
                             </div>
                             <div class="row">
@@ -291,7 +362,8 @@
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12 border-left border-right">
-                                    “Electric Rate Inputs”, “Fuel Rate Inputs” reports. Virtual rate found on “Billing Details” report, generated by energy or fuel source.
+                                    “Electric Rate Inputs”, “Fuel Rate Inputs” reports. Virtual rate found on “Billing Details” report,
+                                    generated by energy or fuel source.
                                 </div>
                             </div>
                             <div class="row">
@@ -314,10 +386,12 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 border-bottom border-left border-right">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/designbuilder_ur03-1.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/designbuilder_ur03-1.png">
                                         Annotated Report
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal" data-full="../assets/images/section7/designbuilder_ur03-2.png">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imageModal"
+                                            data-full="../assets/images/section7/designbuilder_ur03-2.png">
                                         Annotated Report
                                     </button>
                                 </div>
@@ -351,7 +425,9 @@
             </div>
           </div>
         </div>
-
+        <div>
+            <button id="backToTop" class="btn btn-primary" onclick="scrollToTop()">↑ Back to Top</button>
+        </div>
     </main>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
