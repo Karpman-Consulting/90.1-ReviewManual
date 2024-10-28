@@ -47,3 +47,34 @@ function filterContent() {
         });
     });
 }
+
+function saveFilterSelections() {
+    document.querySelectorAll(".form-check-input").forEach((checkbox) => {
+        localStorage.setItem(checkbox.id, checkbox.checked);
+    });
+
+    document.querySelectorAll(".selectpicker").forEach((select) => {
+        const selectedValues = Array.from(select.options)
+            .filter(option => option.selected)
+            .map(option => option.value);
+        localStorage.setItem(select.id, JSON.stringify(selectedValues));
+    });
+}
+
+function loadFilterSelections() {
+    document.querySelectorAll(".form-check-input").forEach((checkbox) => {
+        const savedValue = localStorage.getItem(checkbox.id);
+        if (savedValue !== null) {
+            checkbox.checked = savedValue === "true";
+        }
+    });
+
+    document.querySelectorAll(".selectpicker").forEach((select) => {
+        const savedValues = JSON.parse(localStorage.getItem(select.id));
+        if (Array.isArray(savedValues)) {
+            Array.from(select.options).forEach((option) => {
+                option.selected = savedValues.includes(option.value);
+            });
+        }
+    });
+}

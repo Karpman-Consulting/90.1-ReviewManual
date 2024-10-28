@@ -27,79 +27,79 @@ const list = [
     {
         "key": "SG05",
         "title": "The Modeled Floor Area is as Reported in the Compliance Form and the Same Between Budget/Baseline and Proposed Design",
-        "tags": [],
+        "tags": ['Floor Area', '# of Floors', 'Number of floors'],
         "checkHref": "content/6_3_simulation-general.html#sg05"
     },
     {
         "key": "SG06",
         "title": "The Correct Number of Hours Per Year Was Explicitly Modeled",
-        "tags": [],
+        "tags": ['8760', '8,760', '# of Hours', 'Number of hours', '1400', '1,400', 'leap year'],
         "checkHref": "content/6_3_simulation-general.html#sg06"
     },
     {
         "key": "SG07",
         "title": "The Number of Unmet Load Hours Reported in the Compliance Form Does Not Exceed the Prescribed Limits",
-        "tags": [],
+        "tags": ['Unmet hours', '300', 'UMLH'],
         "checkHref": "content/6_3_simulation-general.html#sg07"
     },
     {
         "key": "SG08",
         "title": "The Number of Unmet Load Hours Reported in the Compliance Form Reflects Simulation Results",
-        "tags": [],
+        "tags": ['Unmet hours', '300', 'UMLH'],
         "checkHref": "content/6_3_simulation-general.html#sg08"
     },
     {
         "key": "SG09",
         "title": "Energy Use Reported in the Compliance Form Matches Simulation Reports",
-        "tags": [],
+        "tags": ['kWh', 'Therm', 'MMBtu', 'GJ', 'Energy Use', 'Energy Consumption', 'Energy'],
         "checkHref": "content/6_3_simulation-general.html#sg09"
     },
     {
         "key": "SG10-P",
         "title": "Site Energy Use Intensity (EUI) of the Proposed Design is Generally Consistent with the Selected Benchmark",
-        "tags": [],
+        "tags": ['EUI', 'Energy Use Intensity', 'Benchmark', 'Site EUI', '“Acceptable Difference Before QC Flag”', 'deviation'],
         "checkHref": "content/6_3_simulation-general.html#sg10-p"
     },
     {
         "key": "SG10-B",
         "title": "Site Energy Use Intensity (EUI) of the Budget/Baseline Design is Generally Consistent with the Selected Benchmark",
-        "tags": [],
+        "tags": ['EUI', 'Energy Use Intensity', 'Benchmark', 'Site EUI', '“Acceptable Difference Before QC Flag”', 'deviation'],
         "checkHref": "content/6_3_simulation-general.html#sg10-b"
     },
     {
         "key": "SG11-P",
         "title": "Modeled Interior Lighting Energy Use of the Proposed Design is Generally Consistent with the Selected Benchmark, with the Difference Less Than Set Threshold",
-        "tags": [],
+        "tags": ['Wattage', '"Acceptable Difference Before QC Flag"', 'Lighting', 'Interior Lighting', 'Benchmark', 'Lighting Power Density', 'LPD'],
         "checkHref": "content/6_3_simulation-general.html#sg11-p"
     },
     {
         "key": "SG11-B",
         "title": "Modeled Interior Lighting Energy Use in the Baseline/Budget Design is Generally Consistent with the Selected Benchmark, with Difference Less Than Set Threshold",
-        "tags": [],
+        "tags": ['Wattage', '"Acceptable Difference Before QC Flag"', 'Lighting', 'Interior Lighting', 'Benchmark', 'Lighting Power Density', 'LPD'],
         "checkHref": "content/6_3_simulation-general.html#sg11-b"
     },
     {
         "key": "SG12",
         "title": "Modeled Energy Use Intensity of the Miscellaneous and Process Loads in the Baseline/Budget Design is Generally Consistent with the Selected Benchmark, with the Difference Less Than the Set Threshold",
-        "tags": [],
+        "tags": ['Wattage', '"Acceptable Difference Before QC Flag"', 'Miscellaneous', 'Process', 'Plug', 'Equipment', 'Benchmark', 'Plug Load', 'Process Load', 'limits'],
         "checkHref": "content/6_3_simulation-general.html#sg12"
     },
     {
         "key": "SG13",
         "title": "Modeled Heating Energy Use in the Proposed and Baseline/Budget Design is Generally Consistent with the Selected Benchmark, with the Difference Less Than the Set Threshold",
-        "tags": [],
+        "tags": ['Space Heating', 'Heating', 'Energy Use', 'Benchmark', 'Heating Energy'],
         "checkHref": "content/6_3_simulation-general.html#sg13"
     },
     {
         "key": "SG14",
         "title": "Modeled Cooling Energy Use in the Proposed and Baseline/Budget Design is Generally Consistent with the Selected Benchmark, with the Difference Less Than the Set Threshold",
-        "tags": [],
+        "tags": ['Space Cooling', 'Cooling', 'Energy Use', 'Benchmark', 'Cooling Energy'],
         "checkHref": "content/6_3_simulation-general.html#sg14"
     },
     {
         "key": "SG15",
         "title": "Modeled HVAC Fans Energy Use in the Proposed and Baseline/Budget Design is Generally Consistent with the Selected Benchmark, with the Difference Less Than the Set Threshold",
-        "tags": [],
+        "tags": ['Fan', 'Energy Use', 'Benchmark', 'HVAC Fan'],
         "checkHref": "content/6_3_simulation-general.html#sg15"
     },
     {

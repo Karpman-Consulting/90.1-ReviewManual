@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         populateLinks();
         attachSearchInputListener();
         replaceAnchorLinks();
+        loadFilterSelections();
     });
 
     // Load footer
@@ -52,6 +53,16 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function attachEventListeners() {
+    // Save checkbox selections to localStorage
+    document.querySelectorAll(".form-check-input").forEach((checkbox) => {
+        checkbox.addEventListener("change", saveFilterSelections);
+    });
+
+    // Save dropdown selections to localStorage
+    document.querySelectorAll(".selectpicker").forEach((select) => {
+        select.addEventListener("change", saveFilterSelections);
+    });
+
     document.getElementById("ecbPath").addEventListener('change', function(event) {
         const checked = event.target.checked;
         const value = event.target.value;

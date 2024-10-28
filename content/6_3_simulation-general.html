@@ -9,24 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="icon" href="../assets/images/favicon.ico" type="image/vnd.microsoft.icon"/>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floating Back to Top Button</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        #backToTop {
-            position: fixed; bottom: 20px; right: 30px;
-            background: #007BFF; color: white;
-            border: none; border-radius: 5px; padding: 10px;
-            cursor: pointer; animation: float 3s infinite alternate;
-        }
-        @keyframes float {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-10px); }
-        }
-    </style>
-
 </head>
 <body>
 <div class="d-flex flex-nowrap">
@@ -38,33 +20,27 @@
 
         <div id="page-content" class="container">
             <!--- Page Content Goes Here --->
-            <div>
-            <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
-            </div>
-
-            <script>
-                function scrollToTop() {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            </script>
-
             <h1>Simulation General (SG)</h1>
             <h3>Overview of Simulation General Checks</h3>
 
-            <p>Simulation General checks help gauge the general quality of the submittal, such as whether an approved
-            simulation tool and weather file were used, modeled floor area reflects design documents, and
-            simulation results reported in the Compliance Form reflect simulation output reports. </p>
+            <p>
+                Simulation General checks help gauge the general quality of the submittal, such as whether an approved
+                simulation tool and weather file were used, modeled floor area reflects design documents, and
+                simulation results reported in the Compliance Form reflect simulation output reports.
+            </p>
 
-            <p>In addition, there are checks that compare modeled energy use of the baseline/budget and proposed
-            design to the selected benchmarks to verify that the simulation results are reasonable. The relevant
-            information is shown on the Energy Performance Summary tab of the Compliance Form in both the
-            tabular and graphical format (Figure 6). Significant deviations between the modeled energy use
-            intensities of the baseline/budget and proposed design and the benchmark should be flagged, as
-            discussed in the specific checks described below.</p>
+            <p>
+                In addition, there are checks that compare modeled energy use of the baseline/budget and proposed
+                design to the selected benchmarks to verify that the simulation results are reasonable. The relevant
+                information is shown on the Energy Performance Summary tab of the Compliance Form in both the
+                tabular and graphical format (Figure 6). Significant deviations between the modeled energy use
+                intensities of the baseline/budget and proposed design and the benchmark should be flagged, as
+                discussed in the specific checks described below.
+            </p>
 
             <figure>
                 <img src="../assets/images/section1-6/figure-6.png"
-                     style="max-width: 750px; min-width: 650px;">
+                     style="max-width: 550px; min-width: 550px;">
                 <figcaption><strong>Figure 6: Energy Performance Summary tab of the Compliance Form, Benchmark Comparison
                 </strong></figcaption>
             </figure>
@@ -303,7 +279,7 @@
                     <li>Simulation tool name and version is reported in the Energy Model Information section on the
                         General Information tab of the Compliance Form.
                         <figure>
-                            <img src="../assets/images/section1-6/sg01-img-1.png" style="max-width: 750px; min-width: 650px;">
+                            <img src="../assets/images/section1-6/sg01-img-1.png" style="max-width: 950px; min-width: 950px;">
                         </figure>
                     </li>
                     <li>If AHJ/RA has the list of simulation programs, verify that the simulation program used for the
@@ -344,14 +320,14 @@
                     <li>Project address is listed in the Project Information section of the Contact Information tab of
                         the Compliance Form. Use the reported zip code to determine the county.
                         <figure>
-                            <img src="../assets/images/section1-6/sg02-img-1.png" style="max-width: 750px; min-width: 650px;">
+                            <img src="../assets/images/section1-6/sg02-img-1.png" style="max-width: 550px; min-width: 550px;">
                         </figure>
                     </li>
                     <li>Refer to 90.1 Annex 1 to confirm that the climate zone listed on the General Information tab,
                         Energy Model Information section is established correctly based on the state and county where
                         the project is located.
                         <figure>
-                            <img src="../assets/images/section1-6/sg02-img-2.png" style="max-width: 750px; min-width: 650px;">
+                            <img src="../assets/images/section1-6/sg02-img-2.png" style="max-width: 600px; min-width: 600px;">
                         </figure>
                     </li>
                 </ol>
@@ -387,8 +363,11 @@
                 <ol>
                     <li>Weather file used in the simulation is reported in the General Information tab of the compliance
                         Form.
-                        <img src="../assets/images/section7/energy-model-information.png" alt="Weather file used in the simulation"
-                             style="margin: auto; min-width: 350px; max-width: 550px;">
+                        <figure>
+                            <img src="../assets/images/section7/energy-model-information.png"
+                                 alt="Weather file used in the simulation"
+                                 style="margin: auto; min-width: 650px; max-width: 650px;">
+                        </figure>
                     </li>
                     <li>If AHJ/RA has pre-approved weather files that must be used for specific project locations,
                         confirm that the weather file listed in the Compliance Form and in the model is approved.
@@ -634,9 +613,9 @@
                         area described as “new construction”, “alteration” and “modeled existing to remain – no
                         alteration” and “conditioned”, “semi-heated and unconditioned”, and “space not enclosed” (click
                         the help text for definitions).
-                        <figure>
-                            <img src="../assets/images/section1-6/sg04-img-1.png" style="max-width: 900px; min-width: 800px;">
-                        </figure>
+
+                        <img src="../assets/images/section1-6/sg04-img-1.png" style="max-width: 1040px; min-width: 1040px;">
+
                     </li>
                     <li>For 90.1 2022 projects, verify that the selection in the “Does Alteration Area Meet
                         G3.1.4a/11.1.4.1?” column aligns with design documents (click the help text for an explanation
@@ -2350,16 +2329,17 @@
                 </ol>
 
                 <p>90.1 2022</p>
-                <p>The compliance calculation is automated on the Compliance Calculations tab in the Compliance
+                <p>
+                    The compliance calculation is automated on the Compliance Calculations tab in the Compliance
                     Form based on the simulation results for the budget and proposed design. However, submitters
                     need to populate the project’s energy credit requirements per Section 11.5.1. Table 6 on the
                     Compliance Calculations tab in the Compliance Form is designed to facilitate this process and for
                     submitters to report the required energy credits. Many values in Table 6 auto-populate, manual
                     overrides are shown in bold orange, review the explanation in the “Reason(s) for Overridden
-                    Energy Credit Requirements/Adjustments” for validity if manual overrides have been made. </p>
-                <figure>
-                    <img src="../assets/images/section1-6/CF_CC_Table-6.png" style="max-width: 750px; min-width: 650px;">
-                </figure><br>
+                    Energy Credit Requirements/Adjustments” for validity if manual overrides have been made.
+                </p>
+                <img src="../assets/images/section1-6/CF_CC_Table-6.png" style="max-width: 1040px; min-width: 1040px;">
+                <br>
 
                 <p><strong>Performance Rating Method</strong></p>
                 <p>90.1 2016, 2019 and 2022</p>
