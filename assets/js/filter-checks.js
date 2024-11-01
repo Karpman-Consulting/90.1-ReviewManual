@@ -64,8 +64,21 @@ function saveFilterSelections() {
 function loadFilterSelections() {
     document.querySelectorAll(".form-check-input").forEach((checkbox) => {
         const savedValue = localStorage.getItem(checkbox.id);
+        const value = checkbox.value;
+
         if (savedValue !== null) {
             checkbox.checked = savedValue === "true";
+        }
+
+        // Update the filters based on the checkbox state
+        if (checkbox.checked) {
+            // Add to the filter array if checked
+            if (!filters.model.includes(value)) {
+                filters.model.push(value);
+            }
+        } else {
+            // Remove from the filter array if not checked
+            filters.model = filters.model.filter((v) => v !== value);
         }
     });
 
