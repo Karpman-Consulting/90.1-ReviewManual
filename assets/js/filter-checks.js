@@ -75,6 +75,18 @@ function loadFilterSelections() {
             Array.from(select.options).forEach((option) => {
                 option.selected = savedValues.includes(option.value);
             });
+
+            // Update the filter object based on the dropdown's ID
+            if (select.id === "check-type") {
+                filters.checkType = savedValues;
+            } else if (select.id === "component-type") {
+                filters.component = savedValues;
+            } else if (select.id === "bem-tool") {
+                filters.bemTool = savedValues;
+            }
         }
     });
+
+    $('.selectpicker').selectpicker('refresh');
+    filterContent();
 }
