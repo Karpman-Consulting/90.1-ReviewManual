@@ -51,10 +51,6 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-#sidebar .btn:hover {
-    background-color: #F7C88A;
-}
-
 #sidebar li {
     border-radius: 0 !important;
     border-bottom: 1px solid #ccc;
@@ -73,6 +69,14 @@ html, body {
     white-space: normal;
 }
 
+#sidebar .active {
+    background-color: #f5d09f;
+    font-weight: bold;
+}
+
+#sidebar .btn:hover {
+    background-color: #F7C88A;
+}
 #sidebar .btn:focus,
 #sidebar .btn:active {
     outline: none !important;
@@ -427,3 +431,4 @@ footer img {
     z-index: 1000;
     visibility: hidden;
 }
+
