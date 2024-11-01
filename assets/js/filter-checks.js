@@ -72,17 +72,23 @@ function loadFilterSelections() {
     document.querySelectorAll(".selectpicker").forEach((select) => {
         const savedValues = JSON.parse(localStorage.getItem(select.id));
         if (Array.isArray(savedValues)) {
-            Array.from(select.options).forEach((option) => {
-                option.selected = savedValues.includes(option.value);
-            });
+            let selectedValues = savedValues;
+
+            // Handle "All" option logic
+            if (selectedValues.includes("All")) {
+                selectedValues = ["All"];
+            }
+
+            // Update the selectpicker with selected values using its 'val' method
+            $(select).selectpicker('val', selectedValues);
 
             // Update the filter object based on the dropdown's ID
             if (select.id === "check-type") {
-                filters.checkType = savedValues;
+                filters.checkType = selectedValues;
             } else if (select.id === "component-type") {
-                filters.component = savedValues;
+                filters.component = selectedValues;
             } else if (select.id === "bem-tool") {
-                filters.bemTool = savedValues;
+                filters.bemTool = selectedValues;
             }
         }
     });
