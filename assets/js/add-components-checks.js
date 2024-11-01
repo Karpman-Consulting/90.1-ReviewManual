@@ -298,7 +298,6 @@ function replaceAnchorLinks() {
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
     anchorLinks.forEach(link => {
-        link.setAttribute("target", "_blank");
         link.addEventListener('click', function(event) {
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
@@ -315,6 +314,12 @@ function replaceAnchorLinks() {
                 });
             }
         });
+    });
+
+    const externalLinks = document.querySelectorAll("a[href]:not([href^='#'])");
+
+    externalLinks.forEach(link => {
+        link.setAttribute('target', '_blank');
     });
 }
 
