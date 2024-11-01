@@ -5,8 +5,6 @@ function filterContent() {
     const anchorTags = document.querySelectorAll('#filter-links a');
 
     cards.forEach((card, index) => {
-        // log the card id
-        console.log(card.id);
         const checkType = card.getAttribute('data-check-type')?.split(',').map(item => item.trim()) || [];
         const component = card.getAttribute('data-component')?.split(',').map(item => item.trim()) || [];
         const modelType = card.getAttribute('data-model')?.split(',').map(item => item.trim()) || [];
@@ -38,8 +36,7 @@ function filterContent() {
             const matchesPath = path.some(p => filters.path.includes(p)) || path.length === 0;
             const matchesVersion = version.some(v => filters.version.includes(v)) || version.length === 0;
             const matchesBEMTool = filters.bemTool[0] === 'All' || bemTool.some(bem => filters.bemTool.includes(bem)) || filters.bemTool.length === 0;
-            console.log(version, path, bemTool);
-            console.log(filters.version, filters.path, filters.bemTool);
+
             // Show or hide the section based on match
             if (!matchesPath || !matchesVersion || !matchesBEMTool) {
                 section.style.display = 'none';
