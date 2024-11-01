@@ -5,6 +5,8 @@ function filterContent() {
     const anchorTags = document.querySelectorAll('#filter-links a');
 
     cards.forEach((card, index) => {
+        // log the card id
+        console.log(card.id);
         const checkType = card.getAttribute('data-check-type')?.split(',').map(item => item.trim()) || [];
         const component = card.getAttribute('data-component')?.split(',').map(item => item.trim()) || [];
         const modelType = card.getAttribute('data-model')?.split(',').map(item => item.trim()) || [];
@@ -26,7 +28,6 @@ function filterContent() {
 
         // Now, filter individual sections within the card
         const sections = card.querySelectorAll('div[data-version], div[data-path], div[data-bem-tool]');
-
         sections.forEach((section) => {
             const version = section.getAttribute('data-version')?.split(',').map(item => item.trim()) || [];
             const path = section.getAttribute('data-path')?.split(',').map(item => item.trim()) || [];
@@ -37,7 +38,8 @@ function filterContent() {
             const matchesPath = path.some(p => filters.path.includes(p)) || path.length === 0;
             const matchesVersion = version.some(v => filters.version.includes(v)) || version.length === 0;
             const matchesBEMTool = filters.bemTool[0] === 'All' || bemTool.some(bem => filters.bemTool.includes(bem)) || filters.bemTool.length === 0;
-
+            console.log(version, path, bemTool);
+            console.log(filters.version, filters.path, filters.bemTool);
             // Show or hide the section based on match
             if (!matchesPath || !matchesVersion || !matchesBEMTool) {
                 section.style.display = 'none';
@@ -59,53 +61,4 @@ function saveFilterSelections() {
             .map(option => option.value);
         localStorage.setItem(select.id, JSON.stringify(selectedValues));
     });
-}
-
-function loadFilterSelections() {
-    document.querySelectorAll(".form-check-input").forEach((checkbox) => {
-        const savedValue = localStorage.getItem(checkbox.id);
-        const value = checkbox.value;
-
-        if (savedValue !== null) {
-            checkbox.checked = savedValue === "true";
-        }
-
-        // Update the filters based on the checkbox state
-        if (checkbox.checked) {
-            // Add to the filter array if checked
-            if (!filters.model.includes(value)) {
-                filters.model.push(value);
-            }
-        } else {
-            // Remove from the filter array if not checked
-            filters.model = filters.model.filter((v) => v !== value);
-        }
-    });
-
-    document.querySelectorAll(".selectpicker").forEach((select) => {
-        const savedValues = JSON.parse(localStorage.getItem(select.id));
-        if (Array.isArray(savedValues)) {
-            let selectedValues = savedValues;
-
-            // Handle "All" option logic
-            if (selectedValues.includes("All")) {
-                selectedValues = ["All"];
-            }
-
-            // Update the selectpicker with selected values using its 'val' method
-            $(select).selectpicker('val', selectedValues);
-
-            // Update the filter object based on the dropdown's ID
-            if (select.id === "check-type") {
-                filters.checkType = selectedValues;
-            } else if (select.id === "component-type") {
-                filters.component = selectedValues;
-            } else if (select.id === "bem-tool") {
-                filters.bemTool = selectedValues;
-            }
-        }
-    });
-
-    $('.selectpicker').selectpicker('refresh');
-    filterContent();
 }

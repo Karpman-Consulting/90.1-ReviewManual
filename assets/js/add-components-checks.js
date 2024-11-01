@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function() {
         $('.selectpicker').selectpicker();
         attachEventListeners();
         populateLinks();
+        filterContent();
         attachSearchInputListener();
         replaceAnchorLinks();
-        loadFilterSelections();
     });
 
     // Load footer
@@ -66,200 +66,77 @@ function attachEventListeners() {
         select.addEventListener("change", saveFilterSelections);
     });
 
-    document.getElementById("ecbPath").addEventListener('change', function(event) {
-        const checked = event.target.checked;
-        const value = event.target.value;
+    document.querySelectorAll(".form-check-input").forEach((checkbox) => {
+        const filterType = checkbox.name; // Get the filter type (e.g., "path", "version", "model")
+        const savedValue = localStorage.getItem(checkbox.id);
+        const value = checkbox.value;
+        // Restore checked state from localStorage
+        if (savedValue !== null) {
+            checkbox.checked = savedValue === "true";
+        }
 
-        if (checked) {
-            filters.path.push(value);
+        // Initialize filters based on the restored checkbox state
+        if (checkbox.checked) {
+            if (!filters[filterType].includes(value)) {
+                filters[filterType].push(value);
+            }
+        } else {
+            filters[filterType] = filters[filterType].filter((v) => v !== value);
         }
-        else {
-            filters.path = filters.path.filter((v) => v !== value);
-        }
-        filterContent();
+
+        // Add an event listener for each checkbox to handle changes
+        checkbox.addEventListener("change", function () {
+            const checked = checkbox.checked;
+
+            if (checked) {
+                filters[filterType].push(value);
+            } else {
+                filters[filterType] = filters[filterType].filter((v) => v !== value);
+            }
+            localStorage.setItem(checkbox.id, checked);
+            filterContent();
+        });
     });
 
-    document.getElementById("prmPath").addEventListener('change', function(event) {
-        const checked = event.target.checked;
-        const value = event.target.value;
+    document.querySelectorAll(".selectpicker").forEach((select) => {
+        const filterType = select.name; // Get filter type (e.g., "checkType", "component", "bemTool")
+        const savedValues = JSON.parse(localStorage.getItem(select.id));
+        if (Array.isArray(savedValues)) {
+            let selectedValues = savedValues.includes("All") ? ["All"] : savedValues;
+            $(select).selectpicker('val', selectedValues);
+            filters[filterType] = selectedValues;
+        }
 
-        if (checked) {
-            filters.path.push(value);
-        }
-        else {
-            filters.path = filters.path.filter((v) => v !== value);
-        }
-        filterContent();
+        select.addEventListener('change', function(event) {
+            const selectOptions = Array.from(event.target.options);
+            const allOption = selectOptions.find(option => option.value === "All");
+            let selectedValues = Array.from(event.target.selectedOptions).map(option => option.value);
+
+            // Handle "All" option selection logic
+            if (filters[filterType].includes("All") && allOption.selected) {
+                allOption.selected = false;
+                $('.selectpicker').selectpicker('refresh');
+                selectedValues = selectedValues.filter(option => option !== "All");
+            } else if (filters[filterType].includes("All") && !allOption.selected) {
+                allOption.selected = true;
+                $('.selectpicker').selectpicker('refresh');
+                selectedValues = ["All"];
+            } else if (!filters[filterType].includes("All") && allOption.selected) {
+                selectOptions.forEach(option => {
+                    if (option.value !== "All") {
+                        option.selected = false;
+                    }
+                });
+                $('.selectpicker').selectpicker('refresh');
+                selectedValues = ["All"];
+            }
+
+            // Update filter object and localStorage
+            filters[filterType] = selectedValues.filter(option => option !== "All" || selectedValues.length === 1);
+            localStorage.setItem(select.id, JSON.stringify(filters[filterType]));
+            filterContent();
+        });
     });
-
-    document.getElementById("v2016").addEventListener('change', function(event) {
-        const checked = event.target.checked;
-        const value = event.target.value;
-
-        if (checked) {
-            filters.version.push(value);
-        }
-        else {
-            filters.version = filters.version.filter((v) => v !== value);
-        }
-        filterContent();
-    });
-
-    document.getElementById("v2019").addEventListener('change', function(event) {
-        const checked = event.target.checked;
-        const value = event.target.value;
-
-        if (checked) {
-            filters.version.push(value);
-        }
-        else {
-            filters.version = filters.version.filter((v) => v !== value);
-        }
-        filterContent();
-    });
-
-    document.getElementById("v2022").addEventListener('change', function(event) {
-        const checked = event.target.checked;
-        const value = event.target.value;
-
-        if (checked) {
-            filters.version.push(value);
-        }
-        else {
-            filters.version = filters.version.filter((v) => v !== value);
-        }
-        filterContent();
-    });
-
-    document.getElementById("bModel").addEventListener('change', function(event) {
-        const checked = event.target.checked;
-        const value = event.target.value;
-
-        if (checked) {
-            filters.model.push(value);
-        }
-        else {
-            filters.model = filters.model.filter((v) => v !== value);
-        }
-        filterContent();
-    });
-
-    document.getElementById("pModel").addEventListener('change', function(event) {
-        const checked = event.target.checked;
-        const value = event.target.value;
-
-        if (checked) {
-            filters.model.push(value);
-        }
-        else {
-            filters.model = filters.model.filter((v) => v !== value);
-        }
-        filterContent();
-    });
-
-    document.getElementById("check-type").addEventListener('change', function(event) {
-        const previousFilter = filters.checkType;
-        const selectOptions = Array.from(event.target.options);
-        const allOption = selectOptions.find(option => option.value === "All");
-        var selectedValues = Array.from(event.target.selectedOptions).map(option => option.value);
-
-        if (previousFilter.includes("All") && allOption.selected) {
-            // Deselect "All" when another option is selected individually
-            allOption.selected = false;
-            $('.selectpicker').selectpicker('refresh');
-            selectedValues = selectedValues.filter(option => option !== "All");
-        }
-        else if (previousFilter.includes("All") && !allOption.selected) {
-            // Keep "All" selected even if someone tries to deselect it
-            allOption.selected = true;
-            $('.selectpicker').selectpicker('refresh');
-            selectedValues = ["All"];
-        }
-        else if (!previousFilter.includes("All") && allOption.selected) {
-            // Deselect all other options if "All" is selected
-            selectOptions.forEach(option => {
-                if (option.value !== "All") {
-                    option.selected = false;
-                }
-            });
-            $('.selectpicker').selectpicker('refresh');
-            selectedValues = ["All"];
-        }
-
-        // Update the filter with the current selection, excluding "All"
-        filters.checkType = selectedValues.filter(option => option !== "All" || selectedValues.length === 1);
-        filterContent();
-    });
-
-
-    document.querySelector('#component-type').addEventListener('change', function (event) {
-        const previousFilter = filters.component;
-        const selectOptions = Array.from(event.target.options);
-        const allOption = selectOptions.find(option => option.value === "All");
-        var selectedValues = Array.from(event.target.selectedOptions).map(option => option.value);
-
-        if (previousFilter.includes("All") && allOption.selected) {
-            // Deselect "All" when another option is selected individually
-            allOption.selected = false;
-            $('.selectpicker').selectpicker('refresh');
-            selectedValues = selectedValues.filter(option => option !== "All");
-        }
-        else if (previousFilter.includes("All") && !allOption.selected) {
-            // Keep "All" selected even if someone tries to deselect it
-            allOption.selected = true;
-            $('.selectpicker').selectpicker('refresh');
-            selectedValues = ["All"];
-        }
-        else if (!previousFilter.includes("All") && allOption.selected) {
-            // Deselect all other options if "All" is selected
-            selectOptions.forEach(option => {
-                if (option.value !== "All") {
-                    option.selected = false;
-                }
-            });
-            $('.selectpicker').selectpicker('refresh');
-            selectedValues = ["All"];
-        }
-
-        // Update the filter with the current selection, excluding "All"
-        filters.component = selectedValues.filter(option => option !== "All" || selectedValues.length === 1);
-        filterContent();
-    });
-
-    document.querySelector('#bem-tool').addEventListener('change', function (event) {
-        const previousFilter = filters.bemTool;
-        const selectOptions = Array.from(event.target.options);
-        const allOption = selectOptions.find(option => option.value === "All");
-        var selectedValues = Array.from(event.target.selectedOptions).map(option => option.value);
-
-        if (previousFilter.includes("All") && allOption.selected) {
-            // Deselect "All" when another option is selected individually
-            allOption.selected = false;
-            $('.selectpicker').selectpicker('refresh');
-            selectedValues = selectedValues.filter(option => option !== "All");
-        }
-        else if (previousFilter.includes("All") && !allOption.selected) {
-            // Keep "All" selected even if someone tries to deselect it
-            allOption.selected = true;
-            $('.selectpicker').selectpicker('refresh');
-            selectedValues = ["All"];
-        }
-        else if (!previousFilter.includes("All") && allOption.selected) {
-            // Deselect all other options if "All" is selected
-            selectOptions.forEach(option => {
-                if (option.value !== "All") {
-                    option.selected = false;
-                }
-            });
-            $('.selectpicker').selectpicker('refresh');
-            selectedValues = ["All"];
-        }
-
-        // Update the filter with the current selection, excluding "All"
-        filters.bemTool = selectedValues.filter(option => option !== "All" || selectedValues.length === 1);
-        filterContent();
-    });
-
 }
 
 function populateLinks() {
