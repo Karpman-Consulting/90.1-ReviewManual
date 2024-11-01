@@ -1219,6 +1219,9 @@ function performSearch(query) {
                 const targetId = targetHref.split('#')[1];
                 const targetElement = document.getElementById(targetId);
 
+                const lastSegment = href.substring(targetHref.lastIndexOf('/') + 1);
+                localStorage.setItem("activeLink", lastSegment);
+
                 if (targetElement) {
                     const headerHeight = document.querySelector('#header-container').offsetHeight;
                     const scrollPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
