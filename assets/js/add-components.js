@@ -37,7 +37,6 @@ function attachSearchInputListener() {
 }
 
 function replaceAnchorLinks() {
-    console.log("called");
     const pageAnchorLinks = document.querySelectorAll('a[href^="#"]');
 
     pageAnchorLinks.forEach(link => {
@@ -60,7 +59,6 @@ function replaceAnchorLinks() {
     });
 
     const externalLinks = document.querySelectorAll("#page-content a[href]:not([href^='#'])");
-    console.log(externalLinks);
 
     externalLinks.forEach(link => {
         link.setAttribute('target', '_blank');
