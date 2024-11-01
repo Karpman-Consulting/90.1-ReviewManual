@@ -137,6 +137,10 @@ function attachEventListeners() {
             filterContent();
         });
     });
+
+    enforceAtLeastOneChecked("path");
+    enforceAtLeastOneChecked("version");
+    enforceAtLeastOneChecked("model");
 }
 
 function populateLinks() {
@@ -289,5 +293,19 @@ function applyScrollState() {
     sidebar.addEventListener("scroll", () => {
         const scrollPosition = sidebar.scrollTop;
         localStorage.setItem("sidebarScrollPosition", scrollPosition);
+    });
+}
+
+function enforceAtLeastOneChecked(groupName) {
+    const checkboxes = document.querySelectorAll(`input[name="${groupName}"]`);
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", function(event) {
+            const checkedCheckboxes = document.querySelectorAll(`input[name="${groupName}"]:checked`);
+
+            // If there is only one checkbox checked in the group and it is being unchecked, prevent it
+            if (checkedCheckboxes.length === 0) {
+                this.checked = true;
+            }
+        }, { capture: true }); // Use capture phase to take priority
     });
 }
