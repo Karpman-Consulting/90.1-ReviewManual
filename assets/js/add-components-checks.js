@@ -131,6 +131,13 @@ function attachEventListeners() {
                 selectedValues = ["All"];
             }
 
+            // Check if no options are selected, then select "All"
+            if (selectedValues.length === 0) {
+                allOption.selected = true;
+                $('.selectpicker').selectpicker('refresh');
+                selectedValues = ["All"];
+            }
+
             // Update filter object and localStorage
             filters[filterType] = selectedValues.filter(option => option !== "All" || selectedValues.length === 1);
             localStorage.setItem(select.id, JSON.stringify(filters[filterType]));
