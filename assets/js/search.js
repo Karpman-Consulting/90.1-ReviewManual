@@ -1219,7 +1219,7 @@ function performSearch(query) {
                 const targetId = targetHref.split('#')[1];
                 const targetElement = document.getElementById(targetId);
 
-                const lastSegment = href.substring(targetHref.lastIndexOf('/') + 1);
+                const lastSegment = targetHref.substring(targetHref.lastIndexOf('/') + 1);
                 localStorage.setItem("activeLink", lastSegment);
 
                 if (targetElement) {
