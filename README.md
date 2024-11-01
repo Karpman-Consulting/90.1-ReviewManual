@@ -1,1 +1,1 @@
-This is the TEMPORARY development repo for the web-based PRM Reference Manual, only intended for use during development to test and collect feedback from stakeholders.
+This is the TEMPORARY development repo for the ASHRAE 90.1 Energy Cost Budget and Performance Rating Method Submittal Review Manual in webpage form, only intended for use during development to test and collect feedback from stakeholders.
