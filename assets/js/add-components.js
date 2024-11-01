@@ -37,6 +37,7 @@ function attachSearchInputListener() {
 }
 
 function replaceAnchorLinks() {
+    console.log("called");
     const pageAnchorLinks = document.querySelectorAll('a[href^="#"]');
 
     pageAnchorLinks.forEach(link => {
@@ -58,13 +59,14 @@ function replaceAnchorLinks() {
         });
     });
 
-    const externalLinks = document.querySelectorAll(".page-content a[href]:not([href^='#'])");
+    const externalLinks = document.querySelectorAll("#page-content a[href]:not([href^='#'])");
+    console.log(externalLinks);
 
     externalLinks.forEach(link => {
         link.setAttribute('target', '_blank');
     });
 
-    const contentLinks = document.querySelectorAll(".page-content a[href*='content/']");
+    const contentLinks = document.querySelectorAll("#page-content a[href*='content/']");
     contentLinks.forEach(link => {
         link.addEventListener("click", function() {
             // Get the href and store only the substring after the last '/' character
