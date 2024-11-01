@@ -186,9 +186,9 @@ function attachSearchInputListener() {
 }
 
 function replaceAnchorLinks() {
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    const pageAnchorLinks = document.querySelectorAll('a[href^="#"]');
 
-    anchorLinks.forEach(link => {
+    pageAnchorLinks.forEach(link => {
         link.addEventListener('click', function(event) {
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
@@ -211,6 +211,16 @@ function replaceAnchorLinks() {
 
     externalLinks.forEach(link => {
         link.setAttribute('target', '_blank');
+    });
+
+    const contentLinks = document.querySelectorAll(".page-content a[href*='content/']");
+    contentLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            // Get the href and store only the substring after the last '/' character
+            const href = this.getAttribute("href");
+            const lastSegment = href.substring(href.lastIndexOf('/') + 1);
+            localStorage.setItem("activeLink", lastSegment);
+        });
     });
 }
 
