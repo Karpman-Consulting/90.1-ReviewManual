@@ -35,7 +35,7 @@ function filterContent() {
             // Treat empty filters arrays as if all options are selected (show everything)
             const matchesPath = path.some(p => filters.path.includes(p)) || path.length === 0;
             const matchesVersion = version.some(v => filters.version.includes(v)) || version.length === 0;
-            const matchesBEMTool = filters.bemTool[0] === 'All' || bemTool.some(bem => filters.bemTool.includes(bem)) || filters.bemTool.length === 0;
+            const matchesBEMTool = filters.bemTool[0] === 'All' || bemTool.some(bem => filters.bemTool.includes(bem)) || bemTool.length === 0;
 
             // Show or hide the section based on match
             if (!matchesPath || !matchesVersion || !matchesBEMTool) {
